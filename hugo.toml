@@ -54,6 +54,12 @@ buildExpired = false
   weight = 10
 
 [[menu.main]]
+  identifier = "scenarios"
+  name = "보안 시나리오"
+  url = "/scenarios/"
+  weight = 15
+
+[[menu.main]]
   identifier = "standards"
   name = "표준과 규제"
   url = "/framework/"
