@@ -1,10 +1,6 @@
 baseURL = "https://aisecatlas.github.io/"
+languageCode = "ko-KR"
 defaultContentLanguage = "ko"
-
-[languages.ko]
-  locale = "ko-KR"
-  languageName = "한국어"
-  weight = 1
 title = "AISec Atlas"
 theme = "PaperMod"
 
