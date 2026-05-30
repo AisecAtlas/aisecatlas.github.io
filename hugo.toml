@@ -1,0 +1,153 @@
+baseURL = "https://aisecatlas.github.io/"
+defaultContentLanguage = "ko"
+
+[languages.ko]
+  locale = "ko-KR"
+  languageName = "한국어"
+  weight = 1
+title = "AISec Atlas"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "AISec Atlas"
+  description = "AI 시대 보안 아키텍처의 지도 — CISA ZTMM v2 기반 표준 정합성 진단"
+  keywords = ["Zero Trust", "ZTA", "AI Security", "보안 아키텍처", "CISA", "NIST"]
+  author = "AISec Atlas"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "AISec Atlas"
+    Content = """
+AI 시대 보안 아키텍처의 지도.
+
+CISA ZTMM v2 의 5 Pillar × 4 성숙도 단계 매트릭스를 기준으로,
+주요 보안 솔루션의 **표준 정합성**을 한국어로 진단합니다.
+
+- 표준 문서 한국어 정리 (CISA / NIST / DoD)
+- Pillar 별 솔루션 리뷰 + 평가 점수
+- 한국 시장(망분리·공공·금융) 특화 노트
+- 월간 동향 큐레이션
+"""
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+  [params.label]
+    text = "AISec Atlas"
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+  identifier = "matrix"
+  name = "매트릭스"
+  url = "/matrix/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "pillars"
+  name = "Pillars"
+  url = "/pillars/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "solutions"
+  name = "Solutions"
+  url = "/solutions/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "top"
+  name = "Top 리스트"
+  url = "/top/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "weekly"
+  name = "월간 동향"
+  url = "/weekly/"
+  weight = 50
+
+[[menu.main]]
+  identifier = "korea"
+  name = "한국 노트"
+  url = "/korea/"
+  weight = 60
+
+[[menu.main]]
+  identifier = "framework"
+  name = "표준"
+  url = "/framework/"
+  weight = 70
+
+[[menu.main]]
+  identifier = "evaluation"
+  name = "평가 척도"
+  url = "/evaluation/"
+  weight = 80
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 90
+
+[[menu.main]]
+  identifier = "search"
+  name = "검색"
+  url = "/search/"
+  weight = 100
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  pillar = "pillars"
+  series = "series"
