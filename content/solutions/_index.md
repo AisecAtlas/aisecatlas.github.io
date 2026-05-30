@@ -22,15 +22,3 @@ description: "제품별 표준 정합성 진단과 도입 가이드"
 | Identity | [Microsoft Entra ID](entra-id/) | 8.9 |
 | Identity | [Okta](okta/) | 8.4 |
 | Devices | [CrowdStrike Falcon](crowdstrike-falcon/) | 8.9 |
-
-## 작성 예정
-
-- Ping Identity (Identity)
-- CyberArk PAM (Identity)
-- SailPoint IGA (Identity)
-- SentinelOne (Devices)
-- Microsoft Defender for Endpoint (Devices)
-- Zscaler (Networks)
-- Cloudflare Zero Trust (Networks)
-- Wiz CNAPP (Applications)
-- Microsoft Purview (Data)

@@ -5,7 +5,7 @@ pillars: ["Identity"]
 ShowToc: false
 ---
 
-> **Zero Trust 의사결정은 모두 이 영역에서 출발합니다.** "누가 무엇에 접근하는가"의 첫 번째 변수가 신원입니다.
+> **Zero Trust 의사결정은 모두 이 영역에서 출발한다.** "누가 무엇에 접근하는가"의 첫 번째 변수가 신원이다.
 
 참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/), [NIST SP 800-207](/framework/nist-800-207/)
 
@@ -15,13 +15,13 @@ ShowToc: false
 
 <a href="/solutions/entra-id/" class="card">
 <div class="card-title">Microsoft Entra ID</div>
-<div class="card-desc">Microsoft 365와 통합되는 IDaaS. P2 라이선스의 PIM과 ID Protection이 시장 최고 수준.</div>
+<div class="card-desc">Microsoft 365와 통합되는 IDaaS. P2 라이선스에서 PIM과 ID Protection 제공. 종합 8.9.</div>
 <div class="card-cta">정합성 진단 보기 (8.9)</div>
 </a>
 
 <a href="/solutions/okta/" class="card">
 <div class="card-title">Okta</div>
-<div class="card-desc">7000개 이상 SaaS 카탈로그. 비밀번호 없는 인증 UX 우수. Auth0 흡수로 직원과 고객 통합.</div>
+<div class="card-desc">7000개 이상 SaaS 카탈로그와 무비밀번호 인증. Auth0 흡수로 직원과 고객 인증 통합. 종합 8.4.</div>
 <div class="card-cta">정합성 진단 보기 (8.4)</div>
 </a>
 
@@ -56,13 +56,6 @@ ShowToc: false
 | ITDR | 신원 위협 탐지와 대응 | Silverfort, Semperis, Authomize |
 | CIAM | 외부 고객용 인증 | Okta Auth0, Frontegg, Stytch |
 
-## 작성 예정
-
-- Ping Identity
-- CyberArk Privileged Access Manager
-- SailPoint IdentityNow
-- Silverfort ITDR
-
 ## 도입 의사결정
 
 ### 첫 번째 결정: 대상이 누구인가
@@ -89,13 +82,13 @@ ShowToc: false
 
 ## 한국 시장 적용 노트
 
-**공동인증서 통합.** 글로벌 IDaaS는 공동인증서를 직접 지원하지 않습니다. 별도 SDK나 OIDC 브로커가 필요합니다.
+**공동인증서 통합.** 글로벌 IDaaS는 공동인증서를 직접 지원하지 않는다. 별도 SDK나 OIDC 브로커가 필요하다.
 
-**개인정보보호법.** 클라우드 IDaaS 도입 시 DPA와 데이터 리전을 검토해야 합니다.
+**개인정보보호법.** 클라우드 IDaaS 도입 시 DPA와 데이터 리전을 검토한다.
 
-**금융권.** 전자금융감독규정과 보안성 심의를 사전에 확인해야 합니다.
+**금융권.** 전자금융감독규정과 보안성 심의를 사전에 확인한다.
 
-**공공과 정부.** CSAP 인증 보유 여부를 확인해야 합니다.
+**공공과 정부.** CSAP 인증 보유 여부를 확인한다.
 
 ---
 최종 검토 2026-05-30

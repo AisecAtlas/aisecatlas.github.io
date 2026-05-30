@@ -144,9 +144,7 @@ CrowdStrike는 클라우드 네이티브 EDR 시장의 리더입니다.
 
 ## 비교 솔루션
 
-- SentinelOne (작성 예정)
-- Microsoft Defender for Endpoint (작성 예정)
-- Palo Alto Cortex XDR (작성 예정)
+- [SentinelOne Singularity 정합성 진단](/solutions/sentinelone/)
 
 ## 면책
 
