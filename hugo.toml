@@ -39,9 +39,9 @@ buildExpired = false
   [params.homeInfoParams]
     Title = "보안 솔루션, 표준 기준으로 다시 본다"
     Content = """
-글로벌 보안 솔루션을 한국어로 정리하고, 미국 CISA와 NIST의 Zero Trust 표준에 비춰 점수를 매깁니다.
+글로벌 보안 솔루션을 한국어로 정리하고, CISA와 NIST의 Zero Trust 표준에 비춰 점수를 매깁니다. 도입을 고민 중인 실무자가 바로 쓸 수 있도록 공개 자료만 사용합니다.
 
-도입을 고민 중인 실무자가 의사결정에 바로 쓸 수 있도록, 공개 자료만으로 평가합니다.
+[솔루션 가이드 →](/pillars/) &nbsp;&nbsp; [표준과 규제 →](/framework/) &nbsp;&nbsp; [검색 →](/search/)
 """
 
   [params.fuseOpts]
@@ -53,70 +53,37 @@ buildExpired = false
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
 
-# 1. 둘러보기 (Overview)
 [[menu.main]]
-  identifier = "matrix"
-  name = "매트릭스"
-  url = "/matrix/"
+  identifier = "guide"
+  name = "솔루션 가이드"
+  url = "/pillars/"
   weight = 10
 
-# 2. 레퍼런스 (Reference) — 핵심 콘텐츠
 [[menu.main]]
-  identifier = "pillars"
-  name = "영역별 가이드"
-  url = "/pillars/"
+  identifier = "standards"
+  name = "표준과 규제"
+  url = "/framework/"
   weight = 20
 
-[[menu.main]]
-  identifier = "solutions"
-  name = "솔루션 리뷰"
-  url = "/solutions/"
-  weight = 30
-
-[[menu.main]]
-  identifier = "top"
-  name = "Top 리스트"
-  url = "/top/"
-  weight = 40
-
-# 3. 참고 자료 (Background)
-[[menu.main]]
-  identifier = "framework"
-  name = "표준 요약"
-  url = "/framework/"
-  weight = 50
-
-[[menu.main]]
-  identifier = "korea"
-  name = "한국 노트"
-  url = "/korea/"
-  weight = 60
-
-# 4. 업데이트
 [[menu.main]]
   identifier = "weekly"
   name = "월간 동향"
   url = "/weekly/"
-  weight = 70
+  weight = 30
 
-# 5. 사이트 정보
+# 월간 동향 하위 목차 (최신 호 + 전체 보기)
 [[menu.main]]
-  identifier = "evaluation"
-  name = "평가 방법"
-  url = "/evaluation/"
-  weight = 80
-
-[[menu.main]]
-  identifier = "about"
-  name = "소개"
-  url = "/about/"
-  weight = 90
+  identifier = "weekly-2026-05"
+  name = "2026년 5월호"
+  url = "/weekly/2026-05/"
+  parent = "weekly"
+  weight = 1
 
 [[menu.main]]
   identifier = "search"
   name = "검색"
   url = "/search/"
-  weight = 100
+  weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

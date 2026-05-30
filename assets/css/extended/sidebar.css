@@ -92,56 +92,17 @@
 }
 
 /* ---------------------------------------------
-   2. 메뉴 시각 그룹 헤더 (사이드바 모드에서만)
-   :has() 활용해 특정 항목 앞에 라벨 삽입
+   2. 월간 동향 하위 항목 들여쓰기
 --------------------------------------------- */
 @media (min-width: 1024px) {
-  /* 레퍼런스 그룹 */
-  #menu li:has(a[href="/pillars/"])::before {
-    content: "레퍼런스";
-    display: block;
-    font-size: 10.5px;
-    font-weight: 600;
+  #menu li a[href^="/weekly/"]:not([href="/weekly/"]) {
+    padding-left: 28px;
+    font-size: 13.5px;
     color: var(--secondary);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 18px 12px 6px;
   }
-
-  /* 참고 자료 그룹 */
-  #menu li:has(a[href="/framework/"])::before {
-    content: "참고 자료";
-    display: block;
-    font-size: 10.5px;
-    font-weight: 600;
+  #menu li a[href^="/weekly/"]:not([href="/weekly/"])::before {
+    content: "›  ";
     color: var(--secondary);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 18px 12px 6px;
-  }
-
-  /* 업데이트 그룹 */
-  #menu li:has(a[href="/weekly/"])::before {
-    content: "업데이트";
-    display: block;
-    font-size: 10.5px;
-    font-weight: 600;
-    color: var(--secondary);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 18px 12px 6px;
-  }
-
-  /* 사이트 정보 그룹 */
-  #menu li:has(a[href="/evaluation/"])::before {
-    content: "사이트";
-    display: block;
-    font-size: 10.5px;
-    font-weight: 600;
-    color: var(--secondary);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 18px 12px 6px;
   }
 }
 
