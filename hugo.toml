@@ -19,8 +19,8 @@ buildExpired = false
 [params]
   env = "production"
   title = "AISec Atlas"
-  description = "한국어로 보는 보안 솔루션 표준 정합성 가이드"
-  keywords = ["Zero Trust", "ZTA", "AI Security", "보안 아키텍처", "CISA", "NIST"]
+  description = "AI 시대의 보안 아키텍처 지도. AI로 보안을 강화하는 일과 AI 자체를 지키는 일."
+  keywords = ["AI Security", "LLM 보안", "Security Copilot", "Agentic SOC", "Zero Trust", "OWASP LLM Top 10", "Prompt Injection"]
   author = "AISec Atlas"
   defaultTheme = "light"
   disableThemeToggle = true
@@ -37,11 +37,11 @@ buildExpired = false
   hideSummary = false
 
   [params.homeInfoParams]
-    Title = "보안 솔루션, 표준 기준으로 다시 본다"
+    Title = "AI 시대의 보안 아키텍처 지도"
     Content = """
-글로벌 보안 솔루션을 한국어로 정리하고, CISA와 NIST의 Zero Trust 표준에 비춰 점수를 매깁니다. 도입을 고민 중인 실무자가 바로 쓸 수 있도록 공개 자료만 사용합니다.
+**AI로 보안을 강화하는 일**과 **AI 자체를 지키는 일**, 두 방향을 한국어로 정리합니다.
 
-[솔루션 가이드 →](/pillars/) &nbsp;&nbsp; [표준과 규제 →](/framework/) &nbsp;&nbsp; [검색 →](/search/)
+CISA와 NIST 표준에 비춰 점수를 매기고, OWASP LLM Top 10과 Agentic Top 10 같은 AI 특화 위협 모델을 함께 다룹니다. 공개 자료만 사용합니다.
 """
 
   [params.fuseOpts]
@@ -66,24 +66,50 @@ buildExpired = false
   weight = 20
 
 [[menu.main]]
-  identifier = "weekly"
-  name = "월간 동향"
-  url = "/weekly/"
+  identifier = "ai"
+  name = "AI 동향"
+  url = "/ai/"
   weight = 30
 
-# 월간 동향 하위 목차 (최신 호 + 전체 보기)
 [[menu.main]]
-  identifier = "weekly-2026-05"
-  name = "2026년 5월호"
-  url = "/weekly/2026-05/"
-  parent = "weekly"
+  identifier = "ai-defend"
+  name = "AI를 지키는 일"
+  url = "/ai/defend-ai/"
+  parent = "ai"
   weight = 1
+
+[[menu.main]]
+  identifier = "ai-augment"
+  name = "AI로 보안 강화"
+  url = "/ai/augment-security/"
+  parent = "ai"
+  weight = 2
+
+[[menu.main]]
+  identifier = "automation"
+  name = "자동화 (with AI)"
+  url = "/automation/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "automation-soar"
+  name = "SOAR와 Hyperautomation"
+  url = "/automation/soar-evolution/"
+  parent = "automation"
+  weight = 1
+
+[[menu.main]]
+  identifier = "automation-copilot"
+  name = "Security Copilots"
+  url = "/automation/security-copilots/"
+  parent = "automation"
+  weight = 2
 
 [[menu.main]]
   identifier = "search"
   name = "검색"
   url = "/search/"
-  weight = 40
+  weight = 50
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
