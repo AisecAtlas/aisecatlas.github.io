@@ -36,13 +36,7 @@ buildExpired = false
   comments = false
   hideSummary = false
 
-  [params.homeInfoParams]
-    Title = "AI 시대의 보안 아키텍처 지도"
-    Content = """
-**AI로 보안을 강화하는 일**과 **AI 자체를 지키는 일**, 두 방향을 한국어로 정리합니다.
-
-CISA와 NIST 표준에 비춰 점수를 매기고, OWASP LLM Top 10과 Agentic Top 10 같은 AI 특화 위협 모델을 함께 다룹니다. 공개 자료만 사용합니다.
-"""
+  mainSections = ["nonexistent"]
 
   [params.fuseOpts]
     isCaseSensitive = false

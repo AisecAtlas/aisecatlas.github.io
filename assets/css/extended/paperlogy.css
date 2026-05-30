@@ -1,0 +1,58 @@
+/* Paperlogy 폰트 (Korean web font by 이은비, noonnu 배포)
+   jsDelivr CDN 경로 사용 */
+
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-4Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-5Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-7Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Paperlogy';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+}
+
+/* 전체 본문에 Paperlogy 적용 */
+html, body {
+  font-family: 'Paperlogy', -apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  font-feature-settings: 'tnum';
+  letter-spacing: -0.005em;
+}
+
+.post-title, .post-content, .header, .nav, .menu, button, input, textarea, select, .home-info {
+  font-family: 'Paperlogy', -apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+/* 코드는 모노스페이스 유지 */
+code, pre, kbd, samp, tt, .highlight {
+  font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'Consolas', 'Menlo', 'Monaco', monospace;
+}

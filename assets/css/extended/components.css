@@ -1,0 +1,265 @@
+/* AISec Atlas — UX 컴포넌트 시스템
+   카드, 버튼, 활성 상태, 외부 링크 등 */
+
+/* ---------------------------------------------
+   1. 색상 토큰 보강 (액센트)
+--------------------------------------------- */
+:root {
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  --card-shadow-hover: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dark {
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+}
+
+/* ---------------------------------------------
+   2. 메뉴 활성 상태
+--------------------------------------------- */
+@media (min-width: 1024px) {
+  #menu .active a,
+  #menu li a.active {
+    background: var(--tertiary);
+    color: var(--accent);
+    font-weight: 600;
+    position: relative;
+  }
+  #menu .active a::before,
+  #menu li a.active::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 8px;
+    bottom: 8px;
+    width: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+}
+
+/* ---------------------------------------------
+   3. 카드 그리드 (홈 화면용)
+--------------------------------------------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 2em 0;
+}
+
+.card {
+  display: block;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--theme);
+  text-decoration: none !important;
+  color: var(--primary) !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-1px);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--primary);
+}
+
+.card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--secondary);
+  margin: 0 0 12px;
+}
+
+.card-cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.card-cta::after {
+  content: " →";
+}
+
+/* ---------------------------------------------
+   4. 버튼 시스템
+--------------------------------------------- */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  margin: 4px 6px 4px 0;
+  min-height: 44px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--theme) !important;
+  border: 1px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white !important;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary) !important;
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+}
+
+/* CTA 영역 */
+.cta-group {
+  margin: 1.5em 0 2em;
+}
+
+/* ---------------------------------------------
+   5. 상태 배지
+--------------------------------------------- */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.badge-done {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-wip {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.dark .badge-done {
+  background: rgba(34, 197, 94, 0.15);
+  color: #86efac;
+}
+
+.dark .badge-wip {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fcd34d;
+}
+
+/* ---------------------------------------------
+   6. 외부 링크 표시 (자동)
+--------------------------------------------- */
+.post-content a[href^="http://"]:not([href*="aisecatlas.github.io"])::after,
+.post-content a[href^="https://"]:not([href*="aisecatlas.github.io"])::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 0.85em;
+  color: var(--secondary);
+}
+
+/* ---------------------------------------------
+   7. 표 모바일 처리
+--------------------------------------------- */
+@media (max-width: 767px) {
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ---------------------------------------------
+   8. 코드/인라인 코드 가독성
+--------------------------------------------- */
+.post-content code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.post-content pre code {
+  padding: 0;
+  background: transparent;
+}
+
+/* ---------------------------------------------
+   9. 모바일 본문 패딩 조정
+--------------------------------------------- */
+@media (max-width: 1023px) {
+  .main {
+    padding: 24px 16px;
+  }
+  .home-info .post-content {
+    font-size: 16px;
+  }
+}
+
+/* ---------------------------------------------
+   10. 포커스 가시성 (접근성)
+--------------------------------------------- */
+a:focus-visible,
+button:focus-visible,
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------
+   11. 헤드라인 hero (홈 진입)
+--------------------------------------------- */
+.hero {
+  padding: 24px 0 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  font-size: 17px;
+  color: var(--secondary);
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
