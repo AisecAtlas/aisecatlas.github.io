@@ -1,12 +1,66 @@
-/* AISec Atlas — 좌측 사이드바 레이아웃 + 메뉴 그룹화 */
+/* ============================================
+   AISec Atlas — Futuristic Dark Theme
+   Linear/Vercel/Stripe-inspired design system
+   ============================================ */
 
-/* ---------------------------------------------
-   1. 데스크탑: 좌측 사이드바
---------------------------------------------- */
+/* ---------- 1. 색상 토큰 (다크 우선) ---------- */
+.dark {
+  --theme: #07090f;
+  --entry: #0d1117;
+  --primary: #e4e6eb;
+  --secondary: #8b95a7;
+  --tertiary: #161b22;
+  --content: #d1d5db;
+  --code-bg: #0d1117;
+  --border: #1f2937;
+
+  --accent: #22d3ee;
+  --accent-hover: #67e8f9;
+  --accent-glow: rgba(34, 211, 238, 0.18);
+  --accent-soft: rgba(34, 211, 238, 0.08);
+
+  --grad-1: #0f172a;
+  --grad-2: #0a0e1a;
+}
+
+:root {
+  --accent: #0891b2;
+  --accent-hover: #0e7490;
+  --accent-glow: rgba(8, 145, 178, 0.15);
+}
+
+/* ---------- 2. 배경 패턴 (그리드 + 그라디언트) ---------- */
+body {
+  background:
+    radial-gradient(circle at 0% 0%, var(--accent-soft) 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, var(--accent-soft) 0%, transparent 40%),
+    linear-gradient(180deg, var(--grad-1) 0%, var(--grad-2) 100%);
+  background-attachment: fixed;
+  color: var(--primary);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.header, .main, .footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- 3. 사이드바 (좌측 고정) ---------- */
 @media (min-width: 1024px) {
   :root {
-    --sidebar-w: 260px;
-    --content-max: 820px;
+    --sidebar-w: 280px;
+    --content-max: 860px;
   }
 
   .header {
@@ -19,14 +73,16 @@
     border-bottom: none;
     overflow-y: auto;
     z-index: 100;
-    background: var(--theme);
+    background: rgba(7, 9, 15, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     box-sizing: border-box;
   }
 
   .nav {
     flex-direction: column;
     align-items: stretch;
-    padding: 28px 18px 32px;
+    padding: 32px 20px;
     height: 100%;
     line-height: 1.4;
     max-width: none;
@@ -34,14 +90,19 @@
   }
 
   .logo {
-    margin: 0 0 20px;
-    padding: 0 6px 18px;
+    margin: 0 0 28px;
+    padding: 0 6px 20px;
     border-bottom: 1px solid var(--border);
   }
 
   .logo a {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   #menu {
@@ -60,15 +121,49 @@
 
   #menu a {
     display: block;
-    padding: 8px 12px;
+    padding: 9px 14px;
     border-radius: 6px;
-    font-size: 14.5px;
-    color: var(--primary);
-    transition: background 0.15s ease;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary);
+    transition: all 0.15s ease;
+    position: relative;
   }
 
   #menu a:hover {
-    background: var(--tertiary);
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  /* 활성 메뉴 */
+  #menu .active a,
+  #menu li.active > a {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  #menu .active a::before,
+  #menu li.active > a::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 9px;
+    bottom: 9px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--accent-hover) 100%);
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 0 12px var(--accent-glow);
+  }
+
+  /* 월간/하위 항목 들여쓰기 */
+  #menu li a[href^="/weekly/"]:not([href="/weekly/"]),
+  #menu li a[href^="/ai/"]:not([href="/ai/"]),
+  #menu li a[href^="/automation/"]:not([href="/automation/"]) {
+    padding-left: 28px;
+    font-size: 13px;
+    color: var(--secondary);
+    opacity: 0.85;
   }
 
   .main, .footer {
@@ -78,127 +173,552 @@
   }
 
   .main {
-    padding: 48px 36px;
+    padding: 64px 48px;
   }
 
   .footer {
-    padding: 24px 36px;
+    padding: 28px 48px 48px;
     text-align: left;
-  }
-
-  .post-title {
-    margin-top: 0;
+    font-size: 12px;
+    color: var(--secondary);
+    border-top: 1px solid var(--border);
+    margin-top: 64px;
   }
 }
 
-/* ---------------------------------------------
-   2. 월간 동향 하위 항목 들여쓰기
---------------------------------------------- */
-@media (min-width: 1024px) {
-  #menu li a[href^="/weekly/"]:not([href="/weekly/"]) {
-    padding-left: 28px;
-    font-size: 13.5px;
-    color: var(--secondary);
-  }
-  #menu li a[href^="/weekly/"]:not([href="/weekly/"])::before {
-    content: "›  ";
-    color: var(--secondary);
-  }
-}
-
-/* ---------------------------------------------
-   3. 모바일: 기본 상단 바 유지, 보강
---------------------------------------------- */
+/* ---------- 4. 모바일 ---------- */
 @media (max-width: 1023px) {
   .header {
     border-bottom: 1px solid var(--border);
+    background: rgba(7, 9, 15, 0.92);
+    backdrop-filter: blur(20px);
+  }
+  .main {
+    padding: 32px 20px;
   }
 }
 
-/* ---------------------------------------------
-   4. 본문 가독성과 강조 일관성
---------------------------------------------- */
-.post-content p {
-  line-height: 1.78;
-  margin: 1.1em 0;
+/* ---------- 5. 타이포그래피 ---------- */
+.post-title {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.post-description {
+  font-size: 16px;
+  color: var(--secondary);
+  margin: 0 0 32px;
+  line-height: 1.6;
+}
+
+.post-meta {
+  font-size: 12px;
+  color: var(--secondary);
+  letter-spacing: 0.02em;
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--content);
 }
 
 .post-content h2 {
-  margin-top: 2.4rem;
-  margin-bottom: 0.8rem;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 3rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  color: var(--primary);
+  position: relative;
+}
+
+.post-content h2:first-child {
+  border-top: none;
   padding-top: 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--border);
-  font-size: 1.55rem;
+  margin-top: 0;
 }
 
 .post-content h3 {
-  margin-top: 1.8rem;
-  margin-bottom: 0.6rem;
-  font-size: 1.2rem;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+  color: var(--primary);
+  letter-spacing: -0.01em;
 }
 
+.post-content h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.post-content p {
+  margin: 1.1em 0;
+  line-height: 1.78;
+}
+
+.post-content strong {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.post-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.post-content a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.post-content ul, .post-content ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+.post-content li {
+  margin: 0.5em 0;
+  line-height: 1.7;
+}
+
+/* ---------- 6. 코드 블록 ---------- */
+.post-content code {
+  background: var(--code-bg);
+  color: var(--accent);
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  border: 1px solid var(--border);
+}
+
+.post-content pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 1.5em 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+.post-content pre code {
+  background: transparent;
+  border: none;
+  color: var(--content);
+  padding: 0;
+}
+
+.post-content pre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+  opacity: 0.4;
+}
+
+/* ---------- 7. 표 ---------- */
 .post-content table {
-  font-size: 14.5px;
-  margin: 1.4em 0;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5em 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .post-content th {
   background: var(--code-bg);
+  color: var(--primary);
   font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  letter-spacing: 0.02em;
 }
 
-.post-content td, .post-content th {
-  padding: 8px 12px;
+.post-content td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--content);
 }
 
-/* 블록인용을 callout 박스로 활용 */
+.post-content tr:last-child td {
+  border-bottom: none;
+}
+
+.post-content tr:hover td {
+  background: var(--accent-soft);
+}
+
+@media (max-width: 767px) {
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ---------- 8. 블록인용 = Callout 박스 ---------- */
 .post-content blockquote {
+  position: relative;
+  margin: 1.8em 0;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, var(--accent-soft) 0%, transparent 100%);
+  border: 1px solid var(--accent-glow);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
   font-size: 15.5px;
-  line-height: 1.7;
-  border-left: 4px solid var(--primary);
-  background: var(--code-bg);
-  padding: 14px 18px;
-  margin: 1.4em 0;
-  border-radius: 0 6px 6px 0;
+  line-height: 1.75;
+  color: var(--primary);
 }
 
 .post-content blockquote p {
   margin: 0.4em 0;
 }
 
+.post-content blockquote p:first-child {
+  margin-top: 0;
+}
+
+.post-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .post-content blockquote strong:first-child {
-  color: var(--primary);
-}
-
-/* 본문 강한 강조 */
-.post-content strong {
+  color: var(--accent);
   font-weight: 700;
-  color: var(--primary);
+  letter-spacing: 0.01em;
 }
 
-/* 리스트 가독성 */
-.post-content ul, .post-content ol {
-  margin: 1em 0;
+/* ---------- 9. Hero (홈 화면) ---------- */
+.hero {
+  position: relative;
+  padding: 24px 0 32px;
+  margin-bottom: 40px;
 }
 
-.post-content li {
-  margin: 0.4em 0;
-  line-height: 1.7;
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.4;
 }
 
-/* ---------------------------------------------
-   5. 홈 화면 메타 정보
---------------------------------------------- */
-.home-info .post-content {
-  font-size: 17px;
-  line-height: 1.7;
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 20px;
+  background: linear-gradient(180deg, var(--primary) 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* ---------------------------------------------
-   6. 푸터에 보조 링크 (메뉴에서 뺀 항목)
---------------------------------------------- */
-.footer {
-  font-size: 13px;
+.hero p {
+  font-size: 18px;
   color: var(--secondary);
+  margin: 0 0 28px;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+/* ---------- 10. 버튼 시스템 ---------- */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none !important;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  margin: 4px 8px 4px 0;
+  min-height: 44px;
+  box-sizing: border-box;
+  line-height: 1.4;
+  position: relative;
+  letter-spacing: -0.01em;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  color: #07090f !important;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-glow), 0 4px 12px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 1px var(--accent), 0 8px 20px var(--accent-glow);
+  border-color: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary) !important;
+  border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+  background: var(--accent-soft);
+}
+
+.cta-group {
+  margin: 24px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+/* ---------- 11. 카드 그리드 ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin: 2.5em 0;
+}
+
+.card {
+  display: block;
+  padding: 28px 26px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 100%);
+  text-decoration: none !important;
+  color: var(--primary) !important;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-soft) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--accent) 0%, transparent 50%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: transparent;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.4), 0 0 24px var(--accent-glow);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--secondary);
+  margin: 0 0 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s ease;
+}
+
+.card-cta::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.card:hover .card-cta {
+  gap: 8px;
+}
+
+.card:hover .card-cta::after {
+  transform: translateX(2px);
+}
+
+/* ---------- 12. 외부 링크 표시 ---------- */
+.post-content a[href^="http"]:not([href*="aisecatlas.github.io"])::after {
+  content: " ↗";
+  display: inline;
+  font-size: 0.85em;
+  color: var(--secondary);
+  margin-left: 1px;
+}
+
+/* ---------- 13. 포커스 (접근성) ---------- */
+a:focus-visible,
+button:focus-visible,
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- 14. 스크롤바 (다크 톤) ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ---------- 15. 페이드인 애니메이션 ---------- */
+.main {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- 16. 검색 페이지 강화 ---------- */
+#searchInput {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-size: 16px;
+  color: var(--primary);
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+#searchResults li {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 16px;
+  transition: all 0.15s ease;
+}
+
+#searchResults li:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* ---------- 17. 사이드바 스크롤 (사이드바 내부) ---------- */
+.header::-webkit-scrollbar {
+  width: 4px;
+}
+
+.header::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+
+/* ---------- 18. 인라인 KBD (단축키 표시) ---------- */
+kbd {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.85em;
+  color: var(--primary);
 }
