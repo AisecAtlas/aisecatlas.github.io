@@ -22,3 +22,11 @@ description: "제품별 표준 정합성 진단과 도입 가이드"
 | Identity | [Microsoft Entra ID](entra-id/) | 8.9 |
 | Identity | [Okta](okta/) | 8.4 |
 | Devices | [CrowdStrike Falcon](crowdstrike-falcon/) | 8.9 |
+| Devices | [SentinelOne Singularity](sentinelone/) | 8.8 |
+| Networks | [Zscaler](zscaler/) | 8.7 |
+| Networks | [Palo Alto Prisma Access](prisma-access/) | 8.7 |
+| Networks | [Netskope](netskope/) | 8.7 |
+| Applications | [Wiz](wiz/) | 8.7 |
+| Applications | [HashiCorp Vault](hashicorp-vault/) | 9.2 |
+| Data | [Rubrik](rubrik/) | 8.3 |
+| Data | [Varonis](varonis/) | 8.7 |
