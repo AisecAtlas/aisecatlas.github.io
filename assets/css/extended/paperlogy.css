@@ -1,11 +1,11 @@
-/* Paperlogy 폰트 — 전역 강제 적용 */
+/* Paperlogy 폰트 — fonts-archive/Paperlogy 저장소 직접 로드 */
 
 @font-face {
   font-family: 'Paperlogy';
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-4Regular.woff2') format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-5Medium.woff2') format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-5Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-6SemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -29,7 +29,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-7Bold.woff2') format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-7Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -37,7 +37,7 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-8ExtraBold.woff2') format('woff2');
 }
 
 /* 전역 강제 적용 - !important로 PaperMod 기본 폰트 무시 */
