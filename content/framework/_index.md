@@ -20,6 +20,24 @@ ShowToc: false
 <div class="card-cta">표준 요약 보기</div>
 </a>
 
+<a href="owasp-llm-top-10/" class="card">
+<div class="card-title">OWASP LLM Top 10 2025</div>
+<div class="card-desc">LLM 앱 10대 보안 위험(LLM01~LLM10). 2025 v2.0에서 RAG, 에이전트 반영.</div>
+<div class="card-cta">표준 요약 보기</div>
+</a>
+
+<a href="nist-ai-rmf/" class="card">
+<div class="card-title">NIST AI RMF</div>
+<div class="card-desc">AI 위험관리 프레임워크 1.0. GOVERN, MAP, MEASURE, MANAGE 4대 기능과 Trustworthy AI 7특성.</div>
+<div class="card-cta">표준 요약 보기</div>
+</a>
+
+<a href="mitre-atlas/" class="card">
+<div class="card-title">MITRE ATLAS</div>
+<div class="card-desc">AI 시스템 공격 전술과 기법 매트릭스. ATT&CK의 AI판, 16전술 84기법.</div>
+<div class="card-cta">표준 요약 보기</div>
+</a>
+
 <a href="ai-security-standards/" class="card">
 <div class="card-title">AI 보안 표준 지형</div>
 <div class="card-desc">OWASP, MITRE ATLAS, NIST AI RMF, ISO 42001, EU AI Act, KISA 가이드라인을 한 장으로 묶은 지도.</div>
@@ -46,5 +64,7 @@ ShowToc: false
 |---|---|
 | CISA ZTMM v2 | [솔루션 가이드](/pillars/)의 5 영역 구분, 평가 ID 체계 |
 | NIST SP 800-207 | 평가 척도 B축(표준 정합성)의 7원칙 |
-| [AI 보안 표준](ai-security-standards/) | [AI 동향](/ai/)의 위협 모델과 거버넌스 |
+| [OWASP LLM Top 10](owasp-llm-top-10/) | LLM 게이트웨이, AI 레드티밍의 위협 모델 기준 |
+| [NIST AI RMF](nist-ai-rmf/) | AI 거버넌스 계층의 상위 프레임 |
+| [MITRE ATLAS](mitre-atlas/) | AI 레드티밍의 공격 커버리지 매핑 |
 | 한국 규제 | 솔루션 리뷰의 "한국 시장 노트" 섹션 |
