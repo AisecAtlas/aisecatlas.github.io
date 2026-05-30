@@ -9,21 +9,21 @@ pillars: ["Identity"]
 ShowToc: true
 ---
 
-본 사이트의 [평가 척도](/evaluation/scoring-rubric/) 기반 점수와 한 줄 요약, 풀 리뷰 링크입니다.
+본 사이트의 [평가 척도](/evaluation/scoring-rubric/) 기반 점수와 한 줄 요약, 풀 리뷰 링크다.
 
-> 선정 기준은 CISA ZTMM Identity 영역의 5개 Function 커버리지와 본 사이트 평가 척도의 종합 점수입니다. 절대 평가이므로 벤더 간 일대일 비교에 단독으로 쓰지 마세요.
+> 선정 기준은 CISA ZTMM Identity 영역의 5개 Function 커버리지와 본 사이트 평가 척도의 종합 점수다. 절대 평가이므로 벤더 간 일대일 비교의 단독 근거로 쓰지 않는다.
 
 ## 1위 Microsoft Entra ID — 8.9 / 10
 
-Microsoft 365 환경이라면 통합 효율과 비용 효율이 가장 큽니다. P2 라이선스의 PIM과 ID Protection은 시장에서 가장 성숙한 편입니다.
+Microsoft 365 환경이라면 통합 효율과 비용 효율이 가장 크다. P2 라이선스의 PIM과 ID Protection은 시장에서 가장 성숙한 편이다.
 
 - 강점: M365, Defender, Sentinel 단일 스택
-- 한계: Microsoft 외 환경에선 우위가 줄어듭니다
+- 한계: Microsoft 외 환경에선 우위가 줄어든다
 - 풀 리뷰: [Microsoft Entra ID 정합성 진단](/solutions/entra-id/)
 
 ## 2위 Okta — 8.4 / 10
 
-7000개 이상의 SaaS 카탈로그가 강점입니다. 비밀번호 없는 인증의 사용자 경험이 좋고, Auth0 흡수로 직원과 고객 인증을 모두 다룹니다.
+7000개 이상의 SaaS 카탈로그가 강점이다. 무비밀번호 인증의 사용자 경험이 좋고, Auth0 흡수로 직원과 고객 인증을 모두 다룬다.
 
 - 강점: SaaS 통합, 무비번 사용자 경험
 - 한계: 가격 불투명, 망분리 환경에 부적합
@@ -31,21 +31,21 @@ Microsoft 365 환경이라면 통합 효율과 비용 효율이 가장 큽니다
 
 ## 3위 Ping Identity — 7.8 / 10 (잠정)
 
-직접 운영과 커스터마이징을 우선하는 조직에 강점이 있습니다. PingOne 클라우드와 PingFederate 온프레미스를 모두 제공합니다.
+직접 운영과 커스터마이징을 우선하는 조직에 강점이 있다. PingOne 클라우드와 PingFederate 온프레미스를 모두 제공한다.
 
 - 강점: 하이브리드 환경 자유도
 - 한계: 학습 곡선과 운영 복잡도
 
 ## 4위 ForgeRock (Ping 합병) — 7.5 / 10 (잠정)
 
-2023년에 Ping Identity와 합병했습니다. 고도의 IGA와 Identity Cloud 통합이 진행 중입니다.
+2023년에 Ping Identity와 합병했다. 고도의 IGA와 Identity Cloud 통합이 진행 중이다.
 
 - 강점: 깊이 있는 IGA, 고객 신원 처리
 - 한계: 합병 중이라 라인업이 정리 중
 
 ## 5위 OneLogin (One Identity) — 7.0 / 10 (잠정)
 
-중견과 중소 시장에 친화적인 가격대입니다. SaaS SSO와 MFA 중심입니다.
+중견과 중소 시장에 친화적인 가격대다. SaaS SSO와 MFA 중심이다.
 
 - 강점: 가격, 학습 곡선이 완만
 - 한계: 고급 Zero Trust 기능(ITDR, IGA)이 제한적
@@ -60,7 +60,7 @@ Microsoft 365 환경이라면 통합 효율과 비용 효율이 가장 큽니다
 | 4 | ForgeRock | 7.5 | 7.5 | 7.5 |
 | 5 | OneLogin | 7.5 | 6.5 | 7.0 |
 
-잠정 점수는 풀 리뷰 작성 시 확정됩니다.
+잠정 점수는 풀 리뷰 작성 시 확정한다.
 
 ## 한국 시장에서 어떻게 고를까
 
@@ -73,7 +73,7 @@ Microsoft 365 환경이라면 통합 효율과 비용 효율이 가장 큽니다
 
 ## 이 리스트에서 제외된 카테고리
 
-다음 카테고리는 별도 Top 리스트로 다룰 예정입니다.
+다음 카테고리는 별도 Top 리스트로 다룬다.
 
 - PAM (CyberArk, BeyondTrust, Delinea)
 - IGA (SailPoint, Saviynt, Omada)
