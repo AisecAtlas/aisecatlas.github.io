@@ -12,14 +12,14 @@ ShowToc: true
 
 ### 2026년
 
+- [2026년 6월호](2026-06/) — 보안 시장 통합 결산, Google의 Wiz 인수, AI 보안 흡수 흐름
 - [2026년 5월호](2026-05/) — CISA ZTMM 1주년, Okta ITDR 확대, 한국 망분리 정책 논의
 
 ## 발행 예정
 
 ### 2026년
 
-- 2026년 6월호 — ITDR 카테고리 비교 (Silverfort, Semperis), CNAPP 시장 정리, 망분리 시그널 추적
-- 2026년 7월호 — 미정
+- 2026년 7월호 — ITDR 카테고리 비교 (Silverfort, Semperis), AI 거버넌스와 TRiSM 정리
 
 ## 다루는 주제
 

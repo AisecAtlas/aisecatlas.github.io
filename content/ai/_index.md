@@ -20,6 +20,48 @@ ShowToc: false
 <div class="card-cta">활용 동향 보기</div>
 </a>
 
+<a href="ai-spm/" class="card">
+<div class="card-title">AI-SPM 솔루션</div>
+<div class="card-desc">AI 자산 발견과 태세 관리. 섀도 AI 인벤토리, Wiz와 Prisma AIRS. 런타임 가드레일과의 차이.</div>
+<div class="card-cta">솔루션 보기</div>
+</a>
+
+<a href="llm-gateway/" class="card">
+<div class="card-title">LLM 게이트웨이 비교</div>
+<div class="card-desc">런타임 가드레일 심층 비교. Lakera(Check Point), Prompt Security(SentinelOne), 오픈소스. OWASP LLM Top 10 매핑.</div>
+<div class="card-cta">비교 보기</div>
+</a>
+
+<a href="ai-red-teaming/" class="card">
+<div class="card-title">AI 레드티밍 비교</div>
+<div class="card-desc">배포 전 능동 공격으로 취약점 발견. Lakera Red, HiddenLayer, Mindgard. MITRE ATLAS 매핑.</div>
+<div class="card-cta">비교 보기</div>
+</a>
+
+<a href="agentic-security/" class="card">
+<div class="card-title">Agentic AI 보안과 MCP</div>
+<div class="card-desc">에이전트 신원(NHI)과 최소 권한, MCP Tool Poisoning 통제. OWASP Agentic, MCP Top 10.</div>
+<div class="card-cta">대응 보기</div>
+</a>
+
+<a href="ai-governance/" class="card">
+<div class="card-title">AI 거버넌스와 TRiSM</div>
+<div class="card-desc">AI 인벤토리, 정책, 컴플라이언스 계층. Credo AI, Holistic AI. EU AI Act, NIST AI RMF, ISO 42001.</div>
+<div class="card-cta">거버넌스 보기</div>
+</a>
+
+<a href="model-supply-chain/" class="card">
+<div class="card-title">AI 모델 공급망 보안</div>
+<div class="card-desc">악성 모델과 pickle 공격, 모델 스캐닝과 서명, ML-BOM. Protect AI, HiddenLayer, JFrog.</div>
+<div class="card-cta">공급망 보기</div>
+</a>
+
+<a href="deepfake-defense/" class="card">
+<div class="card-title">딥페이크와 AI 사기 방어</div>
+<div class="card-desc">AI를 악용한 사칭. 딥페이크 영상, 음성 복제, KYC 우회. Reality Defender, Sensity, Pindrop.</div>
+<div class="card-cta">방어 보기</div>
+</a>
+
 </div>
 
 ## 왜 지금이 분기점인가

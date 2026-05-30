@@ -54,6 +54,8 @@ ShowToc: true
 
 > **왜 별도 표준이 필요한가**: 에이전트는 단일 호출 LLM과 달리 **추론, 메모리, 도구, 다단계 실행**이 결합됩니다. 프롬프트 단계 방어만으로 막을 수 없는 새로운 취약점 분류가 생깁니다.
 
+에이전트 신원(NHI)과 MCP 위협 대응은 [Agentic AI 보안과 MCP](/ai/agentic-security/)에서 다룹니다.
+
 ## Prompt Injection이 여전히 1순위인 이유
 
 2025-2026년의 변화 세 가지가 결합됐습니다.
@@ -70,18 +72,18 @@ ShowToc: true
 
 ### 1. AI 게이트웨이 / Runtime 가드레일
 
-LLM 호출 앞단에서 입출력을 검사하고 차단합니다.
+LLM 호출 앞단에서 입출력을 검사하고 차단합니다. 같은 척도의 심층 비교는 [LLM 게이트웨이와 런타임 가드레일 비교](/ai/llm-gateway/)에서 다룹니다.
 
 | 솔루션 | 특징 |
 |---|---|
-| **Lakera Guard** | **98% 이상 탐지율**, sub-50ms 지연, 100개 이상 언어 지원. Gandalf 게임에서 수집한 **8000만 건 이상의 적대적 프롬프트**로 학습. 2025년에 인수 |
-| **Prompt Security** | 엔터프라이즈 LLM 사용 가시성과 정책 적용에 강점 |
-| **Cisco AI Defense** | Lakera 기술을 흡수해 통합 보안 스택과 결합 |
+| **Lakera Guard** | **98% 이상 탐지율**, sub-50ms 지연, 100개 이상 언어 지원. Gandalf 게임에서 수집한 **8000만 건 이상의 적대적 프롬프트**로 학습. 2025년 Check Point에 인수 |
+| **Prompt Security** | 엔터프라이즈 LLM 사용 가시성과 정책 적용에 강점. 2025년 SentinelOne에 인수 |
+| **Cisco AI Defense** | Robust Intelligence(2024년 인수) 기술 기반의 AI 방화벽 |
 | **Protect AI Guardian** | MLOps 파이프라인 가시성 + Runtime 보호 통합 |
 
 ### 2. AI 레드티밍
 
-배포 전에 LLM 앱과 에이전트를 자동 공격해 취약점을 찾습니다.
+배포 전에 LLM 앱과 에이전트를 자동 공격해 취약점을 찾습니다. 같은 척도의 심층 비교와 MITRE ATLAS 매핑은 [AI 레드티밍 비교](/ai/ai-red-teaming/)에서 다룹니다.
 
 | 솔루션 | 특징 |
 |---|---|
@@ -91,7 +93,7 @@ LLM 호출 앞단에서 입출력을 검사하고 차단합니다.
 
 ### 3. AI TRiSM (Trust, Risk, and Security Management)
 
-거버넌스 차원에서 AI 사용 인벤토리, 데이터 흐름, 정책 적합성을 관리합니다.
+거버넌스 차원에서 AI 사용 인벤토리, 데이터 흐름, 정책 적합성을 관리합니다. 규제 프레임워크(EU AI Act, NIST AI RMF, ISO 42001) 매핑과 솔루션 비교는 [AI 거버넌스와 TRiSM](/ai/ai-governance/)에서 다룹니다.
 
 | 솔루션 | 특징 |
 |---|---|
@@ -100,12 +102,14 @@ LLM 호출 앞단에서 입출력을 검사하고 차단합니다.
 
 ### 4. 모델 공급망 보안
 
-학습 단계와 모델 레지스트리 보안입니다.
+학습 단계와 모델 레지스트리 보안입니다. 악성 모델, pickle 공격, 모델 서명과 ML-BOM 심층 내용은 [AI 모델 공급망 보안](/ai/model-supply-chain/)에서 다룹니다.
 
 | 솔루션 | 특징 |
 |---|---|
 | **Protect AI** | 모델 스캐닝, 학습 데이터 검증 |
 | **Wiz AI-SPM** | CNAPP에 통합된 AI 자산 가시성 |
+
+자산 발견과 태세 관리(AI-SPM)는 별도 페이지에서 다룹니다. [AI-SPM 솔루션](/ai/ai-spm/)을 참고하세요.
 
 ## 도입 의사결정 가이드
 

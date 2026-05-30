@@ -14,10 +14,22 @@ ShowToc: false
 <div class="card-cta">규제 노트 보기</div>
 </a>
 
+<a href="financial-mangbunri/" class="card">
+<div class="card-title">금융권 망분리 개선과 Zero Trust</div>
+<div class="card-desc">전자금융감독규정 개정(2025-02 시행)과 3단계 로드맵. 금융보안원 제로트러스트 안내서.</div>
+<div class="card-cta">규제 노트 보기</div>
+</a>
+
+<a href="csap-n2sf/" class="card">
+<div class="card-title">공공 클라우드 인증(CSAP)과 N²SF 통합</div>
+<div class="card-desc">CSAP 상중하 등급제에서 국정원 단일 검증으로 재편. C/S/O 등급 정합, 2027 하반기 시행.</div>
+<div class="card-cta">규제 노트 보기</div>
+</a>
+
+<a href="pipa-zero-trust-data/" class="card">
+<div class="card-title">개인정보보호법 개정과 Zero Trust Data</div>
+<div class="card-desc">자동화된 결정 대응권, 전송요구권, 생성형 AI 처리 안내서. 데이터 보안 의무와 ZT Data 매핑.</div>
+<div class="card-cta">규제 노트 보기</div>
+</a>
+
 </div>
-
-## 작성 예정
-
-- 금감원 전자금융감독규정과 Zero Trust
-- 공공 부문 보안 인증 체계(CSAP)와 Zero Trust 정합성
-- 개인정보보호법 개정과 Zero Trust Data 영역
