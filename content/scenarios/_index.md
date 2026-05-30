@@ -4,7 +4,7 @@ description: "구체적 보안 질문을 솔루션 조합으로 답한다. MITRE
 ShowToc: false
 ---
 
-> **솔루션 중심이 아니라 질문 중심.** "X를 어떻게 막을 것인가" 같은 구체적 보안 운영 질문에 대해 어떤 솔루션 조합으로 답하는지 정리합니다. MITRE D3FEND의 위협-방어 매핑과 Defense in Depth 원칙을 따릅니다.
+> **솔루션이 아니라 질문에서 출발한다.** "X를 어떻게 막을 것인가" 같은 보안 운영 질문에 솔루션 조합으로 답한다. 위협-방어 매핑은 MITRE D3FEND, 계층 방어는 Defense in Depth 원칙을 따른다.
 
 ## 시나리오 페이지가 답하는 것
 
@@ -18,7 +18,7 @@ ShowToc: false
 
 ## 작성 예정 시나리오
 
-다음 시나리오 페이지를 단계적으로 추가합니다. 시나리오 제안은 [GitHub Issues](https://github.com/AisecAtlas/aisecatlas.github.io/issues)로 받습니다.
+아래 시나리오를 단계적으로 추가한다. 제안은 [GitHub Issues](https://github.com/AisecAtlas/aisecatlas.github.io/issues)로 받는다.
 
 ### 사용자 활동 통제
 - 사용자 웹 활동으로 인한 악성 사이트 접근과 자료 유출을 어떻게 막을 것인가 (SWG, DLP, ZTNA, DNS 필터, 브라우저 격리, CASB 조합)
@@ -39,11 +39,11 @@ ShowToc: false
 
 ## 표기 원칙
 
-- 시나리오 제목은 **질문형**으로 시작합니다 ("X를 어떻게 막을 것인가")
-- 통제 계층은 **Defense in Depth** (CISA 가이드 기준)
-- 위협 매핑은 **MITRE ATT&CK** ID 인용
-- 방어 기법은 **MITRE D3FEND** ID 인용
-- 솔루션은 본 사이트의 [솔루션 가이드](/pillars/) 풀 리뷰로 링크
+- 시나리오 제목은 **질문형**으로 시작한다 ("X를 어떻게 막을 것인가")
+- 통제 계층은 **Defense in Depth**를 따른다 (CISA 가이드 기준)
+- 위협 매핑은 **MITRE ATT&CK** ID로 인용한다
+- 방어 기법은 **MITRE D3FEND** ID로 인용한다
+- 솔루션은 본 사이트의 [솔루션 가이드](/pillars/) 풀 리뷰로 링크한다
 
 ## 참고
 

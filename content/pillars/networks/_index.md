@@ -5,7 +5,7 @@ pillars: ["Networks"]
 ShowToc: false
 ---
 
-> **경계 의존을 줄이는 것이 핵심입니다.** "네트워크 안에 있으니 믿는다"는 가정을 버리고, ZTNA에서 SASE, 마이크로세그멘테이션으로 진화합니다.
+> **경계 의존을 줄이는 것이 핵심이다.** "네트워크 안에 있으니 믿는다"는 가정을 버린다. ZTNA에서 SASE, 마이크로세그멘테이션으로 진화한다.
 
 참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/), [NIST SP 800-207](/framework/nist-800-207/)
 
@@ -15,7 +15,19 @@ ShowToc: false
 
 <a href="/solutions/zscaler/" class="card">
 <div class="card-title">Zscaler</div>
-<div class="card-desc">Zero Trust Exchange 기반 ZTNA, SASE 리더. 네트워크를 확장하지 않고 사용자와 앱을 직접 연결하는 인사이드아웃 구조.</div>
+<div class="card-desc">Zero Trust Exchange 기반 ZTNA, SASE. 네트워크를 확장하지 않고 사용자와 앱을 직접 연결하는 인사이드아웃 구조.</div>
+<div class="card-cta">정합성 진단 보기 (8.7)</div>
+</a>
+
+<a href="/solutions/prisma-access/" class="card">
+<div class="card-title">Palo Alto Prisma Access</div>
+<div class="card-desc">Prisma SASE 기반. 보안(Prisma Access)과 SD-WAN을 단일 콘솔(Strata Cloud Manager)로 통합.</div>
+<div class="card-cta">정합성 진단 보기 (8.7)</div>
+</a>
+
+<a href="/solutions/netskope/" class="card">
+<div class="card-title">Netskope</div>
+<div class="card-desc">자체 소유 사설 보안 클라우드(NewEdge)와 단일 Zero Trust Engine. 서울 데이터센터 운영.</div>
 <div class="card-cta">정합성 진단 보기 (8.7)</div>
 </a>
 
@@ -23,7 +35,7 @@ ShowToc: false
 
 ## 5개 Function
 
-CISA ZTMM v2 Networks 영역의 Function입니다.
+CISA ZTMM v2 Networks 영역의 Function이다.
 
 | Function | 한국어 | 핵심 |
 |---|---|---|
@@ -52,17 +64,16 @@ CISA ZTMM v2 Networks 영역의 Function입니다.
 
 ## 시장 동향 (2025-2026)
 
-**VPN에서 ZTNA로.** Gartner는 2025년까지 신규 원격 접근 도입의 **70% 이상이 VPN이 아닌 ZTNA** 기반이 될 것으로 전망했습니다([Data Center Knowledge](https://www.datacenterknowledge.com/cybersecurity/gartner-zero-trust-will-replace-your-vpn-by-2025)).
+**VPN에서 ZTNA로.** Gartner는 2025년까지 신규 원격 접근 도입의 **70% 이상이 VPN이 아닌 ZTNA** 기반이 될 것으로 전망했다([Data Center Knowledge](https://www.datacenterknowledge.com/cybersecurity/gartner-zero-trust-will-replace-your-vpn-by-2025)).
 
-**SASE 번들 확산.** Gartner는 SD-WAN 구매의 SASE 번들 비율이 2024년 20%에서 **2027년 65%**로 늘어날 것으로 전망했습니다([Reemo 블로그](https://blog.reemo.io/vpn-zero-trust-ztna-transition-2025/)).
+**SASE 번들 확산.** Gartner는 SD-WAN 구매의 SASE 번들 비율이 2024년 20%에서 **2027년 65%**로 늘 것으로 전망했다([Reemo 블로그](https://blog.reemo.io/vpn-zero-trust-ztna-transition-2025/)).
 
-**단일 벤더 수렴.** SSE 벤더와 SASE 플랫폼 벤더 간 기능 격차가 빠르게 좁혀지고 있으며, 단일 벤더 SASE 채택이 늘고 있습니다([Network World](https://www.networkworld.com/article/3997260/genai-controls-and-ztna-architecture-set-sse-vendors-apart.html)).
+**단일 벤더 수렴.** SSE 벤더와 SASE 플랫폼 벤더 간 기능 격차가 좁혀진다. 단일 벤더 SASE 채택이 는다([Network World](https://www.networkworld.com/article/3997260/genai-controls-and-ztna-architecture-set-sse-vendors-apart.html)).
 
 ## 작성 예정
 
 - Cloudflare Zero Trust
-- Netskope
-- Palo Alto Prisma Access
+- Cato Networks
 
 ## 도입 의사결정
 
@@ -90,13 +101,13 @@ CISA ZTMM v2 Networks 영역의 Function입니다.
 
 ## 한국 시장 적용 노트
 
-**망분리.** 클라우드 경유 SASE 구조는 전통적 물리 망분리와 충돌할 수 있습니다. 다만 [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 전환으로 민감(S), 공개(O) 등급에 논리 분리가 허용되면 ZTNA 적용 여지가 넓어집니다.
+**망분리.** 클라우드 경유 SASE 구조는 전통적 물리 망분리와 충돌할 수 있다. [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 전환으로 민감(S), 공개(O) 등급에 논리 분리가 허용되면 ZTNA 적용 여지가 넓어진다.
 
-**공공과 정부.** 클라우드형 ZTNA, SASE는 [CSAP 인증](/korea/regulation/csap-n2sf/) 보유 여부와 트래픽 경유 리전을 확인해야 합니다.
+**공공과 정부.** 클라우드형 ZTNA, SASE는 [CSAP 인증](/korea/regulation/csap-n2sf/) 보유 여부와 트래픽 경유 리전을 확인한다.
 
-**금융권.** 인라인 클라우드 프록시 구조가 [전자금융감독규정](/korea/regulation/financial-mangbunri/)의 망 통제 요건과 어떻게 정합하는지 사전 검토가 필요합니다.
+**금융권.** 인라인 클라우드 프록시 구조가 [전자금융감독규정](/korea/regulation/financial-mangbunri/)의 망 통제 요건과 정합하는지 사전 검토가 필요하다.
 
-**데이터 리전.** 글로벌 SASE는 트래픽이 해외 PoP를 경유할 수 있습니다. 개인정보 국외 이전 관점에서 한국 리전 사용 가능 여부를 확인하세요.
+**데이터 리전.** 글로벌 SASE는 트래픽이 해외 PoP를 경유할 수 있다. 개인정보 국외 이전 관점에서 한국 리전 사용 가능 여부를 확인한다.
 
 ---
 최종 검토 2026-05-30

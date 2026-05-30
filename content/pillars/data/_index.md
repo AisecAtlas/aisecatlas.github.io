@@ -5,13 +5,31 @@ pillars: ["Data"]
 ShowToc: false
 ---
 
-> **데이터가 어디에 있고 누가 접근하는가를 먼저 파악하는 것이 출발점입니다.** 자산을 모르면 보호할 수 없습니다. DSPM이 부상한 이유입니다.
+> **데이터의 위치와 접근 주체를 먼저 파악하는 것이 출발점이다.** 자산을 모르면 보호할 수 없다. DSPM이 부상한 이유다.
 
 참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/), [NIST SP 800-207](/framework/nist-800-207/)
 
+## 작성된 솔루션 리뷰
+
+<div class="card-grid">
+
+<a href="/solutions/varonis/" class="card">
+<div class="card-title">Varonis</div>
+<div class="card-desc">데이터 접근 거버넌스(DAG). 권한 분석과 방치 권한 자동 제거로 불필요한 접근을 차단. DSPM, DDR 통합.</div>
+<div class="card-cta">정합성 진단 보기 (8.7)</div>
+</a>
+
+<a href="/solutions/rubrik/" class="card">
+<div class="card-title">Rubrik</div>
+<div class="card-desc">사이버 복원력. 불변 백업으로 랜섬웨어 후 복구, DSPM과 사이버 복구를 단일 플랫폼에 결합.</div>
+<div class="card-cta">정합성 진단 보기 (8.3)</div>
+</a>
+
+</div>
+
 ## 5개 Function
 
-CISA ZTMM v2 Data 영역의 Function입니다.
+CISA ZTMM v2 Data 영역의 Function이다.
 
 | Function | 한국어 | 핵심 |
 |---|---|---|
@@ -41,19 +59,17 @@ CISA ZTMM v2 Data 영역의 Function입니다.
 
 ## 시장 동향 (2025-2026)
 
-**DSPM의 부상.** Gartner는 2025년 9월 데이터 보안 태세 관리(DSPM) 시장 가이드를 발간했습니다([Cyera 자료](https://www.cyera.com/reports/2025-gartner-market-guide-for-data-security-posture-management)).
+**DSPM의 부상.** Gartner는 2025년 9월 데이터 보안 태세 관리(DSPM) 시장 가이드를 발간했다([Cyera 자료](https://www.cyera.com/reports/2025-gartner-market-guide-for-data-security-posture-management)).
 
-**대형 투자.** Cyera는 2025년 6월 11일 **5억 4천만 달러 규모 시리즈 E**를 유치하며 기업가치 **60억 달러**에 도달했습니다([SiliconANGLE](https://siliconangle.com/2025/06/11/ai-native-data-security-firm-cyera-raises-540m-6b-valuation/)).
+**대형 투자.** Cyera는 2025년 6월 11일 **5억 4천만 달러 규모 시리즈 E**를 유치해 기업가치 **60억 달러**에 도달했다([SiliconANGLE](https://siliconangle.com/2025/06/11/ai-native-data-security-firm-cyera-raises-540m-6b-valuation/)).
 
-**시장 통합.** 2023년부터 2025년 사이 데이터 보안 역량 인수가 이어졌습니다. Cyera는 Trail을 2024년에, Forcepoint는 GetVisibility를 2025년에 인수했습니다([Grand View Research](https://www.grandviewresearch.com/industry-analysis/data-security-posture-management-market-report)).
-
-**사용자 평가.** Varonis는 2025년 Gartner Peer Insights Voice of the Customer에서 2년 연속 Customers' Choice로 선정되었습니다([Varonis 블로그](https://www.varonis.com/blog/gartner-dspm)).
+**시장 통합.** 2023년부터 2025년 사이 데이터 보안 역량 인수가 이어졌다. Cyera는 2024년 Trail을, Forcepoint는 2025년 GetVisibility를 인수했다([Grand View Research](https://www.grandviewresearch.com/industry-analysis/data-security-posture-management-market-report)).
 
 ## 작성 예정
 
 - Microsoft Purview (DLP와 분류)
 - Cyera DSPM
-- Varonis
+- BigID
 
 ## 도입 의사결정
 
@@ -81,13 +97,13 @@ CISA ZTMM v2 Data 영역의 Function입니다.
 
 ## 한국 시장 적용 노트
 
-**개인정보보호법.** 개인정보의 분류, 접근 통제, 암호화는 법적 의무와 직결됩니다. DSPM과 분류 도구가 정형, 비정형 데이터에서 개인정보를 자동 식별하는지 검증하세요.
+**개인정보보호법.** 개인정보의 분류, 접근 통제, 암호화는 법적 의무와 직결된다. DSPM과 분류 도구가 정형, 비정형 데이터에서 개인정보를 자동 식별하는지 검증한다.
 
-**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/)의 기밀(C), 민감(S), 공개(O) 데이터 등급 분류는 Data Categorization Function과 직접 맞물립니다. 등급 분류 자동화가 N²SF 대응의 출발점입니다.
+**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/)의 기밀(C), 민감(S), 공개(O) 데이터 등급 분류는 Data Categorization Function과 직접 맞물린다. 등급 분류 자동화가 N²SF 대응의 출발점이다.
 
-**공공과 정부.** 클라우드형 DSPM은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인해야 합니다.
+**공공과 정부.** 클라우드형 DSPM은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인한다.
 
-**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)과 신용정보법의 데이터 보호 요건에 비추어 접근 통제와 암호화 범위를 검토하세요.
+**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)과 신용정보법의 데이터 보호 요건에 비추어 접근 통제와 암호화 범위를 검토한다.
 
 ---
 최종 검토 2026-05-30

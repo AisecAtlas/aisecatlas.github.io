@@ -9,7 +9,15 @@ description: "카테고리별로 정리한 상위 5개 솔루션"
 
 ## 작성된 리스트
 
-- [IDaaS Top 5 (2026)](identity-idaas-top-5/)
+<div class="card-grid">
+
+<a href="identity-idaas-top-5/" class="card">
+<div class="card-title">IDaaS Top 5 (2026)</div>
+<div class="card-desc">Identity 영역 IDaaS, SSO 상위 5개. 평가 척도 기반 점수와 풀 리뷰 링크.</div>
+<div class="card-cta">리스트 보기</div>
+</a>
+
+</div>
 
 ## 작성 예정
 
