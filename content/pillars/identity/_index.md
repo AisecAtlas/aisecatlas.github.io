@@ -5,9 +5,9 @@ pillars: ["Identity"]
 ShowToc: false
 ---
 
-> **Zero Trust 의사결정은 모두 이 영역에서 출발합니다.** "누가 무엇에 접근하는가"의 첫 번째 변수가 신원이기 때문입니다.
+> **Zero Trust 의사결정은 모두 이 영역에서 출발합니다.** "누가 무엇에 접근하는가"의 첫 번째 변수가 신원입니다.
 
-참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/) · [NIST SP 800-207](/framework/nist-800-207/)
+참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/), [NIST SP 800-207](/framework/nist-800-207/)
 
 ## 작성된 솔루션 리뷰
 

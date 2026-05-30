@@ -96,7 +96,7 @@ Zero Trust 기능을 본격적으로 쓰려면 P2나 Suite가 필요합니다.
 
 ## 언제 선택하나
 
-- Microsoft 365를 이미 사용하는 조직 (통합 효율과 비용 효율이 압도적)
+- Microsoft 365를 이미 사용하는 조직 (통합 효율과 비용 효율이 가장 큼)
 - 하이브리드 AD 환경 (Entra Connect로 자연스럽게 전환됩니다)
 - Windows 워크스테이션 중심 (Hello와 Autopilot 통합)
 - 보안 스택을 Microsoft로 통일하려는 경우 (Defender, Sentinel, Purview)

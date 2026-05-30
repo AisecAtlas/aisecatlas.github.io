@@ -10,7 +10,7 @@ disableShare: true
 
 **AI 시대의 보안**을 같은 척도로 비교할 수 있게 만든 한국어 레퍼런스 사이트입니다.
 
-두 방향을 다룹니다.
+두 가지를 함께 봅니다.
 
 - **AI로 보안을 강화하는 일**: Security Copilot, Agentic SOC 같은 보조 도구
 - **AI 자체를 지키는 일**: LLM 보안, Prompt Injection 방어, Agentic 보안

@@ -15,7 +15,7 @@ ShowToc: true
 
 ## 1위 Microsoft Entra ID — 8.9 / 10
 
-Microsoft 365 환경의 통합 효율과 비용 효율이 압도적입니다. P2 라이선스의 PIM과 ID Protection이 시장 최고 수준입니다.
+Microsoft 365 환경이라면 통합 효율과 비용 효율이 가장 큽니다. P2 라이선스의 PIM과 ID Protection은 시장에서 가장 성숙한 편입니다.
 
 - 강점: M365, Defender, Sentinel 단일 스택
 - 한계: Microsoft 외 환경에선 우위가 줄어듭니다
