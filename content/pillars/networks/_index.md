@@ -70,11 +70,6 @@ CISA ZTMM v2 Networks 영역의 Function이다.
 
 **단일 벤더 수렴.** SSE 벤더와 SASE 플랫폼 벤더 간 기능 격차가 좁혀진다. 단일 벤더 SASE 채택이 는다([Network World](https://www.networkworld.com/article/3997260/genai-controls-and-ztna-architecture-set-sse-vendors-apart.html)).
 
-## 작성 예정
-
-- Cloudflare Zero Trust
-- Cato Networks
-
 ## 도입 의사결정
 
 ### 첫 번째 결정: 무엇을 먼저 푸는가

@@ -18,12 +18,3 @@ description: "카테고리별로 정리한 상위 5개 솔루션"
 </a>
 
 </div>
-
-## 작성 예정
-
-- EDR Top 5
-- ZTNA Top 5
-- CNAPP Top 5
-- DSPM Top 5
-- SIEM Top 5
-- AI/LLM 보안 Top 5

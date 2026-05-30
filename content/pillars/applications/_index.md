@@ -68,12 +68,6 @@ AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/a
 
 **SOC 통합이 성숙 기준.** 2025년 Gartner CNAPP 시장 가이드는 SIEM, SOAR 등 SOC 도구와의 깊은 통합을 성숙한 CNAPP의 차별 역량으로 처음 제시했다([Orca Security 정리](https://orca.security/resources/blog/gartner-2025-market-guide-for-cnapp/)). Palo Alto Networks는 Prisma Cloud를 Cortex Cloud로 재편했다([Dell'Oro Group](https://www.delloro.com/palo-alto-networks-reboots-cnapp-the-shift-from-prisma-cloud-to-cortex-cloud/)).
 
-## 작성 예정
-
-- Cloudflare WAF
-- Palo Alto Prisma Cloud (Cortex Cloud)
-- Aqua Security
-
 ## 도입 의사결정
 
 ### 첫 번째 결정: 무엇이 급한가

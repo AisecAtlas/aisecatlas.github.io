@@ -16,26 +16,7 @@ ShowToc: false
 | 어떤 조합이 합리적인가 | 최소 / 권장 / 최적 3단계 조합과 트레이드오프 |
 | 한국 환경에서 무엇이 달라지나 | 망분리, 개인정보보호법, 금감원, CSAP 적용 변수 |
 
-## 작성 예정 시나리오
-
-아래 시나리오를 단계적으로 추가한다. 제안은 [GitHub Issues](https://github.com/AisecAtlas/aisecatlas.github.io/issues)로 받는다.
-
-### 사용자 활동 통제
-- 사용자 웹 활동으로 인한 악성 사이트 접근과 자료 유출을 어떻게 막을 것인가 (SWG, DLP, ZTNA, DNS 필터, 브라우저 격리, CASB 조합)
-- 외부 SaaS 사용 중 자격 정보 유출을 어떻게 막을 것인가 (IDaaS, CASB, ITDR 조합)
-- 외부 LLM(ChatGPT, Claude) 사용으로 인한 사내 데이터 유출을 어떻게 막을 것인가 (AI 게이트웨이, DLP, 브라우저 격리 조합)
-
-### 신원과 권한
-- 자격 정보 도용 후 횡적 이동을 어떻게 막을 것인가 (ITDR, PAM, 마이크로세그멘테이션 조합)
-- 퇴사자 권한 미회수 사고를 어떻게 막을 것인가 (IGA, IdP, 인사 시스템 통합)
-
-### 데이터와 워크로드
-- 클라우드 구성 실수로 인한 데이터 노출을 어떻게 막을 것인가 (CSPM, DSPM, IaC 보안 조합)
-- 랜섬웨어 침해 후 백업까지 무력화되는 것을 어떻게 막을 것인가 (EDR, 불변 백업, 권한 분리)
-
-### AI 시대 신규 위협
-- AI 에이전트의 도구 오용을 어떻게 막을 것인가 (AI 게이트웨이, IAM, OPA 정책)
-- Prompt Injection 공격을 어떻게 막을 것인가 (Runtime 가드레일, AI 레드티밍, 출력 검증)
+시나리오 추가 제안은 [GitHub Issues](https://github.com/AisecAtlas/aisecatlas.github.io/issues)로 받는다.
 
 ## 표기 원칙
 

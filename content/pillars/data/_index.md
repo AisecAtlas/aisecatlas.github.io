@@ -65,12 +65,6 @@ CISA ZTMM v2 Data 영역의 Function이다.
 
 **시장 통합.** 2023년부터 2025년 사이 데이터 보안 역량 인수가 이어졌다. Cyera는 2024년 Trail을, Forcepoint는 2025년 GetVisibility를 인수했다([Grand View Research](https://www.grandviewresearch.com/industry-analysis/data-security-posture-management-market-report)).
 
-## 작성 예정
-
-- Microsoft Purview (DLP와 분류)
-- Cyera DSPM
-- BigID
-
 ## 도입 의사결정
 
 ### 첫 번째 결정: 무엇이 급한가
