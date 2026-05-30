@@ -1,11 +1,10 @@
 ---
 title: "Visibility & Analytics"
-description: "5개 영역을 횡단하는 가시성과 분석 기능"
+description: "5개 영역을 횡단하는 가시성과 분석 기능."
+ShowToc: false
 ---
 
-## 이 영역이 다루는 것
-
-5개 영역을 횡단하는 가시성과 분석 기능입니다. 로그와 텔레메트리를 수집하고 상관 분석, UEBA, 위협 헌팅을 수행합니다.
+> **로그와 텔레메트리 수집, 상관 분석, UEBA, 위협 헌팅**을 다룹니다. 모든 Pillar 위에 작동합니다.
 
 ## 솔루션 카테고리
 
@@ -20,3 +19,6 @@ description: "5개 영역을 횡단하는 가시성과 분석 기능"
 
 - Splunk vs Microsoft Sentinel 비교
 - 보안 데이터 파이프라인 설계 (Cribl, Tenzir)
+
+---
+최종 검토 2026-05-30

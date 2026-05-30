@@ -1,12 +1,11 @@
 ---
-title: "Data 영역"
-description: "데이터의 분류, 라벨링, 암호화, 접근 통제, 유출 방지"
+title: "Data"
+description: "데이터의 분류, 라벨링, 암호화, 접근 통제, 유출 방지."
 pillars: ["Data"]
+ShowToc: false
 ---
 
-## 이 영역이 다루는 것
-
-데이터의 분류, 라벨링, 암호화, 접근 통제, 유출 방지를 다룹니다.
+> **데이터가 어디에 있고 누가 접근하는가**를 먼저 파악하는 것이 출발점입니다. DSPM이 부상 중인 이유.
 
 ## 솔루션 카테고리
 
@@ -22,3 +21,6 @@ pillars: ["Data"]
 - Microsoft Purview (DLP와 분류)
 - Cyera DSPM
 - Varonis DSPM
+
+---
+최종 검토 2026-05-30

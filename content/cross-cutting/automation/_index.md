@@ -1,11 +1,12 @@
 ---
 title: "Automation & Orchestration"
-description: "운영 효율과 즉시 대응을 위한 자동화와 오케스트레이션"
+description: "운영 효율과 즉시 대응을 위한 자동화."
+ShowToc: false
 ---
 
-## 이 영역이 다루는 것
+> **SOAR에서 Agentic SOC로 진화 중**입니다. 자세한 동향과 솔루션 비교는 별도 섹션에서 다룹니다.
 
-운영 효율과 즉시 대응을 위한 자동화와 오케스트레이션입니다. SOAR, IaC 보안, AI 기반 보조가 포함됩니다.
+자세한 내용: [자동화 (with AI)](/automation/)
 
 ## 솔루션 카테고리
 
@@ -15,7 +16,5 @@ description: "운영 효율과 즉시 대응을 위한 자동화와 오케스트
 | IaC 보안 | Checkov, Snyk IaC, Wiz IaC |
 | AI 보안 보조 | Microsoft Security Copilot, CrowdStrike Charlotte AI |
 
-## 작성 예정
-
-- Tines vs XSOAR 비교
-- AI 보안 보조 도구 평가
+---
+최종 검토 2026-05-30

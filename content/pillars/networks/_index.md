@@ -1,12 +1,11 @@
 ---
-title: "Networks 영역"
-description: "네트워크 경계 의존을 줄이고 암호화와 세그멘테이션을 강화"
+title: "Networks"
+description: "네트워크 경계 의존을 줄이고 암호화와 세그멘테이션을 강화한다."
 pillars: ["Networks"]
+ShowToc: false
 ---
 
-## 이 영역이 다루는 것
-
-네트워크 경계 의존을 줄이고, 마이크로세그멘테이션과 암호화 트래픽 제어를 다룹니다.
+> **경계 의존을 줄이는 것이 핵심**입니다. ZTNA에서 SASE, 마이크로세그멘테이션으로 진화합니다.
 
 ## 솔루션 카테고리
 
@@ -21,3 +20,6 @@ pillars: ["Networks"]
 - Zscaler SASE
 - Cloudflare Zero Trust
 - Netskope
+
+---
+최종 검토 2026-05-30

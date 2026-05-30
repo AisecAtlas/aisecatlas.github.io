@@ -1,12 +1,11 @@
 ---
-title: "Applications & Workloads 영역"
-description: "애플리케이션과 워크로드의 개발부터 런타임까지의 보안"
+title: "Applications & Workloads"
+description: "개발부터 런타임까지 애플리케이션의 보안."
 pillars: ["Applications"]
+ShowToc: false
 ---
 
-## 이 영역이 다루는 것
-
-애플리케이션과 워크로드(컨테이너와 서버리스 포함)의 개발, 배포, 런타임 전 주기 보안을 다룹니다.
+> **개발-배포-런타임 전 주기**를 다룹니다. AI/LLM 보안도 이 영역에 포함됩니다.
 
 ## 솔루션 카테고리
 
@@ -22,4 +21,9 @@ pillars: ["Applications"]
 
 - Wiz CNAPP
 - Cloudflare WAF
-- Lakera AI 보안
+- Lakera (AI 보안)
+
+자세한 AI/LLM 보안 동향은 [AI를 지키는 일](/ai/defend-ai/) 페이지에서 다룹니다.
+
+---
+최종 검토 2026-05-30

@@ -125,5 +125,4 @@ buildExpired = false
 [taxonomies]
   category = "categories"
   tag = "tags"
-  pillar = "pillars"
   series = "series"
