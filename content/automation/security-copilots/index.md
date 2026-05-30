@@ -7,7 +7,7 @@ tags: ["Security Copilot", "Charlotte AI", "Torq", "Tines", "AI SOC"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: 본 카테고리는 **벤더 생태계 안의 통합 Copilot** (Microsoft, CrowdStrike)과 **중립 Hyperautomation 플랫폼** (Torq, Tines)으로 나뉩니다. SOC가 단일 벤더 스택을 쓰는지, 멀티 벤더인지에 따라 자연스러운 선택이 달라집니다.
+> **이 페이지의 결론**: 본 카테고리는 **벤더 생태계 안의 통합 Copilot**(Microsoft, CrowdStrike)과 **중립 Hyperautomation 플랫폼**(Torq, Tines)으로 나뉜다. SOC가 단일 벤더 스택인지 멀티 벤더인지에 따라 선택이 갈린다.
 
 ## 4개 도구 한눈에 비교
 
@@ -25,7 +25,7 @@ ShowToc: true
 
 ### 1. 분석가 알림 분류 가속
 
-알림 폭주를 줄이는 첫 단계 자동화입니다.
+알림 폭주를 줄이는 첫 단계 자동화다.
 
 | 도구 | 어떻게 작동하나 |
 |---|---|
@@ -34,17 +34,17 @@ ShowToc: true
 | Torq | SIEM 알림 수신 즉시 워크플로 트리거, AI 가드레일 적용 |
 | Tines | Smart Mode가 다음 분류 단계를 학습된 패턴으로 제안 |
 
-> **선택 기준**: 본인의 SIEM/EDR이 어디인가가 첫 변수입니다. M365 환경이면 Copilot, Falcon 환경이면 Charlotte, 외부 SIEM(Splunk 등)을 쓰면 Torq나 Tines.
+> **선택 기준**: SIEM/EDR이 어디인가가 첫 변수다. M365 환경이면 Copilot, Falcon 환경이면 Charlotte, 외부 SIEM(Splunk 등)이면 Torq나 Tines.
 
 ### 2. 자율 조사
 
-분석가 1명이 하던 다단계 조사를 에이전트가 수행합니다.
+분석가 1명이 하던 다단계 조사를 에이전트가 수행한다.
 
 | 도구 | 자율 조사 수준 |
 |---|---|
 | Security Copilot | **70개 이상의 파트너 에이전트**가 도메인별 조사 수행 |
 | Charlotte AI | **AgentWorks 생태계**로 Accenture, AWS, Anthropic 등 파트너 에이전트 통합 |
-| Torq | AI 가드레일 안에서 자율 행동, **KuppingerCole AI SOC Leader 등재** |
+| Torq | AI 가드레일 안에서 자율 행동, 명시적 승인 노드 지원 |
 | Tines | AI Action Creator가 자연어 의도를 워크플로로 변환 |
 
 ### 3. 자율 대응과 가드레일
@@ -55,10 +55,10 @@ ShowToc: true
 |---|---|---|
 | Security Copilot | M365 컴플라이언스 정책 활용 | Sentinel 내 승인 워크플로 |
 | Charlotte AI | Falcon 정책과 통합 | 분석가 명령 하에 행동 (Agentic SOAR) |
-| Torq | **AI 가드레일 5점 만점 (KuppingerCole)** | 명시적 승인 노드 |
+| Torq | 정책 코드 기반 가드레일 | 명시적 승인 노드 |
 | Tines | 워크플로 내 검증 | 명시적 승인 노드 |
 
-> **금융권/공공 도입 시**: Torq의 가드레일 깊이가 KuppingerCole 평가에서 가장 높습니다. 컴플라이언스 강조 환경에서 우선 고려할 만합니다.
+> **금융권/공공 도입 시**: Torq는 정책 코드 가드레일과 명시적 승인 노드를 제공한다. 컴플라이언스를 강조하는 환경에서 우선 고려한다.
 
 ### 4. 멀티 벤더 통합
 
@@ -82,7 +82,7 @@ ShowToc: true
 
 ## 의사결정 트리
 
-조직의 상황을 단계적으로 답해보세요.
+조직 상황을 단계적으로 답한다.
 
 **Q1. 기존 SIEM/EDR이 단일 벤더인가?**
 
@@ -102,19 +102,19 @@ ShowToc: true
 
 ## 한국 시장 노트
 
-**언어 정확도.** PoC 시 한국어 알림 분류 정확도를 자체 데이터로 검증하세요. 벤더 클레임과 실제는 차이가 있을 수 있습니다.
+**언어 정확도.** PoC 시 한국어 알림 분류 정확도를 자체 데이터로 검증한다. 벤더 클레임과 실제는 차이가 있을 수 있다.
 
-**데이터 리전.** Security Copilot은 한국 리전이 있습니다. Charlotte AI, Torq, Tines는 글로벌 리전이라 데이터 위치 확인이 필요합니다.
+**데이터 리전.** Security Copilot은 한국 리전이 있다. Charlotte AI, Torq, Tines는 글로벌 리전이라 데이터 위치 확인이 필요하다.
 
-**금융권.** 자율 대응 범위가 보안성 심의에서 검토됩니다. **인간 승인 흐름을 명시적으로 설계**하는 것이 중요합니다.
+**금융권.** 자율 대응 범위가 보안성 심의에서 검토된다. **인간 승인 흐름을 명시적으로 설계**한다.
 
-**공공 부문.** CSAP 인증 보유 여부를 확인하세요. 망분리 환경은 온프레미스 옵션이 있는 도구를 우선 검토합니다.
+**공공 부문.** CSAP 인증 보유 여부를 확인한다. 망분리 환경은 온프레미스 옵션이 있는 도구를 우선 검토한다.
 
-**파트너.** Microsoft, CrowdStrike는 한국 파트너가 다수입니다. Torq, Tines는 직접 영업이나 일부 파트너를 통한 도입이 일반적입니다.
+**파트너.** Microsoft, CrowdStrike는 한국 파트너가 다수다. Torq, Tines는 직접 영업이나 일부 파트너를 통한 도입이 일반적이다.
 
 ## 다음에 작성할 풀 리뷰
 
-본 비교 페이지 이후 각 도구의 풀 리뷰를 추가 예정입니다.
+본 비교 페이지 이후 각 도구의 풀 리뷰를 추가한다.
 
 - Microsoft Security Copilot 풀 리뷰
 - CrowdStrike Charlotte AI 풀 리뷰
@@ -127,7 +127,6 @@ ShowToc: true
 - [CrowdStrike Charlotte AI](https://www.crowdstrike.com/en-us/platform/charlotte-ai/)
 - [CrowdStrike Charlotte AgentWorks (RSA 2026)](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/)
 - [Torq AI SOC Platform](https://torq.io/ai-soc-platform/)
-- [KuppingerCole Emerging AI SOC Leadership Compass](https://torq.io/blog/agentic-ai-hyperautomation-soc/)
 - [Tines 공식 사이트](https://www.tines.com/)
 - [SourceForge: Charlotte AI vs Security Copilot 비교](https://sourceforge.net/software/compare/CrowdStrike-Charlotte-AI-vs-Microsoft-Security-Copilot/)
 
