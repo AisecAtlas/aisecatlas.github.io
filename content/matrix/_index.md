@@ -1,33 +1,35 @@
 ---
-title: "ZTA 매트릭스"
-description: "CISA ZTMM v2 5 Pillar × 4 성숙도 단계 매트릭스"
+title: "보안 영역 매트릭스"
+description: "5개 Pillar와 4단계 성숙도를 한눈에 본다"
 ShowToc: false
 ---
 
-CISA Zero Trust Maturity Model v2 의 5 Pillar 와 4 단계 성숙도를 매트릭스로 시각화한 페이지입니다.
+CISA Zero Trust Maturity Model v2를 따른 매트릭스입니다.
 
-각 셀은 해당 Pillar 의 해당 성숙도 단계를 대표하는 솔루션 카테고리·제품을 의미합니다.
-클릭하면 관련 Pillar 핸드북 또는 솔루션 리뷰로 이동합니다.
+가로축은 성숙도 단계, 세로축은 보안 영역(Pillar)입니다. 각 셀은 해당 영역과 단계를 대표하는 솔루션 카테고리입니다.
 
-## 매트릭스
+## 5개 영역과 4단계
 
-| Pillar | Traditional | Initial | Advanced | Optimal |
+| 영역 | 1단계 Traditional | 2단계 Initial | 3단계 Advanced | 4단계 Optimal |
 |---|---|---|---|---|
-| **Identity** | AD / LDAP | IDaaS (Okta, Entra ID) | + 조건부 접근, MFA | + ITDR, 지속 검증 |
-| **Devices** | AV | EPP / EDR | XDR / 통합 정책 | + 디바이스 신뢰 점수 |
-| **Networks** | VPN | ZTNA 1.0 | SASE / SSE | + 마이크로세그멘테이션 |
-| **Applications & Workloads** | WAF | CSPM | CNAPP / CWPP | + Runtime 보호 |
-| **Data** | DLP | 분류·라벨링 | DSPM | + DTAR / 동적 마스킹 |
+| **Identity** (신원) | AD, LDAP | IDaaS (Okta, Entra ID) | 조건부 접근, MFA 강화 | ITDR, 지속 검증 |
+| **Devices** (기기) | AV | EPP, EDR | XDR, 통합 정책 | 디바이스 신뢰 점수 |
+| **Networks** (네트워크) | VPN | ZTNA 1.0 | SASE, SSE | 마이크로세그멘테이션 |
+| **Applications** (앱) | WAF | CSPM | CNAPP, CWPP | Runtime 보호 |
+| **Data** (데이터) | DLP | 분류와 라벨링 | DSPM | DTAR, 동적 마스킹 |
 
-> 🚧 각 셀의 상세 매핑·솔루션 리뷰는 [Pillars](/pillars/) 섹션에서 단계적으로 채워집니다.
+> 단계는 1에서 4로 가는 일직선이 아닙니다. 영역마다 다른 단계에 있을 수 있고, 조직 전체가 균등할 필요도 없습니다.
 
-## Cross-cutting (횡단 기능)
+## 횡단 기능
+
+특정 영역이 아니라 전 영역에 걸쳐 작동하는 기능입니다.
 
 - [Visibility & Analytics](/cross-cutting/visibility/) — SIEM, XDR, UEBA
 - [Automation & Orchestration](/cross-cutting/automation/) — SOAR, IaC 보안
 - [Governance](/cross-cutting/governance/) — GRC, 정책 관리
 
-## 참고
+## 더 깊이 보려면
 
-- 평가 척도: [/evaluation/](/evaluation/)
-- 출처 표준: [/framework/](/framework/)
+- 영역별 깊이 있는 가이드는 [영역별 가이드](/pillars/)에서 볼 수 있습니다.
+- 점수가 어떻게 매겨지는지는 [평가 방법](/evaluation/scoring-rubric/)에서 확인하세요.
+- 영역 정의의 출처는 [CISA ZTMM v2 요약](/framework/cisa-ztmm-v2/)에서 볼 수 있습니다.

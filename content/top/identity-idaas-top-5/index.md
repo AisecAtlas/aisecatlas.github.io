@@ -1,6 +1,6 @@
 ---
 title: "IDaaS Top 5 (2026)"
-description: "Identity Pillar — 워크포스 IDaaS 솔루션 Top 5"
+description: "직원용 IDaaS 시장의 상위 5개 솔루션"
 date: 2026-05-30
 lastmod: 2026-05-30
 tags: ["IDaaS", "Identity", "Top 5"]
@@ -9,47 +9,49 @@ pillars: ["Identity"]
 ShowToc: true
 ---
 
-본 사이트의 [평가 척도](/evaluation/scoring-rubric/) 기반 점수 + 한 줄 요약 + 풀 리뷰 링크.
+본 사이트의 [평가 척도](/evaluation/scoring-rubric/) 기반 점수와 한 줄 요약, 풀 리뷰 링크입니다.
 
-> **선정 기준**: CISA ZTMM Identity Pillar 의 5 Function 커버리지 + 본 사이트 평가 척도 종합 점수.
-> 본 리스트는 절대 점수 기준이며, 1:1 벤더 비교에 단독 사용하지 마십시오.
+> 선정 기준은 CISA ZTMM Identity 영역의 5개 Function 커버리지와 본 사이트 평가 척도의 종합 점수입니다. 절대 평가이므로 벤더 간 일대일 비교에 단독으로 쓰지 마세요.
 
-## Top 5
+## 1위 Microsoft Entra ID — 8.9 / 10
 
-### 🥇 1. Microsoft Entra ID — 8.9 / 10
-> Microsoft 365 환경의 압도적 통합. P2 라이선스의 PIM·ID Protection 이 시장 최고 수준.
+Microsoft 365 환경의 통합 효율과 비용 효율이 압도적입니다. P2 라이선스의 PIM과 ID Protection이 시장 최고 수준입니다.
 
-- 강점: M365/Defender/Sentinel 단일 스택
-- 한계: 비-MS 환경에선 우위 축소
+- 강점: M365, Defender, Sentinel 단일 스택
+- 한계: Microsoft 외 환경에선 우위가 줄어듭니다
 - 풀 리뷰: [Microsoft Entra ID 정합성 진단](/solutions/entra-id/)
 
-### 🥈 2. Okta — 8.4 / 10
-> 7000+ SaaS 카탈로그 통합. 무비번(FastPass/Passkey) 흐름 우수. Auth0 흡수로 워크포스+고객 통합.
+## 2위 Okta — 8.4 / 10
 
-- 강점: SaaS 통합, 무비번 UX
-- 한계: 가격 불투명, 망분리 부적합
+7000개 이상의 SaaS 카탈로그가 강점입니다. 비밀번호 없는 인증의 사용자 경험이 좋고, Auth0 흡수로 직원과 고객 인증을 모두 다룹니다.
+
+- 강점: SaaS 통합, 무비번 사용자 경험
+- 한계: 가격 불투명, 망분리 환경에 부적합
 - 풀 리뷰: [Okta 정합성 진단](/solutions/okta/)
 
-### 🥉 3. Ping Identity — 7.8 / 10 (잠정)
-> 직접 운영·커스터마이징 우선 조직에 강함. PingOne 클라우드와 PingFederate 온프레 모두 제공.
+## 3위 Ping Identity — 7.8 / 10 (잠정)
+
+직접 운영과 커스터마이징을 우선하는 조직에 강점이 있습니다. PingOne 클라우드와 PingFederate 온프레미스를 모두 제공합니다.
 
 - 강점: 하이브리드 환경 자유도
-- 한계: 학습 곡선·운영 복잡도
-- 풀 리뷰: 🚧 작성 예정
+- 한계: 학습 곡선과 운영 복잡도
+- 풀 리뷰: 작성 예정
 
-### 4. ForgeRock (Ping 합병) — 7.5 / 10 (잠정)
-> 2023년 Ping Identity 와 합병. 고도의 IGA·Identity Cloud 통합 진행 중.
+## 4위 ForgeRock (Ping 합병) — 7.5 / 10 (잠정)
 
-- 강점: 깊은 IGA, 고객 ID 처리
-- 한계: 합병 중 라인업 정리 중
-- 풀 리뷰: 🚧 작성 예정
+2023년에 Ping Identity와 합병했습니다. 고도의 IGA와 Identity Cloud 통합이 진행 중입니다.
 
-### 5. OneLogin (One Identity) — 7.0 / 10 (잠정)
-> 중견·중소 시장 친화 가격. SaaS SSO 와 MFA 중심.
+- 강점: 깊이 있는 IGA, 고객 신원 처리
+- 한계: 합병 중이라 라인업이 정리 중
+- 풀 리뷰: 작성 예정
 
-- 강점: 가격, 학습 곡선
-- 한계: 고급 ZT 기능(ITDR, IGA)은 제한적
-- 풀 리뷰: 🚧 작성 예정
+## 5위 OneLogin (One Identity) — 7.0 / 10 (잠정)
+
+중견과 중소 시장에 친화적인 가격대입니다. SaaS SSO와 MFA 중심입니다.
+
+- 강점: 가격, 학습 곡선이 완만
+- 한계: 고급 Zero Trust 기능(ITDR, IGA)이 제한적
+- 풀 리뷰: 작성 예정
 
 ## 비교표
 
@@ -61,25 +63,25 @@ ShowToc: true
 | 4 | ForgeRock | 7.5 | 7.5 | 7.5 |
 | 5 | OneLogin | 7.5 | 6.5 | 7.0 |
 
-> 점수 잠정 항목은 풀 리뷰 작성 시 확정됩니다.
+잠정 점수는 풀 리뷰 작성 시 확정됩니다.
 
-## 한국 시장 선택 팁
+## 한국 시장에서 어떻게 고를까
 
 | 상황 | 권장 |
 |---|---|
-| 이미 Microsoft 365 사용 | **Entra ID** — 통합 효율·비용 최우선 |
-| SaaS 통합이 핵심 | **Okta** — 카탈로그 광범위 |
-| 망분리 환경 | 위 솔루션 모두 한정적, **국내 EAM** 검토 |
-| 공공·금융 (CSAP 등) | **국내 인증 확보 솔루션** 우선 |
+| Microsoft 365를 이미 쓰는 경우 | Entra ID, 통합 효율과 비용이 최우선 |
+| SaaS 통합이 핵심인 경우 | Okta, 카탈로그가 가장 넓음 |
+| 망분리 환경 | 위 솔루션 모두 한정적, 국내 EAM 검토 |
+| 공공이나 금융 (CSAP 등) | 국내 인증을 보유한 솔루션을 우선 검토 |
 
-## 본 리스트에서 제외된 카테고리
+## 이 리스트에서 제외된 카테고리
 
-다음 카테고리는 별도 Top 리스트로 다룰 예정:
+다음 카테고리는 별도 Top 리스트로 다룰 예정입니다.
 
-- **PAM** (CyberArk, BeyondTrust, Delinea) — [PAM Top 5 — 작성 예정]
-- **IGA** (SailPoint, Saviynt, Omada) — [IGA Top 5 — 작성 예정]
-- **ITDR** (Silverfort, Semperis) — [ITDR Top 5 — 작성 예정]
-- **Customer Identity** (Auth0, Frontegg) — [CIAM Top 5 — 작성 예정]
+- PAM (CyberArk, BeyondTrust, Delinea)
+- IGA (SailPoint, Saviynt, Omada)
+- ITDR (Silverfort, Semperis)
+- 고객 인증 CIAM (Auth0, Frontegg)
 
 ---
-*최초 발행: 2026-05-30 · 최종 검토일: 2026-05-30 · 다음 검토 예정: 2026-08-30*
+최초 발행 2026-05-30, 최종 검토 2026-05-30, 다음 검토 2026-08-30

@@ -1,11 +1,11 @@
 ---
 title: "Visibility & Analytics"
-description: "CISA ZTMM v2 — Cross-cutting: Visibility & Analytics"
+description: "5개 영역을 횡단하는 가시성과 분석 기능"
 ---
 
-## 정의
+## 이 영역이 다루는 것
 
-전 Pillar 를 횡단하는 **가시성·분석 기능**. 로그·텔레메트리 수집, 상관 분석, UEBA, 위협 헌팅.
+5개 영역을 횡단하는 가시성과 분석 기능입니다. 로그와 텔레메트리를 수집하고 상관 분석, UEBA, 위협 헌팅을 수행합니다.
 
 ## 솔루션 카테고리
 
@@ -14,9 +14,9 @@ description: "CISA ZTMM v2 — Cross-cutting: Visibility & Analytics"
 | SIEM | Splunk, Microsoft Sentinel, Elastic Security, Sumo Logic |
 | XDR | Palo Alto Cortex, CrowdStrike Falcon, SentinelOne |
 | UEBA | Exabeam, Securonix |
-| 보안 데이터 레이크 | Snowflake, Databricks + 보안 앱 |
+| 보안 데이터 레이크 | Snowflake, Databricks와 보안 앱 |
 
-## 리뷰 (작성 예정)
+## 작성 예정
 
-- 🚧 Splunk vs Microsoft Sentinel — 비교
-- 🚧 보안 데이터 파이프라인 설계 (Cribl, Tenzir 등)
+- Splunk vs Microsoft Sentinel 비교
+- 보안 데이터 파이프라인 설계 (Cribl, Tenzir)

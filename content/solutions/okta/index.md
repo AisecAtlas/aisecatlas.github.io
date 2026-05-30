@@ -1,162 +1,154 @@
 ---
-title: "Okta — 정합성 진단"
-description: "IDaaS 시장 리더 Okta의 CISA ZTMM Identity Pillar 정합성 평가"
+title: "Okta"
+description: "글로벌 IDaaS 시장 리더의 표준 정합성 진단"
 date: 2026-05-30
 lastmod: 2026-05-30
-tags: ["Okta", "IDaaS", "Identity", "SSO", "MFA"]
+tags: ["Okta", "IDaaS", "Identity"]
 categories: ["solution-review"]
 pillars: ["Identity"]
 ShowToc: true
 ---
 
-## 🏷 Quick Facts
+## 한눈에 보기
 
 | 항목 | 값 |
 |---|---|
-| **Pillar** | Identity |
-| **카테고리** | IDaaS / Workforce Identity Cloud |
-| **본사** | 미국 샌프란시스코 (NASDAQ: OKTA) |
-| **주요 제품** | Workforce Identity, Customer Identity (Auth0), Identity Governance |
-| **CISA 성숙도** | 🔵 Advanced (일부 Optimal) |
-| **종합 점수** | 8.2 / 10 |
-| **최종 검토일** | 2026-05-30 |
+| 영역 | Identity |
+| 카테고리 | IDaaS, Workforce Identity Cloud |
+| 본사 | 미국 샌프란시스코 (NASDAQ: OKTA) |
+| 성숙도 | Advanced (일부 Function은 Optimal) |
+| 종합 점수 | 8.4 / 10 |
+| 최종 검토 | 2026-05-30 |
 
-## 1. Overview (개요)
+## 어떤 제품인가
 
-Okta 는 클라우드 기반 Identity-as-a-Service(IDaaS) 시장의 리더 중 하나.
-2009년 설립, 7,000개 이상의 SaaS 와 사전 통합된 카탈로그를 보유한 것이 핵심 강점.
-2022년 Auth0 인수로 **Workforce Identity(직원용)** 와 **Customer Identity(외부 사용자용)** 양쪽 모두 커버.
+Okta는 클라우드 기반 신원 서비스(IDaaS)의 시장 리더 중 하나입니다.
 
-### 주요 모듈
+2009년 설립됐고, 7000개 이상의 SaaS와 사전 통합돼 있어서 통합 작업 시간을 줄여줍니다. 2022년 Auth0를 인수하면서 직원 인증(Workforce)과 외부 고객 인증(Customer) 양쪽을 모두 다루게 됐습니다.
+
+## 주요 모듈
 
 | 모듈 | 역할 |
 |---|---|
-| Universal Directory | 다양한 ID 소스 통합 디렉토리 |
-| Single Sign-On (SSO) | SaaS·온프레미스 통합 인증 |
+| Universal Directory | 여러 신원 저장소를 하나의 디렉토리로 통합 |
+| Single Sign-On | SaaS와 온프레미스 통합 인증 |
 | Adaptive MFA | 컨텍스트 기반 MFA |
-| Lifecycle Management | 입·전·퇴사 자동화 |
-| Identity Governance | 접근 검토·인증 (Okta IGA) |
-| Privileged Access | PAM 신규 모듈 (2024 GA) |
+| Lifecycle Management | 입사, 전배, 퇴사 자동화 |
+| Identity Governance | 접근 검토와 인증 |
+| Privileged Access | PAM 모듈 (2024년 GA) |
 | FastPass / Passkey | 비밀번호 없는 인증 |
 
-### 한국 시장 위치
+## 평가
 
-- 글로벌 본사 직접 진출 + 다수 파트너 (디지털 솔루션사 등)
-- 가격은 일반적으로 사용자당/월 과금, 모듈별 분리 — 상세는 영업 협의
-- 망분리 환경에서는 적용 어려움 (퍼블릭 클라우드 의존)
+평가 척도 정의는 [평가 척도 페이지](/evaluation/scoring-rubric/)를 참고하세요.
 
-## 2. Evaluation (정합성 평가)
+### A축: 일반 기능 (8.5 / 10)
 
-### 평가 척도 적용 결과
-
-자세한 척도 정의는 [평가 척도](/evaluation/scoring-rubric/) 참조.
-
-#### A. 일반 솔루션 기능 (10점)
-
-| ID | 항목 | 점수 | 비고 |
+| ID | 항목 | 점수 | 근거 |
 |---|---|:-:|---|
 | A-1 | 통합 관리 | 2/2 | 단일 콘솔, REST API, SCIM, Terraform Provider |
 | A-2 | 가용성 | 2/2 | 99.99% SLA, 멀티 리전 |
-| A-3 | 성능 | 2/2 | 대규모 사용자 운영 사례 다수 |
-| A-4 | 운영성 | 1.5/2 | 문서 풍부, 한국어 UI 일부 지원, 학습 곡선 보통 |
-| A-5 | 비용·투명성 | 1/2 | 가격 미공개, 모듈 분리 과금, 한국 직접 라이선스 협상 필요 |
-| **A 합계** | | **8.5/10** | |
+| A-3 | 성능 | 2/2 | 대규모 운영 사례 다수 |
+| A-4 | 운영성 | 1.5/2 | 문서 풍부, 한국어 UI 일부 |
+| A-5 | 비용 투명성 | 1/2 | 가격 미공개, 모듈 분리 과금 |
 
-#### B. ZT 정합성 (10점)
+### B축: 표준 정합성 (8.2 / 10)
 
-| ID | 항목 | 점수 | 비고 |
+| ID | 항목 | 점수 | 근거 |
 |---|---|:-:|---|
-| ZTA-ID-AUTH-01 | Never Trust, Always Verify | 2/2 | FastPass, Passkey, Adaptive MFA |
-| ZTA-ID-AUTH-02 | Least Privilege | 1.5/2 | Okta IGA 별도 라이선스, 동적 권한 부분 지원 |
-| ZTA-ID-AUTH-03 | Assume Breach | 1.5/2 | ITDR 는 별도 라이선스 또는 통합 솔루션 필요 |
-| ZTA-ID-AUTH-04 | Continuous Verification | 1.5/2 | Session Risk 기반 재인증 지원, 일부 모듈 한정 |
-| ZTA-ID-AUTH-05 | Context-aware Policy | 2/2 | 디바이스·위치·시간·위험 점수 기반 |
-| ZTA-ID-AUTH-06 | Encryption End-to-End | 2/2 | TLS, OAuth 2.0 / OIDC 표준 준수 |
-| ZTA-ID-AUTH-07 | Visibility & Analytics | 1/2 | System Log 기본 90일, 장기 보관·고급 분석은 별도 |
-| **B 합계** | | **11.5/14 → 8.2/10** | (가중 환산) |
+| ZTA-ID-AUTH-01 | 항상 검증 | 2/2 | FastPass, Passkey, Adaptive MFA |
+| ZTA-ID-AUTH-02 | 최소 권한 | 1.5/2 | IGA 별도 라이선스, 동적 권한 부분 지원 |
+| ZTA-ID-AUTH-03 | 침해 가정 | 1.5/2 | ITDR은 별도 라이선스나 외부 솔루션 필요 |
+| ZTA-ID-AUTH-04 | 지속 검증 | 1.5/2 | 세션 위험 기반 재인증 지원, 일부 흐름 한정 |
+| ZTA-ID-AUTH-05 | 컨텍스트 정책 | 2/2 | 디바이스, 위치, 시간, 위험 점수 활용 |
+| ZTA-ID-AUTH-06 | 전 구간 암호화 | 2/2 | TLS, OAuth 2.0, OIDC 표준 |
+| ZTA-ID-AUTH-07 | 가시성 | 1/2 | 기본 로그 90일, 장기 보관은 별도 |
 
-#### 종합
+### 종합
 
 | 축 | 점수 |
 |---|---|
 | A. 일반 기능 | 8.5 |
-| B. ZT 정합성 | 8.2 |
-| **종합** | **8.4 → 🔵 Advanced** |
+| B. 표준 정합성 | 8.2 |
+| **종합** | **8.4 (Advanced)** |
 
 ### CISA ZTMM Identity Function 매핑
 
 | Function | 단계 | 근거 |
 |---|---|---|
-| Authentication | 🟢 Optimal | FastPass, Passkey, 무비번 흐름 |
-| Identity Stores | 🔵 Advanced | Universal Directory, 다중 소스 통합 |
-| Risk Assessment | 🔵 Advanced | Risk Engine, ThreatInsight |
-| Access Management | 🔵 Advanced | 정책 기반, 조건부 접근 |
-| Visibility & Analytics | 🟡 Initial | 기본 로그 한정, SIEM 연동 권장 |
+| Authentication | Optimal | FastPass, Passkey, 무비번 흐름 |
+| Identity Stores | Advanced | Universal Directory, 다중 소스 통합 |
+| Risk Assessment | Advanced | Risk Engine, ThreatInsight |
+| Access Management | Advanced | 정책 기반 조건부 접근 |
+| Visibility & Analytics | Initial | 기본 로그 한정, SIEM 연동 권장 |
 
-## 3. Design Decisions (도입 가이드)
+## 언제 선택하나
 
-### 언제 선택하나
+다음 조건에 해당하면 강점이 살아납니다.
 
-- ✅ **SaaS 통합이 핵심**: 7000+ 카탈로그 = 통합 시간 단축
-- ✅ **워크포스 + 고객 ID 통합 필요**: Auth0 흡수로 단일 벤더 가능
-- ✅ **클라우드 우선 전략**: 퍼블릭 SaaS 신뢰 가능한 환경
-- ✅ **무비번 전환 목표**: FastPass/Passkey 가 상대적 우위
+- SaaS 통합이 가장 중요한 경우 (7000개 이상 카탈로그)
+- 직원 인증과 고객 인증을 한 벤더로 통합하려는 경우
+- 클라우드 우선 전략을 따르는 경우
+- 비밀번호 없는 인증으로 전환하려는 경우
 
-### 언제 피하나
+## 언제 피하나
 
-- ❌ **망분리 환경**: 퍼블릭 SaaS 의존 → 적용 곤란
-- ❌ **온프레미스 디렉토리 중심**: AD 통합은 가능하나 클라우드 측면이 약화
-- ❌ **저예산 조직**: 모듈 분리 과금 → 풀 스택 도입 시 비용 증가
-- ❌ **데이터 주권이 극단적으로 중요**: 데이터 리전 제어가 제한적
+다음 조건이면 다른 선택지를 봐야 합니다.
 
-### 대안 비교
+- 망분리 환경 (퍼블릭 SaaS 의존 때문에 적용이 어렵습니다)
+- 온프레미스 디렉토리 중심 환경 (AD 통합은 되지만 클라우드 우위가 사라집니다)
+- 예산이 빠듯한 경우 (모듈 분리 과금이라 풀 스택은 비쌉니다)
+- 데이터 주권이 매우 중요한 경우 (데이터 리전 제어가 제한적입니다)
 
-| 상황 | 권장 |
+## 대안 비교
+
+| 상황 | 권장 솔루션 |
 |---|---|
 | Microsoft 365 중심 | [Microsoft Entra ID](/solutions/entra-id/) |
 | 직접 운영 가능 | Ping Identity, ForgeRock |
-| 비용 민감 | Auth0 (저용량) |
-| 망분리 환경 | 국내 EAM 또는 AD + ADFS |
+| 비용에 민감 | Auth0 (저용량) |
+| 망분리 환경 | 국내 EAM 또는 AD와 ADFS |
 
-## 4. 한국 시장 노트
+## 한국 시장 노트
 
-- **라이선스**: 한국 파트너를 통한 영업 협상 필요. 공식 가격 미공개.
-- **데이터 리전**: 미국·EU·아시아·호주 리전 선택 가능. 한국 리전은 없음.
-- **인증서 통합**: 공동인증(공인인증서) 같은 한국 특화 인증은 별도 SDK·맞춤 구현 필요.
-- **개인정보보호법**: 클라우드 제공 사업자 약관·DPA 검토 필수.
+**라이선스.** 한국 파트너를 통한 영업 협상이 필요합니다. 공식 가격은 공개되지 않습니다.
 
-## 5. 강점 / 한계
+**데이터 리전.** 미국, EU, 아시아, 호주 리전 중 선택할 수 있습니다. 한국 리전은 없습니다.
 
-### 강점
-- 7000+ SaaS 사전 통합 카탈로그
-- Adaptive MFA·Risk Engine 성숙도
-- 무비번(FastPass·Passkey) 흐름의 사용자 경험
-- 워크포스·고객 ID 통합 (Auth0 흡수)
+**공동인증서.** 공동인증(공인인증서)은 직접 지원하지 않습니다. 별도 SDK나 OIDC 브로커가 필요합니다.
 
-### 한계
+**개인정보보호법.** 클라우드 제공 사업자 약관과 DPA를 사전에 검토해야 합니다.
+
+## 강점
+
+- 7000개 이상의 SaaS 사전 통합 카탈로그
+- Adaptive MFA와 Risk Engine 성숙도
+- 비밀번호 없는 인증의 사용자 경험
+- Auth0 흡수로 직원과 고객 인증 통합
+
+## 한계
+
 - 가격 불투명, 모듈 분리 과금
-- 망분리·온프레미스 강제 환경에 부적합
-- 한국어 UI·문서 일부 한정
-- 종합 보안 운영 위해 SIEM·ITDR 등 보완 필요
+- 망분리나 온프레미스 강제 환경에는 부적합
+- 한국어 UI와 문서가 일부 한정적
+- 종합 보안 운영을 위해 SIEM, ITDR 등 별도 보완 필요
 
-## 6. 출처
+## 출처
 
 - [Okta 공식 사이트](https://www.okta.com/)
-- [Okta Trust Center (보안·컴플라이언스)](https://trust.okta.com/)
-- [Okta Documentation](https://help.okta.com/)
+- [Okta Trust Center](https://trust.okta.com/)
+- [Okta 문서](https://help.okta.com/)
 - [Okta + Auth0 통합 안내](https://www.okta.com/auth0/)
 
-## 7. 면책
+## 비교 솔루션
 
-- 본 평가는 **공개 자료** 기반이며, 실제 운영 환경의 가용성·성능은 다를 수 있습니다.
-- 점수는 **상대 비교가 아닌 절대 평가** 입니다.
-- 본 페이지의 "최종 검토일" 이후 사실관계가 바뀌었을 수 있습니다.
+- [Microsoft Entra ID 정합성 진단](/solutions/entra-id/)
+- Ping Identity (작성 예정)
+- OneLogin (작성 예정)
 
-## 8. 비교 솔루션
+## 면책
 
-- [Microsoft Entra ID — 정합성 진단](/solutions/entra-id/) — Microsoft 365 환경 대안
-- 🚧 Ping Identity — 작성 예정
-- 🚧 OneLogin — 작성 예정
+본 평가는 공개 자료를 근거로 합니다. 실제 운영 환경의 가용성과 성능은 다를 수 있습니다. 절대 평가이지 상대 평가가 아닙니다.
 
 ---
-*최초 발행: 2026-05-30 · 최종 검토일: 2026-05-30 · 다음 검토 예정: 2026-08-30*
+최초 발행 2026-05-30, 최종 검토 2026-05-30, 다음 검토 2026-08-30

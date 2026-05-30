@@ -1,6 +1,6 @@
 ---
-title: "NIST SP 800-207 — Zero Trust Architecture 한국어 요약"
-description: "Zero Trust Architecture 의 원전(原典). 7가지 원칙과 핵심 컴포넌트를 한국어로 정리"
+title: "NIST SP 800-207"
+description: "Zero Trust Architecture의 원전을 한국어로 요약"
 date: 2026-05-30
 lastmod: 2026-05-30
 tags: ["NIST", "Zero Trust", "표준"]
@@ -8,106 +8,113 @@ categories: ["framework"]
 ShowToc: true
 ---
 
-> **원문**: [NIST SP 800-207 — Zero Trust Architecture (2020)](https://csrc.nist.gov/publications/detail/sp/800-207/final)
-> 본 페이지는 원문을 한국어로 **요약·정리**한 것이며, 권위 있는 해석으로 사용하려면 원문을 참조하십시오.
+> 원문: [NIST SP 800-207 — Zero Trust Architecture (2020)](https://csrc.nist.gov/publications/detail/sp/800-207/final)
+>
+> 이 페이지는 원문을 한국어로 요약한 것입니다. 권위 있는 해석이 필요하면 원문을 보세요.
 
-## 1. 개요
+## 한 줄 요약
 
-NIST 가 2020년에 발표한 **Zero Trust Architecture(ZTA) 의 원전(原典)** 격 표준.
-"신뢰하지 않고 항상 검증한다" 라는 추상 원칙을 **컴포넌트와 의사결정 흐름**으로 정의.
+Zero Trust Architecture가 무엇인지 정의한 가장 권위 있는 문서입니다. 추상적인 원칙과 컴포넌트를 설명합니다.
+
+## 어떤 문서인가
 
 | 항목 | 내용 |
 |---|---|
-| 발표 기관 | NIST (US Department of Commerce) |
+| 발표 | 미국 NIST |
 | 발표 시점 | 2020년 8월 |
-| 후속 표준 | CISA ZTMM v2(2023), DoD ZT RA(2022) 등이 본 표준에 기반 |
+| 위치 | CISA ZTMM, DoD ZT RA의 이론적 토대 |
 
-## 2. 핵심 원칙 7가지
+## 핵심 원칙 7가지
 
-NIST 가 정의한 ZTA 의 7가지 기본 원칙(Tenets).
+NIST가 정의한 ZTA의 7가지 기본 원칙입니다.
 
-| # | 원칙 (영문) | 한국어 요약 |
+| 번호 | 원칙 | 의미 |
 |---|---|---|
-| 1 | All data sources and computing services are considered resources | 모든 데이터·서비스는 보호 대상 자원 |
-| 2 | All communication is secured regardless of network location | 모든 통신은 위치 무관 암호화·인증 |
-| 3 | Access to individual enterprise resources is granted on a per-session basis | 자원 접근은 **세션 단위**로 부여 |
-| 4 | Access is determined by dynamic policy | 접근 결정은 **동적 정책** (사용자·디바이스·앱·환경 컨텍스트) |
-| 5 | The enterprise monitors and measures the integrity and security posture of all owned and associated assets | 모든 자산의 무결성·보안 상태를 지속 측정 |
-| 6 | All resource authentication and authorization are dynamic and strictly enforced | 모든 인증·인가는 **동적·엄격** |
-| 7 | The enterprise collects as much information as possible about the current state of assets, network infrastructure and communications | 가능한 한 많은 정보를 수집·활용 |
+| 1 | 모든 데이터와 서비스는 자원 | 보호 대상으로 본다 |
+| 2 | 모든 통신은 위치 무관 암호화 | 내부망이라도 신뢰하지 않는다 |
+| 3 | 자원 접근은 세션 단위 | 한 번의 인증으로 무제한 통과 불가 |
+| 4 | 접근 결정은 동적 정책 | 사용자, 기기, 앱, 환경을 모두 본다 |
+| 5 | 모든 자산의 상태를 지속 측정 | 무결성과 보안 상태 추적 |
+| 6 | 인증과 인가는 동적이고 엄격 | 한 번 통과로 끝나지 않는다 |
+| 7 | 최대한 많은 정보를 수집해 활용 | 의사결정 자료로 사용한다 |
 
-본 사이트의 평가 척도 B 축(ZT 정합성)은 이 7원칙을 기반으로 한다.
+본 사이트의 [평가 척도 B축](/evaluation/scoring-rubric/)은 이 7원칙을 기반으로 합니다.
 
-## 3. 핵심 컴포넌트 (Logical Architecture)
+## 핵심 컴포넌트
 
-### Policy 의사결정 흐름
+Zero Trust는 다음 세 컴포넌트의 협업으로 작동합니다.
 
 ```
-[Subject (사용자/서비스)]
-        ↓
-[PEP (Policy Enforcement Point)]  ← 접근 시도
-        ↓ 위탁
-[PDP (Policy Decision Point)]
-        ├─ PE (Policy Engine): 신뢰 점수 계산
-        └─ PA (Policy Administrator): 정책 집행
-        ↓ 결정 (허용/거부/추가 검증)
-[Enterprise Resource (자원)]
+[사용자/서비스]
+      |
+      v
+[PEP - 정책 집행 지점]  ← 실제 접근 차단/허용
+      |
+      v
+[PDP - 정책 결정 지점]
+      ├ PE (Policy Engine): 신뢰 점수 계산
+      └ PA (Policy Administrator): 결정을 PEP에 전달
+      |
+      v
+[보호 대상 자원]
 ```
 
 | 컴포넌트 | 역할 |
 |---|---|
-| **PE** (Policy Engine) | 신뢰 점수 계산, 허용/거부 결정 |
-| **PA** (Policy Administrator) | 결정을 PEP 에 전달, 세션 관리 |
-| **PEP** (Policy Enforcement Point) | 접근 차단·허용을 실제 집행 |
+| PE (Policy Engine) | 신뢰 점수를 계산하고 허용/거부를 결정 |
+| PA (Policy Administrator) | 결정을 PEP에 전달하고 세션을 관리 |
+| PEP (Policy Enforcement Point) | 실제로 접근을 차단하거나 허용 |
 
-### 정책 입력 (Trust Algorithm 입력)
+## 신뢰 알고리즘 입력값
 
-- Subject (사용자·서비스 식별·속성)
+PE가 결정할 때 다음을 입력으로 봅니다.
+
+- Subject (사용자 또는 서비스의 식별 정보)
 - Device (자산 신뢰 상태)
-- Application (요청 자원)
-- Environment (시간·위치·네트워크)
+- Application (요청한 자원)
+- Environment (시간, 위치, 네트워크)
 - Threat Intelligence (외부 위협 정보)
 - Activity Logs (이력)
 
-## 4. ZTA 배포 변형 3종
+## 3가지 배포 변형
 
-| 변형 | 설명 | 적용 사례 |
+NIST는 세 가지 배포 패턴을 제시합니다.
+
+| 변형 | 설명 | 적용 예시 |
 |---|---|---|
-| **Device Agent / Gateway** | 디바이스 에이전트가 게이트웨이와 통신해 접근 | EDR + ZTNA 통합 |
-| **Enclave Gateway** | 자원 군집(enclave) 단위 게이트웨이 | 레거시 앱 보호 |
-| **Resource Portal** | 사용자가 포털을 통해 자원 접근 | SaaS 통합 SSO |
+| Device Agent / Gateway | 디바이스 에이전트가 게이트웨이와 통신 | EDR과 ZTNA 통합 |
+| Enclave Gateway | 자원 그룹 단위 게이트웨이 | 레거시 앱 보호 |
+| Resource Portal | 포털을 통해 자원 접근 | SaaS 통합 SSO |
 
-## 5. NIST 가 명시한 위협 모델
+## ZTA가 해결하지 못하는 위협
 
-ZTA 가 **반드시 해결하지는 못하는** 위협 (원문 §3.2 가 명시):
+NIST는 원문 3.2장에서 ZTA의 한계도 명시합니다.
 
 - 내부자 위협 (정당한 자격으로 악용)
-- 가시성 사각지대 (암호화로 인한 분석 한계)
+- 가시성 사각지대 (암호화 때문에 분석이 어려운 부분)
 - 정책 자체의 결함
-- 신뢰 점수 알고리즘의 오류·편향
-- 가용성 (PEP 자체가 단일 실패점이 될 수 있음)
+- 신뢰 점수 알고리즘의 오류
+- 가용성 (PEP가 단일 실패점이 될 수 있음)
 
-→ ZTA 는 만능이 아니며, 다른 통제와 함께 사용해야 한다는 점을 명시.
+ZTA는 만능이 아닙니다. 다른 통제와 함께 사용해야 한다고 명시합니다.
 
-## 6. CISA ZTMM 과의 관계
+## CISA ZTMM과의 차이
 
-| 표준 | 성격 |
+| 표준 | 답하는 질문 |
 |---|---|
-| **NIST SP 800-207** | "**무엇**(What)" — ZTA 가 무엇인가, 원칙·컴포넌트 |
-| **CISA ZTMM v2** | "**어떻게**(How)" — 단계별로 어떻게 도달하나 |
+| NIST SP 800-207 | Zero Trust란 무엇인가 |
+| CISA ZTMM v2 | 어떻게 단계적으로 달성하나 |
 
-→ 본 사이트는 두 표준을 함께 활용. CISA 의 5 Pillar 구조 위에서 NIST 의 7원칙으로 솔루션을 평가.
+본 사이트는 두 표준을 함께 사용합니다. CISA의 5 Pillar 구조 위에서 NIST 7원칙으로 솔루션을 평가합니다.
 
-## 7. 한국 적용 노트
+## 한국에서 참고할 점
 
-- 한국의 **K-ZTA(가칭)** 등 공식 가이드는 아직 NIST 표준을 직접 채택하는 형태가 아님.
-- 망분리·전자금융 규제와의 정합 검토 필요.
-- 자세한 내용은 [한국 노트 — 규제](/korea/regulation/) 참조.
+K-ZTA 같은 공식 가이드는 아직 NIST 표준을 직접 채택하는 형태가 아닙니다. 망분리, 전자금융 규제와의 정합성을 함께 검토해야 합니다. 자세한 내용은 [한국 노트의 규제 페이지](/korea/regulation/)에서 다룹니다.
 
 ## 출처
 
 - [NIST SP 800-207 공식 페이지](https://csrc.nist.gov/publications/detail/sp/800-207/final)
-- [NIST SP 800-207 PDF 직접 링크](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
+- [NIST SP 800-207 PDF](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
 
 ---
-*최초 발행: 2026-05-30 · 최종 검토일: 2026-05-30 · 다음 검토 예정: 2026-08-30*
+최초 발행 2026-05-30, 최종 검토 2026-05-30, 다음 검토 2026-08-30

@@ -1,11 +1,11 @@
 ---
 title: "Governance"
-description: "CISA ZTMM v2 — Cross-cutting: Governance"
+description: "조직 전반의 정책, 표준, 준거성, 감사"
 ---
 
-## 정의
+## 이 영역이 다루는 것
 
-조직 전반의 **정책·표준·준거성**. GRC, 정책 관리, 위험 평가, 감사.
+조직 전반의 정책, 표준, 준거성을 다룹니다. GRC, 정책 관리, 위험 평가, 감사가 포함됩니다.
 
 ## 솔루션 카테고리
 
@@ -15,7 +15,7 @@ description: "CISA ZTMM v2 — Cross-cutting: Governance"
 | 정책 관리 | Open Policy Agent (OPA), Styra |
 | 위험 정량화 | RiskLens, ThreatConnect |
 
-## 리뷰 (작성 예정)
+## 작성 예정
 
-- 🚧 Drata vs Vanta — 컴플라이언스 자동화
-- 🚧 OPA 도입 가이드
+- Drata vs Vanta 비교 (컴플라이언스 자동화)
+- OPA 도입 가이드

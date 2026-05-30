@@ -1,18 +1,21 @@
 ---
 title: "Top 리스트"
-description: "Pillar / 카테고리별 Top 5 솔루션"
+description: "카테고리별로 정리한 상위 5개 솔루션"
 ---
 
-OWASP Top 10 패턴 — 진입자가 가장 자주 찾는 "이 영역의 Top 5는?" 질문에 답하는 큐레이션.
+"이 영역의 Top 5는 무엇인가"라는 질문에 한 페이지로 답하는 큐레이션입니다.
+
+각 리스트는 [평가 척도](/evaluation/scoring-rubric/) 기반 점수와 한 줄 요약, 풀 리뷰 링크로 구성됩니다.
+
+## 작성된 리스트
+
+- [IDaaS Top 5 (2026)](identity-idaas-top-5/)
 
 ## 작성 예정
 
-- 🚧 IDaaS Top 5 (2026)
-- 🚧 EDR Top 5 (2026)
-- 🚧 ZTNA Top 5 (2026)
-- 🚧 CNAPP Top 5 (2026)
-- 🚧 DSPM Top 5 (2026)
-- 🚧 SIEM Top 5 (2026)
-- 🚧 AI/LLM 보안 Top 5 (2026)
-
-각 Top 리스트는 **평가 척도** 기반 점수 + 한 줄 요약 + 풀 리뷰 링크로 구성됩니다.
+- EDR Top 5
+- ZTNA Top 5
+- CNAPP Top 5
+- DSPM Top 5
+- SIEM Top 5
+- AI/LLM 보안 Top 5
