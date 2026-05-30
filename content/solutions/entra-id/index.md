@@ -130,7 +130,7 @@ Zero Trust 기능을 본격적으로 쓰려면 P2나 Suite가 필요합니다.
 ## 강점
 
 - Microsoft 365와 거의 무료에 가까운 통합
-- P2 라이선스의 PIM과 ID Protection은 시장 최고 수준
+- P2 라이선스에서 PIM(Privileged Identity Management, 시간제한 권한 상승, 접근 검토)과 ID Protection(위험 기반 조건부 접근) 제공 (작가 반영: 마케팅 최상급 제거, 2026-05-31)
 - AD 하이브리드 흐름이 자연스러움
 - Defender, Sentinel, Purview와 단일 스택 보안
 
@@ -150,8 +150,6 @@ Zero Trust 기능을 본격적으로 쓰려면 P2나 Suite가 필요합니다.
 ## 비교 솔루션
 
 - [Okta 정합성 진단](/solutions/okta/)
-- Ping Identity (작성 예정)
-- ForgeRock (작성 예정)
 
 ## 면책
 
