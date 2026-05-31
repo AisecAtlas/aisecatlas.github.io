@@ -70,7 +70,7 @@ N²SF 전환 과제에는 망분리 때문에 막혀 있던 업무 방식이 포
 | 세부 보안역량 | — | **52개** (6대 핵심요소 + 2대 교차기능) |
 | 도입 절차 | — | **5단계** (준비, 계획, 구현, 운영, 피드백 및 개선) |
 
-이 4단계 성숙도 모델은 CISA Zero Trust Maturity Model의 4단계(Traditional, Initial, Advanced, Optimal)와 같은 구조를 따릅니다. 본 사이트의 [평가 척도](/evaluation/scoring-rubric/)도 이 4단계를 사용합니다.
+이 4단계 성숙도 모델은 CISA Zero Trust Maturity Model의 4단계(Traditional, Initial, Advanced, Optimal)와 같은 구조를 따릅니다. 본 사이트도 [CISA ZTMM v2](/framework/cisa-ztmm-v2/)의 이 4단계를 기준으로 솔루션을 분류합니다.
 
 ## 전환기의 우려
 

@@ -117,7 +117,7 @@ ZTMM은 행정명령 [EO 14028](https://www.federalregister.gov/documents/2021/0
 
 ## 본 사이트가 재구성한 Function 격자
 
-CISA 원문은 Pillar마다 function 개수가 다르고 "function 25개"라는 용어를 쓰지 않는다. 세 횡단 기능(Visibility & Analytics, Automation & Orchestration, Governance)은 각 Pillar 안에서 function으로 반복 등장한다. 본 사이트는 평가 ID 체계 `ZTA-{Pillar}-{Function}-{NN}`을 위해 Pillar당 대표 function 5개를 선정해 25개 격자로 재구성했다. 아래 명칭은 본 사이트 기준이며 CISA 원문 명칭과 1:1로 일치하지 않을 수 있다.
+CISA 원문은 Pillar마다 function 개수가 다르고 "function 25개"라는 용어를 쓰지 않는다. 세 횡단 기능(Visibility & Analytics, Automation & Orchestration, Governance)은 각 Pillar 안에서 function으로 반복 등장한다. 본 사이트는 솔루션을 Pillar와 Function으로 분류하기 위해 Pillar당 대표 function 5개를 선정해 25개 격자로 재구성했다. 아래 명칭은 본 사이트 기준이며 CISA 원문 명칭과 1:1로 일치하지 않을 수 있다.
 
 | Pillar | 대표 Function (본 사이트 재구성) |
 |---|---|
@@ -150,8 +150,7 @@ CISA ZTMM은 미국 연방기관 환경을 가정한다. 한국 조직에 적용
 ## 본 사이트는 어떻게 활용하나
 
 - 모든 솔루션 리뷰는 ZTMM Pillar와 단계로 분류된다.
-- 평가 항목 ID는 ZTMM Function을 참조한다.
-- [매트릭스 페이지](/matrix/)는 ZTMM의 5 Pillar × 4 단계 구조 그대로다.
+- [솔루션 가이드](/pillars/)의 5 영역 구분은 ZTMM의 5 Pillar 구조를 따른다.
 
 ## 출처
 

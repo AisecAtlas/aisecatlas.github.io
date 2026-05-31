@@ -16,13 +16,13 @@ ShowToc: false
 <a href="/solutions/varonis/" class="card">
 <div class="card-title">Varonis</div>
 <div class="card-desc">데이터 접근 거버넌스(DAG). 권한 분석과 방치 권한 자동 제거로 불필요한 접근을 차단. DSPM, DDR 통합.</div>
-<div class="card-cta">정합성 진단 보기 (8.7)</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 <a href="/solutions/rubrik/" class="card">
 <div class="card-title">Rubrik</div>
 <div class="card-desc">사이버 복원력. 불변 백업으로 랜섬웨어 후 복구, DSPM과 사이버 복구를 단일 플랫폼에 결합.</div>
-<div class="card-cta">정합성 진단 보기 (8.3)</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 </div>

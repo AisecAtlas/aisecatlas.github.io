@@ -16,19 +16,19 @@ ShowToc: false
 <a href="/solutions/zscaler/" class="card">
 <div class="card-title">Zscaler</div>
 <div class="card-desc">Zero Trust Exchange 기반 ZTNA, SASE. 네트워크를 확장하지 않고 사용자와 앱을 직접 연결하는 인사이드아웃 구조.</div>
-<div class="card-cta">정합성 진단 보기 (8.7)</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 <a href="/solutions/prisma-access/" class="card">
 <div class="card-title">Palo Alto Prisma Access</div>
 <div class="card-desc">Prisma SASE 기반. 보안(Prisma Access)과 SD-WAN을 단일 콘솔(Strata Cloud Manager)로 통합.</div>
-<div class="card-cta">정합성 진단 보기 (8.7)</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 <a href="/solutions/netskope/" class="card">
 <div class="card-title">Netskope</div>
 <div class="card-desc">자체 소유 사설 보안 클라우드(NewEdge)와 단일 Zero Trust Engine. 서울 데이터센터 운영.</div>
-<div class="card-cta">정합성 진단 보기 (8.7)</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 </div>

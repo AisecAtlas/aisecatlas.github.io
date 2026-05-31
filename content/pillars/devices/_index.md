@@ -16,13 +16,13 @@ ShowToc: false
 <a href="/solutions/crowdstrike-falcon/" class="card">
 <div class="card-title">CrowdStrike Falcon</div>
 <div class="card-desc">단일 경량 에이전트 위에 모듈을 더하는 EDR/XDR. RSA 2026에서 Charlotte AgentWorks 발표.</div>
-<div class="card-cta">정합성 진단 보기 (8.9)</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 <a href="/solutions/sentinelone/" class="card">
 <div class="card-title">SentinelOne Singularity</div>
 <div class="card-desc">자율형 EDR/XDR. 엔드포인트가 스스로 차단, 격리, 롤백. Purple AI 자연어 위협 헌팅.</div>
-<div class="card-cta">정합성 진단 보기 (8.8)</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 </div>

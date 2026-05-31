@@ -46,9 +46,9 @@ ShowToc: false
 
 </div>
 
-## 매트릭스로 한눈에 보기
+## 영역별 성숙도 한눈에 보기
 
-가로축은 성숙도 단계, 세로축은 보안 영역이다. 단계는 일직선이 아니다. 영역마다 단계가 달라도 된다.
+가로축은 CISA ZTMM 성숙도 단계, 세로축은 보안 영역이다. 단계는 일직선이 아니다. 영역마다 단계가 달라도 된다.
 
 | 영역 | Traditional | Initial | Advanced | Optimal |
 |---|---|---|---|---|
@@ -58,32 +58,24 @@ ShowToc: false
 | **Applications** | WAF | CSPM | CNAPP, CWPP | Runtime 보호 |
 | **Data** | DLP | 분류와 라벨링 | DSPM | DTAR, 동적 마스킹 |
 
-## 평가 방식
+## 리뷰 구조
 
-모든 솔루션 리뷰는 같은 척도를 쓴다.
+모든 솔루션 리뷰는 같은 구조를 따른다. 한눈에 보기, 어떤 제품인가, 시장 위치, 강점과 한계, 언제 선택하나, 도입 고려사항으로 정리한다.
 
-- **A축 일반 기능** 10점: 통합 관리, 가용성, 성능, 운영성, 비용 투명성
-- **B축 표준 정합성** 10점: NIST 7원칙 + CISA ZTMM 단계
-- **종합** = 두 축의 평균
-
-평가 항목마다 `ZTA-{영역}-{기능}-{번호}` 형식의 고유 ID를 붙여 외부에서 정확히 인용한다.
-
-<div class="cta-group">
-<a href="/evaluation/scoring-rubric/" class="btn-secondary">평가 방식 자세히 보기</a>
-</div>
+각 리뷰는 CISA ZTMM 영역과 NIST SP 800-207 7원칙을 기준으로 솔루션의 위치를 짚는다.
 
 ## 현재 작성된 리뷰
 
-| 영역 | 솔루션 | 종합 점수 |
+| 영역 | 솔루션 | 카테고리 |
 |---|---|---|
-| Identity | [Microsoft Entra ID](/solutions/entra-id/) | 8.9 |
-| Identity | [Okta](/solutions/okta/) | 8.4 |
-| Devices | [CrowdStrike Falcon](/solutions/crowdstrike-falcon/) | 8.9 |
-| Devices | [SentinelOne Singularity](/solutions/sentinelone/) | 8.8 |
-| Networks | [Zscaler](/solutions/zscaler/) | 8.7 |
-| Networks | [Palo Alto Prisma Access](/solutions/prisma-access/) | 8.7 |
-| Networks | [Netskope](/solutions/netskope/) | 8.7 |
-| Applications | [HashiCorp Vault](/solutions/hashicorp-vault/) | 9.2 |
-| Applications | [Wiz](/solutions/wiz/) | 8.7 |
-| Data | [Varonis](/solutions/varonis/) | 8.7 |
-| Data | [Rubrik](/solutions/rubrik/) | 8.3 |
+| Identity | [Microsoft Entra ID](/solutions/entra-id/) | IDaaS, 조건부 접근 |
+| Identity | [Okta](/solutions/okta/) | IDaaS, CIAM |
+| Devices | [CrowdStrike Falcon](/solutions/crowdstrike-falcon/) | EDR, XDR |
+| Devices | [SentinelOne Singularity](/solutions/sentinelone/) | EDR, XDR |
+| Networks | [Zscaler](/solutions/zscaler/) | ZTNA, SASE |
+| Networks | [Palo Alto Prisma Access](/solutions/prisma-access/) | SASE, SSE |
+| Networks | [Netskope](/solutions/netskope/) | SSE, SASE |
+| Applications | [HashiCorp Vault](/solutions/hashicorp-vault/) | 시크릿 관리 |
+| Applications | [Wiz](/solutions/wiz/) | CNAPP, 클라우드 보안 |
+| Data | [Varonis](/solutions/varonis/) | 데이터 거버넌스, DSPM |
+| Data | [Rubrik](/solutions/rubrik/) | 데이터 보안, 복원력 |

@@ -1,6 +1,6 @@
 ---
 title: "LLM 게이트웨이와 런타임 가드레일 비교"
-description: "Lakera, Prompt Security, 오픈소스 가드레일을 같은 척도로 비교한다."
+description: "Lakera, Prompt Security, 오픈소스 가드레일을 같은 기준으로 비교한다."
 date: 2026-05-30
 lastmod: 2026-05-30
 tags: ["AI Security", "LLM Guardrail", "Lakera", "Prompt Injection", "OWASP"]
@@ -39,7 +39,7 @@ LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 
 
 출처: [appsecsanta Lakera 분석](https://appsecsanta.com/lakera), [appsecsanta Lakera 대안](https://appsecsanta.com/ai-security-tools/lakera-alternatives), [is4.ai 오픈소스 비교](https://is4.ai/blog/our-blog-1/guardrails-ai-vs-nemo-guardrails-comparison-2026-352)
 
-점수형 정합성 진단(같은 척도 개별 리뷰): [Lakera](/solutions/lakera/) 8.3, [Protect AI](/solutions/protect-ai/) 8.5, [NVIDIA NeMo Guardrails](/solutions/nemo-guardrails/) 7.8.
+개별 리뷰: [Lakera](/solutions/lakera/), [Protect AI](/solutions/protect-ai/), [NVIDIA NeMo Guardrails](/solutions/nemo-guardrails/).
 
 ### Lakera Guard
 

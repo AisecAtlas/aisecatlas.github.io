@@ -16,7 +16,7 @@ ShowToc: false
 
 <a href="nist-800-207/" class="card">
 <div class="card-title">NIST SP 800-207</div>
-<div class="card-desc">Zero Trust Architecture의 원전. 7원칙과 핵심 컴포넌트. 본 사이트 평가 B축의 근거.</div>
+<div class="card-desc">Zero Trust Architecture의 원전. 7원칙과 핵심 컴포넌트. 솔루션 리뷰의 표준 정합성 기준.</div>
 <div class="card-cta">표준 요약 보기</div>
 </a>
 
@@ -62,8 +62,8 @@ ShowToc: false
 
 | 표준 | 어디에 사용 |
 |---|---|
-| CISA ZTMM v2 | [솔루션 가이드](/pillars/)의 5 영역 구분, 평가 ID 체계 |
-| NIST SP 800-207 | 평가 척도 B축(표준 정합성)의 7원칙 |
+| CISA ZTMM v2 | [솔루션 가이드](/pillars/)의 5 영역 구분 |
+| NIST SP 800-207 | 솔루션 리뷰의 표준 정합성 기준(7원칙) |
 | [OWASP LLM Top 10](owasp-llm-top-10/) | LLM 게이트웨이, AI 레드티밍의 위협 모델 기준 |
 | [NIST AI RMF](nist-ai-rmf/) | AI 거버넌스 계층의 상위 프레임 |
 | [MITRE ATLAS](mitre-atlas/) | AI 레드티밍의 공격 커버리지 매핑 |

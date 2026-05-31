@@ -15,14 +15,14 @@ ShowToc: false
 
 <a href="/solutions/entra-id/" class="card">
 <div class="card-title">Microsoft Entra ID</div>
-<div class="card-desc">Microsoft 365와 통합되는 IDaaS. P2 라이선스에서 PIM과 ID Protection 제공. 종합 8.9.</div>
-<div class="card-cta">정합성 진단 보기 (8.9)</div>
+<div class="card-desc">Microsoft 365와 통합되는 IDaaS. P2 라이선스에서 PIM과 ID Protection 제공.</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 <a href="/solutions/okta/" class="card">
 <div class="card-title">Okta</div>
-<div class="card-desc">7000개 이상 SaaS 카탈로그와 무비밀번호 인증. Auth0 흡수로 직원과 고객 인증 통합. 종합 8.4.</div>
-<div class="card-cta">정합성 진단 보기 (8.4)</div>
+<div class="card-desc">7000개 이상 SaaS 카탈로그와 무비밀번호 인증. Auth0 흡수로 직원과 고객 인증 통합.</div>
+<div class="card-cta">리뷰 보기</div>
 </a>
 
 </div>
