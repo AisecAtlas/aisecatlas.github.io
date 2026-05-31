@@ -11,6 +11,8 @@ ShowToc: false
 
 ## 작성된 솔루션 리뷰
 
+### 클라우드와 시크릿
+
 <div class="card-grid">
 
 <a href="/solutions/wiz/" class="card">
@@ -23,6 +25,42 @@ ShowToc: false
 <div class="card-title">HashiCorp Vault</div>
 <div class="card-desc">동적 시크릿과 암호화 서비스. 수명이 짧은 자격 증명을 생성하고 자동 회수한다.</div>
 <div class="card-cta">정합성 진단 보기 (9.2)</div>
+</a>
+
+</div>
+
+### AI 보안 (AI를 지키는 일)
+
+<div class="card-grid">
+
+<a href="/solutions/protect-ai/" class="card">
+<div class="card-title">Protect AI</div>
+<div class="card-desc">모델 스캐닝과 AI 공급망. 오픈소스 ModelScan, Palo Alto Prisma 편입.</div>
+<div class="card-cta">정합성 진단 보기 (8.5)</div>
+</a>
+
+<a href="/solutions/lakera/" class="card">
+<div class="card-title">Lakera</div>
+<div class="card-desc">LLM 런타임 가드레일과 Gandalf 레드티밍. Check Point 인수.</div>
+<div class="card-cta">정합성 진단 보기 (8.3)</div>
+</a>
+
+<a href="/solutions/hiddenlayer/" class="card">
+<div class="card-title">HiddenLayer</div>
+<div class="card-desc">런타임(AIDR), 공급망, 자세 관리, 레드티밍 통합. AIBOM 가시성.</div>
+<div class="card-cta">정합성 진단 보기 (8.3)</div>
+</a>
+
+<a href="/solutions/robust-intelligence/" class="card">
+<div class="card-title">Robust Intelligence</div>
+<div class="card-desc">업계 첫 AI Firewall과 알고리즘 레드티밍. Cisco AI Defense 기반.</div>
+<div class="card-cta">정합성 진단 보기 (8.0)</div>
+</a>
+
+<a href="/solutions/nemo-guardrails/" class="card">
+<div class="card-title">NVIDIA NeMo Guardrails</div>
+<div class="card-desc">오픈소스 프로그래머블 가드레일 툴킷. Colang으로 정밀 제어.</div>
+<div class="card-cta">정합성 진단 보기 (7.8)</div>
 </a>
 
 </div>
