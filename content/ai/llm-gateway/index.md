@@ -7,7 +7,7 @@ tags: ["AI Security", "LLM Guardrail", "Lakera", "Prompt Injection", "OWASP"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: LLM 게이트웨이는 LLM 호출의 입출력을 실행 중에 검사해 [OWASP LLM Top 10](/ai/defend-ai/)의 Prompt Injection(LLM01)과 부적절한 출력 처리(LLM05)를 막는 계층입니다. 2025년에 상용 도구가 대형 보안 벤더로 빠르게 흡수됐습니다. Lakera는 Cisco로, Prompt Security는 SentinelOne으로 들어갔습니다. 자체 호스팅이 필요하면 오픈소스가 대안입니다.
+> **이 페이지의 결론**: LLM 게이트웨이는 LLM 호출의 입출력을 실행 중에 검사해 [OWASP LLM Top 10](/ai/defend-ai/)의 Prompt Injection(LLM01)과 부적절한 출력 처리(LLM05)를 막는 계층입니다. 2025년에 상용 도구가 대형 보안 벤더로 빠르게 흡수됐습니다. Lakera는 Check Point로, Prompt Security는 SentinelOne으로 들어갔습니다. 자체 호스팅이 필요하면 오픈소스가 대안입니다.
 
 ## 무엇을 하는 계층인가
 
@@ -38,6 +38,8 @@ LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 
 | **LLM Guard** | 오픈소스 | 광범위 기본 스캐너 | 자체 호스팅 | 커뮤니티 |
 
 출처: [appsecsanta Lakera 분석](https://appsecsanta.com/lakera), [appsecsanta Lakera 대안](https://appsecsanta.com/ai-security-tools/lakera-alternatives), [is4.ai 오픈소스 비교](https://is4.ai/blog/our-blog-1/guardrails-ai-vs-nemo-guardrails-comparison-2026-352)
+
+점수형 정합성 진단(같은 척도 개별 리뷰): [Lakera](/solutions/lakera/) 8.3, [Protect AI](/solutions/protect-ai/) 8.5, [NVIDIA NeMo Guardrails](/solutions/nemo-guardrails/) 7.8.
 
 ### Lakera Guard
 
