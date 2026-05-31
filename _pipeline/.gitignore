@@ -1,0 +1,7 @@
+# 검토 전 초안은 커밋하지 않는다 (reviewer 가 통과분만 content/ 로 이동)
+drafts/
+# 파이썬 캐시
+__pycache__/
+*.pyc
+# 스모크테스트 산출물
+poc/_smoketest/

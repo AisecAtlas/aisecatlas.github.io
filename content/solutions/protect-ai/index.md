@@ -103,7 +103,7 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 | 런타임 프롬프트 가드레일 중심 | [Lakera](/solutions/lakera/) |
 | 모델 공급망 카테고리 비교 | [AI 모델 공급망 보안](/ai/model-supply-chain/) |
 
-## 한국 시장 노트
+## 도입 고려사항
 
 **라이선스.** ModelScan은 무료 오픈소스, 나머지는 엔터프라이즈 구독이다. Palo Alto의 국내 파트너를 통한 도입이 가능하다.
 

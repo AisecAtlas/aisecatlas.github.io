@@ -86,7 +86,7 @@ CISA ZTMM v2 Devices 영역의 Function이다.
 | Initial에서 Advanced로 | EDR 전면 적용, 자산 인벤토리 자동화 |
 | Advanced에서 Optimal로 | XDR 통합, 자율 대응과 지속 신뢰 평가 |
 
-## 한국 시장 적용 노트
+## 도입 고려사항
 
 **개인정보보호법.** EDR은 엔드포인트의 행위 텔레메트리를 광범위하게 수집한다. 수집 범위와 보존 기간이 개인정보 처리 원칙에 맞는지 검토한다.
 

@@ -49,7 +49,7 @@ ATLAS는 다음 규모의 지식베이스다([Vectra 정리](https://www.vectra.
 | [OWASP LLM Top 10](/framework/owasp-llm-top-10/) | LLM 앱의 위험 우선순위는 | 위험 목록 |
 | [NIST AI RMF](/framework/nist-ai-rmf/) | AI 위험을 어떻게 거버넌스하나 | 상위 프레임 |
 
-## 한국 적용 시 고려할 점
+## 규제 적용
 
 **위협 모델링.** ATLAS는 국제 공통 지식베이스라 한국 AI 도입의 위협 모델링과 레드티밍 기준으로 쓸 수 있다. 규제 의무가 아니라 자발적 참조다.
 

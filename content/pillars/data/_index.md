@@ -89,7 +89,7 @@ CISA ZTMM v2 Data 영역의 Function이다.
 | Initial에서 Advanced로 | DSPM 도입, 자동 발견과 분류 |
 | Advanced에서 Optimal로 | DSPM과 DLP 통합, 데이터 흐름 지속 모니터링 |
 
-## 한국 시장 적용 노트
+## 도입 고려사항
 
 **개인정보보호법.** 개인정보의 분류, 접근 통제, 암호화는 법적 의무와 직결된다. DSPM과 분류 도구가 정형, 비정형 데이터에서 개인정보를 자동 식별하는지 검증한다.
 

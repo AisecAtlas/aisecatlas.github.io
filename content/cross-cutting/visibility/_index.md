@@ -49,7 +49,7 @@ ShowToc: false
 
 데이터 양이 빠르게 늘면 수집 단계에서 [Cribl 같은 파이프라인](https://softwareanalyst.substack.com/p/market-guide-2025-the-rise-of-security)으로 필터링과 라우팅을 적용해 SIEM 비용을 통제합니다.
 
-## 한국 시장 노트
+## 도입 고려사항
 
 **로그 보존과 개인정보보호법.** SIEM과 데이터 레이크는 개인정보가 포함된 로그를 수집합니다. 수집 범위와 보존 기간이 [개인정보보호법](/korea/regulation/pipa-zero-trust-data/)의 처리 원칙에 맞는지 검토하세요.
 

@@ -60,7 +60,7 @@ AI 기반 보안 보조인 Charlotte AI의 적용 영역이 확대되고, NG-SIE
 
 출처: [CrowdStrike Charlotte AI](https://www.crowdstrike.com/en-us/platform/charlotte-ai/)
 
-## 한국 시장 노트
+## 도입 고려사항
 
 ### 망분리 정책의 차세대 검토 논의
 

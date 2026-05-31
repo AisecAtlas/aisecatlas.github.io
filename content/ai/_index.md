@@ -84,7 +84,7 @@ ShowToc: false
 | 대표 솔루션 | Lakera, Prompt Security, Protect AI | Charlotte AI, Security Copilot, Torq |
 | 의사결정 시점 | LLM/에이전트 도입 직전 | SOC 확장이나 인력 부족 시점 |
 
-## 한국 시장 관점
+## 도입 고려사항
 
 해외 표준과 솔루션을 한국에 적용할 때 추가로 확인할 변수다.
 

@@ -94,7 +94,7 @@ AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/a
 | Initial에서 Advanced로 | CNAPP 도입, CI/CD 보안 통합 |
 | Advanced에서 Optimal로 | 런타임 보호(CWPP), AI 보안 결합 |
 
-## 한국 시장 적용 노트
+## 도입 고려사항
 
 **개인정보보호법.** 클라우드 구성 오류로 인한 데이터 노출은 개인정보 유출 사고로 직결된다. CSPM의 민감 데이터 노출 탐지 범위를 확인한다.
 

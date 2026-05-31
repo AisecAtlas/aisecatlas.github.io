@@ -80,7 +80,7 @@ ShowToc: false
 | Initial에서 Advanced로 | IDaaS, 조건부 접근, Adaptive MFA |
 | Advanced에서 Optimal로 | ITDR, IGA, 지속 검증 추가 |
 
-## 한국 시장 적용 노트
+## 도입 고려사항
 
 **공동인증서 통합.** 글로벌 IDaaS는 공동인증서를 직접 지원하지 않는다. 별도 SDK나 OIDC 브로커가 필요하다.
 

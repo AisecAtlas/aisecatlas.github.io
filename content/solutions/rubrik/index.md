@@ -105,7 +105,7 @@ Rubrik Security Cloud는 **DSPM**(데이터 보안 자세 관리)과 **사이버
 | 클라우드 자세 관리와 공격 경로 | Wiz |
 | 엔드포인트 위협 대응 | SentinelOne, CrowdStrike Falcon |
 
-## 한국 시장 노트
+## 도입 고려사항
 
 **라이선스.** 구독 기반, 공개 정가 없음. 국내 파트너를 통한 도입이 일반적입니다.
 

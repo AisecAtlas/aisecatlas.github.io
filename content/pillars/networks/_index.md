@@ -94,7 +94,7 @@ CISA ZTMM v2 Networks 영역의 Function이다.
 | Initial에서 Advanced로 | ZTNA 전면 적용, SASE 통합 |
 | Advanced에서 Optimal로 | 마이크로세그멘테이션, 전 구간 암호화 |
 
-## 한국 시장 적용 노트
+## 도입 고려사항
 
 **망분리.** 클라우드 경유 SASE 구조는 전통적 물리 망분리와 충돌할 수 있다. [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 전환으로 민감(S), 공개(O) 등급에 논리 분리가 허용되면 ZTNA 적용 여지가 넓어진다.
 

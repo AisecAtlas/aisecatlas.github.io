@@ -1,6 +1,10 @@
 public/
 resources/_gen/
 .hugo_build.lock
+
+# Agent prompts / state (local only, not for public repo)
+agents/
+.claude/
 .DS_Store
 Thumbs.db
 *.log

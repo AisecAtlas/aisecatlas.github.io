@@ -57,7 +57,7 @@ OWASP는 세 가지 Top 10을 운영합니다. 단일 호출 LLM은 **LLM Top 10
 
 세 가지를 함께 쓰는 것이 일반적입니다. NIST AI RMF로 위험 관리 방법을 잡고, ISO 42001로 감사 가능한 체계를 만들고, EU AI Act로 법적 요구를 충족합니다([Cloud Security Alliance](https://cloudsecurityalliance.org/blog/2025/01/29/how-can-iso-iec-42001-nist-ai-rmf-help-comply-with-the-eu-ai-act)). 여기에 OWASP와 MITRE ATLAS로 구체적 위협을 매핑합니다.
 
-## 한국 적용 시 고려할 점
+## 규제 적용
 
 **국내외 동시 적용.** EU 사업이 있는 한국 기업은 EU AI Act와 국내 개인정보보호법, 한국형 제로트러스트 가이드라인을 함께 봐야 합니다.
 
