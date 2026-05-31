@@ -29,5 +29,10 @@ description: "제품별 표준 정합성 진단과 도입 가이드"
 | Networks | [Netskope](netskope/) | 8.7 |
 | Applications | [Wiz](wiz/) | 8.7 |
 | Applications | [HashiCorp Vault](hashicorp-vault/) | 9.2 |
+| Applications (AI 보안) | [Protect AI](protect-ai/) | 8.5 |
+| Applications (AI 보안) | [Lakera](lakera/) | 8.3 |
+| Applications (AI 보안) | [HiddenLayer](hiddenlayer/) | 8.3 |
+| Applications (AI 보안) | [Robust Intelligence](robust-intelligence/) | 8.0 |
+| Applications (AI 보안) | [NVIDIA NeMo Guardrails](nemo-guardrails/) | 7.8 |
 | Data | [Rubrik](rubrik/) | 8.3 |
 | Data | [Varonis](varonis/) | 8.7 |
