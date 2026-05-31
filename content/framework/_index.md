@@ -67,4 +67,4 @@ ShowToc: false
 | [OWASP LLM Top 10](owasp-llm-top-10/) | LLM 게이트웨이, AI 레드티밍의 위협 모델 기준 |
 | [NIST AI RMF](nist-ai-rmf/) | AI 거버넌스 계층의 상위 프레임 |
 | [MITRE ATLAS](mitre-atlas/) | AI 레드티밍의 공격 커버리지 매핑 |
-| 한국 규제 | 솔루션 리뷰의 "한국 시장 노트" 섹션 |
+| 한국 규제 | 솔루션 리뷰의 "도입 고려사항" 섹션 |
