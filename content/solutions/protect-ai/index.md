@@ -1,6 +1,6 @@
 ---
 title: "Protect AI"
-description: "모델 스캐닝과 AI 공급망 보안 중심 AI 방어 표준 정합성 진단"
+description: "모델 스캐닝과 AI 공급망 보안 중심 AI 방어 솔루션 시장 정리"
 date: 2026-05-31
 lastmod: 2026-05-31
 tags: ["Protect AI", "AI 보안", "모델 스캐닝", "AI 공급망", "Applications"]
@@ -13,19 +13,19 @@ ShowToc: true
 
 | 항목 | 값 |
 |---|---|
-| 영역 | Applications (AI 보안) |
 | 카테고리 | AI 보안, 모델 스캐닝, AI 공급망, 레드티밍 |
-| 본사 | 미국. 2025년 7월 22일 Palo Alto Networks에 인수 완료 |
-| 차별점 | 오픈소스 ModelScan부터 모델 보안, 레드티밍, 런타임까지 |
-| 성숙도 | Advanced |
-| 종합 점수 | 8.5 / 10 |
-| 최종 검토 | 2026-05-31 |
+| 본사 | 미국 (비상장, 2025년 7월 22일 Palo Alto Networks에 인수 완료) |
+| 핵심 모듈 | Guardian 모델 보안, Recon 레드티밍, Layer 런타임, 오픈소스 ModelScan, LLM Guard |
+| 시장 위치 | 모델 스캐닝, AI 공급망 보안 대표 주자, Palo Alto Prisma 계열로 통합 중 |
+| 최종 확인일 | 2026-05-31 |
 
 ## 어떤 제품인가
 
 Protect AI는 AI 모델과 애플리케이션을 보호하는 **AI 보안 플랫폼**이다. 모델 공급망과 스캐닝이 핵심으로, [OWASP LLM Top 10](/framework/owasp-llm-top-10/)의 LLM03 공급망과 LLM04 데이터, 모델 포이즈닝에 대응한다.
 
-Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로 통합 중이다([Palo Alto Networks](https://www.prnewswire.com/news-releases/palo-alto-networks-completes-acquisition-of-protect-ai-302510757.html)). 인수액은 공개되지 않았다.
+핵심 개념은 **모델 스캐닝**이다. 오픈소스 ML 모델 스캐너 ModelScan은 PyTorch, TensorFlow, ONNX, Keras, Pickle, GGUF, Safetensors 등 **35종 이상 모델 포맷**에서 안전하지 않은 코드와 직렬화 공격을 검사한다. 여기에 모델 보안(Guardian), 확장형 레드티밍(Recon), 런타임 보안(Layer)을 더해 배포 전부터 런타임까지 AI 공급망 전 구간을 다룬다. 오픈소스 자산으로 진입한 뒤 엔터프라이즈로 확장하는 구조가 차별점이다.
+
+> **왜 중요한가.** 공개 모델 허브에서 내려받은 모델은 직렬화 공격이나 백도어를 품을 수 있다. Protect AI는 배포 전 모델 스캐닝을 CI/CD에 넣어 공급망 위험을 차단한다.
 
 | 모듈 | 역할 |
 |---|---|
@@ -35,43 +35,7 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 | LLM Guard | 오픈소스 LLM 입출력 보안(프롬프트, 출력 스캐너). Layer의 기반 |
 | ModelScan | 오픈소스 ML 모델 스캐너. 다중 포맷에서 안전하지 않은 코드 검사 |
 
-## 평가
-
-평가 기준은 [정합성 진단 척도](/evaluation/scoring-rubric/)를 따른다. AI 방어 맥락으로 해석한 절대 평가이며 공개 자료를 근거로 한다.
-
-### A축: 일반 기능 (9.0 / 10)
-
-| ID | 항목 | 점수 | 근거 |
-|---|---|:-:|---|
-| A-1 | 통합 관리 | 2/2 | Guardian, Recon, Layer, ModelScan을 단일 스위트로, Prisma 통합 |
-| A-2 | 가용성 | 2/2 | 플랫폼형, 클라우드와 사내 모델 모두 대상 |
-| A-3 | 성능 | 2/2 | PyTorch, TensorFlow, ONNX, Keras, Pickle, GGUF, Safetensors 등 35+ 모델 포맷 스캔 |
-| A-4 | 운영성 | 1/2 | 오픈소스 ModelScan으로 진입은 쉬우나 한국어 지원 범위는 확인 제한 |
-| A-5 | 비용 투명성 | 2/2 | ModelScan, LLM Guard 등 오픈소스 자산으로 진입 무료, 엔터프라이즈와 분리 |
-
-### B축: 표준 정합성 (7.9 / 10)
-
-| ID | 항목 | 점수 | 근거 |
-|---|---|:-:|---|
-| ZTA-APP-AISEC-01 | 항상 검증 | 2/2 | 배포 전 모든 모델을 스캔하고 검사 |
-| ZTA-APP-AISEC-02 | 최소 권한 | 1/2 | 모델, 도구 권한 관리는 핵심 범위가 아님 |
-| ZTA-APP-AISEC-03 | 침해 가정 | 2/2 | Recon 레드티밍과 악성 코드 모델 스캐닝으로 침해 가정 대응 |
-| ZTA-APP-AISEC-04 | 지속 검증 | 2/2 | Layer 런타임 보안과 지속 스캐닝 |
-| ZTA-APP-AISEC-05 | 컨텍스트 정책 | 1/2 | 런타임 정책은 있으나 가드레일 특화 솔루션보다 제한 |
-| ZTA-APP-AISEC-06 | 전 구간 암호화 | 1/2 | 모델 무결성 검사 중심, 암호화 강제는 영역 밖 |
-| ZTA-APP-AISEC-07 | 가시성 | 2/2 | 모델 인벤토리와 스캐닝으로 AI 자산 가시성 |
-
-원점수 11/14를 10점으로 환산해 **7.9**.
-
-### 종합
-
-| 축 | 점수 |
-|---|---|
-| A. 일반 기능 | 9.0 |
-| B. 표준 정합성 | 7.9 |
-| **종합** | **8.5 (Advanced)** |
-
-### 위협과 통제
+위협별 대응 모듈은 다음과 같다.
 
 | 위협 (공격 기법) | 대응 모듈 |
 |---|---|
@@ -79,6 +43,12 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 | 모델 내 아키텍처 백도어 | Guardian |
 | 공개 모델 허브發 공급망 위험(LLM03) | Guardian, ModelScan |
 | LLM 앱 프롬프트 인젝션, 유해 출력 | Layer, LLM Guard |
+
+## 시장 위치
+
+Protect AI는 모델 스캐닝과 AI 공급망 보안 카테고리의 대표 주자다. Palo Alto Networks가 **2025년 7월 22일 인수를 완료**했고 Prisma 계열로 통합 중이다([Palo Alto Networks](https://www.prnewswire.com/news-releases/palo-alto-networks-completes-acquisition-of-protect-ai-302510757.html)). 인수액은 공개되지 않았다.
+
+경쟁 구도에서 Protect AI는 오픈소스 스캐너를 진입점으로 삼는 모델 공급망 진영의 주자다. 같은 모델 스캐닝과 공급망 영역에서 [HiddenLayer](/solutions/hiddenlayer/)와 경합하고, 런타임 프롬프트 가드레일 특화는 [Lakera](/solutions/lakera/)가 더 깊다. 최근 동향으로 Palo Alto Prisma 통합이 진행 중이다.
 
 ## 강점과 한계
 
@@ -107,7 +77,7 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 - 모델 도입이 적어 공급망 위험이 작은 환경
 - 정가 투명성과 단순 과금을 최우선으로 보는 경우
 
-| 상황 | 권장 |
+| 상황 | 권장 솔루션 |
 |---|---|
 | 모델 공급망, 스캐닝 중심 | Protect AI |
 | 런타임 프롬프트 가드레일 중심 | [Lakera](/solutions/lakera/) |
@@ -129,12 +99,11 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 - [Palo Alto Networks의 Protect AI 인수 완료 (2025-07-22)](https://www.prnewswire.com/news-releases/palo-alto-networks-completes-acquisition-of-protect-ai-302510757.html)
 - [Protect AI 플랫폼](https://protectai.com/)
 - [ModelScan (오픈소스)](https://protectai.com/modelscan)
-
-비교 솔루션: [Lakera](/solutions/lakera/), [Wiz](/solutions/wiz/), [AI 모델 공급망 보안](/ai/model-supply-chain/)
+- 비교 솔루션: [Lakera](/solutions/lakera/), [HiddenLayer](/solutions/hiddenlayer/), [AI 모델 공급망 보안](/ai/model-supply-chain/)
 
 ## 면책
 
-본 평가는 공개 자료를 근거로 한다. 실제 운영 환경의 탐지 정확도와 성능은 다를 수 있다. 절대 평가이지 상대 평가가 아니다.
+본 정리는 공개 자료를 근거로 한다. 제품 사양과 시장 상황은 빠르게 바뀐다. 도입 전 최신 공식 발표를 확인한다.
 
 ---
-최초 발행 2026-05-31, 최종 검토 2026-05-31, 다음 검토 2026-08-31
+최초 발행 2026-05-31, 최종 확인 2026-05-31, 다음 확인 2026-08-31
