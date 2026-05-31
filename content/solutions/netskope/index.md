@@ -23,11 +23,11 @@ ShowToc: true
 
 ## 어떤 제품인가
 
-Netskope One은 클라우드에서 보안을 전달하는 **SSE/SASE 플랫폼**입니다. SWG, CASB, ZTNA, FWaaS를 묶고 SD-WAN, RBI, DLP, DEM까지 통합합니다([출처](https://www.netskope.com/products/secure-access-service-edge)).
+Netskope One은 클라우드에서 보안을 전달하는 **SSE/SASE 플랫폼**이다. SWG, CASB, ZTNA, FWaaS를 묶고 SD-WAN, RBI, DLP, DEM까지 통합한다([출처](https://www.netskope.com/products/secure-access-service-edge)).
 
-기반은 **NewEdge**입니다. Netskope가 데이터센터와 피어링, 라우팅을 직접 소유하고 운영하는 사설 보안 클라우드로, 전 세계 **75개 이상 리전**이 모두 풀 컴퓨트 데이터센터입니다([출처](https://www.sdxcentral.com/news/netskope-unveils-ai-fast-path-to-boost-newedge-cloud-performance-and-security/)). 모든 서비스의 접근 결정을 하나로 통제하는 **Zero Trust Engine**이 단일 정책 두뇌 역할을 하고, Cloud Confidence Index가 **8만 5천 개 이상 앱**의 위험도를 평가해 위험 기반 통제를 적용합니다([출처](https://www.netskope.com/products/security-service-edge)).
+기반은 **NewEdge**다. Netskope가 데이터센터와 피어링, 라우팅을 직접 소유하고 운영하는 사설 보안 클라우드로, 전 세계 **75개 이상 리전**이 모두 풀 컴퓨트 데이터센터다([출처](https://www.sdxcentral.com/news/netskope-unveils-ai-fast-path-to-boost-newedge-cloud-performance-and-security/)). 모든 서비스의 접근 결정을 하나로 통제하는 **Zero Trust Engine**이 단일 정책 두뇌 역할을 하고, Cloud Confidence Index가 **8만 5천 개 이상 앱**의 위험도를 평가해 위험 기반 통제를 적용한다([출처](https://www.netskope.com/products/security-service-edge)).
 
-규모도 근거가 됩니다. 2025년 7월 기준 ARR **7억 700만 달러**, 고객 **4,300곳 이상**, Fortune 100의 **30% 이상**입니다. 2025년 9월 NASDAQ에 상장(NTSK)해 약 9억 800만 달러를 조달했습니다([CNBC](https://www.cnbc.com/2025/09/18/netskope-ipo-stock-nasdaq-ntsk.html)).
+규모도 근거가 된다. 2025년 7월 기준 ARR **7억 700만 달러**, 고객 **4,300곳 이상**, Fortune 100의 **30% 이상**이다. 2025년 9월 NASDAQ에 상장(NTSK)해 약 9억 800만 달러를 조달했다([CNBC](https://www.cnbc.com/2025/09/18/netskope-ipo-stock-nasdaq-ntsk.html)).
 
 | 모듈 | 역할 |
 |---|---|
@@ -40,7 +40,7 @@ Netskope One은 클라우드에서 보안을 전달하는 **SSE/SASE 플랫폼**
 
 ## 평가
 
-평가 기준은 [정합성 진단 척도](/evaluation/scoring-rubric/)를 따릅니다. 절대 평가이며 공개 자료를 근거로 합니다.
+평가 기준은 [정합성 진단 척도](/evaluation/scoring-rubric/)를 따른다. 절대 평가이며 공개 자료를 근거로 한다.
 
 ### A축: 일반 기능 (8.0 / 10)
 
@@ -109,13 +109,13 @@ Netskope One은 클라우드에서 보안을 전달하는 **SSE/SASE 플랫폼**
 
 ## 도입 고려사항
 
-**라이선스.** 모듈별 구독, 공개 정가 없음. 국내 파트너를 통한 도입이 일반적입니다.
+**라이선스.** 모듈별 구독, 공개 정가 없음. 국내 파트너를 통한 도입이 일반적이다.
 
-**데이터 리전.** Netskope는 NewEdge 네트워크에 **서울 데이터센터**를 운영합니다. 한국과 북아시아 사용자에게 낮은 지연과 높은 성능을 제공한다고 밝혔습니다([출처](https://www.netskope.com/press-releases/netskope-launches-newedge-data-center-expanding-coverage-across-north-asia)). 국내 리전이 공개 확인되는 점은 다른 인라인 SASE 대비 장점입니다.
+**데이터 리전.** Netskope는 NewEdge 네트워크에 **서울 데이터센터**를 운영한다. 한국과 북아시아 사용자에게 낮은 지연과 높은 성능을 제공한다고 밝혔다([출처](https://www.netskope.com/press-releases/netskope-launches-newedge-data-center-expanding-coverage-across-north-asia)). 국내 리전이 공개 확인되는 점은 다른 인라인 SASE 대비 장점이다.
 
-**CSAP.** Netskope의 한국 클라우드 보안인증(CSAP) 획득 여부는 공개 자료에서 확인되지 않았습니다. 공공 도입 검토 시 최신 인증 현황을 직접 확인하세요.
+**CSAP.** Netskope의 한국 클라우드 보안인증(CSAP) 획득 여부는 공개 자료에서 확인되지 않는다. 공공 도입 검토 시 최신 인증 현황을 직접 확인한다.
 
-**망분리.** 클라우드 전달 인라인 보안 플랫폼입니다. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 이번 검토에서 국내 적용 사례는 확인하지 못했습니다.
+**망분리.** 클라우드 전달 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 이번 검토에서 국내 적용 사례는 확인하지 못했다.
 
 ## 출처
 
@@ -129,7 +129,7 @@ Netskope One은 클라우드에서 보안을 전달하는 **SSE/SASE 플랫폼**
 
 ## 면책
 
-본 평가는 공개 자료를 근거로 합니다. 실제 운영 환경의 가용성과 성능은 다를 수 있습니다. 절대 평가이지 상대 평가가 아닙니다.
+본 평가는 공개 자료를 근거로 한다. 실제 운영 환경의 가용성과 성능은 다를 수 있다. 절대 평가이지 상대 평가가 아니다.
 
 ---
 최초 발행 2026-05-30, 최종 검토 2026-05-30, 다음 검토 2026-08-30

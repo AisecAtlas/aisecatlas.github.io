@@ -7,13 +7,13 @@ tags: ["AI Security", "LLM Guardrail", "Lakera", "Prompt Injection", "OWASP"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: LLM 게이트웨이는 LLM 호출의 입출력을 실행 중에 검사해 [OWASP LLM Top 10](/ai/defend-ai/)의 Prompt Injection(LLM01)과 부적절한 출력 처리(LLM05)를 막는 계층입니다. 2025년에 상용 도구가 대형 보안 벤더로 빠르게 흡수됐습니다. Lakera는 Check Point로, Prompt Security는 SentinelOne으로 들어갔습니다. 자체 호스팅이 필요하면 오픈소스가 대안입니다.
+> **이 페이지의 결론**: LLM 게이트웨이는 LLM 호출의 입출력을 실행 중에 검사해 [OWASP LLM Top 10](/ai/defend-ai/)의 Prompt Injection(LLM01)과 부적절한 출력 처리(LLM05)를 막는 계층이다. 2025년에 상용 도구가 대형 보안 벤더로 빠르게 흡수됐다. Lakera는 Check Point로, Prompt Security는 SentinelOne으로 들어갔다. 자체 호스팅이 필요하면 오픈소스가 대안이다.
 
 ## 무엇을 하는 계층인가
 
-LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 사이에 위치합니다. 사용자 입력과 모델 출력을 양방향으로 검사해 위험을 차단합니다. [AI를 지키는 일](/ai/defend-ai/)에서 정리한 4개 방어 카테고리 중 첫 번째인 게이트웨이를 깊이 비교합니다.
+LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 사이에 위치한다. 사용자 입력과 모델 출력을 양방향으로 검사해 위험을 차단한다. [AI를 지키는 일](/ai/defend-ai/)의 4개 방어 카테고리 중 첫 번째인 게이트웨이를 깊이 비교한다.
 
-전통적 정규표현식과 시그니처로는 자연어 공격을 막을 수 없습니다. 게이트웨이는 분류 모델로 입출력의 의도를 평가합니다.
+전통적 정규표현식과 시그니처로는 자연어 공격을 막을 수 없다. 게이트웨이는 분류 모델로 입출력의 의도를 평가한다.
 
 ## OWASP LLM Top 10과의 매핑
 
@@ -43,11 +43,11 @@ LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 
 
 ### Lakera Guard
 
-분류기 API 방식입니다. 단일 REST 호출로 카테고리별 분류 결과를 반환합니다. **98% 이상의 prompt injection 탐지율, sub-50ms 지연, 100개 이상 언어**를 표방합니다([Lakera Guard](https://www.lakera.ai/lakera-guard)). 호출당 과금이라 트래픽이 늘면 비용도 비례합니다. 2025년 Check Point가 **3억 달러** 규모로 인수했고, Lakera는 Check Point의 AI 보안 거점(Global Center of Excellence for AI Security)의 토대가 됩니다([Check Point 보도자료](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/)).
+분류기 API 방식이다. 단일 REST 호출로 카테고리별 분류 결과를 반환한다. **98% 이상의 prompt injection 탐지율, sub-50ms 지연, 100개 이상 언어**를 표방한다([Lakera Guard](https://www.lakera.ai/lakera-guard)). 호출당 과금이라 트래픽이 늘면 비용도 비례한다. 2025년 Check Point가 **3억 달러** 규모로 인수했고, Lakera는 Check Point의 AI 보안 거점(Global Center of Excellence for AI Security)의 토대가 된다([Check Point 보도자료](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/)).
 
 ### Prompt Security
 
-엔터프라이즈 LLM 사용 가시성과 정책 적용에 강점이 있는 관리형 런타임 가드레일입니다. 2025년 5월 SentinelOne에 인수되어 Singularity 플랫폼에 통합됐습니다. SentinelOne으로 엔드포인트를 표준화한 조직이 같은 스택에서 AI 가드레일을 쓰려 할 때 적합합니다([appsecsanta Lakera 대안](https://appsecsanta.com/ai-security-tools/lakera-alternatives)).
+엔터프라이즈 LLM 사용 가시성과 정책 적용에 강점이 있는 관리형 런타임 가드레일이다. 2025년 5월 SentinelOne에 인수되어 Singularity 플랫폼에 통합됐다. SentinelOne으로 엔드포인트를 표준화한 조직이 같은 스택에서 AI 가드레일을 쓰려 할 때 적합하다([appsecsanta Lakera 대안](https://appsecsanta.com/ai-security-tools/lakera-alternatives)).
 
 ### 오픈소스 가드레일
 
@@ -57,7 +57,7 @@ LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 
 | Guardrails AI | LLM이 폼, API 페이로드 같은 구조화 데이터를 반환해야 할 때 |
 | LLM Guard | 실사용자 대상 프로덕션 앱에 기본 커버리지가 필요할 때 |
 
-NeMo Guardrails는 가장 아키텍처가 완성된 오픈소스 프레임워크지만, NVIDIA가 README에서 기본 설정 그대로는 프로덕션에 권장하지 않는다고 명시합니다. 추가 하드닝이 필요합니다([is4.ai 비교](https://is4.ai/blog/our-blog-1/guardrails-ai-vs-nemo-guardrails-comparison-2026-352)). prompt injection이 특정 위협이면 Vigil이나 Rebuff를 위에 얹는 패턴이 쓰입니다.
+NeMo Guardrails는 가장 아키텍처가 완성된 오픈소스 프레임워크지만, NVIDIA가 README에서 기본 설정 그대로는 프로덕션에 권장하지 않는다고 명시한다. 추가 하드닝이 필요하다([is4.ai 비교](https://is4.ai/blog/our-blog-1/guardrails-ai-vs-nemo-guardrails-comparison-2026-352)). prompt injection이 특정 위협이면 Vigil이나 Rebuff를 위에 얹는 패턴이 쓰인다.
 
 ## 상용과 오픈소스 선택
 
@@ -89,13 +89,13 @@ NeMo Guardrails는 가장 아키텍처가 완성된 오픈소스 프레임워크
 
 ## 도입 고려사항
 
-**개인정보 마스킹.** Prompt에 PII가 섞이는 흐름은 개인정보보호법 위반 소지가 있습니다. 게이트웨이의 입출력 PII 마스킹 기능이 핵심입니다.
+**개인정보 마스킹.** Prompt에 PII가 섞이는 흐름은 개인정보보호법 위반 소지가 있다. 게이트웨이의 입출력 PII 마스킹 기능이 핵심이다.
 
-**망분리와 자체 호스팅.** 외부 API 호출이 불가능한 [망분리, N²SF](/korea/regulation/n2sf-mangbunri/) 환경은 자체 호스팅 가능한 도구만 후보입니다. 오픈소스 가드레일과 사내 정책 엔진의 결합이 현실적입니다.
+**망분리와 자체 호스팅.** 외부 API 호출이 불가능한 [망분리, N²SF](/korea/regulation/n2sf-mangbunri/) 환경은 자체 호스팅 가능한 도구만 후보다. 오픈소스 가드레일과 사내 정책 엔진의 결합이 현실적이다.
 
-**공공 부문.** SaaS형 게이트웨이는 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인해야 합니다.
+**공공 부문.** SaaS형 게이트웨이는 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인한다.
 
-**한국어 탐지 검증.** 다국어 표방과 실제 한국어 탐지 정확도는 다를 수 있습니다. PoC에서 자체 데이터로 검증하세요.
+**한국어 탐지 검증.** 다국어 표방과 실제 한국어 탐지 정확도는 다를 수 있다. PoC에서 자체 데이터로 검증한다.
 
 ## 출처
 
@@ -109,7 +109,7 @@ NeMo Guardrails는 가장 아키텍처가 완성된 오픈소스 프레임워크
 
 ## 면책
 
-본 평가는 공개 자료를 근거로 합니다. 인수합병과 제품 통합이 빠른 영역입니다. 탐지율과 지연 수치는 벤더 표방값이며 환경에 따라 다릅니다. 도입 전에 PoC로 검증하세요.
+본 평가는 공개 자료를 근거로 한다. 시장 변동이 빠른 영역이다. 탐지율과 지연 수치는 벤더 표방값이며 환경에 따라 다르다. 도입 전에 최신 공식 발표를 확인한다.
 
 ---
 최초 발행 2026-05-30, 최종 검토 2026-05-30, 다음 검토 2026-06-30
