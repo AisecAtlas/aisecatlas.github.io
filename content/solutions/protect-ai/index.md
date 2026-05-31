@@ -32,6 +32,7 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 | Guardian | AI 모델 보안. 모델 검사와 차단 |
 | Recon | AI용 확장형 레드티밍 |
 | Layer | 런타임 보안 |
+| LLM Guard | 오픈소스 LLM 입출력 보안(프롬프트, 출력 스캐너). Layer의 기반 |
 | ModelScan | 오픈소스 ML 모델 스캐너. 다중 포맷에서 안전하지 않은 코드 검사 |
 
 ## 평가
@@ -44,9 +45,9 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 |---|---|:-:|---|
 | A-1 | 통합 관리 | 2/2 | Guardian, Recon, Layer, ModelScan을 단일 스위트로, Prisma 통합 |
 | A-2 | 가용성 | 2/2 | 플랫폼형, 클라우드와 사내 모델 모두 대상 |
-| A-3 | 성능 | 2/2 | 다중 포맷 모델 스캐닝을 대규모로 수행 |
+| A-3 | 성능 | 2/2 | PyTorch, TensorFlow, ONNX, Keras, Pickle, GGUF, Safetensors 등 35+ 모델 포맷 스캔 |
 | A-4 | 운영성 | 1/2 | 오픈소스 ModelScan으로 진입은 쉬우나 한국어 지원 범위는 확인 제한 |
-| A-5 | 비용 투명성 | 2/2 | ModelScan이 무료 오픈소스, 엔터프라이즈와 분리 |
+| A-5 | 비용 투명성 | 2/2 | ModelScan, LLM Guard 등 오픈소스 자산으로 진입 무료, 엔터프라이즈와 분리 |
 
 ### B축: 표준 정합성 (7.9 / 10)
 
@@ -70,10 +71,19 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 | B. 표준 정합성 | 7.9 |
 | **종합** | **8.5 (Advanced)** |
 
+### 위협과 통제
+
+| 위협 (공격 기법) | 대응 모듈 |
+|---|---|
+| 모델 직렬화 공격(Pickle, PyTorch deserialization) | ModelScan, Guardian |
+| 모델 내 아키텍처 백도어 | Guardian |
+| 공개 모델 허브發 공급망 위험(LLM03) | Guardian, ModelScan |
+| LLM 앱 프롬프트 인젝션, 유해 출력 | Layer, LLM Guard |
+
 ## 강점과 한계
 
 **강점**
-- 오픈소스 ModelScan으로 진입 장벽이 낮고 비용 투명성이 높음
+- 오픈소스 ModelScan, LLM Guard로 진입 장벽이 낮고 비용 투명성이 높음
 - 모델 보안(Guardian), 레드티밍(Recon), 런타임(Layer)을 한 스위트로
 - 모델 공급망과 포이즈닝(LLM03, LLM04) 대응에 강점
 - Palo Alto Prisma 통합으로 기존 플랫폼과 연계
@@ -101,6 +111,7 @@ Palo Alto Networks가 2025년 7월 22일 인수를 완료했고 Prisma 계열로
 |---|---|
 | 모델 공급망, 스캐닝 중심 | Protect AI |
 | 런타임 프롬프트 가드레일 중심 | [Lakera](/solutions/lakera/) |
+| 모델 스캐닝, 공급망 경쟁 비교 | [HiddenLayer](/solutions/hiddenlayer/) |
 | 모델 공급망 카테고리 비교 | [AI 모델 공급망 보안](/ai/model-supply-chain/) |
 
 ## 도입 고려사항

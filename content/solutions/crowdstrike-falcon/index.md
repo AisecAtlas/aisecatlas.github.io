@@ -17,7 +17,7 @@ ShowToc: true
 | 카테고리 | EDR, XDR, 통합 보안 플랫폼 |
 | 본사 | 미국 텍사스 오스틴 (NASDAQ: CRWD) |
 | 차별점 | 단일 경량 에이전트 위에 모듈을 더해 확장 |
-| 성숙도 | Optimal (Devices), Advanced (Identity, Workloads) |
+| 성숙도 | Advanced (8.9) |
 | 종합 점수 | 8.9 / 10 |
 | 최종 검토 | 2026-05-30 |
 
@@ -33,8 +33,9 @@ CrowdStrike는 클라우드 네이티브 EDR 시장의 리더다.
 |---|---|
 | Falcon Prevent | 차세대 백신 (NGAV) |
 | Falcon Insight | EDR |
-| Falcon OverWatch | 24/7 위협 헌팅 (MDR) |
-| Falcon X | 위협 인텔리전스 |
+| Falcon OverWatch | 24/7 관리형 위협 헌팅 |
+| Falcon Complete | 관리형 탐지, 대응 (MDR) |
+| Falcon Adversary Intelligence | 위협 인텔리전스 (구 Falcon X) |
 | Falcon Discover | 자산과 앱 인벤토리 |
 | Falcon Spotlight | 취약점 관리 |
 | Falcon Identity Protection | ITDR |
@@ -75,7 +76,7 @@ CrowdStrike는 클라우드 네이티브 EDR 시장의 리더다.
 |---|---|
 | A. 일반 기능 | 8.5 |
 | B. 표준 정합성 | 9.3 |
-| **종합** | **8.9 (Devices에서 Optimal)** |
+| **종합** | **8.9 (Advanced)** |
 
 ### CISA ZTMM Devices Function 매핑
 
@@ -124,7 +125,7 @@ CrowdStrike는 클라우드 네이티브 EDR 시장의 리더다.
 ## 강점
 
 - 단일 경량 에이전트로 모듈을 더해갈 수 있음
-- OverWatch MDR의 위협 헌팅 수준이 높음
+- OverWatch 관리형 위협 헌팅 수준이 높음 (MDR은 Falcon Complete)
 - LogScale과 NG-SIEM의 데이터 통합
 - Identity Protection으로 ITDR까지 확장
 - 글로벌 위협 인텔리전스 네트워크
