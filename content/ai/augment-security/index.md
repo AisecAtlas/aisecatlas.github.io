@@ -35,6 +35,8 @@ ShowToc: true
 
 ## 시장 주도 솔루션
 
+③ AI로 보안을 강화하는 벤더는 [벤더 프로필](/ai/vendors/)에서 ③로 분리해 정리하고, 전체 위치는 [AI 보안 지도](/ai/map/)에서 봅니다. 대표로 [CrowdStrike](/ai/vendors/crowdstrike/), [Microsoft](/ai/vendors/microsoft/), [SentinelOne](/ai/vendors/sentinelone/)가 있습니다.
+
 ### Microsoft Security Copilot
 
 | 항목 | 내용 |

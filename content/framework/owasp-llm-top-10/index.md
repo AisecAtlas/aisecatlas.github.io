@@ -1,8 +1,8 @@
 ---
 title: "OWASP Top 10 for LLM Applications 2025"
-description: "LLM 애플리케이션 보안 위험 10대 분류 (v2.0) 한국어 요약"
+description: "LLM을 쓰는 애플리케이션이 받는 10가지 공격. v2.0(2025) 10개 항목을 영문 원제와 함께 빠짐없이 한국어로 푼다."
 date: 2026-05-31
-lastmod: 2026-05-31
+lastmod: 2026-06-07
 tags: ["OWASP", "LLM 보안", "표준"]
 categories: ["framework"]
 ShowToc: true
@@ -10,74 +10,79 @@ ShowToc: true
 
 > 원문: [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/)
 >
-> 이 페이지는 원문을 한국어로 요약한 것입니다. 권위 있는 해석이 필요하면 원문을 봅니다.
+> 한국어 풀이입니다. 번역이 의미를 비트는 항목은 그 자리에서 짚지만, 권위 있는 해석이 필요하면 원문을 봅니다.
 
-## 한 줄 요약
+LLM을 쓰는 애플리케이션이 실제로 받는 공격을 10가지로 추린 목록입니다. 대상은 모델 연구가 아니라 **모델을 부르는 앱**입니다. 챗봇, RAG, 코파일럿, 에이전트를 만드는 개발자와 운영자가 무엇을 먼저 막아야 하는지 보여줍니다.
 
-OWASP GenAI Security Project가 정리한 **LLM 애플리케이션의 10대 보안 위험**입니다. 2025년 v2.0에서 RAG와 에이전트 확산을 반영해 항목을 개정했습니다.
+## 무엇을 대상으로 하나
 
-## 어떤 문서인가
+대상은 **LLM을 통합한 애플리케이션**입니다. 모델 자체의 학습 알고리즘이나 조직 거버넌스가 아니라, LLM을 호출해 동작하는 앱의 입력, 출력, 데이터, 권한, 자원입니다.
 
-| 항목 | 내용 |
-|---|---|
-| 발표 기관 | OWASP GenAI Security Project |
-| 발표 시점 | 2025 (v2.0), 최초 2023 (v1) |
-| 대상 | LLM을 쓰는 애플리케이션의 설계, 개발, 운영 |
-| 구조 | 위험 10개(LLM01~LLM10), 각 설명과 완화책 |
+- 포함: 프롬프트와 응답 처리, RAG의 검색과 임베딩, 플러그인과 도구 호출, 시스템 프롬프트, 추론 비용
+- 제외: 모델 가중치 자체의 학술적 견고성, 조직의 AI 경영시스템(그쪽은 ISO 42001, NIST AI RMF)
 
-## 10대 위험
+## 어떻게 10개로 나눴나
 
-| ID | 위험 | 핵심 |
+100명 이상의 전문가가 **실제 발생 빈도와 영향**을 근거로 10가지를 골랐습니다. 번호(LLM01~LLM10)는 식별자이고 엄격한 순위는 아니지만, LLM01 프롬프트 인젝션이 가장 흔하고 중대한 위협으로 꼽힙니다. 분류 축은 공격이 **어디를 노리는가**입니다. 입력(LLM01), 출력(LLM05), 데이터와 공급망(LLM03, LLM04, LLM08), 권한과 행동(LLM06), 노출(LLM02, LLM07), 신뢰성(LLM09), 자원(LLM10)으로 흩어집니다.
+
+## 전체 구성
+
+10개 항목 전부입니다. 영문 원제를 함께 둔 이유는 한국어 번역만으로는 의미가 좁아지기 때문입니다.
+
+| 코드 | 항목 (영문 원제) | 무엇을 노리나 |
 |---|---|---|
-| LLM01 | Prompt Injection | 입력으로 모델 지시를 변조 |
-| LLM02 | Sensitive Information Disclosure | 학습 데이터나 컨텍스트의 민감 정보 노출 |
-| LLM03 | Supply Chain | 모델, 데이터셋, 플러그인 공급망 취약점 |
-| LLM04 | Data and Model Poisoning | 학습, 미세조정 데이터와 모델 오염 |
-| LLM05 | Improper Output Handling | 모델 출력을 검증 없이 신뢰해 2차 공격 유발 |
-| LLM06 | Excessive Agency | 과도한 권한, 도구, 자율성 부여 |
-| LLM07 | System Prompt Leakage | 시스템 프롬프트의 비밀이 유출 |
-| LLM08 | Vector and Embedding Weaknesses | RAG의 벡터, 임베딩 주입과 오염 |
-| LLM09 | Misinformation | 환각과 잘못된 정보의 과신 |
-| LLM10 | Unbounded Consumption | 무제한 호출로 비용과 가용성 침해 |
+| LLM01 | 프롬프트 인젝션 (Prompt Injection) | 직접 또는 간접 입력으로 모델의 의도를 탈취 |
+| LLM02 | 민감정보 노출 (Sensitive Information Disclosure) | 학습 데이터, 시스템 프롬프트, 사용자 데이터 누출 |
+| LLM03 | 공급망 (Supply Chain) | 외부 모델, 데이터셋, 플러그인 의존성 침해 |
+| LLM04 | 데이터와 모델 오염 (Data and Model Poisoning) | 학습, 파인튜닝, 임베딩 데이터를 오염해 백도어나 편향 주입 |
+| LLM05 | 부적절한 출력 처리 (Improper Output Handling) | 검증 없이 전달된 LLM 출력이 후속 시스템을 공격 |
+| LLM06 | 과도한 권한 (Excessive Agency) | 필요 이상의 기능, 권한, 자율성으로 의도치 않은 행동 |
+| LLM07 | 시스템 프롬프트 유출 (System Prompt Leakage) | 시스템 프롬프트의 지시와 비밀이 사용자에게 노출 |
+| LLM08 | 벡터와 임베딩 약점 (Vector and Embedding Weaknesses) | RAG의 검색과 임베딩 단계를 노린 누출과 오염 |
+| LLM09 | 잘못된 정보 (Misinformation) | 환각 등으로 틀린 정보를 신뢰성 있게 생성하고 전파 |
+| LLM10 | 무제한 소비 (Unbounded Consumption) | 무제한 추론 요청으로 비용과 자원을 고갈하거나 모델을 추출 |
+
+## 항목별 풀이
+
+**LLM01 프롬프트 인젝션.** 공격자가 입력으로 모델의 행동을 바꿔 시스템 프롬프트나 가드레일을 우회합니다. 사용자가 직접 넣는 직접(direct) 방식과, 모델이 읽는 웹페이지나 문서에 명령을 숨기는 간접(indirect) 방식이 있습니다. 간접이 에이전트 시대의 핵심 공격면입니다.
+
+**LLM02 민감정보 노출.** 모델이 학습 데이터의 개인정보, 시스템 프롬프트, 다른 사용자의 입력을 응답으로 흘립니다.
+
+**LLM03 공급망.** 외부에서 받은 모델, 데이터셋, 어댑터, 플러그인이 침해됐을 때 그 위험이 앱으로 들어옵니다. 모델 레지스트리와 오픈소스 모델의 출처가 약점입니다.
+
+**LLM04 데이터와 모델 오염.** 학습이나 파인튜닝, 임베딩 단계에서 데이터를 오염해 백도어나 편향을 심습니다. 특정 트리거에만 반응하는 백도어가 대표적입니다.
+
+**LLM05 부적절한 출력 처리.** LLM의 출력을 검증 없이 브라우저, 데이터베이스, 셸로 넘기면 XSS, SQL 인젝션, 원격 코드 실행으로 이어집니다. 모델을 신뢰 경계로 다뤄 출력을 항상 검증해야 합니다.
+
+**LLM06 과도한 권한.** Excessive Agency는 "과도한 대리권"으로 옮기지만, 에이전트에게 필요 이상의 도구, 권한, 자율성을 준 상태를 뜻합니다. 사람의 대리가 아니라 시스템 권한 범위의 문제입니다. 최소 권한으로 도구와 행동을 제한해야 합니다.
+
+**LLM07 시스템 프롬프트 유출.** 시스템 프롬프트에 담은 지시나 자격 정보가 사용자에게 드러납니다. 근본 대책은 누출을 막는 것이 아니라 시스템 프롬프트에 비밀을 두지 않는 것입니다.
+
+**LLM08 벡터와 임베딩 약점.** RAG에서 외부 문서를 임베딩해 검색할 때, 임베딩 역전으로 원문을 복원하거나 악성 문서로 검색 결과를 오염합니다. 다중 테넌트 환경의 데이터 격리가 핵심입니다.
+
+**LLM09 잘못된 정보.** Misinformation은 환각을 포함해 모델이 틀린 정보를 그럴듯하게 만들어 내고, 사용자가 그것을 과신할 때 피해가 됩니다. 출력 검증과 근거 제시로 줄입니다.
+
+**LLM10 무제한 소비.** 추론 요청에 제한이 없으면 비용과 자원이 고갈됩니다(Denial of Wallet). 반복 질의로 모델 동작을 복제하는 모델 추출도 여기 포함됩니다.
 
 ## 2023에서 2025로 무엇이 바뀌었나
 
-| 변화 | 내용 |
-|---|---|
-| 신규 | System Prompt Leakage, Vector and Embedding Weaknesses 추가. RAG, 임베딩이 핵심 관행이 되며 고유 위협이 부각([IronCore Labs](https://ironcorelabs.com/blog/2025/owasp-llm-top10-2025-update/)) |
-| 범위 확장 | Training Data Poisoning → Data and Model Poisoning, Model Denial of Service → Unbounded Consumption, Overreliance → Misinformation([Lasso](https://www.lasso.security/blog/owasp-top-10-for-llm-applications-generative-ai-key-updates-for-2025)) |
-| 통합 | Insecure Plugin Design은 Excessive Agency로 흡수, Model Theft는 Supply Chain 등으로 재배치 |
+v2.0(2025)은 RAG와 에이전트 확산을 반영했습니다.
 
-## 유사 표준과의 관계
+- 신규: LLM07 시스템 프롬프트 유출, LLM08 벡터와 임베딩 약점
+- 확장: LLM10 무제한 소비 — 기존 Model Denial of Service를 비용 고갈과 모델 추출까지 넓힘
+- 이름 변경: Insecure Output Handling → Improper Output Handling, Training Data Poisoning → Data and Model Poisoning, Overreliance → Misinformation
+- 흡수: Insecure Plugin Design은 별도 항목에서 빠지고 공급망과 과도한 권한으로 나뉘어 들어감
 
-| 표준 | 답하는 질문 | 본 사이트에서의 위치 |
-|---|---|---|
-| OWASP LLM Top 10 | 단일 호출, RAG 앱의 위험은 무엇인가 | 본 페이지 |
-| OWASP Agentic Top 10 (2026) | 자율 에이전트의 위험은 무엇인가 | [Agentic AI 보안](/ai/agentic-security/) |
-| MITRE ATLAS | AI 시스템 공격 전술과 기법은 무엇인가 | [AI 동향](/ai/) |
-| NIST AI RMF | AI 위험을 어떻게 거버넌스하나 | 표준 요약 예정 |
+## 다른 표준과 우리 사이트에서
 
-## 규제 적용
-
-**개인정보보호법.** LLM02(민감 정보 노출)와 LLM04(데이터 포이즈닝)는 PII 처리와 직결됩니다. 입출력 마스킹과 학습 데이터 출처 통제를 함께 봅니다.
-
-**RAG 도입.** 사내 문서를 RAG로 붙이는 사례가 늘면서 LLM08(벡터, 임베딩 취약점)의 적용 범위가 커집니다.
-
-**망분리.** 외부 LLM API를 직접 호출할 수 없는 환경은 사내 LLM과 자체 가드레일에서 같은 10대 위험을 점검합니다.
-
-## 본 사이트는 이 표준을 어떻게 사용하나
-
-- [AI를 지키는 일](/ai/defend-ai/)과 [LLM 게이트웨이 비교](/ai/llm-gateway/)의 위협 모델 기준
-- 런타임 가드레일, AI 레드티밍 솔루션의 커버리지 매핑 축
-- LLM 도입 보안 점검의 출발 체크리스트
+- MITRE ATLAS와의 관계: ATLAS는 공격자의 전술과 기법을 담은 지식 베이스이고, LLM Top 10은 앱이 받는 위험의 분류입니다. LLM01은 ATLAS의 프롬프트 인젝션 기법에 대응합니다. [MITRE ATLAS](/framework/mitre-atlas/) 참고.
+- 에이전트는 별도 목록인 OWASP Agentic Top 10이 다룹니다. [Agentic AI 보안과 MCP](/ai/agentic-security/) 참고.
+- LLM Top 10은 [AI를 지키는 일](/ai/defend-ai/)과 [LLM 게이트웨이](/ai/llm-gateway/)의 솔루션이 각 항목을 어떻게 막는지의 기준입니다.
 
 ## 출처
 
-- [OWASP Top 10 for LLM Applications 2025 (genai.owasp.org)](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/)
-- [OWASP 프로젝트 페이지 (OWASP Foundation)](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [OWASP Top 10 for LLMs 2025 공식 PDF](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf)
-- [2025 변화 분석 (IronCore Labs)](https://ironcorelabs.com/blog/2025/owasp-llm-top10-2025-update/)
-- [2023에서 2025 변화 (Lasso Security)](https://www.lasso.security/blog/owasp-top-10-for-llm-applications-generative-ai-key-updates-for-2025)
+- [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/)
+- [OWASP GenAI Security Project](https://genai.owasp.org/llm-top-10/)
 
 ---
-최초 발행 2026-05-31, 최종 검토 2026-05-31, 다음 검토 2026-08-31
+최초 발행 2026-05-31, 최종 확인 2026-06-07, 다음 검토 2026-09-07

@@ -68,6 +68,8 @@ ShowToc: true
 
 ## 시장 카테고리
 
+이 영역 벤더의 ZTA 아키텍처와 보호 대상 비교는 [벤더 프로필](/ai/vendors/)과 [AI 보안 지도](/ai/map/)에 있습니다. 대표로 [Palo Alto](/ai/vendors/palo-alto/), [Check Point](/ai/vendors/check-point/), [HiddenLayer](/ai/vendors/hiddenlayer/), [Mindgard](/ai/vendors/mindgard/)가 있습니다.
+
 2026년 현재 AI 방어 도구는 네 가지 카테고리로 나뉩니다.
 
 ### 1. AI 게이트웨이 / Runtime 가드레일
