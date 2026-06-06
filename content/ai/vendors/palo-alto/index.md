@@ -80,9 +80,9 @@ NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체
 <div class="zta-vconn" data-label="정책 질의와 결정"></div>
 <div class="zta-plane">
 <div class="zta-node zta-subject"><div class="zta-node-role">주체 — 신원 확인</div><b>직원 / 엔드포인트</b><span>IdP와 SSO 신원, 기기 신뢰, 사용자 그룹</span></div>
-<div class="zta-harrow" data-label="① 프롬프트 요청 (미신뢰)"></div>
+<div class="zta-harrow" data-label="① 요청"></div>
 <div class="zta-node zta-pep is-pep"><div class="zta-node-role">통제 지점 (PEP)</div><b>Prisma Access PoP / NGFW</b><span>App-ID 앱 식별, TLS 복호화, Enterprise DLP와 300개 분류기 검사, 차단</span></div>
-<div class="zta-harrow" data-label="② 허용 시 전달"></div>
+<div class="zta-harrow" data-label="② 전달"></div>
 <div class="zta-node zta-resource"><div class="zta-node-role">통제 대상 (자원)</div><b>외부 GenAI 앱</b><span>ChatGPT, Gemini, Copilot. 보호 대상은 반출되는 데이터</span></div>
 </div>
 <div class="zta-vconn up" data-label="신호 공급"></div>
@@ -90,7 +90,7 @@ NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체
 <div class="zta-band-label">상호작용 시스템</div>
 <div class="zta-chips"><span class="zta-chip">IdP / 사용자 신원</span><span class="zta-chip">Enterprise DLP</span><span class="zta-chip">Precision AI 위협 인텔</span><span class="zta-chip">Strata Logging (SIEM)</span></div>
 </div>
-<div class="zta-legend"><span class="dot"></span> 강조 = 통제 지점(PEP). 주체는 신원 확인을 거쳐야 자원에 닿고, PEP는 PDP의 결정에 따라 인라인 차단한다.</div>
+<div class="zta-legend"><span class="dot"></span> ① 주체가 미신뢰 상태로 PEP에 요청하고, ② PEP가 검사 후 허용 시 자원에 전달합니다. 강조한 통제 지점(PEP)이 PDP의 결정에 따라 인라인 차단합니다.</div>
 </div>
 
 <div class="zta">
@@ -105,9 +105,9 @@ NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체
 <div class="zta-vconn" data-label="정책 질의와 결정"></div>
 <div class="zta-plane">
 <div class="zta-node zta-subject"><div class="zta-node-role">주체 — 신원 확인</div><b>사용자 / AI 에이전트</b><span>에이전트와 워크로드 신원(NHI), 도구 권한</span></div>
-<div class="zta-harrow" data-label="① 프롬프트 또는 도구 호출"></div>
+<div class="zta-harrow" data-label="① 호출"></div>
 <div class="zta-node zta-pep is-pep"><div class="zta-node-role">통제 지점 (PEP)</div><b>런타임 인터셉트</b><span>API Intercept(Scan API) 또는 Network Intercept(인라인 방화벽)가 프롬프트와 응답 검사</span></div>
-<div class="zta-harrow" data-label="② 검사 후 전달"></div>
+<div class="zta-harrow" data-label="② 전달"></div>
 <div class="zta-node zta-resource"><div class="zta-node-role">통제 대상 (자원)</div><b>사내 LLM / 모델 / 에이전트</b><span>model-agnostic. 보호 대상은 모델과 데이터</span></div>
 </div>
 <div class="zta-vconn up" data-label="신뢰 신호 공급"></div>
@@ -115,7 +115,7 @@ NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체
 <div class="zta-band-label">상호작용 시스템 (신뢰 공급)</div>
 <div class="zta-chips"><span class="zta-chip">AI-SPM 태세 (CDM 역할)</span><span class="zta-chip">AI Model Security 모델 스캔 (Protect AI)</span><span class="zta-chip">AI Red Teaming</span><span class="zta-chip">활동 로그</span></div>
 </div>
-<div class="zta-legend"><span class="dot"></span> 런타임 인터셉트가 PEP. 배포 전 모델 스캔과 지속 태세(AI-SPM)가 PDP에 신뢰 신호를 공급한다(NIST 800-207의 CDM과 위협 인텔 입력에 대응).</div>
+<div class="zta-legend"><span class="dot"></span> ① 주체가 모델을 호출하면 ② 런타임 인터셉트(PEP)가 검사 후 전달합니다. 배포 전 모델 스캔과 지속 태세(AI-SPM)가 PDP에 신뢰 신호를 공급합니다(NIST 800-207의 CDM과 위협 인텔 입력에 대응).</div>
 </div>
 
 ## 강점과 한계

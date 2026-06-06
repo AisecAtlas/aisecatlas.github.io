@@ -529,9 +529,11 @@
 }
 .zta-harrow::after {
   content: attr(data-label);
-  font-size: 9.5px; color: var(--secondary);
-  text-align: center; white-space: normal;
-  max-width: 90px; line-height: 1.35;
+  font-size: 10px; font-weight: 600; color: var(--accent);
+  text-align: center; white-space: nowrap;
+  max-width: 92px; line-height: 1.2; word-break: keep-all;
+  border: 1px solid var(--accent-glow); border-radius: 9px;
+  padding: 1px 7px; background: rgba(255,255,255,0.04);
 }
 
 /* 상호작용 시스템 */
