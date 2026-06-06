@@ -25,6 +25,18 @@ ShowToc: false
 <div class="card-cta">리뷰 보기</div>
 </a>
 
+<a href="/solutions/harmonic-security/" class="card">
+<div class="card-title">Harmonic Security</div>
+<div class="card-desc">브라우저 기반 Shadow AI 발견과 GenAI 데이터 유출 방지. DOM 캡처로 TLS, 핀닝과 무관하게 프롬프트 내용 가시화.</div>
+<div class="card-cta">리뷰 보기</div>
+</a>
+
+<a href="/solutions/witnessai/" class="card">
+<div class="card-title">WitnessAI</div>
+<div class="card-desc">단말 설치 없는 에이전트리스 네트워크 인라인 AI 거버넌스. 사람과 에이전트 AI 상호작용 가시화, 의도 분류.</div>
+<div class="card-cta">리뷰 보기</div>
+</a>
+
 </div>
 
 ## 5개 Function
@@ -56,6 +68,9 @@ CISA ZTMM v2 Data 영역의 Function이다.
 | DLP | 데이터 유출 방지 | Microsoft Purview, Forcepoint, Trellix DLP |
 | 분류와 라벨링 | 민감도 라벨 부여 | Microsoft Purview, Titus, Boldon James |
 | 암호화와 키 관리 | 암호화와 키 수명주기 | HashiCorp Vault, AWS KMS, Thales |
+| AI 사용 가시화 / Shadow AI | 직원 GenAI 사용 발견과 데이터 보호 | [Harmonic Security](/solutions/harmonic-security/), [WitnessAI](/solutions/witnessai/), Nightfall, Cyberhaven |
+
+직원 AI 사용 가시화의 캡처 메커니즘과 솔루션 지형은 [AI 사용 가시화](/ai/ai-usage-visibility/)가 정리한다.
 
 ## 시장 동향 (2025-2026)
 

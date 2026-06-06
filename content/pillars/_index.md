@@ -79,3 +79,5 @@ ShowToc: false
 | Applications | [Wiz](/solutions/wiz/) | CNAPP, 클라우드 보안 |
 | Data | [Varonis](/solutions/varonis/) | 데이터 거버넌스, DSPM |
 | Data | [Rubrik](/solutions/rubrik/) | 데이터 보안, 복원력 |
+| Data | [Harmonic Security](/solutions/harmonic-security/) | Shadow AI 발견, GenAI DLP |
+| Data | [WitnessAI](/solutions/witnessai/) | AI 사용 가시화, 거버넌스 |

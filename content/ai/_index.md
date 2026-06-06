@@ -1,65 +1,109 @@
 ---
-title: "AI 동향"
-description: "AI를 지키는 일과 AI로 보안을 강화하는 일. 2026년 시장 동향과 핵심 표준."
+title: "AI 보안"
+description: "AI를 지키는 일, 직원 AI 사용을 가시화하는 일, AI로 보안을 강화하는 일. 세 축으로 정리한 2026년 AI 보안."
 ShowToc: false
 ---
 
-> **AI 보안은 두 축으로 나뉜다.** 보안 조직은 AI를 지키는 일과 AI로 보안을 강화하는 일을 동시에 마주한다. 두 축은 시장도 표준도 따로 움직인다.
+> **AI 보안은 세 축이다.** ① 사내 LLM과 에이전트를 **지키고**, ② 직원이 쓰는 AI를 **가시화하고 통제**하고, ③ AI로 SOC 운영을 **강화**한다. 세 축은 위협도 시장도 따로 움직인다.
+
+## ① AI를 지키는 일
+
+사내에 도입한 LLM 앱과 AI 에이전트를 공격으로부터 보호한다. 공격면이 자연어라 시그니처로 막을 수 없다. 기준은 OWASP LLM Top 10과 Agentic Top 10.
 
 <div class="card-grid">
 
 <a href="defend-ai/" class="card">
-<div class="card-title">AI를 지키는 일</div>
-<div class="card-desc">LLM 애플리케이션과 AI 에이전트를 공격으로부터 보호한다. OWASP LLM Top 10과 Agentic Top 10이 기준.</div>
-<div class="card-cta">방어 동향 보기</div>
+<div class="card-title">AI를 지키는 일 (개요)</div>
+<div class="card-desc">LLM 앱과 에이전트 방어의 전체 그림. Prompt Injection이 1순위인 이유, 방어 4카테고리.</div>
+<div class="card-cta">방어 카테고리 4종</div>
 </a>
 
-<a href="augment-security/" class="card">
-<div class="card-title">AI로 보안 강화</div>
-<div class="card-desc">Security Copilot, Agentic SOC로 SOC 운영과 위협 헌팅을 가속한다. 27초 침투 시대의 답.</div>
-<div class="card-cta">활용 동향 보기</div>
-</a>
-
-<a href="ai-spm/" class="card">
-<div class="card-title">AI-SPM 솔루션</div>
-<div class="card-desc">AI 자산 발견과 태세 관리. 섀도 AI 인벤토리, Wiz와 Prisma AIRS. 런타임 가드레일과의 차이.</div>
-<div class="card-cta">솔루션 보기</div>
+<a href="prompt-injection-defense/" class="card">
+<div class="card-title">Prompt Injection 방어</div>
+<div class="card-desc">직접과 간접 프롬프트 인젝션, 멀티턴 jailbreak, 멀티모달 인젝션. 입출력 필터와 가드레일.</div>
+<div class="card-cta">LLM01 1순위 위협</div>
 </a>
 
 <a href="llm-gateway/" class="card">
 <div class="card-title">LLM 게이트웨이 비교</div>
-<div class="card-desc">런타임 가드레일 심층 비교. Lakera(Check Point), Prompt Security(SentinelOne), 오픈소스. OWASP LLM Top 10 매핑.</div>
-<div class="card-cta">비교 보기</div>
+<div class="card-desc">런타임 가드레일 심층 비교. Lakera(Check Point), Prompt Security(SentinelOne), 오픈소스.</div>
+<div class="card-cta">OWASP LLM Top 10 매핑</div>
 </a>
 
 <a href="ai-red-teaming/" class="card">
 <div class="card-title">AI 레드티밍 비교</div>
-<div class="card-desc">배포 전 능동 공격으로 취약점 발견. Lakera Red, HiddenLayer, Mindgard. MITRE ATLAS 매핑.</div>
-<div class="card-cta">비교 보기</div>
+<div class="card-desc">배포 전 능동 공격으로 취약점 발견. Lakera Red, HiddenLayer, Mindgard.</div>
+<div class="card-cta">MITRE ATLAS 매핑</div>
 </a>
 
 <a href="agentic-security/" class="card">
 <div class="card-title">Agentic AI 보안과 MCP</div>
-<div class="card-desc">에이전트 신원(NHI)과 최소 권한, MCP Tool Poisoning 통제. OWASP Agentic, MCP Top 10.</div>
-<div class="card-cta">대응 보기</div>
-</a>
-
-<a href="ai-governance/" class="card">
-<div class="card-title">AI 거버넌스와 TRiSM</div>
-<div class="card-desc">AI 인벤토리, 정책, 컴플라이언스 계층. Credo AI, Holistic AI. EU AI Act, NIST AI RMF, ISO 42001.</div>
-<div class="card-cta">거버넌스 보기</div>
+<div class="card-desc">에이전트 신원(NHI)과 최소 권한, MCP Tool Poisoning 통제.</div>
+<div class="card-cta">OWASP Agentic, MCP Top 10</div>
 </a>
 
 <a href="model-supply-chain/" class="card">
 <div class="card-title">AI 모델 공급망 보안</div>
 <div class="card-desc">악성 모델과 pickle 공격, 모델 스캐닝과 서명, ML-BOM. Protect AI, HiddenLayer, JFrog.</div>
-<div class="card-cta">공급망 보기</div>
+<div class="card-cta">공급망 위협 정리</div>
 </a>
 
 <a href="deepfake-defense/" class="card">
 <div class="card-title">딥페이크와 AI 사기 방어</div>
 <div class="card-desc">AI를 악용한 사칭. 딥페이크 영상, 음성 복제, KYC 우회. Reality Defender, Sensity, Pindrop.</div>
-<div class="card-cta">방어 보기</div>
+<div class="card-cta">사칭 방어 솔루션</div>
+</a>
+
+</div>
+
+## ② 직원 AI 사용 가시화와 통제
+
+직원이 어떤 AI를 어떻게 쓰는지 본다. TLS 암호화 너머 프롬프트를 잡는 기술과, 승인 자산 인벤토리, 거버넌스 계층.
+
+<div class="card-grid">
+
+<a href="ai-usage-visibility/" class="card">
+<div class="card-title">AI 사용 가시화와 Shadow AI 통제</div>
+<div class="card-desc">TLS 너머 프롬프트를 잡는 8가지 캡처 메커니즘. 인라인 프록시, AI 게이트웨이, 엔드포인트, 브라우저, DNS. Harmonic, WitnessAI, Zscaler, Netskope.</div>
+<div class="card-cta">캡처 메커니즘 8종</div>
+</a>
+
+<a href="ai-spm/" class="card">
+<div class="card-title">AI-SPM: AI 자산 인벤토리</div>
+<div class="card-desc">승인된 AI 자산의 발견, 인벤토리, 태세 평가. 섀도 AI 에이전트 발견. Wiz, Prisma AIRS.</div>
+<div class="card-cta">런타임 가드레일과의 차이</div>
+</a>
+
+<a href="ai-governance/" class="card">
+<div class="card-title">AI 거버넌스와 TRiSM</div>
+<div class="card-desc">AI 인벤토리, 정책, 컴플라이언스 계층. Credo AI, Holistic AI. EU AI Act, NIST AI RMF, ISO 42001.</div>
+<div class="card-cta">규제 프레임워크 매핑</div>
+</a>
+
+</div>
+
+## ③ AI로 보안을 강화하는 일
+
+AI 에이전트가 SOC의 분류, 조사, 일부 대응을 자율 수행한다. 27초 침투 시대에 자동화는 생존의 문제다. SOAR에서 Agentic SOC로의 진화.
+
+<div class="card-grid">
+
+<a href="augment-security/" class="card">
+<div class="card-title">AI로 보안 강화 (개요)</div>
+<div class="card-desc">Security Copilot, Agentic SOC가 SOC 운영을 어떻게 가속하나. 에이전트가 실제로 하는 일.</div>
+<div class="card-cta">자율 대응 4단계</div>
+</a>
+
+<a href="/automation/security-copilots/" class="card">
+<div class="card-title">Security Copilots 비교</div>
+<div class="card-desc">Microsoft Security Copilot, Charlotte AI, Torq, Tines를 같은 척도로 비교한다.</div>
+<div class="card-cta">도구 4종 비교</div>
+</a>
+
+<a href="/automation/soar-evolution/" class="card">
+<div class="card-title">SOAR와 Hyperautomation</div>
+<div class="card-desc">1세대 SOAR, Hyperautomation, Agentic SOC의 진화 단계와 차이의 본질. 어디서 한계가 오는가.</div>
+<div class="card-cta">진화 3단계</div>
 </a>
 
 </div>
@@ -70,23 +114,21 @@ ShowToc: false
 
 **공격이 빨라졌다.** CrowdStrike 2025 Global Threat Report에 따르면 eCrime 침투 시간이 **최단 27초**까지 줄었다. AI 활용 공격은 전년 대비 **89% 증가**했다.
 
-**표준이 분리됐다.** OWASP는 2025년 LLM Top 10 v2.0을 정비한 뒤, 2026년 자율 행동을 하는 **에이전트 시스템 전용 Top 10**을 별도 발표했다. 단일 호출 LLM과 다단계 추론 에이전트는 위협 모델이 다르다.
+**Shadow AI가 폭증했다.** Cyberhaven 분석으로 기업 데이터가 AI 도구로 흘러간 양이 전년 대비 **485% 증가**했다. 직원의 미승인 AI 사용을 보지 못하는 조직이 다수다.
 
-**상용 도구가 보강됐다.** CrowdStrike는 RSA 2026에서 **Charlotte AI AgentWorks** 생태계를 공개했다. Microsoft Security Copilot은 파트너 에이전트 **70개 이상**이 등록된 Security Store를 운영한다. Torq는 2026년 초 **Series D $140M**을 유치해 평가액 $1.2B에 도달했다.
+**상용 도구가 보강됐다.** CrowdStrike는 RSA 2026에서 **Charlotte AI AgentWorks**를 공개했고, Microsoft Security Copilot은 파트너 에이전트 **70개 이상**의 Security Store를 운영한다. Torq는 2026년 초 **Series D $140M**을 유치했다.
 
-## 두 축의 빠른 비교
+## 세 축의 빠른 비교
 
-| 항목 | AI를 지키는 일 | AI로 보안 강화 |
-|---|---|---|
-| 보호 대상 | LLM 앱, RAG, 에이전트 | SOC 운영, 분석가 |
-| 주요 위협 | Prompt Injection, Tool Misuse | (보호 대상이 아니라 보조 도구) |
-| 표준 | OWASP LLM/Agentic Top 10 | NIST CSF, 자체 가드레일 |
-| 대표 솔루션 | Lakera, Prompt Security, Protect AI | Charlotte AI, Security Copilot, Torq |
-| 의사결정 시점 | LLM/에이전트 도입 직전 | SOC 확장이나 인력 부족 시점 |
+| 항목 | ① 지키는 일 | ② 사용 가시화 | ③ 보안 강화 |
+|---|---|---|---|
+| 본다 | LLM 앱, 에이전트 입출력 | 직원 AI 사용, 프롬프트 | SOC 운영, 알림 |
+| 주요 질문 | Prompt Injection을 어떻게 막나 | 누가 어떤 AI에 뭘 넣나 | 분석가를 어떻게 가속하나 |
+| 표준 | OWASP LLM/Agentic Top 10 | (해당 없음, 캡처 기술) | NIST CSF, 자체 가드레일 |
+| 대표 솔루션 | Lakera, Prompt Security | Harmonic, WitnessAI, Zscaler | Charlotte AI, Security Copilot, Torq |
+| 의사결정 시점 | LLM/에이전트 도입 직전 | 직원 AI 사용 통제 필요 시 | SOC 확장이나 인력 부족 시 |
 
 ## 도입 고려사항
-
-해외 표준과 솔루션을 한국에 적용할 때 추가로 확인할 변수다.
 
 **개인정보 처리.** Prompt에 PII가 섞이면 개인정보보호법 위반 소지가 있다. 입출력 마스킹과 토큰화가 필수다.
 
@@ -100,9 +142,9 @@ ShowToc: false
 
 - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- [Cyberhaven — AI 데이터 흐름 분석](https://www.cyberhaven.com/product/linea)
 - [CrowdStrike Charlotte AI AgentWorks (RSA 2026)](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/)
 - [Microsoft Security Copilot Blog](https://techcommunity.microsoft.com/blog/securitycopilotblog/from-alert-overload-to-decisive-action-how-security-copilot-agents-are-transform/4504213)
-- [Torq Agentic AI and Hyperautomation in the SOC](https://torq.io/blog/agentic-ai-hyperautomation-soc/)
 
 ---
-최초 발행 2026-05-30, 최종 검토 2026-05-30
+최초 발행 2026-05-30, 최종 검토 2026-06-06

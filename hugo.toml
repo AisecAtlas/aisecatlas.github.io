@@ -47,8 +47,8 @@ buildExpired = false
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
 
-# IA 메뉴 (운영자 지시 반영, 경로 유지·라벨/구조만 재정리)
-# 1. 솔루션 카탈로그  2. AI 보안(독립)  3. 자동화  4. 표준과 규제
+# IA 메뉴 (2026-06-06 재편: AI 보안을 3축 단일 허브로 통합, 자동화는 ③축으로 흡수)
+# 1. 솔루션 카탈로그  2. AI 보안(① 지키기 ② 사용 가시화 ③ 보안 강화)  3. 표준과 규제
 
 [[menu.main]]
   identifier = "solutions"
@@ -70,43 +70,30 @@ buildExpired = false
   weight = 1
 
 [[menu.main]]
-  identifier = "aisec-augment"
-  name = "AI로 보안 강화"
-  url = "/ai/augment-security/"
+  identifier = "aisec-visibility"
+  name = "AI 사용 가시화"
+  url = "/ai/ai-usage-visibility/"
   parent = "aisec"
   weight = 2
 
 [[menu.main]]
-  identifier = "automation"
-  name = "자동화"
-  url = "/automation/"
-  weight = 30
-
-[[menu.main]]
-  identifier = "automation-soar"
-  name = "SOAR와 Hyperautomation"
-  url = "/automation/soar-evolution/"
-  parent = "automation"
-  weight = 1
-
-[[menu.main]]
-  identifier = "automation-copilot"
-  name = "Security Copilots"
-  url = "/automation/security-copilots/"
-  parent = "automation"
-  weight = 2
+  identifier = "aisec-augment"
+  name = "AI로 보안 강화"
+  url = "/ai/augment-security/"
+  parent = "aisec"
+  weight = 3
 
 [[menu.main]]
   identifier = "standards"
   name = "표준과 규제"
   url = "/framework/"
-  weight = 40
+  weight = 30
 
 [[menu.main]]
   identifier = "search"
   name = "검색"
   url = "/search/"
-  weight = 50
+  weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
