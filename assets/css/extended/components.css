@@ -423,3 +423,139 @@
 @media (max-width: 640px) {
   .aipipe-s { min-height: 0; }
 }
+
+/* ============================================
+   ZTA 통제 구조 다이어그램 (.zta)
+   NIST SP 800-207 기반: 주체(신원) → PEP → 자원,
+   제어판 PDP(PE+PA), 상호작용 시스템. JS 없음.
+   ============================================ */
+
+.zta {
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  background:
+    radial-gradient(120% 120% at 50% 0%, var(--accent-soft) 0%, transparent 42%),
+    var(--code-bg);
+}
+
+.zta-title {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.zta-band-label {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.zta-node {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--entry, rgba(255,255,255,0.02));
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.zta-node b { font-size: 14px; color: var(--primary); line-height: 1.3; }
+.zta-node span { font-size: 11.5px; color: var(--secondary); line-height: 1.45; }
+.zta-node-role {
+  font-size: 9.5px; font-weight: 700; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--secondary);
+}
+
+/* 제어판 (PDP) */
+.zta-control {
+  border: 1px solid var(--accent-glow);
+  border-radius: 10px;
+  padding: 12px;
+  background: var(--accent-soft);
+}
+.zta-control .zta-band-label { color: var(--accent); }
+.zta-pdp { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.zta-control .zta-node { background: transparent; border-color: var(--accent-glow); }
+
+/* 세로 연결선 */
+.zta-vconn {
+  height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.zta-vconn::before {
+  content: ""; position: absolute; top: 0; bottom: 0;
+  border-left: 1.5px dashed var(--accent-glow);
+}
+.zta-vconn::after {
+  content: "↕ " attr(data-label);
+  position: relative;
+  font-size: 10.5px; color: var(--accent);
+  background: var(--code-bg); padding: 2px 9px; border-radius: 8px;
+  border: 1px solid var(--accent-glow);
+}
+
+/* 데이터 평면: 주체 → PEP → 자원 */
+.zta-plane {
+  display: grid;
+  grid-template-columns: 1fr 70px 1.15fr 70px 1fr;
+  align-items: stretch;
+}
+.zta-pep.is-pep {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 0 0 1px var(--accent-glow) inset;
+}
+.zta-pep.is-pep .zta-node-role, .zta-pep.is-pep b { color: var(--accent); }
+
+.zta-harrow {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 56px;
+}
+.zta-harrow::before { content: "→"; font-size: 20px; color: var(--secondary); }
+.zta-harrow::after {
+  content: attr(data-label);
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -150%);
+  font-size: 9.5px; color: var(--secondary); white-space: nowrap;
+}
+
+/* 상호작용 시스템 */
+.zta-support {
+  margin-top: 14px;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.zta-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.zta-chip {
+  font-size: 11px; color: var(--secondary);
+  border: 1px solid var(--border); border-radius: 10px;
+  padding: 3px 9px; background: var(--entry, rgba(255,255,255,0.02));
+}
+
+.zta-legend {
+  margin-top: 12px; font-size: 11.5px; color: var(--secondary);
+}
+.zta-legend .dot {
+  display: inline-block; width: 11px; height: 11px; border-radius: 3px;
+  vertical-align: middle; margin-right: 5px;
+  background: var(--accent-soft); border: 1px solid var(--accent);
+}
+
+@media (max-width: 680px) {
+  .zta-pdp { grid-template-columns: 1fr; }
+  .zta-plane { grid-template-columns: 1fr; }
+  .zta-harrow { min-height: 30px; }
+  .zta-harrow::before { content: "↓"; }
+  .zta-harrow::after { position: static; transform: none; }
+}

@@ -64,38 +64,58 @@ ShowToc: true
 | 데이터 분류 | Enterprise DLP + 300개 이상 ML 분류기, 컨텍스트 기반 LLM 분류 |
 | 통제 | Internet Access 정책으로 사용자 그룹별 허용, 차단, 기능 제한. 프롬프트 이력 감사 |
 
-## 보안 아키텍처
+## 보안 아키텍처 (ZTA 기준)
 
-두 제품은 끼는 위치가 다르다. AI Access Security는 **나가는 트래픽**(직원 → 외부 AI)을, Prisma AIRS는 **사내 AI 주변**(빌드, 런타임, 태세)을 본다.
+NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체의 신원 확인 → 통제 지점(PEP) → 통제 대상(자원)** 흐름에 **정책 결정(PDP)**과 **상호작용 시스템**이 붙는다. 둘의 차이는 주체와 자원, PEP의 위치다.
 
-<div class="arch">
-<div class="arch-title">AI Access Security — SASE 인라인 (직원 → 외부 GenAI)</div>
-<div class="arch-stack">
-  <div class="arch-layer"><div class="arch-layer-main"><div class="arch-layer-title">사용자 / 엔드포인트</div><div class="arch-layer-sub">프롬프트 입력, 파일 업로드</div></div><div class="arch-tag">출발</div></div>
-  <div class="arch-flow"></div>
-  <div class="arch-layer is-control"><div class="arch-layer-main"><div class="arch-layer-title">Prisma Access PoP / NGFW</div><div class="arch-layer-sub">App-ID로 GenAI 앱 식별, TLS 복호화, Enterprise DLP와 300개 분류기로 프롬프트와 파일 검사, 정책 차단</div></div><div class="arch-tag">통제 지점</div></div>
-  <div class="arch-flow"></div>
-  <div class="arch-layer"><div class="arch-layer-main"><div class="arch-layer-title">외부 GenAI 앱</div><div class="arch-layer-sub">ChatGPT, Gemini, Copilot 등</div></div><div class="arch-tag">목적지</div></div>
+<div class="zta">
+<div class="zta-title">AI Access Security — 직원의 외부 GenAI 사용 통제</div>
+<div class="zta-control">
+<div class="zta-band-label">제어판 — 정책 결정 (PDP)</div>
+<div class="zta-pdp">
+<div class="zta-node"><div class="zta-node-role">Policy Engine</div><b>접근 정책 결정</b><span>사용자와 그룹, GenAI 앱, 데이터 분류로 허용 또는 차단 판단</span></div>
+<div class="zta-node"><div class="zta-node-role">Policy Administrator</div><b>Strata Cloud Manager / Panorama</b><span>정책 배포와 세션 통제</span></div>
 </div>
-<div class="arch-legend"><span class="dot"></span> 통제 지점 = Palo Alto가 트래픽을 가로채 검사하고 차단하는 지점. 제어판은 Strata Cloud Manager 또는 Panorama.</div>
+</div>
+<div class="zta-vconn" data-label="정책 질의와 결정"></div>
+<div class="zta-plane">
+<div class="zta-node zta-subject"><div class="zta-node-role">주체 — 신원 확인</div><b>직원 / 엔드포인트</b><span>IdP와 SSO 신원, 기기 신뢰, 사용자 그룹</span></div>
+<div class="zta-harrow" data-label="① 프롬프트 요청 (미신뢰)"></div>
+<div class="zta-node zta-pep is-pep"><div class="zta-node-role">통제 지점 (PEP)</div><b>Prisma Access PoP / NGFW</b><span>App-ID 앱 식별, TLS 복호화, Enterprise DLP와 300개 분류기 검사, 차단</span></div>
+<div class="zta-harrow" data-label="② 허용 시 전달"></div>
+<div class="zta-node zta-resource"><div class="zta-node-role">통제 대상 (자원)</div><b>외부 GenAI 앱</b><span>ChatGPT, Gemini, Copilot. 보호 대상은 반출되는 데이터</span></div>
+</div>
+<div class="zta-vconn up" data-label="신호 공급"></div>
+<div class="zta-support">
+<div class="zta-band-label">상호작용 시스템</div>
+<div class="zta-chips"><span class="zta-chip">IdP / 사용자 신원</span><span class="zta-chip">Enterprise DLP</span><span class="zta-chip">Precision AI 위협 인텔</span><span class="zta-chip">Strata Logging (SIEM)</span></div>
+</div>
+<div class="zta-legend"><span class="dot"></span> 강조 = 통제 지점(PEP). 주체는 신원 확인을 거쳐야 자원에 닿고, PEP는 PDP의 결정에 따라 인라인 차단한다.</div>
 </div>
 
-<div class="arch">
-<div class="arch-title">Prisma AIRS — 사내 구축 AI 보호 (빌드, 런타임, 태세)</div>
-<div class="arch-stack">
-  <div class="arch-layer is-control"><div class="arch-layer-main"><div class="arch-layer-title">빌드 — AI Model Security</div><div class="arch-layer-sub">모델 레지스트리와 배포 전, 변조와 악성 스크립트와 역직렬화 스캔. AI Red Teaming으로 공격 시뮬레이션</div></div><div class="arch-tag">통제</div></div>
-  <div class="arch-flow"></div>
-  <div class="arch-boundary"><span class="arch-boundary-label">사내 AI 앱과 에이전트</span>
-    <div class="arch-layer"><div class="arch-layer-main"><div class="arch-layer-title">사용자 / 에이전트</div><div class="arch-layer-sub">프롬프트 요청</div></div></div>
-    <div class="arch-flow"></div>
-    <div class="arch-layer is-control"><div class="arch-layer-main"><div class="arch-layer-title">런타임 — API Intercept 또는 Network Intercept</div><div class="arch-layer-sub">Scan API(코드 내장) 또는 인라인 클라우드 방화벽이 프롬프트와 응답을 검사. 인젝션, 데이터 노출, 안전하지 않은 출력 차단</div></div><div class="arch-tag">통제</div></div>
-    <div class="arch-flow"></div>
-    <div class="arch-layer"><div class="arch-layer-main"><div class="arch-layer-title">LLM / 모델</div><div class="arch-layer-sub">model-agnostic</div></div></div>
-  </div>
-  <div class="arch-flow"></div>
-  <div class="arch-layer is-control"><div class="arch-layer-main"><div class="arch-layer-title">태세 — AI Posture Management (AI-SPM)</div><div class="arch-layer-sub">전 구간에 걸쳐 클라우드 AI 자산, 학습과 추론 데이터, 모델 접근을 지속 점검</div></div><div class="arch-tag">통제</div></div>
+<div class="zta">
+<div class="zta-title">Prisma AIRS — 사내 구축 AI 보호 (런타임 PEP 중심)</div>
+<div class="zta-control">
+<div class="zta-band-label">제어판 — 정책 결정 (PDP)</div>
+<div class="zta-pdp">
+<div class="zta-node"><div class="zta-node-role">Policy Engine</div><b>AIRS 런타임 정책</b><span>프롬프트와 응답의 인젝션, 데이터 노출, 안전하지 않은 출력 판단</span></div>
+<div class="zta-node"><div class="zta-node-role">Policy Administrator</div><b>Strata Cloud Manager</b><span>정책 배포와 통제</span></div>
 </div>
-<div class="arch-legend"><span class="dot"></span> 점선 박스 = 보호 대상인 사내 AI 앱과 에이전트. 통제 = Prisma AIRS가 작동하는 지점.</div>
+</div>
+<div class="zta-vconn" data-label="정책 질의와 결정"></div>
+<div class="zta-plane">
+<div class="zta-node zta-subject"><div class="zta-node-role">주체 — 신원 확인</div><b>사용자 / AI 에이전트</b><span>에이전트와 워크로드 신원(NHI), 도구 권한</span></div>
+<div class="zta-harrow" data-label="① 프롬프트 또는 도구 호출"></div>
+<div class="zta-node zta-pep is-pep"><div class="zta-node-role">통제 지점 (PEP)</div><b>런타임 인터셉트</b><span>API Intercept(Scan API) 또는 Network Intercept(인라인 방화벽)가 프롬프트와 응답 검사</span></div>
+<div class="zta-harrow" data-label="② 검사 후 전달"></div>
+<div class="zta-node zta-resource"><div class="zta-node-role">통제 대상 (자원)</div><b>사내 LLM / 모델 / 에이전트</b><span>model-agnostic. 보호 대상은 모델과 데이터</span></div>
+</div>
+<div class="zta-vconn up" data-label="신뢰 신호 공급"></div>
+<div class="zta-support">
+<div class="zta-band-label">상호작용 시스템 (신뢰 공급)</div>
+<div class="zta-chips"><span class="zta-chip">AI-SPM 태세 (CDM 역할)</span><span class="zta-chip">AI Model Security 모델 스캔 (Protect AI)</span><span class="zta-chip">AI Red Teaming</span><span class="zta-chip">활동 로그</span></div>
+</div>
+<div class="zta-legend"><span class="dot"></span> 런타임 인터셉트가 PEP. 배포 전 모델 스캔과 지속 태세(AI-SPM)가 PDP에 신뢰 신호를 공급한다(NIST 800-207의 CDM과 위협 인텔 입력에 대응).</div>
 </div>
 
 ## 강점과 한계
