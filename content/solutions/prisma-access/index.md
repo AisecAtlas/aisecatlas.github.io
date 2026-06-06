@@ -21,11 +21,11 @@ ShowToc: true
 
 ## 어떤 제품인가
 
-Prisma Access는 Palo Alto Networks의 클라우드 전달 보안 서비스다. 방화벽(FWaaS), Secure Web Gateway(SWG), CASB, **ZTNA**를 하나로 묶어 제공한다.
+Prisma Access는 Palo Alto Networks의 클라우드 전달 보안 서비스입니다. 방화벽(FWaaS), Secure Web Gateway(SWG), CASB, **ZTNA**를 하나로 묶어 제공합니다.
 
-상위 플랫폼은 **Prisma SASE**로, 세 축으로 구성된다. 보안의 Prisma Access, 연결의 Prisma SD-WAN, 그리고 둘을 통합 관리하는 **Strata Cloud Manager**다([출처](https://www.tufin.com/blog/palo-alto-sase)). 보안과 네트워크 연결을 한 콘솔에서 다루는 점이 ZTNA 단독 제품과의 차이다.
+상위 플랫폼은 **Prisma SASE**로, 세 축으로 구성됩니다. 보안의 Prisma Access, 연결의 Prisma SD-WAN, 그리고 둘을 통합 관리하는 **Strata Cloud Manager**입니다([출처](https://www.tufin.com/blog/palo-alto-sase)). 보안과 네트워크 연결을 한 콘솔에서 다루는 점이 ZTNA 단독 제품과의 차이입니다.
 
-> **왜 중요한가.** 방화벽 자산을 보유한 조직이 기존 보안 정책과 SD-WAN 연결을 단일 콘솔로 묶어 SASE로 전환할 수 있다는 점이 핵심 차별점이다.
+> **왜 중요한가.** 방화벽 자산을 보유한 조직이 기존 보안 정책과 SD-WAN 연결을 단일 콘솔로 묶어 SASE로 전환할 수 있다는 점이 핵심 차별점입니다.
 
 | 모듈 | 역할 |
 |---|---|
@@ -36,11 +36,11 @@ Prisma Access는 Palo Alto Networks의 클라우드 전달 보안 서비스다. 
 
 ## 시장 위치
 
-Prisma Access는 SASE 시장의 주요 상장 사업자다. FY2025 SASE ARR은 전년 대비 **35% 증가**했고, SASE 고객은 약 **6,300곳**, Prisma Access Browser는 **600만 시트**를 넘었다([PANW FY2025 Q4](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2025-financial-results)).
+Prisma Access는 SASE 시장의 주요 상장 사업자입니다. FY2025 SASE ARR은 전년 대비 **35% 증가**했고, SASE 고객은 약 **6,300곳**, Prisma Access Browser는 **600만 시트**를 넘었습니다([PANW FY2025 Q4](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2025-financial-results)).
 
-App Acceleration으로 클라우드 앱 연결을 직접 인터넷 대비 최대 5배 가속하는 등 성능 측면 기능을 강화해 왔다. 2025년에는 App Acceleration, Agentic AI 대응 등 플랫폼 확장이 이어졌다([Network World](https://www.networkworld.com/article/2097575/palo-alto-extends-sase-security-performance-features.html)).
+App Acceleration으로 클라우드 앱 연결을 직접 인터넷 대비 최대 5배 가속하는 등 성능 측면 기능을 강화해 왔습니다. 2025년에는 App Acceleration, Agentic AI 대응 등 플랫폼 확장이 이어졌습니다([Network World](https://www.networkworld.com/article/2097575/palo-alto-extends-sase-security-performance-features.html)).
 
-경쟁 구도에서 Prisma Access는 방화벽 자산과 SD-WAN을 한 벤더로 묶으려는 조직에 강점을 가진다. 순수 클라우드 인라인 보안으로 빠른 ZTNA 전환을 원하면 Zscaler를, 데이터 보호 중심 SSE는 Netskope를 함께 검토하는 경우가 많다.
+경쟁 구도에서 Prisma Access는 방화벽 자산과 SD-WAN을 한 벤더로 묶으려는 조직에 강점을 가집니다. 순수 클라우드 인라인 보안으로 빠른 ZTNA 전환을 원하면 Zscaler를, 데이터 보호 중심 SSE는 Netskope를 함께 검토하는 경우가 많습니다.
 
 ## 강점과 한계
 
@@ -79,13 +79,13 @@ App Acceleration으로 클라우드 앱 연결을 직접 인터넷 대비 최대
 
 ## 도입 고려사항
 
-**라이선스.** 모듈별 구독, 공개 정가 없음. 국내 파트너를 통한 도입이 일반적이다.
+**라이선스.** 모듈별 구독, 공개 정가 없음. 국내 파트너를 통한 도입이 일반적입니다.
 
-**데이터 리전.** 클라우드 전달 서비스. 한국 사용자 트래픽 처리 위치와 국내 접속 지점은 도입 시 벤더에 직접 확인이 필요하다.
+**데이터 리전.** 클라우드 전달 서비스. 한국 사용자 트래픽 처리 위치와 국내 접속 지점은 도입 시 벤더에 직접 확인이 필요합니다.
 
-**CSAP.** Prisma Access의 한국 클라우드 보안인증(CSAP) 획득 여부는 공개 자료에서 확인되지 않는다. 공공 도입 검토 시 최신 인증 현황을 직접 확인한다.
+**CSAP.** Prisma Access의 한국 클라우드 보안인증(CSAP) 획득 여부는 공개 자료에서 확인되지 않습니다. 공공 도입 검토 시 최신 인증 현황을 직접 확인합니다.
 
-**망분리.** 클라우드 SaaS형 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 국내 적용 사례는 공개 자료상 확인되지 않는다.
+**망분리.** 클라우드 SaaS형 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 국내 적용 사례는 공개 자료상 확인되지 않습니다.
 
 ## 출처
 
@@ -98,7 +98,7 @@ App Acceleration으로 클라우드 앱 연결을 직접 인터넷 대비 최대
 
 ## 면책
 
-본 정리는 공개 자료를 근거로 한다. 제품 사양과 시장 상황은 빠르게 바뀐다. 도입 전 최신 공식 발표를 확인한다.
+본 정리는 공개 자료를 근거로 합니다. 제품 사양과 시장 상황은 빠르게 바뀝니다. 도입 전 최신 공식 발표를 확인합니다.
 
 ---
 최초 발행 2026-05-30, 최종 확인 2026-05-31, 다음 확인 2026-08-30

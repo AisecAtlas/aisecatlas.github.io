@@ -1,11 +1,11 @@
 ---
 title: "Devices"
-description: "엔드포인트, 서버, 모바일, IoT 자산을 관리한다."
+description: "엔드포인트, 서버, 모바일, IoT 자산을 관리합니다."
 pillars: ["Devices"]
 ShowToc: false
 ---
 
-> **자산 인벤토리, 신뢰 평가, 정책 적용이 핵심이다.** 모든 자산을 알지 못하면 접근 결정을 내릴 수 없다. EDR과 XDR이 가장 큰 카테고리다.
+> **자산 인벤토리, 신뢰 평가, 정책 적용이 핵심입니다.** 모든 자산을 알지 못하면 접근 결정을 내릴 수 없습니다. EDR과 XDR이 가장 큰 카테고리입니다.
 
 참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/), [NIST SP 800-207](/framework/nist-800-207/)
 
@@ -29,7 +29,7 @@ ShowToc: false
 
 ## 5개 Function
 
-CISA ZTMM v2 Devices 영역의 Function이다.
+CISA ZTMM v2 Devices 영역의 Function입니다.
 
 | Function | 한국어 | 핵심 |
 |---|---|---|
@@ -58,9 +58,9 @@ CISA ZTMM v2 Devices 영역의 Function이다.
 
 ## 시장 동향 (2025-2026)
 
-**Microsoft의 점유율.** Microsoft는 IDC 2025 데이터 기준 모던 엔드포인트 보안 시장 점유율 **3년 연속 1위**를 차지했다([Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2025/08/27/microsoft-ranked-number-one-in-modern-endpoint-security-market-share-third-year-in-a-row/)).
+**Microsoft의 점유율.** Microsoft는 IDC 2025 데이터 기준 모던 엔드포인트 보안 시장 점유율 **3년 연속 1위**를 차지했습니다([Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2025/08/27/microsoft-ranked-number-one-in-modern-endpoint-security-market-share-third-year-in-a-row/)).
 
-**AI 자율 대응으로 이동.** EDR이 XDR로 확장된다. 분석가 개입 없이 행동하는 자율 대응이 차별 요소가 됐다. CrowdStrike는 RSA 2026에서 Charlotte AgentWorks 생태계를 공개했다([CrowdStrike 보도자료](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/)).
+**AI 자율 대응으로 이동.** EDR이 XDR로 확장됩니다. 분석가 개입 없이 행동하는 자율 대응이 차별 요소가 됐습니다. CrowdStrike는 RSA 2026에서 Charlotte AgentWorks 생태계를 공개했습니다([CrowdStrike 보도자료](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/)).
 
 ## 도입 의사결정
 
@@ -88,13 +88,13 @@ CISA ZTMM v2 Devices 영역의 Function이다.
 
 ## 도입 고려사항
 
-**개인정보보호법.** EDR은 엔드포인트의 행위 텔레메트리를 광범위하게 수집한다. 수집 범위와 보존 기간이 개인정보 처리 원칙에 맞는지 검토한다.
+**개인정보보호법.** EDR은 엔드포인트의 행위 텔레메트리를 광범위하게 수집합니다. 수집 범위와 보존 기간이 개인정보 처리 원칙에 맞는지 검토합니다.
 
-**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 환경에서 클라우드 기반 EDR의 텔레메트리 전송 경로를 확인한다. 자체 호스팅 관리 서버 옵션 유무가 변수다.
+**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 환경에서 클라우드 기반 EDR의 텔레메트리 전송 경로를 확인합니다. 자체 호스팅 관리 서버 옵션 유무가 변수입니다.
 
-**공공과 정부.** 클라우드형 EDR, XDR은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인한다.
+**공공과 정부.** 클라우드형 EDR, XDR은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인합니다.
 
-**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)에 따라 엔드포인트 로그 수집과 자율 대응 범위가 보안성 검토 대상이 된다. 자세한 사례는 [CrowdStrike Falcon 리뷰](/solutions/crowdstrike-falcon/)의 한국 노트를 다룬다.
+**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)에 따라 엔드포인트 로그 수집과 자율 대응 범위가 보안성 검토 대상이 됩니다. 자세한 사례는 [CrowdStrike Falcon 리뷰](/solutions/crowdstrike-falcon/)의 한국 노트에서 다룹니다.
 
 ---
 최종 검토 2026-05-30

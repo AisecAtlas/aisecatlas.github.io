@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: Palo Alto는 AI 보안을 **두 제품으로 분리**한다. **Prisma AIRS**는 조직이 *직접 만든 AI*(모델, 앱, 에이전트)를 빌드부터 런타임까지 보호하고(Ⅰ. AI를 보호), **AI Access Security**는 *직원이 쓰는 외부 GenAI*를 SASE 인라인에서 통제한다(Ⅱ. AI 사용행위 보호). 인수한 **Protect AI**(2025-07-22 완료)가 Prisma AIRS의 모델 스캐닝과 레드티밍의 기반이다.
+> **이 페이지의 결론**: Palo Alto는 AI 보안을 **두 제품으로 분리**합니다. **Prisma AIRS**는 조직이 *직접 만든 AI*(모델, 앱, 에이전트)를 빌드부터 런타임까지 보호하고(Ⅰ. AI를 보호), **AI Access Security**는 *직원이 쓰는 외부 GenAI*를 SASE 인라인에서 통제합니다(Ⅱ. AI 사용행위 보호). 인수한 **Protect AI**(2025-07-22 완료)가 Prisma AIRS의 모델 스캐닝과 레드티밍의 기반입니다.
 
 ## 한눈에 보기
 
@@ -23,9 +23,9 @@ ShowToc: true
 
 ## 표준 기능과 공격표면 통제
 
-보안표준(OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF) 기준으로, Palo Alto는 AI 공격표면의 **모델부터 사용행위까지** 통제 지점을 갖는다.
+보안표준(OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF) 기준으로, Palo Alto는 AI 공격표면의 **모델부터 사용행위까지** 통제 지점을 갖습니다.
 
-{{< ai-pipeline title="Palo Alto 통제 지점 (AI 공격표면)" highlight="model,deploy,runtime,agent,usage" note="**Prisma AIRS**가 모델, 배포, 추론과 런타임, 에이전트 단계를 보호하고(데이터 단계는 AI-SPM 태세로 가시화), **AI Access Security**가 사용자 사용행위 단계를 SASE 인라인에서 통제한다." >}}
+{{< ai-pipeline title="Palo Alto 통제 지점 (AI 공격표면)" highlight="model,deploy,runtime,agent,usage" note="**Prisma AIRS**가 모델, 배포, 추론과 런타임, 에이전트 단계를 보호하고(데이터 단계는 AI-SPM 태세로 가시화), **AI Access Security**가 사용자 사용행위 단계를 SASE 인라인에서 통제합니다." >}}
 
 | 표준 기능 | 분류 | Palo Alto 제품 |
 |---|---|---|
@@ -39,7 +39,7 @@ ShowToc: true
 
 ### Prisma AIRS (AI Runtime Security)
 
-조직이 빌드한 AI를 보호하는 플랫폼. 공식 제품 페이지 기준 다섯 기능으로 구성된다([Prisma AIRS](https://www.paloaltonetworks.com/prisma/prisma-ai-runtime-security)).
+조직이 빌드한 AI를 보호하는 플랫폼. 공식 제품 페이지 기준 다섯 기능으로 구성됩니다([Prisma AIRS](https://www.paloaltonetworks.com/prisma/prisma-ai-runtime-security)).
 
 | 기능 | 무엇을 하나 |
 |---|---|
@@ -49,13 +49,13 @@ ShowToc: true
 | AI Agent Security | 에이전트 신원 검증, 무단 행동 차단 (AIRS 3.0의 중심) |
 | AI Red Teaming | 실제 공격 시나리오로 배포 전 자동 시뮬레이션 |
 
-런타임 통합은 두 방식이다. **API Intercept**는 앱 코드에 내장된 Security-as-Code가 지역 Scan API로 프롬프트와 응답을 보내 검사하고(동기 2MB, 비동기 5MB 한도), **Network Intercept**는 퍼블릭/프라이빗 클라우드에 배치된 인라인 방화벽이다([API Intercept 개요](https://docs.paloaltonetworks.com/ai-runtime-security/activation-and-onboarding/ai-runtime-security-api-intercept-overview)).
+런타임 통합은 두 방식입니다. **API Intercept**는 앱 코드에 내장된 Security-as-Code가 지역 Scan API로 프롬프트와 응답을 보내 검사하고(동기 2MB, 비동기 5MB 한도), **Network Intercept**는 퍼블릭/프라이빗 클라우드에 배치된 인라인 방화벽입니다([API Intercept 개요](https://docs.paloaltonetworks.com/ai-runtime-security/activation-and-onboarding/ai-runtime-security-api-intercept-overview)).
 
-버전 흐름: **AIRS 2.0**(2025-10-28)이 인수한 Protect AI의 네이티브 통합을 완료했고, **AIRS 3.0**(2026-03-23)이 에이전트 보안 플랫폼으로 확장하며 발견, 위험 평가, 실시간 보호(AI Agent Gateway)를 더했다([AIRS 2.0](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-secures-the-ai-agent-revolution-with-the-launch-of-prisma-airs-2-0), [AIRS 3.0](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-secures-agentic-ai-with-prisma-airs-3-0)).
+버전 흐름: **AIRS 2.0**(2025-10-28)이 인수한 Protect AI의 네이티브 통합을 완료했고, **AIRS 3.0**(2026-03-23)이 에이전트 보안 플랫폼으로 확장하며 발견, 위험 평가, 실시간 보호(AI Agent Gateway)를 더했습니다([AIRS 2.0](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-secures-the-ai-agent-revolution-with-the-launch-of-prisma-airs-2-0), [AIRS 3.0](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-secures-agentic-ai-with-prisma-airs-3-0)).
 
 ### AI Access Security
 
-직원의 외부 GenAI 사용을 Prisma SASE 데이터 경로에서 통제한다([AI Access Security](https://www.paloaltonetworks.com/sase/ai-access-security)).
+직원의 외부 GenAI 사용을 Prisma SASE 데이터 경로에서 통제합니다([AI Access Security](https://www.paloaltonetworks.com/sase/ai-access-security)).
 
 | 항목 | 내용 |
 |---|---|
@@ -66,7 +66,7 @@ ShowToc: true
 
 ## 보안 아키텍처 (ZTA 기준)
 
-NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체의 신원 확인 → 통제 지점(PEP) → 통제 대상(자원)** 흐름에 **정책 결정(PDP)**과 **상호작용 시스템**이 붙는다. 둘의 차이는 주체와 자원, PEP의 위치다.
+NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체의 신원 확인 → 통제 지점(PEP) → 통제 대상(자원)** 흐름에 **정책 결정(PDP)**과 **상호작용 시스템**이 붙습니다. 둘의 차이는 주체와 자원, PEP의 위치입니다.
 
 <div class="zta">
 <div class="zta-title">AI Access Security — 직원의 외부 GenAI 사용 통제</div>
@@ -127,17 +127,17 @@ NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체
 - 기존 Prisma SASE 자산이 있으면 AI Access Security를 정책으로 활성화
 
 **한계**
-- 두 제품의 경계가 혼동되기 쉽다. AI Access Security(외부 AI 사용 통제)와 Prisma AIRS(사내 AI 보호)는 다른 문제를 푼다
-- GenAI 앱 사전 규모가 공식 출처마다 다르다(500에서 6,000개 이상). 도입 시 현행 수치를 직접 확인
+- 두 제품의 경계가 혼동되기 쉬움. AI Access Security(외부 AI 사용 통제)와 Prisma AIRS(사내 AI 보호)는 다른 문제를 풂
+- GenAI 앱 사전 규모가 공식 출처마다 다름(500에서 6,000개 이상). 도입 시 현행 수치를 직접 확인
 - Prisma AIRS의 한국 데이터 리전은 공식 자료에서 확인되지 않음(2026-03 싱가포르 랜딩만 발표)
 
 ## 한국 시장 노트
 
-**데이터 리전.** Prisma Access는 서울(Seoul) PoP를 운영하며 Explicit Proxy와 Colo-Connect를 지원한다([Prisma Access 위치 목록](https://docs.paloaltonetworks.com/prisma-access/administration/prisma-access-overview/list-of-prisma-access-locations)). AI Access Security는 Prisma Access 위에서 동작하므로 국내 PoP 적용이 가능하다.
+**데이터 리전.** Prisma Access는 서울(Seoul) PoP를 운영하며 Explicit Proxy와 Colo-Connect를 지원합니다([Prisma Access 위치 목록](https://docs.paloaltonetworks.com/prisma-access/administration/prisma-access-overview/list-of-prisma-access-locations)). AI Access Security는 Prisma Access 위에서 동작하므로 국내 PoP 적용이 가능합니다.
 
-**Prisma AIRS 리전.** AIRS의 한국 리전 보장은 공식 자료에서 확인되지 않는다. 2026-03 싱가포르 랜딩이 발표됐다. 공공과 금융 도입 전 직접 확인한다.
+**Prisma AIRS 리전.** AIRS의 한국 리전 보장은 공식 자료에서 확인되지 않습니다. 2026-03 싱가포르 랜딩이 발표됐습니다. 공공과 금융 도입 전 직접 확인합니다.
 
-**CSAP와 망분리.** 클라우드 인라인 경유 구조는 [CSAP](/korea/regulation/csap-n2sf/)와 데이터 처리 리전 검토 대상이다.
+**CSAP와 망분리.** 클라우드 인라인 경유 구조는 [CSAP](/korea/regulation/csap-n2sf/)와 데이터 처리 리전 검토 대상입니다.
 
 ## 출처
 
@@ -153,7 +153,7 @@ NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체
 
 ## 면책
 
-본 정리는 Palo Alto Networks 공식 자료를 근거로 한다. 제품 사양과 시장 상황은 빠르게 바뀐다. 도입 전 최신 공식 발표를 확인한다. GenAI 앱 수와 한국 리전은 출처별로 다르거나 미확인이므로 직접 검증한다.
+본 정리는 Palo Alto Networks 공식 자료를 근거로 합니다. 제품 사양과 시장 상황은 빠르게 바뀝니다. 도입 전 최신 공식 발표를 확인합니다. GenAI 앱 수와 한국 리전은 출처별로 다르거나 미확인이므로 직접 검증합니다.
 
 ---
 최초 발행 2026-06-06, 최종 확인 2026-06-06, 다음 확인 2026-07-06

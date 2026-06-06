@@ -5,7 +5,7 @@ pillars: ["Applications"]
 ShowToc: false
 ---
 
-> **개발, 배포, 런타임을 잇는 전 주기 보안이 핵심이다.** 경계가 아니라 워크로드 단위로 보호한다. AI/LLM 보안도 이 영역에 포함된다.
+> **개발, 배포, 런타임을 잇는 전 주기 보안이 핵심입니다.** 경계가 아니라 워크로드 단위로 보호합니다. AI/LLM 보안도 이 영역에 포함됩니다.
 
 참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/), [NIST SP 800-207](/framework/nist-800-207/)
 
@@ -23,7 +23,7 @@ ShowToc: false
 
 <a href="/solutions/hashicorp-vault/" class="card">
 <div class="card-title">HashiCorp Vault</div>
-<div class="card-desc">동적 시크릿과 암호화 서비스. 수명이 짧은 자격 증명을 생성하고 자동 회수한다.</div>
+<div class="card-desc">동적 시크릿과 암호화 서비스. 수명이 짧은 자격 증명을 생성하고 자동 회수합니다.</div>
 <div class="card-cta">리뷰 보기</div>
 </a>
 
@@ -67,7 +67,7 @@ ShowToc: false
 
 ## 5개 Function
 
-CISA ZTMM v2 Applications & Workloads 영역의 Function이다.
+CISA ZTMM v2 Applications & Workloads 영역의 Function입니다.
 
 | Function | 한국어 | 핵심 |
 |---|---|---|
@@ -96,15 +96,15 @@ CISA ZTMM v2 Applications & Workloads 영역의 Function이다.
 | WAF, API 보안 | 웹과 API 계층 방어 | Cloudflare WAF, Akamai, F5, Imperva, Wallarm |
 | AI, LLM 보안 | AI 앱과 모델 보호 | Lakera, Prompt Security, Protect AI |
 
-AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/ai/ai-spm/)에서 별도로 깊이 다룬다.
+AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/ai/ai-spm/)에서 별도로 깊이 다룹니다.
 
 ## 시장 동향 (2025-2026)
 
-**사상 최대 인수.** Google은 클라우드 보안 기업 Wiz를 **320억 달러** 전액 현금에 인수했다. 2025년 3월 18일 발표 후 2026년 3월 11일 완료된 사이버보안 역사상 최대 규모 인수다([TechCrunch](https://techcrunch.com/2026/03/11/google-completes-32b-acquisition-of-wiz/)). Wiz는 2025년 연간 반복 매출 **10억 달러**를 넘겼다.
+**사상 최대 인수.** Google은 클라우드 보안 기업 Wiz를 **320억 달러** 전액 현금에 인수했습니다. 2025년 3월 18일 발표 후 2026년 3월 11일 완료된 사이버보안 역사상 최대 규모 인수입니다([TechCrunch](https://techcrunch.com/2026/03/11/google-completes-32b-acquisition-of-wiz/)). Wiz는 2025년 연간 반복 매출 **10억 달러**를 넘겼습니다.
 
-**플랫폼 통합 압력.** Gartner는 2029년까지 통합 CNAPP를 도입하지 않은 기업의 **60%**가 클라우드 공격면 가시성을 확보하지 못하고 제로 트러스트 목표 달성에 실패할 것으로 전망했다([Orca Security 정리](https://orca.security/resources/blog/gartner-2025-market-guide-for-cnapp/)).
+**플랫폼 통합 압력.** Gartner는 2029년까지 통합 CNAPP를 도입하지 않은 기업의 **60%**가 클라우드 공격면 가시성을 확보하지 못하고 제로 트러스트 목표 달성에 실패할 것으로 전망했습니다([Orca Security 정리](https://orca.security/resources/blog/gartner-2025-market-guide-for-cnapp/)).
 
-**SOC 통합이 성숙 기준.** 2025년 Gartner CNAPP 시장 가이드는 SIEM, SOAR 등 SOC 도구와의 깊은 통합을 성숙한 CNAPP의 차별 역량으로 처음 제시했다([Orca Security 정리](https://orca.security/resources/blog/gartner-2025-market-guide-for-cnapp/)). Palo Alto Networks는 Prisma Cloud를 Cortex Cloud로 재편했다([Dell'Oro Group](https://www.delloro.com/palo-alto-networks-reboots-cnapp-the-shift-from-prisma-cloud-to-cortex-cloud/)).
+**SOC 통합이 성숙 기준.** 2025년 Gartner CNAPP 시장 가이드는 SIEM, SOAR 등 SOC 도구와의 깊은 통합을 성숙한 CNAPP의 차별 역량으로 처음 제시했습니다([Orca Security 정리](https://orca.security/resources/blog/gartner-2025-market-guide-for-cnapp/)). Palo Alto Networks는 Prisma Cloud를 Cortex Cloud로 재편했습니다([Dell'Oro Group](https://www.delloro.com/palo-alto-networks-reboots-cnapp-the-shift-from-prisma-cloud-to-cortex-cloud/)).
 
 ## 도입 의사결정
 
@@ -134,13 +134,13 @@ AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/a
 
 ## 도입 고려사항
 
-**개인정보보호법.** 클라우드 구성 오류로 인한 데이터 노출은 개인정보 유출 사고로 직결된다. CSPM의 민감 데이터 노출 탐지 범위를 확인한다.
+**개인정보보호법.** 클라우드 구성 오류로 인한 데이터 노출은 개인정보 유출 사고로 직결됩니다. CSPM의 민감 데이터 노출 탐지 범위를 확인합니다.
 
-**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 전환으로 공공 클라우드 활용이 늘면, 워크로드 단위 보호와 가시성을 제공하는 CNAPP의 역할이 커진다.
+**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 전환으로 공공 클라우드 활용이 늘면, 워크로드 단위 보호와 가시성을 제공하는 CNAPP의 역할이 커집니다.
 
-**공공과 정부.** 클라우드형 CNAPP은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인한다.
+**공공과 정부.** 클라우드형 CNAPP은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인합니다.
 
-**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/) 완화로 금융권 클라우드 도입이 늘면서 워크로드 보안과 접근 통제 요건이 보안성 검토 대상이 된다.
+**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/) 완화로 금융권 클라우드 도입이 늘면서 워크로드 보안과 접근 통제 요건이 보안성 검토 대상이 됩니다.
 
 ---
 최종 검토 2026-05-30

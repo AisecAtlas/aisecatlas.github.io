@@ -5,7 +5,7 @@ pillars: ["Data"]
 ShowToc: false
 ---
 
-> **데이터의 위치와 접근 주체를 먼저 파악하는 것이 출발점이다.** 자산을 모르면 보호할 수 없다. DSPM이 부상한 이유다.
+> **데이터의 위치와 접근 주체를 먼저 파악하는 것이 출발점입니다.** 자산을 모르면 보호할 수 없습니다. DSPM이 부상한 이유입니다.
 
 참고 표준: [CISA ZTMM v2](/framework/cisa-ztmm-v2/), [NIST SP 800-207](/framework/nist-800-207/)
 
@@ -41,7 +41,7 @@ ShowToc: false
 
 ## 5개 Function
 
-CISA ZTMM v2 Data 영역의 Function이다.
+CISA ZTMM v2 Data 영역의 Function입니다.
 
 | Function | 한국어 | 핵심 |
 |---|---|---|
@@ -70,15 +70,15 @@ CISA ZTMM v2 Data 영역의 Function이다.
 | 암호화와 키 관리 | 암호화와 키 수명주기 | HashiCorp Vault, AWS KMS, Thales |
 | AI 사용 가시화 / Shadow AI | 직원 GenAI 사용 발견과 데이터 보호 | [Harmonic Security](/solutions/harmonic-security/), [WitnessAI](/solutions/witnessai/), Nightfall, Cyberhaven |
 
-직원 AI 사용 가시화의 캡처 메커니즘과 솔루션 지형은 [AI 사용 가시화](/ai/ai-usage-visibility/)가 정리한다.
+직원 AI 사용 가시화의 캡처 메커니즘과 솔루션 지형은 [AI 사용 가시화](/ai/ai-usage-visibility/)에서 정리합니다.
 
 ## 시장 동향 (2025-2026)
 
-**DSPM의 부상.** Gartner는 2025년 9월 데이터 보안 태세 관리(DSPM) 시장 가이드를 발간했다([Cyera 자료](https://www.cyera.com/reports/2025-gartner-market-guide-for-data-security-posture-management)).
+**DSPM의 부상.** Gartner는 2025년 9월 데이터 보안 태세 관리(DSPM) 시장 가이드를 발간했습니다([Cyera 자료](https://www.cyera.com/reports/2025-gartner-market-guide-for-data-security-posture-management)).
 
-**대형 투자.** Cyera는 2025년 6월 11일 **5억 4천만 달러 규모 시리즈 E**를 유치해 기업가치 **60억 달러**에 도달했다([SiliconANGLE](https://siliconangle.com/2025/06/11/ai-native-data-security-firm-cyera-raises-540m-6b-valuation/)).
+**대형 투자.** Cyera는 2025년 6월 11일 **5억 4천만 달러 규모 시리즈 E**를 유치해 기업가치 **60억 달러**에 도달했습니다([SiliconANGLE](https://siliconangle.com/2025/06/11/ai-native-data-security-firm-cyera-raises-540m-6b-valuation/)).
 
-**시장 통합.** 2023년부터 2025년 사이 데이터 보안 역량 인수가 이어졌다. Cyera는 2024년 Trail을, Forcepoint는 2025년 GetVisibility를 인수했다([Grand View Research](https://www.grandviewresearch.com/industry-analysis/data-security-posture-management-market-report)).
+**시장 통합.** 2023년부터 2025년 사이 데이터 보안 역량 인수가 이어졌습니다. Cyera는 2024년 Trail을, Forcepoint는 2025년 GetVisibility를 인수했습니다([Grand View Research](https://www.grandviewresearch.com/industry-analysis/data-security-posture-management-market-report)).
 
 ## 도입 의사결정
 
@@ -106,13 +106,13 @@ CISA ZTMM v2 Data 영역의 Function이다.
 
 ## 도입 고려사항
 
-**개인정보보호법.** 개인정보의 분류, 접근 통제, 암호화는 법적 의무와 직결된다. DSPM과 분류 도구가 정형, 비정형 데이터에서 개인정보를 자동 식별하는지 검증한다.
+**개인정보보호법.** 개인정보의 분류, 접근 통제, 암호화는 법적 의무와 직결됩니다. DSPM과 분류 도구가 정형, 비정형 데이터에서 개인정보를 자동 식별하는지 검증합니다.
 
-**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/)의 기밀(C), 민감(S), 공개(O) 데이터 등급 분류는 Data Categorization Function과 직접 맞물린다. 등급 분류 자동화가 N²SF 대응의 출발점이다.
+**망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/)의 기밀(C), 민감(S), 공개(O) 데이터 등급 분류는 Data Categorization Function과 직접 맞물립니다. 등급 분류 자동화가 N²SF 대응의 출발점입니다.
 
-**공공과 정부.** 클라우드형 DSPM은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인한다.
+**공공과 정부.** 클라우드형 DSPM은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인합니다.
 
-**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)과 신용정보법의 데이터 보호 요건에 비추어 접근 통제와 암호화 범위를 검토한다.
+**금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)과 신용정보법의 데이터 보호 요건에 비추어 접근 통제와 암호화 범위를 검토합니다.
 
 ---
 최종 검토 2026-05-30

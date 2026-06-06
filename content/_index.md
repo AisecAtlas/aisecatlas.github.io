@@ -18,19 +18,19 @@ description: "AI를 지키고, 직원 AI 사용을 가시화하고, AI로 보안
 
 <a href="/ai/" class="card">
 <div class="card-title">AI 보안</div>
-<div class="card-desc">① AI를 지키기(LLM과 에이전트 보안), ② 직원 AI 사용 가시화(Shadow AI 통제), ③ AI로 보안 강화(Security Copilot, Agentic SOC) 세 축을 11건으로 다룬다. Lakera, Harmonic, WitnessAI, Charlotte AI를 OWASP LLM Top 10, MITRE ATLAS에 매핑한다.</div>
+<div class="card-desc">① AI를 지키기(LLM과 에이전트 보안), ② 직원 AI 사용 가시화(Shadow AI 통제), ③ AI로 보안 강화(Security Copilot, Agentic SOC) 세 축을 11건으로 다룹니다. Lakera, Harmonic, WitnessAI, Charlotte AI를 OWASP LLM Top 10, MITRE ATLAS에 매핑합니다.</div>
 <div class="card-cta">AI 보안 11건 보기</div>
 </a>
 
 <a href="/pillars/" class="card">
 <div class="card-title">솔루션 리뷰</div>
-<div class="card-desc">Identity, Devices, Networks, Applications, Data 영역에서 솔루션 16건을 같은 구조로 리뷰한다. 각 리뷰는 한눈에 보기, 시장 위치, 강점과 한계, 도입 고려사항을 같은 형식으로 정리한다.</div>
+<div class="card-desc">Identity, Devices, Networks, Applications, Data 영역에서 솔루션 16건을 같은 구조로 리뷰합니다. 각 리뷰는 한눈에 보기, 시장 위치, 강점과 한계, 도입 고려사항을 같은 형식으로 정리합니다.</div>
 <div class="card-cta">리뷰 16건 보기</div>
 </a>
 
 <a href="/framework/" class="card">
 <div class="card-title">표준과 규제</div>
-<div class="card-desc">OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, NIST SP 800-207, CISA ZTMM를 표준 요약 6건으로 압축한다. 한국 규제 4건은 망분리, CSAP, N²SF 적용 노트로 잇는다.</div>
+<div class="card-desc">OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, NIST SP 800-207, CISA ZTMM를 표준 요약 6건으로 압축합니다. 한국 규제 4건은 망분리, CSAP, N²SF 적용 노트로 잇습니다.</div>
 <div class="card-cta">표준 6건 보기</div>
 </a>
 
@@ -47,7 +47,7 @@ description: "AI를 지키고, 직원 AI 사용을 가시화하고, AI로 보안
 
 ## 어디서 시작하나
 
-관심사에 따라 출발점이 다르다. 아래 표에서 바로 진입한다.
+관심사에 따라 출발점이 다릅니다. 아래 표에서 바로 진입합니다.
 
 | 관심사 | 출발점 |
 |---|---|
@@ -60,7 +60,7 @@ description: "AI를 지키고, 직원 AI 사용을 가시화하고, AI로 보안
 
 ## 운영 원칙
 
-> **공개 자료만 쓴다.** 광고, 스폰서, 제휴 링크가 없다.
-> 모든 솔루션을 같은 구조로 리뷰한다. 벤더 공식 문서, 표준 문서, 공개 리포트를 근거로 한다.
+> **공개 자료만 씁니다.** 광고, 스폰서, 제휴 링크가 없습니다.
+> 모든 솔루션을 같은 구조로 리뷰합니다. 벤더 공식 문서, 표준 문서, 공개 리포트를 근거로 합니다.
 
-<!-- 톤 점검 + 가독성 점검: 종결어미 단일(한다체), 가치제안 1문장, 숫자 포함, 표/카드 비중 50%+, 수식어 0, 상투구 0, 중간점 0, AI 중심 포지셔닝, 자기지시 서술 0 -->
+<!-- 톤 점검 + 가독성 점검: 종결어미: 개조식+합니다체, 가치제안 1문장, 숫자 포함, 표/카드 비중 50%+, 수식어 0, 상투구 0, 중간점 0, AI 중심 포지셔닝, 자기지시 서술 0 -->

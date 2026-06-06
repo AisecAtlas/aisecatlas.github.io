@@ -21,11 +21,11 @@ ShowToc: true
 
 ## 어떤 제품인가
 
-Zscaler는 클라우드에서 동작하는 인라인 보안 플랫폼이다. 핵심은 **Zero Trust Exchange**로, 전 세계 **150개 이상 데이터센터**([출처](https://www.zscaler.com/blogs/cxo-insights/putting-zero-trust-practice-overview-zscalers-platform-offerings-solution-elements-and))에 분산된 SASE 아키텍처 기반이다.
+Zscaler는 클라우드에서 동작하는 인라인 보안 플랫폼입니다. 핵심은 **Zero Trust Exchange**로, 전 세계 **150개 이상 데이터센터**([출처](https://www.zscaler.com/blogs/cxo-insights/putting-zero-trust-practice-overview-zscalers-platform-offerings-solution-elements-and))에 분산된 SASE 아키텍처 기반입니다.
 
-기존 VPN은 사용자를 사내 네트워크에 들여보낸다. Zscaler는 네트워크를 사용자에게 확장하지 않고, 개별 디바이스와 개별 앱 사이에만 일대일 연결(**segment of one**)을 만든다. 앱은 외부에 노출되지 않고 안에서 밖으로 연결을 맺는다(**inside-out**).
+기존 VPN은 사용자를 사내 네트워크에 들여보냅니다. Zscaler는 네트워크를 사용자에게 확장하지 않고, 개별 디바이스와 개별 앱 사이에만 일대일 연결(**segment of one**)을 만듭니다. 앱은 외부에 노출되지 않고 안에서 밖으로 연결을 맺습니다(**inside-out**).
 
-> **왜 중요한가.** 네트워크 중심 경계 모델에서 ID 우선, 앱 중심 모델로의 전환이 제로 트러스트의 핵심이다. Zscaler는 이 전환을 제품 구조로 강제한다.
+> **왜 중요한가.** 네트워크 중심 경계 모델에서 ID 우선, 앱 중심 모델로의 전환이 제로 트러스트의 핵심입니다. Zscaler는 이 전환을 제품 구조로 강제합니다.
 
 | 모듈 | 역할 |
 |---|---|
@@ -38,11 +38,11 @@ Zscaler는 클라우드에서 동작하는 인라인 보안 플랫폼이다. 핵
 
 ## 시장 위치
 
-Zscaler는 ZTNA, SASE 시장의 상장 리더다. FY2025 4분기에 연간반복매출(ARR)이 **30억 달러**를 넘었고 매출은 전년 대비 **21% 증가**했다([SEC 8-K](https://www.sec.gov/Archives/edgar/data/0001713683/000171368325000138/zs-07312025_991.htm)). FY2026 1분기 매출은 **26% 증가**했다([SEC 8-K](https://www.sec.gov/Archives/edgar/data/0001713683/000171368325000203/zs-10312025_991.htm)).
+Zscaler는 ZTNA, SASE 시장의 상장 리더입니다. FY2025 4분기에 연간반복매출(ARR)이 **30억 달러**를 넘었고 매출은 전년 대비 **21% 증가**했습니다([SEC 8-K](https://www.sec.gov/Archives/edgar/data/0001713683/000171368325000138/zs-07312025_991.htm)). FY2026 1분기 매출은 **26% 증가**했습니다([SEC 8-K](https://www.sec.gov/Archives/edgar/data/0001713683/000171368325000203/zs-10312025_991.htm)).
 
-플랫폼 규모는 **150개 이상 글로벌 데이터센터**다([출처](https://www.zscaler.com/blogs/cxo-insights/putting-zero-trust-practice-overview-zscalers-platform-offerings-solution-elements-and)). 사용자 인근 데이터센터에서 인라인 검사를 수행하는 구조다.
+플랫폼 규모는 **150개 이상 글로벌 데이터센터**입니다([출처](https://www.zscaler.com/blogs/cxo-insights/putting-zero-trust-practice-overview-zscalers-platform-offerings-solution-elements-and)). 사용자 인근 데이터센터에서 인라인 검사를 수행하는 구조입니다.
 
-경쟁 구도에서 Zscaler는 클라우드 네이티브 SSE/SASE 진영의 대표 주자다. 방화벽 자산을 보유한 조직은 Palo Alto Prisma Access를, 데이터 보호 중심 SSE는 Netskope를 함께 검토하는 경우가 많다. 최근 동향으로 2025년 Zero Trust Segmentation, SAP RISE 네이티브 통합 등 확장이 이어졌다([SAP RISE 통합 발표](https://ir.zscaler.com/news-releases/news-release-details/zscaler-now-offers-natively-integrated-zero-trust-solution-rise)).
+경쟁 구도에서 Zscaler는 클라우드 네이티브 SSE/SASE 진영의 대표 주자입니다. 방화벽 자산을 보유한 조직은 Palo Alto Prisma Access를, 데이터 보호 중심 SSE는 Netskope를 함께 검토하는 경우가 많습니다. 최근 동향으로 2025년 Zero Trust Segmentation, SAP RISE 네이티브 통합 등 확장이 이어졌습니다([SAP RISE 통합 발표](https://ir.zscaler.com/news-releases/news-release-details/zscaler-now-offers-natively-integrated-zero-trust-solution-rise)).
 
 ## 강점과 한계
 
@@ -81,13 +81,13 @@ Zscaler는 ZTNA, SASE 시장의 상장 리더다. FY2025 4분기에 연간반복
 
 ## 도입 고려사항
 
-**라이선스.** 모듈별 구독, 공개 정가 없음. 국내 파트너를 통한 도입이 일반적이다.
+**라이선스.** 모듈별 구독, 공개 정가 없음. 국내 파트너를 통한 도입이 일반적입니다.
 
-**데이터 리전.** 글로벌 150개 이상 데이터센터 운영. 한국(서울) 데이터센터의 정확한 운영과 인증 상태는 [Zscaler 데이터센터 맵](https://trust.zscaler.com/data-center-map)에서 별도 확인이 필요하다.
+**데이터 리전.** 글로벌 150개 이상 데이터센터 운영. 한국(서울) 데이터센터의 정확한 운영과 인증 상태는 [Zscaler 데이터센터 맵](https://trust.zscaler.com/data-center-map)에서 별도 확인이 필요합니다.
 
-**CSAP.** Zscaler의 한국 클라우드 보안인증(CSAP) 획득 여부는 공개 자료에서 확인되지 않는다. 참고로 CSAP는 KISA가 운영하며, AWS 서울 리전, Azure, Google Cloud는 CSAP Low(Group C)를 획득했다. 공공 도입 검토 시 최신 인증 현황을 직접 확인한다.
+**CSAP.** Zscaler의 한국 클라우드 보안인증(CSAP) 획득 여부는 공개 자료에서 확인되지 않습니다. 참고로 CSAP는 KISA가 운영하며, AWS 서울 리전, Azure, Google Cloud는 CSAP Low(Group C)를 획득했습니다. 공공 도입 검토 시 최신 인증 현황을 직접 확인합니다.
 
-**망분리.** 클라우드 SaaS형 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 국내 적용 사례는 공개 자료상 확인되지 않는다.
+**망분리.** 클라우드 SaaS형 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 국내 적용 사례는 공개 자료상 확인되지 않습니다.
 
 ## 출처
 
@@ -102,7 +102,7 @@ Zscaler는 ZTNA, SASE 시장의 상장 리더다. FY2025 4분기에 연간반복
 
 ## 면책
 
-본 정리는 공개 자료를 근거로 한다. 제품 사양과 시장 상황은 빠르게 바뀐다. 도입 전 최신 공식 발표를 확인한다.
+본 정리는 공개 자료를 근거로 합니다. 제품 사양과 시장 상황은 빠르게 바뀝니다. 도입 전 최신 공식 발표를 확인합니다.
 
 ---
 최초 발행 2026-05-30, 최종 확인 2026-05-31, 다음 확인 2026-08-30
