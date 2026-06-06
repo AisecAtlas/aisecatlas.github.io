@@ -137,6 +137,31 @@
 }
 
 /* ============================================
+   홈 탭 (맵 / AI 보안 / ZTA 분류) — 토글, JS 최소
+   ============================================ */
+.home-tabs { margin: 2.5rem 0 0; }
+.home-tabnav {
+  display: flex; gap: 2px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--border); margin-bottom: 1.8rem;
+}
+.home-tab {
+  background: transparent; border: 0; border-bottom: 2px solid transparent;
+  padding: 12px 20px; font-size: 16px; font-weight: 700;
+  color: var(--secondary); cursor: pointer; font-family: inherit; margin-bottom: -1px;
+  transition: color .15s ease, border-color .15s ease;
+}
+.home-tab:hover { color: var(--primary); }
+.home-tab.is-active { color: var(--accent); border-bottom-color: var(--accent); }
+.home-panel { display: none; }
+.home-panel.is-active { display: block; }
+.home-panel-more {
+  margin-top: 2.5rem; padding-top: 1.2rem;
+  border-top: 1px dashed var(--border); font-size: 14px;
+}
+.home-panel-more a { font-weight: 600; }
+@media (max-width: 640px) { .home-tab { padding: 10px 14px; font-size: 15px; } }
+
+/* ============================================
    보안 아키텍처 다이어그램 (.arch-stack)
    계층형 레이어 박스 + 통제 지점 강조. JS 없음.
    ============================================ */

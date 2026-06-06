@@ -8,31 +8,31 @@ ShowToc: false
 
 <div class="card-grid">
 
-<a href="identity/" class="card">
+<a href="/pillars/identity/" class="card">
 <div class="card-title">Identity</div>
 <div class="card-desc">사용자와 서비스의 신원을 확립하고 지속적으로 검증합니다. IDaaS, PAM, IGA, ITDR.</div>
 <div class="card-cta">신원 리뷰 2건</div>
 </a>
 
-<a href="devices/" class="card">
+<a href="/pillars/devices/" class="card">
 <div class="card-title">Devices</div>
 <div class="card-desc">엔드포인트, 서버, 모바일, IoT 자산을 관리합니다. EPP, EDR, XDR, MDM, UEM.</div>
 <div class="card-cta">기기 리뷰 2건</div>
 </a>
 
-<a href="networks/" class="card">
+<a href="/pillars/networks/" class="card">
 <div class="card-title">Networks</div>
 <div class="card-desc">네트워크 경계 의존을 줄이고 암호화와 세그멘테이션을 강화합니다. ZTNA, SASE, SSE.</div>
 <div class="card-cta">네트워크 리뷰 3건</div>
 </a>
 
-<a href="applications/" class="card">
+<a href="/pillars/applications/" class="card">
 <div class="card-title">Applications & Workloads</div>
 <div class="card-desc">개발부터 런타임까지 애플리케이션의 보안을 다룹니다. CSPM, CNAPP, CWPP, WAF.</div>
 <div class="card-cta">애플리케이션 리뷰 2건</div>
 </a>
 
-<a href="data/" class="card">
+<a href="/pillars/data/" class="card">
 <div class="card-title">Data</div>
 <div class="card-desc">데이터의 분류, 라벨링, 암호화, 접근 통제, 유출 방지를 다룹니다. DSPM, DLP.</div>
 <div class="card-cta">데이터 리뷰 4건</div>
