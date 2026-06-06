@@ -135,3 +135,291 @@
   margin: 0 0 16px;
   font-weight: 700;
 }
+
+/* ============================================
+   보안 아키텍처 다이어그램 (.arch-stack)
+   계층형 레이어 박스 + 통제 지점 강조. JS 없음.
+   ============================================ */
+
+.arch {
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 20px 8px;
+  background: linear-gradient(180deg, var(--code-bg) 0%, transparent 100%);
+}
+
+.arch-title {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+/* 세로 레이어 스택 */
+.arch-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.arch-layer {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: var(--theme, #1b1b1f);
+  background: var(--entry, var(--code-bg));
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.arch-layer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.arch-layer-title {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 15px;
+}
+
+.arch-layer-sub {
+  font-size: 12.5px;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+.arch-tag {
+  flex: none;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+/* 벤더의 통제 지점 강조 */
+.arch-layer.is-control {
+  border-color: var(--accent-glow);
+  background: var(--accent-soft);
+}
+
+.arch-layer.is-control .arch-layer-title { color: var(--accent); }
+
+.arch-layer.is-control .arch-tag {
+  color: var(--accent);
+  border-color: var(--accent-glow);
+  background: var(--accent-soft);
+}
+
+/* 레이어 사이 흐름 화살표 */
+.arch-flow {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 13px;
+  line-height: 1;
+  padding: 5px 0;
+  user-select: none;
+}
+
+.arch-flow::before { content: "↓"; opacity: 0.55; }
+
+/* 가로 병렬 박스 (모듈 한 줄에 여러 개) */
+.arch-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.arch-row .arch-layer { justify-content: center; text-align: center; }
+.arch-row .arch-layer-main { align-items: center; }
+
+/* 범례 */
+.arch-legend {
+  font-size: 12px;
+  color: var(--secondary);
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+
+.arch-legend .dot {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin: 0 5px 0 2px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-glow);
+}
+
+@media (max-width: 640px) {
+  .arch-layer { flex-direction: column; align-items: flex-start; gap: 4px; }
+}
+
+/* 신뢰 경계 (데이터 흐름도에서 점선 박스) */
+.arch-boundary {
+  border: 1px dashed var(--accent-glow);
+  border-radius: 10px;
+  padding: 10px 10px 4px;
+  margin: 4px 0;
+  position: relative;
+}
+.arch-boundary > .arch-boundary-label {
+  position: absolute;
+  top: -9px; left: 14px;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--theme, #1b1b1f);
+  padding: 0 6px;
+}
+
+/* ============================================
+   표준 AI 공격표면 파이프라인 (.aipipe)
+   데이터→모델→배포→런타임→에이전트→사용 6단계
+   각 단계에 OWASP LLM / MITRE ATLAS 위협 칩,
+   통제 지점(.is-control) 강조. JS 없음.
+   ============================================ */
+
+.aipipe {
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  background:
+    radial-gradient(120% 100% at 0% 0%, var(--accent-soft) 0%, transparent 45%),
+    var(--code-bg);
+}
+
+.aipipe-track {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+}
+
+.aipipe-stage {
+  flex: 1 0 150px;
+  min-width: 150px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 12px 10px;
+  background: var(--entry, rgba(255,255,255,0.02));
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.aipipe-n {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--secondary);
+  width: 20px; height: 20px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.aipipe-t {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.aipipe-s {
+  font-size: 11.5px;
+  color: var(--secondary);
+  line-height: 1.45;
+  min-height: 2.4em;
+}
+
+.aipipe-threats {
+  margin-top: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.01em;
+  color: var(--secondary);
+  border-top: 1px dashed var(--border);
+  padding-top: 6px;
+}
+
+.aipipe-arrow {
+  flex: 0 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+/* 통제 지점 강조 */
+.aipipe-stage.is-control {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 0 0 1px var(--accent-glow) inset;
+}
+.aipipe-stage.is-control .aipipe-n {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.aipipe-stage.is-control .aipipe-t { color: var(--accent); }
+.aipipe-stage.is-control::after {
+  content: "통제";
+  position: absolute;
+  top: 8px; right: 8px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  border: 1px solid var(--accent-glow);
+  border-radius: 8px;
+  padding: 1px 6px;
+  background: var(--theme, #1b1b1f);
+}
+
+.aipipe-note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--primary);
+  line-height: 1.6;
+}
+.aipipe-note p { margin: 0; }
+
+.aipipe-legend {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+  font-size: 11.5px;
+  color: var(--secondary);
+}
+.aipipe-legend .dot {
+  display: inline-block;
+  width: 11px; height: 11px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+}
+
+@media (max-width: 640px) {
+  .aipipe-s { min-height: 0; }
+}

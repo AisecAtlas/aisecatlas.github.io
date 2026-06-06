@@ -1,0 +1,29 @@
+{{- /* 표준 AI 공격표면 파이프라인. 사용: {{< ai-pipeline highlight="runtime,agent" title="..." note="..." >}} */ -}}
+{{- $hl := slice -}}
+{{- with .Get "highlight" }}{{ $hl = split (replaceRE "\\s" "" .) "," }}{{ end -}}
+{{- $stages := slice
+  (dict "n" "1" "k" "data"    "t" "데이터"        "s" "학습·파인튜닝·RAG 데이터"   "threats" "LLM04 포이즈닝 · LLM08 임베딩")
+  (dict "n" "2" "k" "model"   "t" "모델"          "s" "가중치·아티팩트·공급망"      "threats" "LLM03 공급망 · ATLAS")
+  (dict "n" "3" "k" "deploy"  "t" "배포"          "s" "레지스트리·서빙 인프라"      "threats" "오구성 · 접근 통제")
+  (dict "n" "4" "k" "runtime" "t" "추론·런타임"   "s" "프롬프트·응답 처리"          "threats" "LLM01 인젝션 · LLM02 · LLM05")
+  (dict "n" "5" "k" "agent"   "t" "앱·에이전트"   "s" "도구 호출·자율 행동"         "threats" "LLM06 · Agentic · MCP")
+  (dict "n" "6" "k" "usage"   "t" "사용자·사용행위" "s" "직원 GenAI 사용·데이터 반출" "threats" "데이터 유출 · Shadow AI")
+-}}
+<div class="aipipe">
+{{- with .Get "title" }}<div class="arch-title">{{ . }}</div>{{ end }}
+  <div class="aipipe-track">
+  {{- range $i, $st := $stages }}
+    {{- if gt $i 0 }}<div class="aipipe-arrow">→</div>{{ end }}
+    {{- $isc := in $hl $st.k }}
+    <div class="aipipe-stage{{ if $isc }} is-control{{ end }}">
+      <span class="aipipe-n">{{ $st.n }}</span>
+      <span class="aipipe-t">{{ $st.t }}</span>
+      <span class="aipipe-s">{{ $st.s }}</span>
+      <span class="aipipe-threats">{{ $st.threats }}</span>
+    </div>
+  {{- end }}
+  </div>
+{{- with .Get "note" }}<div class="aipipe-note">{{ . | markdownify }}</div>{{ end }}
+  <div class="aipipe-legend"><span class="dot"></span> 강조 단계 = 이 솔루션의 통제 지점. 위협 ID는 OWASP LLM Top 10과 MITRE ATLAS 기준.</div>
+</div>
+{{- /* keys: data, model, deploy, runtime, agent, usage */ -}}
