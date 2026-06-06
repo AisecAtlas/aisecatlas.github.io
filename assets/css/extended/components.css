@@ -319,7 +319,8 @@
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px 12px 10px;
-  background: var(--entry, rgba(255,255,255,0.02));
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.14);
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -436,8 +437,8 @@
   border-radius: 12px;
   padding: 18px;
   background:
-    radial-gradient(120% 120% at 50% 0%, var(--accent-soft) 0%, transparent 42%),
-    var(--code-bg);
+    radial-gradient(130% 130% at 50% -10%, var(--accent-soft) 0%, transparent 46%),
+    rgba(255, 255, 255, 0.028);
 }
 
 .zta-title {
@@ -462,13 +463,14 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px 12px;
-  background: var(--entry, rgba(255,255,255,0.02));
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
+.zta-node { border-color: rgba(255, 255, 255, 0.14); }
 .zta-node b { font-size: 14px; color: var(--primary); line-height: 1.3; }
-.zta-node span { font-size: 11.5px; color: var(--secondary); line-height: 1.45; }
+.zta-node span { font-size: 11.5px; color: rgba(255, 255, 255, 0.66); line-height: 1.45; }
 .zta-node-role {
   font-size: 9.5px; font-weight: 700; letter-spacing: 0.05em;
   text-transform: uppercase; color: var(--secondary);
@@ -493,20 +495,21 @@
 }
 .zta-vconn::before {
   content: ""; position: absolute; top: 0; bottom: 0;
-  border-left: 1.5px dashed var(--accent-glow);
+  border-left: 1.5px dashed rgba(255, 255, 255, 0.22);
 }
 .zta-vconn::after {
   content: "↕ " attr(data-label);
   position: relative;
   font-size: 10.5px; color: var(--accent);
-  background: var(--code-bg); padding: 2px 9px; border-radius: 8px;
+  background: #14151a; padding: 2px 9px; border-radius: 8px;
   border: 1px solid var(--accent-glow);
 }
 
 /* 데이터 평면: 주체 → PEP → 자원 */
 .zta-plane {
   display: grid;
-  grid-template-columns: 1fr 70px 1.15fr 70px 1fr;
+  grid-template-columns: 1fr 96px 1.15fr 96px 1fr;
+  gap: 2px;
   align-items: stretch;
 }
 .zta-pep.is-pep {
@@ -517,16 +520,18 @@
 .zta-pep.is-pep .zta-node-role, .zta-pep.is-pep b { color: var(--accent); }
 
 .zta-harrow {
-  position: relative;
-  display: flex; align-items: center; justify-content: center;
-  min-height: 56px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 5px; padding: 6px 3px; min-height: 56px;
 }
-.zta-harrow::before { content: "→"; font-size: 20px; color: var(--secondary); }
+.zta-harrow::before {
+  content: "→"; font-size: 22px; line-height: 1; color: var(--accent);
+}
 .zta-harrow::after {
   content: attr(data-label);
-  position: absolute; left: 50%; top: 50%;
-  transform: translate(-50%, -150%);
-  font-size: 9.5px; color: var(--secondary); white-space: nowrap;
+  font-size: 9.5px; color: var(--secondary);
+  text-align: center; white-space: normal;
+  max-width: 90px; line-height: 1.35;
 }
 
 /* 상호작용 시스템 */
@@ -538,9 +543,9 @@
 }
 .zta-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .zta-chip {
-  font-size: 11px; color: var(--secondary);
-  border: 1px solid var(--border); border-radius: 10px;
-  padding: 3px 9px; background: var(--entry, rgba(255,255,255,0.02));
+  font-size: 11px; color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 10px;
+  padding: 3px 9px; background: rgba(255, 255, 255, 0.05);
 }
 
 .zta-legend {
