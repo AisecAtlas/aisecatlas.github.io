@@ -10,7 +10,7 @@ ShowToc: true
 
 > 원문: [MITRE ATLAS](https://atlas.mitre.org)
 >
-> 이 페이지는 원문을 한국어로 요약한 것입니다. 권위 있는 해석이 필요하면 원문을 봅니다.
+> 원문을 한국어로 요약한 자료입니다. 권위 있는 해석이 필요하면 원문을 확인합니다.
 
 MITRE ATLAS(Adversarial Threat Landscape for AI Systems)는 AI/ML 시스템을 노리는 공격을 **전술(공격자의 목표)과 기법(목표를 이루는 수단)의 매트릭스**로 해체한 지식베이스입니다. ATT&CK과 같은 구조를 AI 수명주기에 맞춰 옮긴 것으로, 데이터 수집과 모델 학습부터 배포, 추론, 에이전트 운영까지의 공격을 전술별로 분류합니다.
 
