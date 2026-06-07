@@ -48,11 +48,11 @@ buildExpired = false
     keys = ["title", "permalink", "summary", "content"]
 
 # IA 메뉴 (2026-06-06 재편: AI 보안을 3축 단일 허브로 통합, 자동화는 ③축으로 흡수)
-# 1. 솔루션 카탈로그  2. AI 보안(① 지키기 ② 사용 가시화 ③ 보안 강화)  3. 표준과 규제
+# 1. ZTA 기반 솔루션 분류  2. AI 보안(① 지키기 ② 사용 가시화 ③ 보안 강화)  3. 표준과 규제
 
 [[menu.main]]
   identifier = "solutions"
-  name = "솔루션 카탈로그"
+  name = "ZTA 기반 솔루션 분류"
   url = "/pillars/"
   weight = 10
 

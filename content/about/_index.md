@@ -47,7 +47,7 @@ disableShare: true
 
 | 영역 | 어디서 | 깊이 |
 |---|---|---|
-| Zero Trust 5 Pillar 솔루션 | [솔루션 가이드](/pillars/) | 카테고리 + 개별 풀 리뷰 |
+| Zero Trust 5 Pillar 솔루션 | [ZTA 기반 솔루션 분류](/pillars/) | 카테고리 + 개별 풀 리뷰 |
 | AI/LLM 보안 | [AI 동향](/ai/) | 시장 동향 + OWASP 표준 + 솔루션 카테고리 |
 | 보안 자동화 | [자동화](/automation/) | SOAR 진화 + Copilot 비교 |
 | 국제 표준 | [표준과 규제](/framework/) | CISA, NIST 한국어 요약 |

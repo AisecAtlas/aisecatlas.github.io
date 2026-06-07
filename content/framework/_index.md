@@ -34,8 +34,8 @@ ShowToc: false
 
 <a href="mitre-atlas/" class="card">
 <div class="card-title">MITRE ATLAS</div>
-<div class="card-desc">AI 시스템 공격 전술과 기법 매트릭스. ATT&CK의 AI판, 16전술 84기법.</div>
-<div class="card-cta">표준 요약 보기</div>
+<div class="card-desc">AI 시스템 공격 전술과 기법 매트릭스. ATT&CK의 AI판, 16전술 상위 101기법.</div>
+<div class="card-cta">전술 16개 해체 보기</div>
 </a>
 
 <a href="ai-security-standards/" class="card">
@@ -62,7 +62,7 @@ ShowToc: false
 
 | 표준 | 어디에 사용 |
 |---|---|
-| CISA ZTMM v2 | [솔루션 가이드](/pillars/)의 5 영역 구분 |
+| CISA ZTMM v2 | [ZTA 기반 솔루션 분류](/pillars/)의 5 영역 구분 |
 | NIST SP 800-207 | 솔루션 리뷰의 표준 정합성 기준(7원칙) |
 | [OWASP LLM Top 10](owasp-llm-top-10/) | LLM 게이트웨이, AI 레드티밍의 위협 모델 기준 |
 | [NIST AI RMF](nist-ai-rmf/) | AI 거버넌스 계층의 상위 프레임 |

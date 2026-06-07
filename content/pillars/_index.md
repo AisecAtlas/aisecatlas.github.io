@@ -1,6 +1,6 @@
 ---
-title: "솔루션 가이드"
-description: "CISA Zero Trust Maturity Model의 5개 영역으로 분류한 보안 솔루션 카탈로그."
+title: "ZTA 기반 솔루션 분류"
+description: "CISA Zero Trust Maturity Model의 5개 영역으로 분류한 보안 솔루션."
 ShowToc: false
 ---
 
