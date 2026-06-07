@@ -55,12 +55,15 @@ CISA ZTMM v2 Devices 영역의 Function입니다.
 | EPP / EDR | 엔드포인트 보호와 탐지 대응 | CrowdStrike Falcon, SentinelOne, Microsoft Defender for Endpoint |
 | XDR | 엔드포인트 너머로 탐지 범위 확장 | Palo Alto Cortex XDR, Trellix, Trend Vision One |
 | MDM / UEM | 모바일과 통합 단말 관리 | Intune, Jamf, VMware Workspace ONE |
+| OT / ICS 보안 | 산업 제어와 사이버-물리 자산의 가시성과 위협 탐지 | Claroty, Dragos, Nozomi Networks, Armis |
 
 ## 시장 동향 (2025-2026)
 
 **Microsoft의 점유율.** Microsoft는 IDC 2025 데이터 기준 모던 엔드포인트 보안 시장 점유율 **3년 연속 1위**를 차지했습니다([Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2025/08/27/microsoft-ranked-number-one-in-modern-endpoint-security-market-share-third-year-in-a-row/)).
 
 **AI 자율 대응으로 이동.** EDR이 XDR로 확장됩니다. 분석가 개입 없이 행동하는 자율 대응이 차별 요소가 됐습니다. CrowdStrike는 RSA 2026에서 Charlotte AgentWorks 생태계를 공개했습니다([CrowdStrike 보도자료](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/)).
+
+**OT 보안 시장 통합.** 산업 제어 보안의 순수 플레이어가 인수로 좁혀집니다. ServiceNow가 Armis를 약 **77억 5천만 달러**에 인수했고(2026년 4월 종결, [ServiceNow](https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-completes-Armis-acquisition-closing-the-gap-between-asset-visibility-and-cyber-risk/default.aspx)), Mitsubishi Electric이 Nozomi Networks를 인수했습니다(2026년 1월 종결, 인수액 보도 기준 미확정, [Mitsubishi Electric](https://www.mitsubishielectric.com/en/pr/2025/0909/)). 순수 플레이어로는 Claroty와 Dragos가 남습니다.
 
 ## 도입 의사결정
 
@@ -86,6 +89,15 @@ CISA ZTMM v2 Devices 영역의 Function입니다.
 | Initial에서 Advanced로 | EDR 전면 적용, 자산 인벤토리 자동화 |
 | Advanced에서 Optimal로 | XDR 통합, 자율 대응과 지속 신뢰 평가 |
 
+### 네 번째 결정: 산업 제어와 OT 자산
+
+제조, 에너지, 발전의 제어망은 IT EDR과 다른 가시성이 필요합니다.
+
+| 상황 | 권장 |
+|---|---|
+| 제조, 에너지, 발전 제어망 | OT 전용 가시성(Claroty, Dragos)으로 자산 인벤토리와 위협 탐지 |
+| IT와 OT 통합 관리 | 자산 가시성에 네트워크 [마이크로세그멘테이션](/pillars/networks/) 결합 |
+
 ## 도입 고려사항
 
 **개인정보보호법.** EDR은 엔드포인트의 행위 텔레메트리를 광범위하게 수집합니다. 수집 범위와 보존 기간이 개인정보 처리 원칙에 맞는지 검토합니다.
@@ -95,6 +107,12 @@ CISA ZTMM v2 Devices 영역의 Function입니다.
 **공공과 정부.** 클라우드형 EDR, XDR은 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인합니다.
 
 **금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)에 따라 엔드포인트 로그 수집과 자율 대응 범위가 보안성 검토 대상이 됩니다. 자세한 사례는 [CrowdStrike Falcon 리뷰](/solutions/crowdstrike-falcon/)의 한국 노트에서 다룹니다.
+
+## 관련 페이지
+
+- [AI 사용 헌팅](/ai/shadow-ai-hunting/) — 엔드포인트 텔레메트리로 미승인 AI 사용을 추적
+- [CISA ZTMM v2](/framework/cisa-ztmm-v2/) — Devices 영역의 Function과 성숙도 정의
+- [ZTA 기반 솔루션 분류](/pillars/) — 5개 영역 전체의 솔루션 카탈로그
 
 ---
 최종 검토 2026-05-30

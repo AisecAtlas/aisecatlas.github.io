@@ -8,9 +8,9 @@ categories: ["korea-note"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: 금융위원회가 약 10년간 유지된 금융권 물리 망분리를 단계적으로 완화하고 있습니다. 2024년 8월 「금융분야 망분리 개선 로드맵」 발표, 2025년 2월 전자금융감독규정 개정 시행으로 생성형 AI와 클라우드 활용 길이 열렸고, 금융보안원은 그 공백을 메울 「금융분야 제로트러스트 보안 안내서」를 내놓았습니다. 공공의 [N²SF](/korea/regulation/n2sf-mangbunri/)와 같은 방향입니다.
+금융위원회가 약 10년간 유지된 금융권 물리 망분리를 단계적으로 완화하고 있습니다. 2024년 8월 「금융분야 망분리 개선 로드맵」 발표, 2025년 2월 전자금융감독규정 개정 시행으로 생성형 AI와 클라우드 활용 길이 열렸고, 금융보안원은 그 공백을 메울 「금융분야 제로트러스트 보안 안내서」를 내놓았습니다. 공공의 [N²SF](/korea/regulation/n2sf-mangbunri/)와 같은 방향입니다.
 
-## 왜 지금이 중요한가
+## 규제 완화 배경
 
 금융권은 그동안 가장 엄격한 물리 망분리가 적용되던 영역입니다. 대부분의 생성형 AI가 클라우드 기반 인터넷 환경에서 제공되는 반면, 국내 금융권은 외부 통신 제한으로 도입에 제약이 있었습니다([신김 뉴스레터](https://www.shinkim.com/kor/media/newsletter/2533)). 이 제약을 풀기 위한 규제 개선이 진행 중입니다.
 
@@ -45,6 +45,21 @@ ShowToc: true
 
 출처: [보안뉴스 — 금보원 금융권 맞춤형 제로트러스트 가이드 배포](https://m.boannews.com/html/detail.html?tab_type=1&idx=143084)
 
+## 금융보안원 클라우드 보안 통제
+
+망분리 예외로 클라우드와 SaaS 이용이 열리면서, 금융보안원이 안전 운영 기준을 제시합니다.
+
+| 통제 | 내용 |
+|---|---|
+| 클라우드 보안 관리 참고서 | 「금융분야 상용 클라우드컴퓨팅서비스 보안 관리 참고서」를 국내외 주요 CSP와 협업해 마련(CSP 9곳, [ZDNet](https://zdnet.co.kr/view/?no=20251015114832) 보도) |
+| 클라우드 이용 가이드 | 「금융분야 클라우드컴퓨팅서비스 이용 가이드」 2025년 개정 |
+| 혁신금융서비스 보안대책 평가 | 혁신금융서비스 지정 금융회사의 보안대책을 금융보안원이 평가해 망분리 예외 구간의 안전 운영을 지원 |
+| SaaS 이용 조건 | 침해사고 대응기관(금융보안원 등) 평가를 거친 SaaS만 사용, 접속 단말 보호대책과 안전 인증, 최소권한 부여 의무 |
+
+개인신용정보를 처리하지 않는 비중요 업무가 망분리 예외의 경계입니다. 개인신용정보 처리는 [개인정보보호법](/korea/regulation/pipa-zero-trust-data/)과 신용정보법에 맞물립니다.
+
+출처: [금융보안원 클라우드 보안 관리 참고서](https://www.fsec.or.kr/bbs/detail?menuNo=69&bbsNo=11629), [금융위원회 — 금융권 생성형 AI 활용 지원방안](https://www.fsc.go.kr/no010101/83594)
+
 ## 공공 N²SF와의 관계
 
 | 구분 | 금융권 망분리 개선 | 공공 N²SF |
@@ -56,10 +71,16 @@ ShowToc: true
 
 두 트랙 모두 [제로트러스트 가이드라인 2.0](/korea/regulation/n2sf-mangbunri/)이 제시한 4단계 성숙도, 원칙 기반 접근과 정합합니다.
 
-## 본 사이트는 이 정책을 어떻게 사용하나
+## 솔루션 적용 연결
 
-- 솔루션 리뷰의 **한국 시장 노트 — 금융권 항목**에서 해당 솔루션이 전자금융감독규정 개정 후 어떤 업무 범위에 적용 가능한지 판단하는 근거로 사용합니다.
-- [Identity](/pillars/identity/), [Networks](/pillars/networks/) 영역의 ZTNA, IDaaS 솔루션이 금융권 자율보안 요건과 어떻게 맞물리는지 연결합니다.
+- 전자금융감독규정 개정 후 솔루션의 적용 업무 범위. 개인신용정보 비처리 비중요 업무가 망분리 예외의 경계
+- [Identity](/pillars/identity/), [Networks](/pillars/networks/) 영역의 ZTNA, IDaaS. 금융권 자율보안 요건과 맞물리는 통제 지점
+
+## 관련 페이지
+
+- [NIST SP 800-207](/framework/nist-800-207/)
+- [한국 규제 노트](/korea/regulation/)
+- [데이터 제로트러스트와 개인정보](/korea/regulation/pipa-zero-trust-data/)
 
 ## 출처
 
@@ -69,6 +90,9 @@ ShowToc: true
 - [보안뉴스 — 금보원 금융권 맞춤형 제로트러스트 가이드 배포](https://m.boannews.com/html/detail.html?tab_type=1&idx=143084)
 - [김장 법률사무소 — 금융분야 클라우드 및 망분리 규제 개선방안](https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=24889)
 - [신김 — 망분리 규제 완화와 생성형 AI](https://www.shinkim.com/kor/media/newsletter/2533)
+- [금융위원회 — 금융권 생성형 AI 활용 지원방안](https://www.fsc.go.kr/no010101/83594)
+- [금융보안원 — 금융분야 클라우드 보안 관리 참고서](https://www.fsec.or.kr/bbs/detail?menuNo=69&bbsNo=11629)
+- [금융보안원 — 금융분야 클라우드컴퓨팅서비스 이용 가이드](https://www.fsec.or.kr/bbs/detail?menuNo=222&bbsNo=11691)
 
 ## 면책
 

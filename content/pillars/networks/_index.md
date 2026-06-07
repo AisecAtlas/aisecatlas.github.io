@@ -60,7 +60,7 @@ CISA ZTMM v2 Networks 영역의 Function입니다.
 |---|---|---|
 | ZTNA | 애플리케이션 단위 원격 접근, VPN 대체 | Zscaler Private Access, Cloudflare Access, Netskope Private Access |
 | SASE / SSE | 네트워크와 보안 기능의 클라우드 통합 | Zscaler, Palo Alto Prisma, Netskope, Cato Networks |
-| 마이크로세그멘테이션 | 내부 횡적 이동 차단 | Illumio, Akamai Guardicore, VMware NSX |
+| 마이크로세그멘테이션 | 내부 횡적 이동 차단 | Illumio, Zero Networks, Akamai Guardicore, VMware NSX |
 
 ## 시장 동향 (2025-2026)
 
@@ -69,6 +69,8 @@ CISA ZTMM v2 Networks 영역의 Function입니다.
 **SASE 번들 확산.** Gartner는 SD-WAN 구매의 SASE 번들 비율이 2024년 20%에서 **2027년 65%**로 늘 것으로 전망했습니다([Reemo 블로그](https://blog.reemo.io/vpn-zero-trust-ztna-transition-2025/)).
 
 **단일 벤더 수렴.** SSE 벤더와 SASE 플랫폼 벤더 간 기능 격차가 좁혀집니다. 단일 벤더 SASE 채택이 늡니다([Network World](https://www.networkworld.com/article/3997260/genai-controls-and-ztna-architecture-set-sse-vendors-apart.html)).
+
+**정책 자동화와 신원 결합.** 마이크로세그멘테이션이 정적 IP 기반에서 정책 자동 학습과 신원 결합 방향으로 이동합니다. Zero Networks는 수동 정책 작성 없이 트래픽을 학습해 민감 연결에 MFA를 게이트로 적용합니다([principlezero](https://principlezero.net/2025/10/06/top-microsegmentation-vendors/)). Palo Alto Networks는 2025년 7월 [신원 보안](/pillars/identity/) 기업 CyberArk를 약 **250억 달러**에 인수하기로 합의해(FY2026 하반기 종결 예정, [Palo Alto Networks](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-announces-agreement-to-acquire-cyberark--the-identity-security-leader)) 네트워크 통제와 신원의 수렴을 보여줍니다.
 
 ## 도입 의사결정
 
@@ -103,6 +105,12 @@ CISA ZTMM v2 Networks 영역의 Function입니다.
 **금융권.** 인라인 클라우드 프록시 구조가 [전자금융감독규정](/korea/regulation/financial-mangbunri/)의 망 통제 요건과 정합하는지 사전 검토가 필요합니다.
 
 **데이터 리전.** 글로벌 SASE는 트래픽이 해외 PoP를 경유할 수 있습니다. 개인정보 국외 이전 관점에서 한국 리전 사용 가능 여부를 확인합니다.
+
+## 관련 페이지
+
+- [AI 사용 가시화](/ai/ai-usage-visibility/) — 네트워크 통제 지점에서 직원 AI 사용을 캡처
+- [CISA ZTMM v2](/framework/cisa-ztmm-v2/) — Networks 영역의 Function과 성숙도 정의
+- [ZTA 기반 솔루션 분류](/pillars/) — 5개 영역 전체의 솔루션 카탈로그
 
 ---
 최종 검토 2026-05-30

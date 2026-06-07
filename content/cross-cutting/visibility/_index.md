@@ -24,7 +24,7 @@ ShowToc: false
 
 **데이터 레이크로의 이동.** Microsoft Sentinel data lake가 정식 출시되어 **350개 이상 소스**의 보안 데이터를 모읍니다. Google SecOps는 2025년 Gartner 평가에서 비전 완성도 최고점을 받았고, 페타바이트급 인프라와 Gemini AI를 결합합니다([Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2025/10/16/microsoft-named-a-leader-in-the-2025-gartner-magic-quadrant-for-siem/)).
 
-**데이터 파이프라인의 부상.** 수집을 저장과 분리해 비용을 낮추는 보안 데이터 파이프라인이 부상했습니다. Cribl은 출시 6년 만에 **연간 반복 매출 2억 달러**를 넘겼습니다([SACR 시장 가이드](https://softwareanalyst.substack.com/p/market-guide-2025-the-rise-of-security)). Cribl Stream은 고비용 도구로 보내는 데이터 양을 **36에서 50%** 줄이고, 저장 용량을 최대 **88%** 압축한다고 밝힙니다([Cribl](https://cribl.io/solutions/initiatives/cost-control/)).
+**데이터 파이프라인의 부상.** 수집을 저장과 분리해 비용을 낮추는 보안 데이터 파이프라인이 부상했습니다. Cribl은 ARR **3억 달러**를 2026년 2월 넘겼고, CrowdStrike(Onum)와 SentinelOne(Observo AI)이 파이프라인 스타트업을 인수했습니다([Cribl](https://cribl.io/news/cribl-surpasses-usd300-million-in-arr-powering-the-essential-infrastructure/)). 자세한 내용은 [보안 데이터 파이프라인](/cross-cutting/visibility/security-data-pipeline/)을 참고합니다.
 
 > **핵심.** 순수 로그 집계는 commodity가 됐습니다. 경쟁은 AI 기반 분석과 비용 구조로 옮겨갔습니다. SIEM 마이그레이션의 1차 동기는 대개 비용입니다.
 
@@ -56,6 +56,12 @@ ShowToc: false
 **망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 환경은 클라우드 SIEM 사용에 제약이 있습니다. 온프레미스 SIEM이나 자체 데이터 레이크 구성이 현실적인 경우가 있습니다.
 
 **공공과 정부.** 클라우드형 SIEM과 데이터 레이크는 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인합니다.
+
+## 관련 페이지
+
+- [AI 사용 가시화](/ai/ai-usage-visibility/) — 직원 AI 사용을 캡처하는 기술 통제
+- [AI 사용 헌팅](/ai/shadow-ai-hunting/) — 로그와 텔레메트리로 미승인 AI 사용을 추적
+- [ZTA 기반 솔루션 분류](/pillars/) — 5개 영역 전체의 솔루션 카탈로그
 
 ---
 최종 검토 2026-05-30

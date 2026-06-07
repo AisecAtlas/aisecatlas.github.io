@@ -55,6 +55,7 @@ ShowToc: false
 | IGA | 신원 거버넌스 | SailPoint, Saviynt, Omada |
 | ITDR | 신원 위협 탐지와 대응 | Silverfort, Semperis, Authomize |
 | CIAM | 외부 고객용 인증 | Okta Auth0, Frontegg, Stytch |
+| 비인간 신원(NHI) | API 키, 서비스 계정, 토큰 등 기계와 AI 에이전트 신원 관리 | CyberArk, Token Security, Entro Security |
 
 ## 도입 의사결정
 
@@ -80,6 +81,15 @@ ShowToc: false
 | Initial에서 Advanced로 | IDaaS, 조건부 접근, Adaptive MFA |
 | Advanced에서 Optimal로 | ITDR, IGA, 지속 검증 추가 |
 
+### 네 번째 결정: 기계와 AI 에이전트 신원
+
+Agentic AI 확산으로 API 키와 서비스 계정 같은 비인간 신원이 사람 신원을 크게 앞지르면서, 신원 통제가 사람에서 기계와 에이전트로 확장됩니다.
+
+| 상황 | 권장 |
+|---|---|
+| API 키와 서비스 계정 폭증 | 시크릿 관리([HashiCorp Vault](/solutions/hashicorp-vault/))와 NHI 거버넌스 |
+| AI 에이전트가 자율 행동 | 에이전트별 신원, 권한, 감사 추적([Agentic AI 보안](/ai/agentic-security/)) |
+
 ## 도입 고려사항
 
 **공동인증서 통합.** 글로벌 IDaaS는 공동인증서를 직접 지원하지 않습니다. 별도 SDK나 OIDC 브로커가 필요합니다.
@@ -89,6 +99,12 @@ ShowToc: false
 **금융권.** 전자금융감독규정과 보안성 심의를 사전에 확인합니다.
 
 **공공과 정부.** CSAP 인증 보유 여부를 확인합니다.
+
+## 관련 페이지
+
+- [CISA ZTMM v2](/framework/cisa-ztmm-v2/) — Identity 영역의 Function과 성숙도 정의
+- [ZTA 기반 솔루션 분류](/pillars/) — 5개 영역 전체의 솔루션 카탈로그
+- [AI 거버넌스](/ai/ai-governance/) — AI 에이전트 신원과 권한 통제의 거버넌스 축
 
 ---
 최종 검토 2026-05-30
