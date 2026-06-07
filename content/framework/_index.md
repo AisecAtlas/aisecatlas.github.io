@@ -44,6 +44,12 @@ ShowToc: false
 <div class="card-cta">표준 요약 보기</div>
 </a>
 
+<a href="eu-ai-act/" class="card">
+<div class="card-title">EU AI Act</div>
+<div class="card-desc">위험 4등급(허용 불가, 고위험, 제한적, 최소)으로 의무를 차등 부과하는 세계 첫 포괄 AI 법. 단계적 시행.</div>
+<div class="card-cta">4등급 해체 보기</div>
+</a>
+
 <a href="mitre-atlas/" class="card">
 <div class="card-title">MITRE ATLAS</div>
 <div class="card-desc">AI 시스템 공격 전술과 기법 매트릭스. ATT&CK의 AI판, 16전술 상위 101기법.</div>

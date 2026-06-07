@@ -26,7 +26,7 @@ AI 보안 표준은 하나가 아니라 층위가 다른 여러 문서의 묶음
 | MITRE ATLAS | MITRE | 적대 TTP 지식베이스 | [AI 레드티밍](/ai/ai-red-teaming/) |
 | NIST AI RMF | NIST(미국) | 위험 관리 방법론 | [AI 거버넌스](/ai/ai-governance/) |
 | ISO/IEC 42001 | ISO | 인증 관리 체계 | [AI 거버넌스](/ai/ai-governance/) |
-| EU AI Act | EU | 법, 벌칙 | [AI 거버넌스](/ai/ai-governance/) |
+| [EU AI Act](/framework/eu-ai-act/) | EU | 법, 벌칙 | [AI 거버넌스](/ai/ai-governance/) |
 | 한국형 제로트러스트 가이드라인 2.0 | 과기정통부, KISA | 국내 지침 | [망분리와 N²SF](/korea/regulation/n2sf-mangbunri/) |
 
 ## 층위별 정리
@@ -74,6 +74,7 @@ OWASP는 세 가지 Top 10을 운영합니다. 단일 호출 LLM은 **LLM Top 10
 - [OWASP MCP Top 10](/framework/owasp-mcp-top-10/) — MCP 연결 계층 위협 분류 (v0.1 베타)
 - [MITRE ATLAS](/framework/mitre-atlas/) — AI 공격 전술과 기법 지식베이스
 - [NIST AI RMF](/framework/nist-ai-rmf/) — AI 위험 관리 방법론
+- [EU AI Act](/framework/eu-ai-act/) — 위험 4등급 기반 AI 법
 - [NIST SP 800-207](/framework/nist-800-207/) — 제로 트러스트 아키텍처 원전
 
 ## 출처

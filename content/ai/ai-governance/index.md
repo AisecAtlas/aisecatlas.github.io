@@ -31,7 +31,7 @@ AI 거버넌스는 AI 자산 인벤토리, 정책 집행, 위험 관리, 감사 
 
 | 프레임워크 | 성격 | 역할 |
 |---|---|---|
-| EU AI Act | 법, 벌칙 있음 | 법적 컴플라이언스 요구사항 |
+| [EU AI Act](/framework/eu-ai-act/) | 법, 벌칙 있음 | 법적 컴플라이언스 요구사항 |
 | NIST AI RMF | 자발적 지침 | 위험 관리 방법론 |
 | ISO/IEC 42001 | 인증 | 감사 가능한 관리 체계 |
 
@@ -49,14 +49,20 @@ AI 거버넌스는 AI 자산 인벤토리, 정책 집행, 위험 관리, 감사 
 
 ## 솔루션
 
-| 솔루션 | 특징 |
-|---|---|
-| **Credo AI** | 인벤토리, 정책 집행, 위험 관리, 런타임 보증을 NIST AI RMF, ISO 42001, EU AI Act에 정렬 |
-| **Holistic AI** | 편향 감사에서 전 주기 거버넌스로 확장. 섀도 AI 발견, 자동 위험 테스트 |
-| **Modulos** | EU AI Act 대응 기능에 강점 |
-| **Trustible** | 프레임워크 매핑과 정책 관리 |
+AI 거버넌스 도구는 두 갈래입니다. 기존 GRC와 데이터 플랫폼을 확장한 쪽과, AI 거버넌스 전용으로 출발한 쪽입니다.
 
-출처: [Credo AI](https://www.credo.ai/product), [Modulos AI 거버넌스 플랫폼 가이드](https://www.modulos.ai/best-ai-governance-platforms/)
+| 솔루션 | 갈래 | 특징 |
+|---|---|---|
+| **IBM watsonx.governance** | 기존 인프라 확장 | 생애주기 모니터링, 편향 탐지, 설명가능성. FedRAMP 인가로 미 연방 배포 가능 |
+| **ServiceNow AI Control Tower** | 기존 인프라 확장 | ServiceNow 워크플로에 AI 자산과 위험 거버넌스 통합 |
+| **OneTrust AI Governance** | 기존 인프라 확장 | 프라이버시와 GRC 플랫폼을 AI로 확장 |
+| **Collibra** | 기존 인프라 확장 | 데이터 카탈로그 기반의 AI 자산 거버넌스 |
+| **Credo AI** | AI 전용 | 인벤토리, 정책 집행, 위험 관리를 NIST AI RMF, ISO 42001, EU AI Act에 정렬. Gartner AI TRiSM Representative Vendor 등재 |
+| **Holistic AI** | AI 전용 | 편향 감사에서 전 주기 거버넌스로 확장. 섀도 AI 발견, 자동 위험 테스트 |
+| **Modulos** | AI 전용 | EU AI Act 대응 기능에 강점 |
+| **Trustible** | AI 전용 | 프레임워크 매핑과 정책 관리 |
+
+출처: [Credo AI](https://www.credo.ai/product), [IBM watsonx.governance](https://www.ibm.com/solutions/ai-governance), [Modulos AI 거버넌스 플랫폼 가이드](https://www.modulos.ai/best-ai-governance-platforms/)
 
 Holistic AI는 2026년 Guardian Agents를 출시해 지속 관찰(Sentinel)과 실시간 개입(Operative) 에이전트를 더했습니다([Modulos 정리](https://www.modulos.ai/best-ai-governance-platforms/)).
 
