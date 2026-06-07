@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: Palo Alto는 AI 보안을 **두 제품으로 분리**합니다. **Prisma AIRS**는 조직이 *직접 만든 AI*(모델, 앱, 에이전트)를 빌드부터 런타임까지 보호하고(Ⅰ. AI를 보호), **AI Access Security**는 *직원이 쓰는 외부 GenAI*를 SASE 인라인에서 통제합니다(Ⅱ. AI 사용행위 보호). 인수한 **Protect AI**(2025-07-22 완료)가 Prisma AIRS의 모델 스캐닝과 레드티밍의 기반입니다.
+Palo Alto는 AI 보안을 **두 제품으로 분리**합니다. **Prisma AIRS**는 조직이 직접 만든 AI(모델, 앱, 에이전트)를 빌드부터 런타임까지 보호하고(Ⅰ. AI를 보호), **AI Access Security**는 직원이 쓰는 외부 GenAI를 SASE 인라인에서 통제합니다(Ⅱ. AI 사용행위 보호). 인수한 **Protect AI**(2025-07-22 완료)가 Prisma AIRS의 모델 스캐닝과 레드티밍의 기반입니다.
 
 ## 한눈에 보기
 
@@ -138,6 +138,14 @@ NIST SP 800-207 제로 트러스트 구조로 보면, 두 제품 모두 **주체
 **Prisma AIRS 리전.** AIRS의 한국 리전 보장은 공식 자료에서 확인되지 않습니다. 2026-03 싱가포르 랜딩이 발표됐습니다. 공공과 금융 도입 전 직접 확인합니다.
 
 **CSAP와 망분리.** 클라우드 인라인 경유 구조는 [CSAP](/korea/regulation/csap-n2sf/)와 데이터 처리 리전 검토 대상입니다.
+
+## 관련 페이지
+
+- AI를 지키는 일(①): [AI를 지키는 일](/ai/defend-ai/) — Prisma AIRS의 모델, 런타임, 에이전트 보호 맥락
+- AI 사용행위 가시화(②): [AI 사용 가시화](/ai/ai-usage-visibility/) — AI Access Security의 Shadow AI 통제 맥락
+- 솔루션 리뷰: [Protect AI](/solutions/protect-ai/) — Prisma AIRS 모델 스캐닝의 기반
+- 솔루션 리뷰: [Prisma Access](/solutions/prisma-access/) — AI Access Security가 올라타는 SASE 데이터 경로
+- 전체 조망: [AI 보안 지도](/ai/map/), [벤더 프로필](/ai/vendors/)
 
 ## 출처
 

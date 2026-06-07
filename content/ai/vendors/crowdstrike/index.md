@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: **Charlotte AI는 AI 보안이 아닙니다.** Falcon 플랫폼에 AI를 붙여 SOC 운영을 가속하는 ③ "AI로 보안 강화"입니다. CrowdStrike가 *AI를 보호*하는 일은 별도 제품인 **Falcon AIDR**(런타임)과 **Falcon Cloud Security AI-SPM**(태세)이 맡고(①), *직원 AI 사용행위 보호*는 **Falcon Data Protection**과 **Shadow AI 가시성 서비스**가 맡습니다(②). 한 벤더가 ①②③에 모두 걸쳐 있어, 제품을 기능으로 분해해야 분류가 섭니다.
+**Charlotte AI는 AI 보안이 아닙니다.** Falcon 플랫폼에 AI를 붙여 SOC 운영을 가속하는 ③ "AI로 보안 강화"입니다. CrowdStrike가 AI를 보호하는 일은 별도 제품인 **Falcon AIDR**(런타임)과 **Falcon Cloud Security AI-SPM**(태세)이 맡고(①), 직원 AI 사용행위 보호는 **Falcon Data Protection**과 **Shadow AI 가시성 서비스**가 맡습니다(②). 한 벤더가 ①②③에 모두 걸쳐 있어 제품마다 맡는 기능이 다릅니다.
 
 ## 한눈에 보기
 
@@ -128,6 +128,14 @@ AgentWorks 출시 파트너는 Accenture, AWS, Anthropic, Deloitte, Kroll, NVIDI
 **데이터 리전.** 2026-01-20 신규 리전 발표는 사우디아라비아, 인도, UAE만 명시했고 한국과 일본과 APAC은 포함되지 않았습니다([신규 리전 보도자료](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-announces-new-regional-clouds-to-expand-secure-data-sovereignty/)). 한국 데이터 레지던시는 공식 자료에서 확인되지 않으므로 직접 확인합니다.
 
 **CSAP와 망분리.** 클라우드 SaaS 플랫폼 구조는 [CSAP](/korea/regulation/csap-n2sf/)와 데이터 처리 리전 검토 대상입니다. Charlotte AI의 한국어 지원도 공식 확인이 필요합니다.
+
+## 관련 페이지
+
+- AI를 지키는 일(①): [AI를 지키는 일](/ai/defend-ai/) — Falcon AIDR, AI-SPM의 AI 보호 맥락
+- AI 사용행위 가시화(②): [AI 사용 가시화](/ai/ai-usage-visibility/) — Falcon Data Protection, Shadow AI 통제 맥락
+- AI로 보안 강화(③): [AI로 보안 강화](/ai/augment-security/) — Charlotte AI의 agentic SOC 맥락
+- 솔루션 리뷰: [CrowdStrike Falcon](/solutions/crowdstrike-falcon/) — Falcon 플랫폼 상세
+- 전체 조망: [AI 보안 지도](/ai/map/), [벤더 프로필](/ai/vendors/)
 
 ## 출처
 

@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: Mindgard는 "공세적 AI 보안"을 표방하는 스타트업입니다. AI를 **방어**하는 인라인 가드레일이나 모델 바이너리 스캐너와 달리, 타깃 AI를 **공격**해 약점을 먼저 찾습니다(①). Mindgard 플랫폼이 고객의 LLM과 GenAI 앱과 에이전트를 인터페이스(API, CLI, Burp, CI/CD)로 자동 공격하고, 발견한 취약점을 OWASP LLM Top 10과 MITRE ATLAS에 매핑합니다. Lancaster University 10년 이상 연구에서 나온 스핀아웃입니다.
+Mindgard는 "공세적 AI 보안"을 표방하는 스타트업입니다. AI를 **방어**하는 인라인 가드레일이나 모델 바이너리 스캐너와 달리, 타깃 AI를 **공격**해 약점을 먼저 찾습니다(①). Mindgard 플랫폼이 고객의 LLM과 GenAI 앱과 에이전트를 인터페이스(API, CLI, Burp, CI/CD)로 자동 공격하고, 발견한 취약점을 OWASP LLM Top 10과 MITRE ATLAS에 매핑합니다. Lancaster University 10년 이상 연구에서 나온 스핀아웃입니다.
 
 ## 한눈에 보기
 
@@ -82,6 +82,13 @@ Mindgard는 방어하는 PEP가 아니라 **타깃 AI를 공격하는 레드팀 
 ## 한국 시장 노트
 
 **한국 자료 부재.** Mindgard의 한국 사무소, 한국어 자료, 국내 파트너는 공식 자료에서 확인되지 않습니다. 공식 확장은 런던과 보스턴 중심입니다. 도입 시 CI/CD 파이프라인 통합 위치에서 적용하고, 처리 위치를 [CSAP](/korea/regulation/csap-n2sf/) 관점에서 확인합니다.
+
+## 관련 페이지
+
+- [AI를 지키는 일](/ai/defend-ai/)
+- [AI 레드티밍](/ai/ai-red-teaming/)
+- [AI 보안 지도](/ai/map/)
+- [벤더 프로필](/ai/vendors/)
 
 ## 출처
 

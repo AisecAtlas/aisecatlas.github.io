@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: Nightfall AI는 AI 네이티브 DLP로 직원 AI 사용행위 보호(②)에 특화한 스타트업입니다. 캡처가 **하이브리드**입니다. 미승인 AI와 반출 경로는 **브라우저 확장과 엔드포인트 에이전트**가 제출 전에 인라인 차단하고, 승인 SaaS는 **API(OAuth)로 out-of-band 스캔**합니다. 같은 ②라도 WitnessAI(네트워크 인라인)나 Harmonic(브라우저 단일)과 달리 **엔드포인트 인라인과 API 스캔을 함께** 씁니다.
+Nightfall AI는 AI 네이티브 DLP로 직원 AI 사용행위 보호(②)에 특화한 스타트업입니다. 캡처가 **하이브리드**입니다. 미승인 AI와 반출 경로는 **브라우저 확장과 엔드포인트 에이전트**가 제출 전에 인라인 차단하고, 승인 SaaS는 **API(OAuth)로 out-of-band 스캔**합니다. 같은 ②라도 WitnessAI(네트워크 인라인)나 Harmonic(브라우저 단일)과 달리 **엔드포인트 인라인과 API 스캔을 함께** 씁니다.
 
 ## 한눈에 보기
 
@@ -35,7 +35,7 @@ ShowToc: true
 
 ## 캡처 메커니즘과 아키텍처
 
-미승인 경로는 **엔드포인트 인라인 PEP**, 승인 SaaS는 **API out-of-band 스캐너**입니다. 둘을 함께 쓰는 하이브리드입니다. 캡처 메커니즘 비교는 [AI 사용 가시화](/ai/ai-usage-visibility/)가 정리합니다.
+미승인 경로는 **엔드포인트 인라인 PEP**, 승인 SaaS는 **API out-of-band 스캐너**입니다. 둘을 함께 쓰는 하이브리드입니다.
 
 <div class="zta">
 <div class="zta-title">② 미승인 AI 경로 — 엔드포인트 인라인 PEP</div>
@@ -91,6 +91,13 @@ ShowToc: true
 ## 한국 시장 노트
 
 **한국 자료 부재.** Nightfall의 한국 사무소, 한국어 사이트, 파트너, 컴플라이언스는 공식 자료에서 확인되지 않습니다. 단말 기반 캡처는 클라우드 경유 없이 적용 가능하나, 백엔드 탐지의 처리 위치를 [CSAP](/korea/regulation/csap-n2sf/) 관점에서 확인합니다.
+
+## 관련 페이지
+
+- [AI 사용 가시화](/ai/ai-usage-visibility/)
+- [AI 사용 헌팅](/ai/shadow-ai-hunting/)
+- [AI 보안 지도](/ai/map/)
+- [벤더 프로필](/ai/vendors/)
 
 ## 출처
 

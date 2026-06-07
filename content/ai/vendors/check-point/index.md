@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: Check Point의 AI 보호(①) 핵심은 인수한 **Lakera**입니다. Lakera Guard는 **Check Point AI Agent Security**로, Lakera Red는 **Check Point AI Red Teaming**으로 편입돼 LLM과 에이전트의 런타임 가드레일과 배포 전 레드티밍을 제공합니다. 직원 AI 사용행위 보호(②)는 **GenAI Protect**, SOC 운영 가속(③)은 **Infinity AI Copilot**이 맡고, 2026-03-23 발표한 **AI Defense Plane**이 셋을 단일 제어판으로 묶습니다.
+Check Point의 AI 보호(①) 핵심은 인수한 **Lakera**입니다. Lakera Guard는 **Check Point AI Agent Security**로, Lakera Red는 **Check Point AI Red Teaming**으로 편입돼 LLM과 에이전트의 런타임 가드레일과 배포 전 레드티밍을 제공합니다. 직원 AI 사용행위 보호(②)는 **GenAI Protect**, SOC 운영 가속(③)은 **Infinity AI Copilot**이 맡고, 2026-03-23 발표한 **AI Defense Plane**이 셋을 단일 제어판으로 묶습니다.
 
 ## 한눈에 보기
 
@@ -135,6 +135,15 @@ AI-SPM이라는 공식 용어는 쓰지 않습니다. 모델 태세는 AI Red Te
 **한국 자료 부재.** Lakera, GenAI Protect, AI Defense Plane의 한국 특화 가용성과 데이터 레지던시는 공식 자료에서 확인되지 않습니다. 도입 전 Check Point Korea에 직접 확인합니다.
 
 **CSAP와 망분리.** 클라우드 제어판 구조는 [CSAP](/korea/regulation/csap-n2sf/)와 데이터 처리 리전 검토 대상입니다. 인수 전 Lakera 단독 솔루션 리뷰는 [Lakera](/solutions/lakera/)를 참고합니다.
+
+## 관련 페이지
+
+- [AI를 지키는 일](/ai/defend-ai/)
+- [AI 사용 가시화](/ai/ai-usage-visibility/)
+- [AI로 보안 강화](/ai/augment-security/)
+- [AI 보안 지도](/ai/map/)
+- [벤더 프로필](/ai/vendors/)
+- [Lakera](/solutions/lakera/)
 
 ## 출처
 

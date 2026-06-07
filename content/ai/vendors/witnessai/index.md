@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: WitnessAI는 직원 AI 사용행위 보호(②) 전문 스타트업입니다. **단말에 아무것도 설치하지 않는 에이전트리스 네트워크 인라인** 방식이 핵심으로, 기존 SWG/SASE가 AI 트래픽을 WitnessAI 클라우드 프록시로 포워딩하면 거기서 통제합니다. PEP가 **네트워크 인라인 클라우드 프록시**에 있어 Harmonic의 브라우저 PEP와 다릅니다. AI Firewall(Protect)로 런타임 보호(①)도 더합니다. 제품 상세는 [WitnessAI 솔루션 리뷰](/solutions/witnessai/)가, 이 페이지는 기능 분류와 아키텍처를 봅니다.
+WitnessAI는 직원 AI 사용행위 보호(②) 전문 스타트업입니다. **단말에 아무것도 설치하지 않는 에이전트리스 네트워크 인라인** 방식이 핵심으로, 기존 SWG/SASE가 AI 트래픽을 WitnessAI 클라우드 프록시로 포워딩하면 거기서 통제합니다. PEP가 **네트워크 인라인 클라우드 프록시**에 있어 Harmonic의 브라우저 PEP와 다릅니다. AI Firewall(Protect)로 런타임 보호(①)도 더합니다.
 
 ## 한눈에 보기
 
@@ -35,7 +35,7 @@ ShowToc: true
 
 ## 캡처 메커니즘과 아키텍처
 
-핵심은 **PEP가 에이전트리스 네트워크 인라인 클라우드 프록시**라는 것입니다. 단말에 아무것도 설치하지 않고, 기존 SWG/SASE가 AI 트래픽을 WitnessAI 프록시로 포워딩합니다. Harmonic의 단말 브라우저 PEP, AI Guard의 앱과 모델 사이 PEP와 다른 위치입니다. 캡처 메커니즘 비교는 [AI 사용 가시화](/ai/ai-usage-visibility/)가 정리합니다.
+핵심은 **PEP가 에이전트리스 네트워크 인라인 클라우드 프록시**라는 것입니다. 단말에 아무것도 설치하지 않고, 기존 SWG/SASE가 AI 트래픽을 WitnessAI 프록시로 포워딩합니다. Harmonic의 단말 브라우저 PEP, AI Guard의 앱과 모델 사이 PEP와 다른 위치입니다.
 
 <div class="zta">
 <div class="zta-title">WitnessAI — 에이전트리스 네트워크 인라인 PEP</div>
@@ -81,6 +81,14 @@ ShowToc: true
 **투자자 연결.** 2026-01 전략 라운드에 Samsung Ventures와 Qualcomm Ventures가 참여했고, 라운드는 "글로벌 확장"과 cloud-to-edge AI 보안을 강조했습니다([$58M 발표](https://www.prnewswire.com/news-releases/witnessai-raises-58-million-for-global-expansion-and-announces-new-ways-to-secure-ai-agents-302659319.html)). 다만 한국 사무소와 데이터 레지던시는 공식 자료에서 확인되지 않습니다. 투자자 연결을 운영 거점으로 해석하지 않습니다.
 
 **CSAP와 망분리.** 클라우드 인라인 프록시 구조는 [CSAP](/korea/regulation/csap-n2sf/)와 처리 리전 검토 대상입니다.
+
+## 관련 페이지
+
+- [AI를 지키는 일](/ai/defend-ai/)
+- [AI 사용 가시화](/ai/ai-usage-visibility/)
+- [WitnessAI 솔루션 리뷰](/solutions/witnessai/)
+- [AI 보안 지도](/ai/map/)
+- [벤더 프로필](/ai/vendors/)
 
 ## 출처
 

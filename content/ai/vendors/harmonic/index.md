@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: Harmonic Security는 직원 AI 사용행위 보호(②) 전문 스타트업입니다. **브라우저 확장**이 단말에서 프롬프트를 읽어 제출 전에 민감 데이터를 편집하고 차단합니다. PEP가 **엔드포인트와 브라우저**에 있어 네트워크 로그를 우회하는 AI 브라우저까지 포착하고 TLS 가로채기에 의존하지 않습니다. 2025-10 **MCP Gateway**로 에이전트 보안(①)까지 넓혔습니다. 제품 상세와 평가는 [Harmonic Security 솔루션 리뷰](/solutions/harmonic-security/)가 다루고, 이 페이지는 기능 분류와 아키텍처를 봅니다.
+Harmonic Security는 직원 AI 사용행위 보호(②) 전문 스타트업입니다. **브라우저 확장**이 단말에서 프롬프트를 읽어 제출 전에 민감 데이터를 편집하고 차단합니다. PEP가 **엔드포인트와 브라우저**에 있어 네트워크 로그를 우회하는 AI 브라우저까지 포착하고 TLS 가로채기에 의존하지 않습니다. 2025-10 **MCP Gateway**로 에이전트 보안(①)까지 넓혔습니다.
 
 ## 한눈에 보기
 
@@ -34,7 +34,7 @@ ShowToc: true
 
 ## 캡처 메커니즘과 아키텍처
 
-핵심은 **PEP가 단말과 브라우저에 있다**는 것입니다. 네트워크 인라인 프록시(Zscaler)나 앱과 모델 사이(AI Guard)와 다른 위치입니다. 캡처 메커니즘 비교는 [AI 사용 가시화](/ai/ai-usage-visibility/)가 정리합니다.
+핵심은 **PEP가 단말과 브라우저에 있다**는 것입니다. 네트워크 인라인 프록시(Zscaler)나 앱과 모델 사이(AI Guard)와 다른 위치입니다.
 
 <div class="zta">
 <div class="zta-title">② Harmonic Protect — 단말 브라우저 PEP</div>
@@ -103,6 +103,14 @@ ShowToc: true
 ## 한국 시장 노트
 
 **한국 자료 부재.** Harmonic의 한국 사무소, 파트너, 현지화, 컴플라이언스는 공식 자료에서 확인되지 않습니다. 단말 기반 캡처라 클라우드 경유 없이 적용 가능하나, 백엔드 SLM 분석의 처리 위치를 [CSAP](/korea/regulation/csap-n2sf/) 관점에서 확인합니다.
+
+## 관련 페이지
+
+- [AI를 지키는 일](/ai/defend-ai/)
+- [AI 사용 가시화](/ai/ai-usage-visibility/)
+- [Harmonic Security 솔루션 리뷰](/solutions/harmonic-security/)
+- [AI 보안 지도](/ai/map/)
+- [벤더 프로필](/ai/vendors/)
 
 ## 출처
 

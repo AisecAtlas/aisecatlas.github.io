@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: Microsoft는 AI 보안을 제품군으로 흩어 놓습니다. **Security Copilot**은 SOC를 가속하는 ③ "AI로 보안 강화"이지 AI 보안이 아닙니다. *AI를 보호*(①)는 **Prompt Shields**(런타임 가드레일), **Defender for Cloud AI-SPM과 위협 보호**(Azure AI 워크로드), **Entra Agent ID**(에이전트 신원)가 맡고, *직원 AI 사용행위 보호*(②)는 **Purview DSPM for AI**와 **Defender for Cloud Apps**가 맡습니다.
+Microsoft는 AI 보안을 제품군으로 흩어 놓습니다. **Security Copilot**은 SOC를 가속하는 ③ "AI로 보안 강화"이지 AI 보안이 아닙니다. AI를 보호(①)는 **Prompt Shields**(런타임 가드레일), **Defender for Cloud AI-SPM과 위협 보호**(Azure AI 워크로드), **Entra Agent ID**(에이전트 신원)가 맡고, 직원 AI 사용행위 보호(②)는 **Purview DSPM for AI**와 **Defender for Cloud Apps**가 맡습니다.
 
 ## 한눈에 보기
 
@@ -131,6 +131,14 @@ Purview의 "기타 AI 앱" 분류는 Defender for Cloud Apps 카탈로그를 그
 **데이터 처리(추론).** 국가 내 데이터 처리(추론) 15개국 발표에 **한국은 포함되지 않았습니다**([15개국 처리 발표](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/04/microsoft-offers-in-country-data-processing-to-15-countries-to-strengthen-sovereign-controls-for-microsoft-365-copilot/)). 저장 레지던시와 처리 위치를 혼동하지 않고 확인합니다.
 
 **Azure 리전과 CSAP.** Azure 한국 리전(Korea Central, Korea South)이 있으나 Prompt Shields의 한국 리전 제공은 공식 리전 목록에서 별도 확인이 필요합니다. 공공 도입은 [CSAP](/korea/regulation/csap-n2sf/)와 처리 리전을 확인합니다.
+
+## 관련 페이지
+
+- AI를 지키는 일(①): [AI를 지키는 일](/ai/defend-ai/) — Prompt Shields, Defender for Cloud의 AI 보호 맥락
+- AI 사용행위 가시화(②): [AI 사용 가시화](/ai/ai-usage-visibility/) — Purview DSPM for AI, Defender for Cloud Apps 통제 맥락
+- AI로 보안 강화(③): [AI로 보안 강화](/ai/augment-security/) — Security Copilot의 SOC 가속 맥락
+- 솔루션 리뷰: [Microsoft Entra ID](/solutions/entra-id/) — Entra Agent ID가 올라타는 신원 기반
+- 전체 조망: [AI 보안 지도](/ai/map/), [벤더 프로필](/ai/vendors/)
 
 ## 출처
 

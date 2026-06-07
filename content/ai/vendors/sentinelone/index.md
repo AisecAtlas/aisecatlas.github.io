@@ -8,7 +8,7 @@ categories: ["vendor-profile"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: SentinelOne의 역사적 핵심은 **Purple AI**(③, agentic SOC 분석가)로 AI 보안이 아니라 AI로 보안을 강화하는 일입니다. *AI를 보호*(①)와 *직원 AI 사용행위 보호*(②)는 인수한 **Prompt Security**(2025-08-05 인수 발표)가 더했습니다. 여기에 2024-11 출시한 **AI-SPM**(자산 태세)을 합쳐 "Securing AI" 기둥으로 묶습니다. Prompt Security는 인수 후에도 이름을 유지합니다("Prompt Security, a SentinelOne company").
+SentinelOne의 역사적 핵심은 **Purple AI**(③, agentic SOC 분석가)로, AI 보안이 아니라 AI로 보안을 강화하는 일입니다. AI 보호(①)와 직원 AI 사용행위 보호(②)는 인수한 **Prompt Security**(2025-08-05 인수 발표)가 더했습니다. 여기에 2024-11 출시한 **AI-SPM**(자산 태세)을 합쳐 "Securing AI" 기둥으로 묶습니다. Prompt Security는 인수 후에도 이름을 유지합니다("Prompt Security, a SentinelOne company").
 
 ## 한눈에 보기
 
@@ -135,6 +135,15 @@ Singularity Data Lake 위의 agentic SOC 분석가입니다. 자연어를 쿼리
 **한국어 페이지.** SentinelOne은 한국어 제품 페이지(프롬프트 보안)를 제공하며 Shadow AI, 프롬프트 인젝션과 탈옥 보호, 민감 데이터 DLP, 직원 AI 사용 발견을 다룹니다([한국어 Securing AI](https://www.sentinelone.com/ko/platform/securing-ai-prompt/)).
 
 **인증과 리전.** 한국 특화 인증과 데이터 레지던시는 공식 자료에서 확인되지 않습니다. [CSAP](/korea/regulation/csap-n2sf/)와 처리 리전을 직접 확인합니다. EDR/XDR 일반 도입 노트는 [SentinelOne 솔루션 리뷰](/solutions/sentinelone/)를 참고합니다.
+
+## 관련 페이지
+
+- [AI를 지키는 일](/ai/defend-ai/)
+- [AI 사용 가시화](/ai/ai-usage-visibility/)
+- [AI로 보안 강화](/ai/augment-security/)
+- [AI 보안 지도](/ai/map/)
+- [벤더 프로필](/ai/vendors/)
+- [SentinelOne](/solutions/sentinelone/)
 
 ## 출처
 
