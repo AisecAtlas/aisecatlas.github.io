@@ -7,7 +7,7 @@ tags: ["Security Copilot", "Charlotte AI", "Torq", "Tines", "AI SOC"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: 본 카테고리는 **벤더 생태계 안의 통합 Copilot**(Microsoft, CrowdStrike)과 **중립 Hyperautomation 플랫폼**(Torq, Tines)으로 나뉩니다. SOC가 단일 벤더 스택인지 멀티 벤더인지에 따라 선택이 갈립니다.
+Security Copilot 카테고리는 벤더 생태계 안의 통합 Copilot(Microsoft, CrowdStrike)과 중립 Hyperautomation 플랫폼(Torq, Tines)으로 나뉩니다. SOC가 단일 벤더 스택인지 멀티 벤더인지에 따라 선택이 갈립니다.
 
 ## 4개 도구 한눈에 비교
 
@@ -49,7 +49,7 @@ ShowToc: true
 
 ### 3. 자율 대응과 가드레일
 
-자동으로 행동까지 할 수 있는가, 어디까지 위임할 수 있는가를 봅니다.
+자동으로 행동까지 할 수 있는가, 어디까지 위임할 수 있는가가 갈리는 지점입니다.
 
 | 도구 | 가드레일 깊이 | 인간 승인 흐름 |
 |---|---|---|
@@ -112,14 +112,12 @@ ShowToc: true
 
 **파트너.** Microsoft, CrowdStrike는 한국 파트너가 다수입니다. Torq, Tines는 직접 영업이나 일부 파트너를 통한 도입이 일반적입니다.
 
-## 다음에 작성할 풀 리뷰
+## 관련 페이지
 
-각 도구의 풀 리뷰를 차례로 추가합니다.
-
-- Microsoft Security Copilot 풀 리뷰
-- CrowdStrike Charlotte AI 풀 리뷰
-- Torq AI SOC Platform 풀 리뷰
-- Tines 풀 리뷰
+- [AI로 보안 강화](/ai/augment-security/)
+- [Agentic SOC 2026 동향](/automation/agentic-soc-2026/)
+- [SOAR 진화](/automation/soar-evolution/)
+- [AI 보안 지도](/ai/map/)
 
 ## 출처
 

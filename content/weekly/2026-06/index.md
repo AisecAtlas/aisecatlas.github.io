@@ -91,6 +91,12 @@ SentinelOne이 LLM 런타임 가드레일 기업 Prompt Security를 인수해 Si
 - AI 거버넌스와 TRiSM 시장 정리
 - 한국 N²SF 가이드라인 후속 동향
 
+## 관련 페이지
+
+- [AI 보안](/ai/) — AI를 지키는 일, 직원 AI 사용 가시화, AI로 보안 강화 3축 허브
+- [벤더 프로필](/ai/vendors/) — 인수와 통합으로 재편된 AI 보안 벤더별 상세
+- [AI 보안 지도](/ai/map/) — 기능과 통제 지점으로 본 벤더 분포
+
 ## 출처
 
 - [TechCrunch — Google completes $32B acquisition of Wiz](https://techcrunch.com/2026/03/11/google-completes-32b-acquisition-of-wiz/)

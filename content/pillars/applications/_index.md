@@ -142,5 +142,11 @@ AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/a
 
 **금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/) 완화로 금융권 클라우드 도입이 늘면서 워크로드 보안과 접근 통제 요건이 보안성 검토 대상이 됩니다.
 
+## 관련 페이지
+
+- [AI를 지키는 일](/ai/defend-ai/) — 모델, 프롬프트, AI 공급망을 보호하는 솔루션 정리
+- [CISA ZTMM v2](/framework/cisa-ztmm-v2/) — Applications & Workloads 영역의 Function과 성숙도 기준
+- [ZTA 기반 솔루션 분류](/pillars/) — 5개 영역별 솔루션 카탈로그
+
 ---
 최종 검토 2026-05-30

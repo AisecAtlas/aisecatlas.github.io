@@ -65,10 +65,16 @@ ShowToc: true
 | [전자금융감독규정](/korea/regulation/financial-mangbunri/) | 금융위원회 | 금융 데이터 보호와 접근 통제 |
 | [CSAP](/korea/regulation/csap-n2sf/) | KISA, 국정원 | 클라우드 데이터 처리 인증 |
 
-## 본 사이트의 사용 방식
+## 도입 검토 시 적용
 
-- 솔루션 리뷰의 **한국 시장 노트 개인정보보호법 항목**에서 DSPM, DLP, 암호화 솔루션이 법적 안전조치 의무를 어떻게 충족하는지 판단하는 근거로 사용합니다.
-- [생성형 AI 보안](/ai/defend-ai/)과 [AI-SPM](/ai/ai-spm/) 도입 시 안내서의 수명주기 단계와 연계합니다.
+- 솔루션 리뷰의 한국 시장 노트 개인정보보호법 항목에서 DSPM, DLP, 암호화 솔루션이 법적 안전조치 의무를 어떻게 충족하는지 판단하는 근거가 됩니다.
+- [생성형 AI 보안](/ai/defend-ai/)과 [AI-SPM](/ai/ai-spm/) 도입은 안내서의 수명주기 단계와 연계됩니다.
+
+## 관련 페이지
+
+- [Data 영역](/pillars/data/)
+- [NIST AI RMF](/framework/nist-ai-rmf/)
+- [한국 규제 노트](/korea/regulation/)
 
 ## 출처
 

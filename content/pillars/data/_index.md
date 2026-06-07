@@ -114,5 +114,11 @@ CISA ZTMM v2 Data 영역의 Function입니다.
 
 **금융권.** [전자금융감독규정](/korea/regulation/financial-mangbunri/)과 신용정보법의 데이터 보호 요건에 비추어 접근 통제와 암호화 범위를 검토합니다.
 
+## 관련 페이지
+
+- [데이터 제로트러스트와 개인정보](/korea/regulation/pipa-zero-trust-data/) — 개인정보보호법 관점의 데이터 접근 통제와 분류
+- [CISA ZTMM v2](/framework/cisa-ztmm-v2/) — Data 영역의 Function과 성숙도 기준
+- [ZTA 기반 솔루션 분류](/pillars/) — 5개 영역별 솔루션 카탈로그
+
 ---
 최종 검토 2026-05-30

@@ -57,7 +57,7 @@ N²SF 전환 과제에는 망분리 때문에 막혀 있던 업무 방식이 포
 
 출처: [소만사 정리](https://www.somansa.com/security-report/privacy-report/20240911_mls/)
 
-이 변화는 본 사이트의 [AI를 지키는 일](/ai/defend-ai/) 영역과 직접 연결됩니다. 망분리 환경이라 LLM과 AI 코파일럿을 도입하지 못한다는 제약이 정책 수준에서 완화되기 때문입니다.
+망분리 환경이라 LLM과 AI 코파일럿을 도입하지 못한다는 제약이 정책 수준에서 완화됩니다. 이는 [AI를 지키는 일](/ai/defend-ai/) 영역의 도입 전제가 바뀌는 변화입니다.
 
 ## 민간 트랙: 제로트러스트 가이드라인 2.0
 
@@ -70,7 +70,7 @@ N²SF 전환 과제에는 망분리 때문에 막혀 있던 업무 방식이 포
 | 세부 보안역량 | — | **52개** (6대 핵심요소 + 2대 교차기능) |
 | 도입 절차 | — | **5단계** (준비, 계획, 구현, 운영, 피드백 및 개선) |
 
-이 4단계 성숙도 모델은 CISA Zero Trust Maturity Model의 4단계(Traditional, Initial, Advanced, Optimal)와 같은 구조를 따릅니다. 본 사이트도 [CISA ZTMM v2](/framework/cisa-ztmm-v2/)의 이 4단계를 기준으로 솔루션을 분류합니다.
+이 4단계 성숙도 모델은 [CISA ZTMM v2](/framework/cisa-ztmm-v2/)의 4단계(Traditional, Initial, Advanced, Optimal)와 같은 구조를 따릅니다.
 
 ## 전환기의 우려
 
@@ -79,11 +79,17 @@ N²SF 전환 과제에는 망분리 때문에 막혀 있던 업무 방식이 포
 - **공공 클라우드 시장 혼선**: MLS 적용 발표 직후 공공 클라우드(CSAP) 시장 위축 우려가 제기되었습니다([컴월드](https://www.comworld.co.kr/news/articleView.html?idxno=51283), [아이티데일리](http://www.itdaily.kr/news/articleView.html?idxno=226904)).
 - **적용 현실성**: 공공기관의 망분리 적용률이 11% 수준이라는 지적과 함께 현실성 있는 N²SF 적용이 필요하다는 논의가 있습니다([데이터넷](https://www.datanet.co.kr/news/articleView.html?idxno=201437)).
 
-## 본 사이트의 사용 방식
+## 도입 검토 시 적용
 
-- 솔루션 리뷰의 **한국 시장 노트 — 망분리 항목**에서 해당 솔루션이 N²SF의 어느 등급(C/S/O)에 적용 가능한지 판단하는 근거로 사용합니다.
-- [Networks 영역](/pillars/networks/)의 ZTNA, SASE 솔루션이 N²SF의 논리 분리 요건과 어떻게 맞물리는지 연결합니다.
-- [AI를 지키는 일](/ai/defend-ai/) 영역에서 망분리 완화가 AI 도입에 주는 영향을 다룹니다.
+- 솔루션 리뷰의 한국 시장 노트 망분리 항목에서 해당 솔루션이 N²SF의 어느 등급(C/S/O)에 적용 가능한지 판단하는 근거가 됩니다.
+- [Networks 영역](/pillars/networks/)의 ZTNA, SASE 솔루션은 N²SF의 논리 분리 요건과 맞물립니다.
+- 망분리 완화는 [AI를 지키는 일](/ai/defend-ai/) 영역의 AI 도입 전제를 바꿉니다.
+
+## 관련 페이지
+
+- [CSAP와 N²SF](/korea/regulation/csap-n2sf/)
+- [NIST SP 800-207](/framework/nist-800-207/)
+- [AI 보안 표준 지형](/framework/ai-security-standards/)
 
 ## 출처
 
