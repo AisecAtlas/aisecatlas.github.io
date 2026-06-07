@@ -12,7 +12,7 @@ ShowToc: false
 
 <a href="soar-evolution/" class="card">
 <div class="card-title">SOAR와 Hyperautomation</div>
-<div class="card-desc">1세대 SOAR, Hyperautomation, Agentic SOC의 진화 단계와 차이의 본질. 어디서 한계가 오는가.</div>
+<div class="card-desc">1세대 SOAR, Hyperautomation, Agentic SOC의 진화 단계와 차이의 본질, 한계가 드러나는 지점.</div>
 <div class="card-cta">진화 단계 보기</div>
 </a>
 
