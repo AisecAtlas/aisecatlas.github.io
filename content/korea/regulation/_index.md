@@ -32,4 +32,10 @@ ShowToc: false
 <div class="card-cta">규제 노트 보기</div>
 </a>
 
+<a href="ai-basic-act/" class="card">
+<div class="card-title">AI 기본법</div>
+<div class="card-desc">2026년 1월 시행한 포괄 AI 법. 고영향 AI와 생성형 AI에 투명성과 안전성 의무. EU AI Act와 비교.</div>
+<div class="card-cta">규제 노트 보기</div>
+</a>
+
 </div>
