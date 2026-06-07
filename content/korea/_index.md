@@ -20,6 +20,12 @@ ShowToc: false
 <div class="card-cta">사례 보기</div>
 </a>
 
+<a href="domestic-ai-security/" class="card">
+<div class="card-title">국내 보안 벤더의 AI 대응</div>
+<div class="card-desc">안랩, SK쉴더스, 이글루코퍼레이션의 AI 보안 제품과 가이드. AI로 보안 운영과 AI 자체 보안 두 갈래.</div>
+<div class="card-cta">벤더 동향 보기</div>
+</a>
+
 </div>
 
 ## 작성 원칙
