@@ -7,11 +7,11 @@ tags: ["AI Security", "Agentic AI", "MCP", "Non-Human Identity", "OWASP"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: AI 에이전트는 도구를 호출하고 다단계로 추론하기 때문에 단일 호출 LLM과 다른 방어가 필요합니다. 두 축이 핵심입니다. 첫째, 에이전트에 사람과 같은 수준의 신원과 최소 권한을 부여하는 것(Non-Human Identity). 둘째, 에이전트가 도구를 연결하는 통로인 MCP의 위협을 통제하는 것입니다. 위협 분류는 [AI를 지키는 일](/ai/defend-ai/)의 OWASP Agentic Top 10에서 다루고, 이 페이지는 대응을 다룹니다.
+AI 에이전트는 도구를 호출하고 다단계로 추론하기 때문에 단일 호출 LLM과 다른 방어가 필요합니다. 두 축이 핵심입니다. 첫째, 에이전트에 사람과 같은 수준의 신원과 최소 권한을 부여하는 것(Non-Human Identity). 둘째, 에이전트가 도구를 연결하는 통로인 MCP의 위협을 통제하는 것입니다. 위협 분류는 [AI를 지키는 일](/ai/defend-ai/)의 OWASP Agentic Top 10이 다루고, 대응은 아래에서 다룹니다.
 
-## 에이전트는 왜 다른가
+## 에이전트 고유 공격면
 
-에이전트는 추론, 메모리, 도구 호출, 다단계 실행이 결합됩니다. 프롬프트 단계 방어만으로는 막을 수 없는 공격면이 생깁니다. OWASP Agentic Top 10은 Tool Misuse, Delegated Trust, Persistent Memory 오염 같은 위협을 별도로 분류합니다. 위협 상세는 [defend-ai](/ai/defend-ai/)에서 다룹니다.
+에이전트는 추론, 메모리, 도구 호출, 다단계 실행이 결합됩니다. 프롬프트 단계 방어만으로는 막을 수 없는 공격면이 생깁니다. OWASP Agentic Top 10은 Tool Misuse, Delegated Trust, Persistent Memory 오염 같은 위협을 별도로 분류합니다. 위협 상세는 [AI를 지키는 일](/ai/defend-ai/)에서 다룹니다.
 
 ## MCP 보안
 

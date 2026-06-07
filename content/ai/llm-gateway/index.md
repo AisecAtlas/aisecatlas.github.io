@@ -1,17 +1,17 @@
 ---
 title: "LLM 게이트웨이와 런타임 가드레일 비교"
-description: "Lakera, Prompt Security, 오픈소스 가드레일을 같은 기준으로 비교합니다."
+description: "Lakera, Prompt Security, 오픈소스 가드레일의 탐지 방식과 배포, 소속을 같은 기준으로 분해."
 date: 2026-05-30
 lastmod: 2026-05-30
 tags: ["AI Security", "LLM Guardrail", "Lakera", "Prompt Injection", "OWASP"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: LLM 게이트웨이는 LLM 호출의 입출력을 실행 중에 검사해 [OWASP LLM Top 10](/ai/defend-ai/)의 Prompt Injection(LLM01)과 부적절한 출력 처리(LLM05)를 막는 계층입니다. 2025년에 상용 도구가 대형 보안 벤더로 빠르게 흡수됐습니다. Lakera는 Check Point로, Prompt Security는 SentinelOne으로 들어갔습니다. 자체 호스팅이 필요하면 오픈소스가 대안입니다.
+LLM 게이트웨이는 LLM 호출의 입출력을 실행 중에 검사해 [OWASP LLM Top 10](/framework/owasp-llm-top-10/)의 Prompt Injection(LLM01)과 부적절한 출력 처리(LLM05)를 막는 계층입니다. 2025년 상용 도구가 대형 보안 벤더로 빠르게 흡수됐습니다. Lakera는 Check Point로, Prompt Security는 SentinelOne으로 들어갔습니다. 자체 호스팅이 필요하면 오픈소스가 대안입니다.
 
-## 무엇을 하는 계층인가
+## 계층 위치와 역할
 
-LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 사이에 위치합니다. 사용자 입력과 모델 출력을 양방향으로 검사해 위험을 차단합니다. [AI를 지키는 일](/ai/defend-ai/)의 4개 방어 카테고리 중 첫 번째인 게이트웨이를 깊이 비교합니다.
+LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 사이에 위치합니다. 사용자 입력과 모델 출력을 양방향으로 검사해 위험을 차단합니다. [AI를 지키는 일](/ai/defend-ai/)의 4개 방어 카테고리 중 첫 번째가 게이트웨이입니다.
 
 전통적 정규표현식과 시그니처로는 자연어 공격을 막을 수 없습니다. 게이트웨이는 분류 모델로 입출력의 의도를 평가합니다.
 
