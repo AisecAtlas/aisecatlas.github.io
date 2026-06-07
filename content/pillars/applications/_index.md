@@ -95,8 +95,9 @@ CISA ZTMM v2 Applications & Workloads 영역의 Function입니다.
 | CWPP | 워크로드 런타임 보호 | Aqua, Sysdig, Prisma Cloud |
 | WAF, API 보안 | 웹과 API 계층 방어 | Cloudflare WAF, Akamai, F5, Imperva, Wallarm |
 | AI, LLM 보안 | AI 앱과 모델 보호 | Lakera, Prompt Security, Protect AI |
+| ASPM | SDLC 전반의 취약점 결과 통합과 우선순위화 | Apiiro, Cycode, Snyk, Legit Security, OX Security |
 
-AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/ai/ai-spm/)에서 별도로 깊이 다룹니다.
+AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/ai/ai-spm/)에서 별도로 깊이 다룹니다. ASPM은 코드부터 클라우드까지 흩어진 보안 도구 결과를 모아 우선순위화하는 계층으로, 데이터 태세의 [DSPM](/pillars/data/)과 AI 태세의 [AI-SPM](/ai/ai-spm/)과 함께 SPM 3형제로 묶입니다.
 
 ## 시장 동향 (2025-2026)
 
@@ -117,6 +118,7 @@ AI, LLM 보안은 [AI를 지키는 일](/ai/defend-ai/)과 [AI-SPM 솔루션](/a
 | 컨테이너, 워크로드 런타임 보호 | CWPP |
 | 웹과 API 노출 방어 | WAF, API 보안 |
 | LLM, AI 앱 보호 | AI, LLM 보안 |
+| SDLC 전반 취약점 통합과 우선순위화 | ASPM |
 
 ### 두 번째 결정: 환경
 

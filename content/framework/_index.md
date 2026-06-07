@@ -26,6 +26,18 @@ ShowToc: false
 <div class="card-cta">표준 요약 보기</div>
 </a>
 
+<a href="owasp-agentic-top-10/" class="card">
+<div class="card-title">OWASP Agentic Top 10 2026</div>
+<div class="card-desc">자율 에이전트 10대 보안 위험(ASI01~ASI10). 목표 탈취, 도구 오용, 에이전트 간 통신.</div>
+<div class="card-cta">ASI 10개 해체 보기</div>
+</a>
+
+<a href="owasp-mcp-top-10/" class="card">
+<div class="card-title">OWASP MCP Top 10</div>
+<div class="card-desc">에이전트와 도구를 잇는 MCP의 10대 위험(MCP01~MCP10). 토큰 노출, 도구 중독, 인증 부재. v0.1 베타.</div>
+<div class="card-cta">MCP 10개 해체 보기</div>
+</a>
+
 <a href="nist-ai-rmf/" class="card">
 <div class="card-title">NIST AI RMF</div>
 <div class="card-desc">AI 위험관리 프레임워크 1.0. GOVERN, MAP, MEASURE, MANAGE 4대 기능과 Trustworthy AI 7특성.</div>
@@ -58,13 +70,15 @@ ShowToc: false
 
 </div>
 
-## 본 사이트는 이 표준들을 어떻게 사용하나
+## 표준 활용처
 
 | 표준 | 어디에 사용 |
 |---|---|
 | CISA ZTMM v2 | [ZTA 기반 솔루션 분류](/pillars/)의 5 영역 구분 |
 | NIST SP 800-207 | 솔루션 리뷰의 표준 정합성 기준(7원칙) |
 | [OWASP LLM Top 10](owasp-llm-top-10/) | LLM 게이트웨이, AI 레드티밍의 위협 모델 기준 |
+| [OWASP Agentic Top 10](owasp-agentic-top-10/) | Agentic 보안, 에이전트 위협 모델 기준 |
+| [OWASP MCP Top 10](owasp-mcp-top-10/) | MCP 연결 계층 위협 모델 기준 |
 | [NIST AI RMF](nist-ai-rmf/) | AI 거버넌스 계층의 상위 프레임 |
 | [MITRE ATLAS](mitre-atlas/) | AI 레드티밍의 공격 커버리지 매핑 |
 | 한국 규제 | 솔루션 리뷰의 "도입 고려사항" 섹션 |
