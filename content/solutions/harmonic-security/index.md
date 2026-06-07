@@ -85,6 +85,11 @@ Harmonic Security는 Shadow AI 발견에 특화한 순수 플레이입니다. 20
 
 **망분리.** 단말 기반이라 인라인 클라우드 경유 없이 적용 가능하나, 백엔드 SLM 분석의 위치와 통신 경로를 확인합니다.
 
+## 관련 페이지
+
+- [Harmonic 벤더 프로필](/ai/vendors/harmonic/) — 회사와 제품 라인 상세
+- [AI 사용 가시화](/ai/ai-usage-visibility/) — 직원 AI 사용 캡처 메커니즘 비교
+
 ## 출처
 
 - [Harmonic Security — Shadow AI Detection](https://www.harmonic.security/solutions/shadow-ai-detection)
@@ -94,7 +99,7 @@ Harmonic Security는 Shadow AI 발견에 특화한 순수 플레이입니다. 20
 
 ## 면책
 
-본 정리는 공개 자료를 근거로 한다. 제품 사양과 시장 상황은 빠르게 바뀐다. 도입 전 최신 공식 발표를 확인한다.
+본 정리는 공개 자료를 근거로 합니다. 제품 사양과 시장 상황은 빠르게 바뀝니다. 도입 전 최신 공식 발표를 확인합니다.
 
 ---
 최초 발행 2026-06-06, 최종 확인 2026-06-06, 다음 확인 2026-07-06

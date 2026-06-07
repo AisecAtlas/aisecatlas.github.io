@@ -86,6 +86,11 @@ Netskope는 SSE/SASE 시장의 주요 주자입니다. 2025년 7월 기준 ARR *
 
 **망분리.** 클라우드 전달 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 이번 검토에서 국내 적용 사례는 확인하지 못했습니다.
 
+## 관련 페이지
+
+- [Networks 영역](/pillars/networks/) — 네트워크 통제 지점과 솔루션 분포
+- [AI 사용 가시화](/ai/ai-usage-visibility/) — 직원 AI 사용 캡처 방식
+
 ## 출처
 
 - [Netskope One SASE 제품 페이지](https://www.netskope.com/products/secure-access-service-edge)

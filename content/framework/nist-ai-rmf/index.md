@@ -108,7 +108,14 @@ NIST는 2024년 7월 **Generative AI Profile**(AI 600-1)을 발표했습니다. 
 
 **개인정보보호법.** 7대 특성의 프라이버시 강화와 보안, 복원력은 개인정보보호법과 정보보호 체계에 직접 연결됩니다. MEASURE 2의 평가 항목이 점검 근거가 됩니다.
 
-**본 사이트에서.** [AI 거버넌스와 TRiSM](/ai/ai-governance/)의 거버넌스 계층 기준이자, 생성형 AI 위험을 [OWASP LLM Top 10](/framework/owasp-llm-top-10/)의 기술 위험과 연결하는 상위 프레임입니다. [AI를 지키는 일](/ai/defend-ai/)의 통제가 어느 기능에 대응하는지의 좌표입니다.
+[AI 거버넌스와 TRiSM](/ai/ai-governance/)의 거버넌스 계층 기준이자, 생성형 AI 위험을 [OWASP LLM Top 10](/framework/owasp-llm-top-10/)의 기술 위험과 연결하는 상위 프레임입니다. [AI를 지키는 일](/ai/defend-ai/)의 통제가 어느 기능에 대응하는지의 좌표입니다.
+
+## 관련 페이지
+
+- [MITRE ATLAS](/framework/mitre-atlas/) — AI 공격 전술과 기법 지식베이스
+- [OWASP LLM Top 10](/framework/owasp-llm-top-10/) — LLM 앱의 기술 위험 분류
+- [AI 거버넌스](/ai/ai-governance/) — AI TRiSM과 컴플라이언스 축
+- [AI 보안 표준 지형](/framework/ai-security-standards/) — 표준 전체 층위 한 장 정리
 
 ## 출처
 

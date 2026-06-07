@@ -79,6 +79,13 @@ v2.0(2025)은 RAG와 에이전트 확산을 반영했습니다.
 - 에이전트는 별도 목록인 OWASP Agentic Top 10이 다룹니다. [Agentic AI 보안과 MCP](/ai/agentic-security/) 참고.
 - LLM Top 10은 [AI를 지키는 일](/ai/defend-ai/)과 [LLM 게이트웨이](/ai/llm-gateway/)의 솔루션이 각 항목을 어떻게 막는지의 기준입니다.
 
+## 관련 페이지
+
+- [MITRE ATLAS](/framework/mitre-atlas/) — 위험을 일으키는 공격 전술과 기법 매트릭스
+- [Prompt Injection 방어](/ai/prompt-injection-defense/) — LLM01 방어 기법 비교
+- [LLM 게이트웨이](/ai/llm-gateway/) — 입력과 출력을 통제하는 런타임 게이트
+- [AI를 지키는 일](/ai/defend-ai/) — 항목별 방어 솔루션 정리
+
 ## 출처
 
 - [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/)

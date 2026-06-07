@@ -100,6 +100,12 @@ Robust Intelligence는 AI 보안 카테고리를 초기 상용화한 업체로, 
 
 **망분리.** 실시간 Firewall과 Validation SaaS형입니다. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 한국어 프롬프트 공격과 우회 패턴의 탐지 정확도는 PoC에서 자체 데이터로 검증합니다.
 
+## 관련 페이지
+
+- [Applications 영역](/pillars/applications/) — AI 애플리케이션 보안 솔루션 분류
+- [Cisco 벤더 프로필](/ai/vendors/cisco/) — Robust Intelligence를 인수한 벤더 상세
+- [AI를 지키는 일](/ai/defend-ai/) — AI 자산 방어 전반의 흐름
+
 ## 출처
 
 - [Robust Intelligence is now part of Cisco](https://www.cisco.com/site/us/en/products/security/ai-defense/robust-intelligence-is-part-of-cisco/index.html)

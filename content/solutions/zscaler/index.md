@@ -89,6 +89,12 @@ Zscaler는 ZTNA, SASE 시장의 상장 리더입니다. FY2025 4분기에 연간
 
 **망분리.** 클라우드 SaaS형 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 국내 적용 사례는 공개 자료상 확인되지 않습니다.
 
+## 관련 페이지
+
+- [Networks 영역](/pillars/networks/) — 네트워크 통제 지점과 솔루션 분포
+- [Zscaler 벤더 프로필](/ai/vendors/zscaler/) — 회사별 AI 보안 상세
+- [AI 사용 가시화](/ai/ai-usage-visibility/) — 직원 AI 사용 캡처 방식
+
 ## 출처
 
 - [Zscaler 플랫폼 개요 (CXO Insights)](https://www.zscaler.com/blogs/cxo-insights/putting-zero-trust-practice-overview-zscalers-platform-offerings-solution-elements-and)

@@ -111,6 +111,11 @@ Entra ID는 Microsoft 365와 Azure를 사용하는 조직에서 사실상 표준
 
 **공동인증서.** 직접 통합은 없습니다. 별도 OIDC 브로커가 필요합니다.
 
+## 관련 페이지
+
+- [Identity 영역](/pillars/identity/) — 신원 통제 지점과 솔루션 분포
+- [Microsoft 벤더 프로필](/ai/vendors/microsoft/) — 회사별 AI 보안 상세
+
 ## 출처
 
 - [Microsoft Entra 공식 페이지](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)

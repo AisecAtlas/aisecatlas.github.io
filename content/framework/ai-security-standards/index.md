@@ -67,6 +67,13 @@ OWASP는 세 가지 Top 10을 운영합니다. 단일 호출 LLM은 **LLM Top 10
 - NIST AI RMF, ISO 42001, EU AI Act는 [AI 거버넌스](/ai/ai-governance/)의 컴플라이언스 축으로 사용합니다.
 - 한국형 가이드라인은 [한국 규제 노트](/korea/regulation/)와 연결합니다.
 
+## 관련 페이지
+
+- [OWASP LLM Top 10](/framework/owasp-llm-top-10/) — LLM 앱 위협 분류
+- [MITRE ATLAS](/framework/mitre-atlas/) — AI 공격 전술과 기법 지식베이스
+- [NIST AI RMF](/framework/nist-ai-rmf/) — AI 위험 관리 방법론
+- [NIST SP 800-207](/framework/nist-800-207/) — 제로 트러스트 아키텍처 원전
+
 ## 출처
 
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)

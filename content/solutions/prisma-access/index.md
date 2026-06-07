@@ -87,6 +87,11 @@ App Acceleration으로 클라우드 앱 연결을 직접 인터넷 대비 최대
 
 **망분리.** 클라우드 SaaS형 인라인 보안 플랫폼. 한국 공공과 금융의 망분리 환경 적용 가능성은 별도 검토가 필요하며, 국내 적용 사례는 공개 자료상 확인되지 않습니다.
 
+## 관련 페이지
+
+- [Networks 영역](/pillars/networks/) — 네트워크 통제 지점과 솔루션 분포
+- [Palo Alto 벤더 프로필](/ai/vendors/palo-alto/) — 회사별 AI 보안 상세
+
 ## 출처
 
 - [Prisma SASE 아키텍처 (Tufin)](https://www.tufin.com/blog/palo-alto-sase)

@@ -109,6 +109,12 @@ NIST SP 800-207(Zero Trust Architecture, 2020년 8월 최종본)은 네트워크
 - N²SF. 획일적 망분리를 정보 중요도 기반 차등 보안으로 전환하는 국가망보안체계가 제로 트러스트 원칙과 같은 방향을 가리킵니다. 800-207의 위치 무관 통신과 동적 정책이 망분리 완화 논의의 참조점입니다.
 - 정합성. 망분리, 전자금융 규제와의 충돌 지점은 별도로 검토합니다. 자세한 맥락은 [한국 규제 노트](/korea/regulation/)에서 다룹니다.
 
+## 관련 페이지
+
+- [CISA ZTMM v2](/framework/cisa-ztmm-v2/) — 800-207을 5기둥 4단계 성숙도로 운영화
+- [NIST AI RMF](/framework/nist-ai-rmf/) — 상위 AI 위험 거버넌스 프레임
+- [ZTA 기반 솔루션 분류](/pillars/) — PEP 위치별 솔루션 카탈로그
+
 ## 출처
 
 - [NIST SP 800-207 공식 페이지](https://csrc.nist.gov/pubs/sp/800/207/final)

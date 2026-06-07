@@ -88,6 +88,10 @@ Varonis는 데이터 보안 시장의 주요 상장 사업자입니다. 2025년 
 
 **망분리.** 자체 호스팅 옵션이 있어 망분리 환경 적용 여지가 있으나, 구체 구성은 별도 검토가 필요하며 국내 적용 사례는 공개 자료상 확인되지 않습니다.
 
+## 관련 페이지
+
+- [Data 영역](/pillars/data/) — Varonis가 속한 솔루션 카탈로그 영역
+
 ## 출처
 
 - [Varonis 데이터 보안 플랫폼](https://www.varonis.com/data-security-platform)

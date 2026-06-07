@@ -94,6 +94,12 @@ Protect AI는 모델 스캐닝과 AI 공급망 보안 카테고리의 대표 주
 
 **망분리.** 오픈소스 ModelScan은 사내 도입과 자체 호스팅 여지가 있어 망분리 환경에서 검토할 수 있습니다.
 
+## 관련 페이지
+
+- [Applications 영역](/pillars/applications/) — AI 애플리케이션 보안 솔루션 분류
+- [Palo Alto 벤더 프로필](/ai/vendors/palo-alto/) — Protect AI를 인수한 벤더 상세
+- [모델 공급망 보안](/ai/model-supply-chain/) — 모델 스캐닝과 공급망 위험 카테고리
+
 ## 출처
 
 - [Palo Alto Networks의 Protect AI 인수 완료 (2025-07-22)](https://www.prnewswire.com/news-releases/palo-alto-networks-completes-acquisition-of-protect-ai-302510757.html)
