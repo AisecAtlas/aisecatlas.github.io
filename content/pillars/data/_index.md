@@ -82,7 +82,7 @@ CISA ZTMM v2 Data 영역의 Function입니다.
 
 ## 도입 의사결정
 
-### 첫 번째 결정: 무엇이 급한가
+### 첫 번째 결정: 우선순위
 
 | 문제 | 권장 카테고리 |
 |---|---|
@@ -119,6 +119,10 @@ CISA ZTMM v2 Data 영역의 Function입니다.
 - [데이터 제로트러스트와 개인정보](/korea/regulation/pipa-zero-trust-data/) — 개인정보보호법 관점의 데이터 접근 통제와 분류
 - [CISA ZTMM v2](/framework/cisa-ztmm-v2/) — Data 영역의 Function과 성숙도 기준
 - [ZTA 기반 솔루션 분류](/pillars/) — 5개 영역별 솔루션 카탈로그
+
+## 면책
+
+본 정리는 공개 자료를 근거로 합니다. 펀딩과 시장 수치는 발표 기준이며 빠르게 바뀝니다.
 
 ---
 최종 검토 2026-05-30
