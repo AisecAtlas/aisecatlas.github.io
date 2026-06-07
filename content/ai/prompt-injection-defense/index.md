@@ -31,8 +31,6 @@ ShowToc: true
 
 ## 카테고리별 주요 솔루션
 
-런타임 가드레일 제품의 항목별 비교는 [LLM 게이트웨이 비교](/ai/llm-gateway/)에서 다룹니다.
-
 플랫폼 통합 흐름도 빨라집니다. Check Point의 AI Defense Plane은 Google Cloud Gemini Enterprise Agent 플랫폼과 통합해 에이전트 인벤토리, 배포 전 정책, 실시간 프롬프트 인젝션 탐지를 제공할 예정입니다. 가용 시점은 2026년 6월 말로 예고됐습니다([StockTitan](https://www.stocktitan.net/news/CHKP/check-point-to-integrate-ai-defense-plane-with-google-cloud-to-help-2y9plpkjsnuh.html)). Snowflake는 Cortex AI Guardrails로 프롬프트 인젝션과 탈옥을 차단합니다([Snowflake](https://www.snowflake.com/en/blog/engineering/cortex-ai-guardrails-prompt-injection-prevention/)).
 
 ## 도입 의사결정 가이드
@@ -60,6 +58,14 @@ ShowToc: true
 **망분리.** 외부 LLM API를 못 쓰는 환경은 사내 LLM에도 동일한 인젝션 방어를 적용합니다.
 
 **언어.** 한국어 우회 프롬프트의 탐지 정확도는 PoC에서 자체 데이터로 검증합니다.
+
+## 관련 페이지
+
+- [LLM 게이트웨이](/ai/llm-gateway/) — 런타임 가드레일 제품의 항목별 비교
+- [AI를 지키는 일](/ai/defend-ai/) — 인젝션 방어를 포함한 AI 방어 전체 구조
+- [OWASP LLM Top 10](/framework/owasp-llm-top-10/) — LLM01 프롬프트 인젝션의 원문 분류
+- [Lakera](/solutions/lakera/) — 프롬프트 인젝션 차단 상용 가드레일 개별 리뷰
+- [AI 보안 지도](/ai/map/) — AI 보안 솔루션 전체 분포
 
 ## 출처
 

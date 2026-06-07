@@ -7,11 +7,11 @@ tags: ["AI Security", "LLM", "Prompt Injection", "OWASP", "Agentic AI"]
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: 2026년 현재 AI 보안의 1순위 위협은 여전히 **Prompt Injection**이며, 특히 **간접(Indirect) Injection**이 에이전트 시스템에서 핵심 공격면이 되었습니다. OWASP는 LLM과 Agentic 시스템을 위해 **별도의 Top 10**을 유지하고, 시장에는 4가지 카테고리의 방어 도구가 형성됐습니다.
+2026년 현재 AI 보안의 1순위 위협은 여전히 **Prompt Injection**이며, 특히 **간접(Indirect) Injection**이 에이전트 시스템에서 핵심 공격면이 되었습니다. OWASP는 LLM과 Agentic 시스템을 위해 **별도의 Top 10**을 유지하고, 시장에는 4가지 카테고리의 방어 도구가 형성됐습니다.
 
 ## 무엇을 보호하는가
 
-조직이 LLM이나 AI 에이전트를 도입하면 새로운 자산이 생긴다.
+조직이 LLM이나 AI 에이전트를 도입하면 새로운 자산이 생깁니다.
 
 - **LLM 애플리케이션**: 사내 챗봇, RAG, 코파일럿 같은 단일 호출 시스템
 - **AI 에이전트**: 도구를 호출하고 여러 단계를 추론해 자율 행동하는 시스템
@@ -54,8 +54,6 @@ ShowToc: true
 
 > **왜 별도 표준이 필요한가**: 에이전트는 단일 호출 LLM과 달리 **추론, 메모리, 도구, 다단계 실행**이 결합됩니다. 프롬프트 단계 방어만으로 막을 수 없는 새로운 취약점 분류가 생깁니다.
 
-에이전트 신원(NHI)과 MCP 위협 대응은 [Agentic AI 보안과 MCP](/ai/agentic-security/)에서 다룹니다.
-
 ## Prompt Injection이 여전히 1순위인 이유
 
 2025-2026년의 변화 세 가지가 결합됐습니다.
@@ -68,13 +66,11 @@ ShowToc: true
 
 ## 시장 카테고리
 
-이 영역 벤더의 ZTA 아키텍처와 보호 대상 비교는 [벤더 프로필](/ai/vendors/)과 [AI 보안 지도](/ai/map/)에 있습니다. 대표로 [Palo Alto](/ai/vendors/palo-alto/), [Check Point](/ai/vendors/check-point/), [HiddenLayer](/ai/vendors/hiddenlayer/), [Mindgard](/ai/vendors/mindgard/)가 있습니다.
-
-2026년 현재 AI 방어 도구는 네 가지 카테고리로 나뉩니다.
+2026년 현재 AI 방어 도구는 네 가지 카테고리로 나뉩니다. 대표 벤더로 [Palo Alto](/ai/vendors/palo-alto/), [Check Point](/ai/vendors/check-point/), [HiddenLayer](/ai/vendors/hiddenlayer/), [Mindgard](/ai/vendors/mindgard/)가 있습니다.
 
 ### 1. AI 게이트웨이 / Runtime 가드레일
 
-LLM 호출 앞단에서 입출력을 검사하고 차단합니다. 같은 척도의 심층 비교는 [LLM 게이트웨이와 런타임 가드레일 비교](/ai/llm-gateway/)에서 다룹니다.
+LLM 호출 앞단에서 입출력을 검사하고 차단합니다. 같은 척도의 심층 비교는 [LLM 게이트웨이와 런타임 가드레일 비교](/ai/llm-gateway/)에 있습니다.
 
 | 솔루션 | 특징 |
 |---|---|
@@ -85,7 +81,7 @@ LLM 호출 앞단에서 입출력을 검사하고 차단합니다. 같은 척도
 
 ### 2. AI 레드티밍
 
-배포 전에 LLM 앱과 에이전트를 자동 공격해 취약점을 찾습니다. 같은 척도의 심층 비교와 MITRE ATLAS 매핑은 [AI 레드티밍 비교](/ai/ai-red-teaming/)에서 다룹니다.
+배포 전에 LLM 앱과 에이전트를 자동 공격해 취약점을 찾습니다. 같은 척도의 심층 비교와 MITRE ATLAS 매핑은 [AI 레드티밍 비교](/ai/ai-red-teaming/)에 있습니다.
 
 | 솔루션 | 특징 |
 |---|---|
@@ -95,7 +91,7 @@ LLM 호출 앞단에서 입출력을 검사하고 차단합니다. 같은 척도
 
 ### 3. AI TRiSM (Trust, Risk, and Security Management)
 
-거버넌스 차원에서 AI 사용 인벤토리, 데이터 흐름, 정책 적합성을 관리합니다. 규제 프레임워크(EU AI Act, NIST AI RMF, ISO 42001) 매핑과 솔루션 비교는 [AI 거버넌스와 TRiSM](/ai/ai-governance/)에서 다룹니다.
+거버넌스 차원에서 AI 사용 인벤토리, 데이터 흐름, 정책 적합성을 관리합니다. 규제 프레임워크(EU AI Act, NIST AI RMF, ISO 42001) 매핑과 솔루션 비교는 [AI 거버넌스와 TRiSM](/ai/ai-governance/)에 있습니다.
 
 | 솔루션 | 특징 |
 |---|---|
@@ -104,14 +100,14 @@ LLM 호출 앞단에서 입출력을 검사하고 차단합니다. 같은 척도
 
 ### 4. 모델 공급망 보안
 
-학습 단계와 모델 레지스트리 보안입니다. 악성 모델, pickle 공격, 모델 서명과 ML-BOM 심층 내용은 [AI 모델 공급망 보안](/ai/model-supply-chain/)에서 다룹니다.
+학습 단계와 모델 레지스트리 보안입니다. 악성 모델, pickle 공격, 모델 서명과 ML-BOM 심층 내용은 [AI 모델 공급망 보안](/ai/model-supply-chain/)에 있습니다.
 
 | 솔루션 | 특징 |
 |---|---|
 | **Protect AI** | 모델 스캐닝, 학습 데이터 검증 |
 | **Wiz AI-SPM** | CNAPP에 통합된 AI 자산 가시성 |
 
-자산 발견과 태세 관리(AI-SPM)는 [AI-SPM 솔루션](/ai/ai-spm/)에서 다룹니다.
+자산 발견과 태세 관리(AI-SPM)는 [AI-SPM 솔루션](/ai/ai-spm/)에 있습니다.
 
 ## 도입 의사결정 가이드
 
@@ -158,6 +154,16 @@ LLM 호출 앞단에서 입출력을 검사하고 차단합니다. 같은 척도
 **망분리 환경.** 외부 LLM API를 직접 호출할 수 없는 조직은 자체 호스팅 LLM과 자체 가드레일 조합이 현실적입니다. 오픈소스 도구(NeMo Guardrails 등)와 사내 OPA 정책의 결합 패턴이 자주 쓰입니다.
 
 **공공 부문.** CSAP 인증을 보유한 클라우드에서 운영되는 LLM 서비스만 사용 가능한 경우가 많습니다. Microsoft Azure OpenAI Service의 한국 리전 활용 사례가 늡니다.
+
+## 관련 페이지
+
+- [Prompt Injection 방어](/ai/prompt-injection-defense/)
+- [LLM 게이트웨이와 런타임 가드레일 비교](/ai/llm-gateway/)
+- [AI 모델 공급망 보안](/ai/model-supply-chain/)
+- [AI 레드티밍 비교](/ai/ai-red-teaming/)
+- [Agentic AI 보안과 MCP](/ai/agentic-security/)
+- [AI 보안 지도](/ai/map/)
+- [표준: OWASP LLM Top 10](/framework/owasp-llm-top-10/)
 
 ## 출처
 

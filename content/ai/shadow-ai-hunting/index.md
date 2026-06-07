@@ -74,6 +74,13 @@ ShowToc: true
 - **프라이버시와 거버넌스.** 직원의 단말 행위 수집은 거버넌스 근거가 필요합니다. 수집 범위를 AI 사용 식별에 한정하고, 단말 텔레메트리의 처리와 보관 위치를 문서화하며, 개인정보 처리 근거를 확보합니다.
 - **DNS 해석.** DNS 축은 사람의 직접 사용과 백그라운드 자동 호출이 섞입니다. 단일 질의를 사용 근거로 단정하지 않고 빈도와 시간대로 해석합니다.
 
+## 관련 페이지
+
+- [AI 사용 가시화와 Shadow AI 통제](/ai/ai-usage-visibility/) — 네트워크 인라인, 엔드포인트, 브라우저, DNS 등 8가지 캡처 메커니즘
+- [Nightfall AI](/ai/vendors/nightfall/) — 브라우저 플러그인과 엔드포인트 기반 Shadow AI 발견, DLP 결합
+- [Cyberhaven](/ai/vendors/cyberhaven/) — 엔드포인트 데이터 리니지로 AI 반출 데이터 추적
+- [AI 보안 솔루션 지도](/ai/map/) — 캡처 메커니즘과 통제 지점별 벤더 분포
+
 ## 출처
 
 - [CrowdStrike — Innovations to Secure AI Agents and Govern Shadow AI](https://www.crowdstrike.com/en-us/blog/new-crowdstrike-innovations-secure-ai-agents-govern-shadow-ai/)

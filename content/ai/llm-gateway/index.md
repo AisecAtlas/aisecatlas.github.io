@@ -39,8 +39,6 @@ LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 
 
 출처: [appsecsanta Lakera 분석](https://appsecsanta.com/lakera), [appsecsanta Lakera 대안](https://appsecsanta.com/ai-security-tools/lakera-alternatives), [is4.ai 오픈소스 비교](https://is4.ai/blog/our-blog-1/guardrails-ai-vs-nemo-guardrails-comparison-2026-352)
 
-개별 리뷰: [Lakera](/solutions/lakera/), [Protect AI](/solutions/protect-ai/), [NVIDIA NeMo Guardrails](/solutions/nemo-guardrails/).
-
 ### Lakera Guard
 
 분류기 API 방식입니다. 단일 REST 호출로 카테고리별 분류 결과를 반환합니다. **98% 이상의 prompt injection 탐지율, sub-50ms 지연, 100개 이상 언어**를 표방합니다([Lakera Guard](https://www.lakera.ai/lakera-guard)). 호출당 과금이라 트래픽이 늘면 비용도 비례합니다. 2025년 Check Point가 **3억 달러** 규모로 인수했고, Lakera는 Check Point의 AI 보안 거점(Global Center of Excellence for AI Security)의 토대가 됩니다([Check Point 보도자료](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/)).
@@ -96,6 +94,14 @@ NeMo Guardrails는 가장 아키텍처가 완성된 오픈소스 프레임워크
 **공공 부문.** SaaS형 게이트웨이는 [CSAP 인증](/korea/regulation/csap-n2sf/)과 데이터 처리 리전을 확인합니다.
 
 **한국어 탐지 검증.** 다국어 표방과 실제 한국어 탐지 정확도는 다를 수 있습니다. PoC에서 자체 데이터로 검증합니다.
+
+## 관련 페이지
+
+- [AI를 지키는 일](/ai/defend-ai/) — 게이트웨이를 포함한 4개 방어 카테고리 전체 구조
+- [Prompt Injection 방어](/ai/prompt-injection-defense/) — 게이트웨이가 막는 LLM01의 위협 유형과 심층 방어
+- [Lakera](/solutions/lakera/) — 분류기 API 방식 상용 가드레일 개별 리뷰
+- [NeMo Guardrails](/solutions/nemo-guardrails/) — 대화 정책 제어 오픈소스 프레임워크 개별 리뷰
+- [AI 보안 지도](/ai/map/) — AI 보안 솔루션 전체 분포
 
 ## 출처
 

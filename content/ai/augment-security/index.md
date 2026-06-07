@@ -7,7 +7,7 @@ tags: ["Security Copilot", "Agentic SOC", "AI SOC", "Charlotte AI", "Microsoft S
 ShowToc: true
 ---
 
-> **이 페이지의 결론**: SOC는 **알림 과부하**와 **인력 부족**이라는 만성 문제 위에 **27초 침투**라는 새 압박을 받습니다. 2026년의 답은 **Agentic SOC**입니다. AI 에이전트가 분류, 조사, 일부 대응을 자율 수행하고 분석가는 의사결정과 가드레일 설정에 집중합니다.
+SOC는 **알림 과부하**와 **인력 부족**이라는 만성 문제 위에 **27초 침투**라는 새 압박을 받습니다. 2026년의 답은 **Agentic SOC**입니다. AI 에이전트가 분류, 조사, 일부 대응을 자율 수행하고 분석가는 의사결정과 가드레일 설정에 집중합니다.
 
 ## SOC가 직면한 압박
 
@@ -31,11 +31,11 @@ ShowToc: true
 
 > **차이의 본질**: SOAR는 정해진 일을 빠르게 합니다. Agentic SOC는 **정해지지 않은 일도 가능한 한 안전하게 수행**합니다.
 
-자세한 진화 비교는 [SOAR와 Hyperautomation 진화](/automation/soar-evolution/)에서 다룹니다.
+SOAR에서 Agentic SOC까지의 단계별 비교는 [SOAR와 Hyperautomation 진화](/automation/soar-evolution/)에 있습니다.
 
 ## 시장 주도 솔루션
 
-③ AI로 보안을 강화하는 벤더는 [벤더 프로필](/ai/vendors/)에서 ③로 분리해 정리하고, 전체 위치는 [AI 보안 지도](/ai/map/)에서 봅니다. 대표로 [CrowdStrike](/ai/vendors/crowdstrike/), [Microsoft](/ai/vendors/microsoft/), [SentinelOne](/ai/vendors/sentinelone/)가 있습니다.
+AI로 보안을 강화하는 대표 벤더로 [CrowdStrike](/ai/vendors/crowdstrike/), [Microsoft](/ai/vendors/microsoft/), [SentinelOne](/ai/vendors/sentinelone/)가 있습니다.
 
 ### Microsoft Security Copilot
 
@@ -74,11 +74,9 @@ ShowToc: true
 | AI Action Creator | 자연어로 워크플로 설명 → 로직과 API 호출, 데이터 변환을 즉시 생성 |
 | 한계 | 가드레일 깊이는 Torq에 비해 상대적으로 짧은 역사 |
 
-> 본 카테고리의 풀 비교는 [Security Copilots 비교](/automation/security-copilots/)에서 다룹니다.
-
 ## 에이전트가 SOC에서 실제로 하는 일
 
-추상이 아니라 구체적인 작업으로 봅니다.
+에이전트가 SOC에서 수행하는 작업은 네 가지로 나뉩니다.
 
 ### Alert Triage 자동화
 
@@ -146,6 +144,14 @@ ShowToc: true
 **금융권 적용.** 자율 대응은 금감원 보안성 심의에서 면밀히 검토됩니다. 감사 추적과 인간 승인 흐름을 명확히 설계합니다.
 
 **공공 부문.** CSAP 인증과 망분리 정책이 적용 범위를 좁힙니다. 사내 호스팅과 자체 가드레일 조합이 현실적인 출발점입니다.
+
+## 관련 페이지
+
+- [Agentic SOC 2026](/automation/agentic-soc-2026/)
+- [Security Copilots 비교](/automation/security-copilots/)
+- [SOAR와 Hyperautomation 진화](/automation/soar-evolution/)
+- [AI 보안 지도](/ai/map/)
+- [벤더 프로필](/ai/vendors/)
 
 ## 출처
 
