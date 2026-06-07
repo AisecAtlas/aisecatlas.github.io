@@ -20,7 +20,7 @@ ShowToc: true
 |---|---|---|---|---|
 | Google | Wiz | 320억 달러 | 2025-03 발표, 2026-03 완료 | CNAPP, 클라우드 보안 |
 | Cisco | Splunk | 280억 달러 | 2024-03 완료 | SIEM, 관측 |
-| Check Point | Lakera | 3억 달러 | 2025 | AI 보안, LLM 가드레일 |
+| Check Point | Lakera | 약 1억 8,700만 달러 (SEC 6-K) | 2025-10 완료 | AI 보안, LLM 가드레일 |
 | Palo Alto Networks | Protect AI | 비공개 | 2025-07 완료 | AI, ML 보안 |
 | Cisco | Robust Intelligence | 비공개 | 2024 | AI 방화벽 |
 | SentinelOne | Prompt Security | 비공개 | 2025 | LLM 런타임 가드레일 |
@@ -45,7 +45,7 @@ Cisco가 Splunk를 주당 157달러, 약 **280억 달러**에 인수해 2024년 
 
 ### Check Point, Lakera 인수
 
-Check Point가 LLM 가드레일과 레드티밍 기업 Lakera를 **3억 달러**에 인수했습니다. Lakera는 Check Point의 AI 보안 거점이 됩니다([Check Point 보도자료](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/)).
+Check Point가 LLM 가드레일과 레드티밍 기업 Lakera를 인수했습니다(SEC 6-K 기준 순현금 약 **1억 8,700만 달러**, 2025년 10월 완료). Lakera는 Check Point의 AI 보안 거점이 됩니다([Check Point](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/), [SEC 6-K](https://www.checkpoint.com/downloads/investor/6k-december-2-2025.pdf)).
 
 ### Palo Alto Networks, Protect AI 인수
 

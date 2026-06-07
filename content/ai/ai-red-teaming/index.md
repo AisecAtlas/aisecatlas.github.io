@@ -22,11 +22,13 @@ AI 레드티밍은 공격자보다 먼저 LLM과 에이전트를 능동적으로
 
 레드티밍에서 발견한 탈옥은 CI/CD 회귀 테스트가 되고, 게이트웨이 정책으로 이어집니다. 두 도구를 같은 워크플로에 두는 것이 이상적입니다([General Analysis](https://generalanalysis.com/guides/best-ai-red-teaming-tools)).
 
-## MITRE ATLAS 표준
+## 표준과 근거
 
 **MITRE ATLAS(Adversarial Threat Landscape for Artificial-Intelligence Systems)**는 AI와 ML 시스템을 겨냥한 적대적 전술과 기법의 지식 베이스입니다. MITRE ATT&CK을 AI 공격면으로 확장한 것으로, 레드팀이 테스트를 구조화하고 결과를 보고하는 공통 분류 체계가 됩니다([MITRE ATLAS](/framework/mitre-atlas/)).
 
 콘텐츠 버전 2026.05 기준 **16개 전술, 상위 기법 101개, 하위 기법 69개, 실제 사례 57건**을 담습니다([MITRE ATLAS](/framework/mitre-atlas/)). 2025년 10월 업데이트에서 Zenity Labs 협업으로 **에이전트 전용 기법 14개**가 더해졌습니다. 무료 도구인 ATLAS Navigator와 Arsenal로 위협 모델링이 가능합니다.
+
+NIST도 레드티밍을 표준으로 끌어올렸습니다. NIST AI 100-2e2025는 적대적 머신러닝(adversarial ML)의 공격과 완화를 분류한 용어 체계이고(2025년 3월, [NIST](https://csrc.nist.gov/pubs/ai/100/2/e2025/final)), NIST AI 600-1 생성형 AI 프로파일은 배포 전후 레드티밍을 권고합니다([NIST](https://www.nist.gov/itl/ai-risk-management-framework)). Microsoft AI Red Team은 100개 이상의 생성형 AI 제품을 레드팀한 경험을 백서로 공개했습니다(2025년 1월, [Microsoft](https://www.microsoft.com/en-us/research/publication/lessons-from-red-teaming-100-generative-ai-products/)).
 
 ## 솔루션 비교
 
@@ -40,7 +42,7 @@ AI 레드티밍은 공격자보다 먼저 LLM과 에이전트를 능동적으로
 
 ### Lakera Red
 
-Lakera Guard의 자매 제품으로, 무료 Community 티어로 시작할 수 있습니다. Gandalf 게임에서 모은 적대적 프롬프트 데이터가 공격 시뮬레이션의 토대입니다. Lakera는 2025년 Check Point에 **3억 달러** 규모로 인수됐고, Lakera Red도 함께 넘어갔습니다([Check Point 보도자료](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/)).
+Lakera Guard의 자매 제품으로, 무료 Community 티어로 시작할 수 있습니다. Gandalf 게임에서 모은 적대적 프롬프트 데이터가 공격 시뮬레이션의 토대입니다. Lakera는 2025년 10월 Check Point에 인수됐고(SEC 6-K 기준 순현금 약 **1억 8,700만 달러**), Lakera Red도 함께 넘어갔습니다([Check Point](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/), [SEC 6-K](https://www.checkpoint.com/downloads/investor/6k-december-2-2025.pdf)).
 
 ### HiddenLayer AISec Platform
 

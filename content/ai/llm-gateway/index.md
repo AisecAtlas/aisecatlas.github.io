@@ -41,7 +41,7 @@ LLM 게이트웨이, 또는 런타임 가드레일은 애플리케이션과 LLM 
 
 ### Lakera Guard
 
-분류기 API 방식입니다. 단일 REST 호출로 카테고리별 분류 결과를 반환합니다. **98% 이상의 prompt injection 탐지율, sub-50ms 지연, 100개 이상 언어**를 표방합니다([Lakera Guard](https://www.lakera.ai/lakera-guard)). 호출당 과금이라 트래픽이 늘면 비용도 비례합니다. 2025년 Check Point가 **3억 달러** 규모로 인수했고, Lakera는 Check Point의 AI 보안 거점(Global Center of Excellence for AI Security)의 토대가 됩니다([Check Point 보도자료](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/)).
+분류기 API 방식입니다. 단일 REST 호출로 카테고리별 분류 결과를 반환합니다. **98% 이상의 prompt injection 탐지율, sub-50ms 지연, 100개 이상 언어**를 표방합니다([Lakera Guard](https://www.lakera.ai/lakera-guard)). 호출당 과금이라 트래픽이 늘면 비용도 비례합니다. 2025년 10월 Check Point가 인수했고(SEC 6-K 기준 순현금 약 **1억 8,700만 달러**), Lakera는 Check Point의 AI 보안 거점(Global Center of Excellence for AI Security)의 토대가 됩니다([Check Point](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/), [SEC 6-K](https://www.checkpoint.com/downloads/investor/6k-december-2-2025.pdf)).
 
 ### Prompt Security
 
