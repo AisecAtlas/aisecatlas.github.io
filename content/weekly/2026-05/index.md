@@ -98,5 +98,11 @@ Microsoft Security Copilot, CrowdStrike Charlotte AI 같은 운영 보조 AI의 
 - CNAPP 시장 정리 (Wiz, Prisma Cloud, Falcon Cloud Security)
 - 한국 망분리 정책 변화의 시그널 추적
 
+## 관련 페이지
+
+- [AI 보안](/ai/) — 기능별 AI 보안 동향
+- [2026년 6월 호](/weekly/2026-06/) — 다음 주간 동향
+- [AI 보안 지도](/ai/map/) — 기능×벤더 한 장 비교
+
 ---
 최초 발행 2026-05-30, 최종 검토 2026-05-30

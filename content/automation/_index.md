@@ -6,7 +6,7 @@ ShowToc: false
 
 > **자동화 자체는 새롭지 않습니다.** LLM 기반 추론이 가용해지면서 정해진 일뿐 아니라 **정해지지 않은 일도 안전하게 수행**할 수 있게 된 것이 다시 화두가 된 이유입니다.
 
-이 페이지는 [AI 보안](/ai/)의 세 번째 축 [AI로 보안 강화](/ai/augment-security/)의 자동화 묶음입니다. 진입은 AI 보안 허브에서 합니다.
+보안 운영 자동화는 [AI 보안](/ai/)의 세 번째 축 [AI로 보안 강화](/ai/augment-security/)에 속합니다. SOAR에서 Hyperautomation, Agentic SOC로 이어지는 영역입니다.
 
 <div class="card-grid">
 
