@@ -12,7 +12,7 @@ ShowToc: false
 
 | 카테고리 | 정의 | 대표 솔루션 |
 |---|---|---|
-| SOAR | 플레이북 기반 대응 자동화 | Palo Alto XSOAR, Splunk SOAR, Tines, Torq |
+| SOAR | 플레이북 기반 대응 자동화 | Palo Alto XSOAR, Splunk SOAR, Tines, Torq, Swimlane, D3 Security |
 | IaC 보안 | 인프라 코드 단계 보안 검사 | Checkov, Snyk IaC, Wiz IaC |
 | AI 보안 보조 | LLM 기반 분석과 대응 보조 | Microsoft Security Copilot, CrowdStrike Charlotte AI |
 
@@ -43,6 +43,13 @@ ShowToc: false
 **망분리와 N²SF.** [국가망보안체계(N²SF)](/korea/regulation/n2sf-mangbunri/) 환경은 클라우드 SOAR 사용에 제약이 있습니다. 사내 호스팅과 자체 가드레일 조합이 현실적인 경우가 있습니다.
 
 **자율 대응 책임.** [개인정보보호법](/korea/regulation/pipa-zero-trust-data/)의 자동화된 결정 대응권 관점에서, 사람에게 영향을 주는 자동 조치는 설명과 책임 소재를 설계합니다.
+
+
+## 관련 페이지
+
+- [AI로 보안 강화](/ai/augment-security/) — AI를 보안 운영에 쓰는 ③축
+- [SOAR 진화](/automation/soar-evolution/) — SOAR에서 Agentic SOC로
+- [ZTA 기반 솔루션 분류](/pillars/) — 영역별 솔루션 카탈로그
 
 ---
 최종 검토 2026-05-30
