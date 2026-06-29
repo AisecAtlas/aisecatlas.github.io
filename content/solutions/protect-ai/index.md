@@ -23,9 +23,7 @@ ShowToc: true
 
 Protect AI는 AI 모델과 애플리케이션을 보호하는 **AI 보안 플랫폼**입니다. 모델 공급망과 스캐닝이 핵심으로, [OWASP LLM Top 10](/framework/owasp-llm-top-10/)의 LLM03 공급망과 LLM04 데이터, 모델 포이즈닝에 대응합니다.
 
-핵심 개념은 **모델 스캐닝**입니다. 오픈소스 ML 모델 스캐너 ModelScan은 PyTorch, TensorFlow, ONNX, Keras, Pickle, GGUF, Safetensors 등 **35종 이상 모델 포맷**에서 안전하지 않은 코드와 직렬화 공격을 검사합니다. 여기에 모델 보안(Guardian), 확장형 레드티밍(Recon), 런타임 보안(Layer)을 더해 배포 전부터 런타임까지 AI 공급망 전 구간을 다룹니다. 오픈소스 자산으로 진입한 뒤 엔터프라이즈로 확장하는 구조가 차별점입니다.
-
-> **왜 중요한가.** 공개 모델 허브에서 내려받은 모델은 직렬화 공격이나 백도어를 품을 수 있습니다. Protect AI는 배포 전 모델 스캐닝을 CI/CD에 넣어 공급망 위험을 차단합니다.
+핵심 개념은 **모델 스캐닝**입니다. 공개 모델 허브에서 내려받은 모델은 직렬화 공격이나 백도어를 품습니다. Protect AI는 배포 전 모델 스캐닝을 CI/CD에 넣어 공급망 위험을 차단합니다. 오픈소스 ML 모델 스캐너 ModelScan은 PyTorch, TensorFlow, ONNX, Keras, Pickle, GGUF, Safetensors 등 **35종 이상 모델 포맷**에서 안전하지 않은 코드와 직렬화 공격을 검사합니다. 여기에 모델 보안(Guardian), 확장형 레드티밍(Recon), 런타임 보안(Layer)을 더해 배포 전부터 런타임까지 AI 공급망 전 구간을 다룹니다. 오픈소스 자산으로 진입한 뒤 엔터프라이즈로 확장하는 구조가 차별점입니다.
 
 | 모듈 | 역할 |
 |---|---|
@@ -96,7 +94,7 @@ Protect AI는 모델 스캐닝과 AI 공급망 보안 카테고리의 대표 주
 
 ## 관련 페이지
 
-- [Applications 영역](/pillars/applications/) — AI 애플리케이션 보안 솔루션 분류
+- [Applications 영역](/pillars/applications/) — Protect AI가 속한 솔루션 카탈로그 영역
 - [Palo Alto 벤더 프로필](/ai/vendors/palo-alto/) — Protect AI를 인수한 벤더 상세
 - [모델 공급망 보안](/ai/model-supply-chain/) — 모델 스캐닝과 공급망 위험 카테고리
 

@@ -9,7 +9,7 @@ ShowToc: true
 
 AI 거버넌스, 또는 AI TRiSM은 개별 공격을 막는 기술 도구가 아니라 조직이 AI를 어떻게 쓰고 통제하는지 정하는 정책, 위험, 컴플라이언스 계층입니다. [런타임 가드레일](/ai/llm-gateway/), [레드티밍](/ai/ai-red-teaming/), [AI-SPM](/ai/ai-spm/) 위에서 이들을 묶는 우산입니다. EU AI Act, NIST AI RMF, ISO 42001이 기준입니다.
 
-## AI 거버넌스란
+## AI 거버넌스 개요
 
 AI 거버넌스는 AI 자산 인벤토리, 정책 집행, 위험 관리, 감사 가능한 증거 생성을 다룹니다([Credo AI](https://www.credo.ai/product)). Gartner는 이 시장을 AI TRiSM(Trust, Risk and Security Management)으로 부르며, 2025년 AI 거버넌스 플랫폼 시장 가이드를 발간했습니다([Credo AI 블로그](https://www.credo.ai/blog/credo-ai-recognized-in-the-gartner-r-market-guide-for-ai-governance-platforms-2025)).
 

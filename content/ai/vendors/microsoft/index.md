@@ -47,7 +47,7 @@ Microsoft 보안 스택 위에 얹는 AI 증강 계층입니다. 에이전트가
 
 ### ① AI 보호 — Prompt Shields, Defender for Cloud, Entra Agent ID
 
-| 제품 | 무엇을 하나 |
+| 제품 | 역할 |
 |---|---|
 | Prompt Shields | 생성 전에 프롬프트를 검사해 직접(탈옥)과 간접(문서) 인젝션을 차단하는 런타임 API. 8개 언어로 학습([Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)) |
 | Defender for Cloud AI-SPM | Azure OpenAI, AI Foundry, Bedrock, Vertex AI의 AI 워크로드를 발견해 **AI BOM**, 공격 경로, 노출 엔드포인트, IaC 오구성 점검([AI-SPM](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture)) |
@@ -58,7 +58,7 @@ Microsoft 보안 스택 위에 얹는 AI 증강 계층입니다. 에이전트가
 
 ### ② AI 사용행위 보호 — Purview DSPM for AI, Defender for Cloud Apps
 
-| 제품 | 무엇을 하나 |
+| 제품 | 역할 |
 |---|---|
 | Purview DSPM for AI | Copilot과 에이전트와 서드파티 LLM 앱의 프롬프트와 응답을 통합 감사 로그로 발견하고 민감 데이터 흐름을 통제. 원클릭 정책, 데이터 위험 평가, 엔드포인트 DLP로 브라우저 GenAI 붙여넣기 차단([Purview for AI](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview)) |
 | Defender for Cloud Apps | 프록시 로그 기반 Cloud Discovery로 "생성형 AI" 카테고리 앱을 발견하고 위험 점수화, 승인 또는 차단([Cloud Discovery](https://learn.microsoft.com/en-us/defender-cloud-apps/set-up-cloud-discovery)) |

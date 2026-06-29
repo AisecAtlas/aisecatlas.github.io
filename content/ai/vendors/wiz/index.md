@@ -41,7 +41,7 @@ Wiz의 AI 보안은 **AI-SPM**(①)이 핵심입니다. CNAPP의 Security Graph 
 
 CNAPP에 네이티브 통합된 첫 AI 보안 기능입니다. 에이전트리스로 동작합니다([AI-SPM](https://www.wiz.io/solutions/ai-spm)).
 
-| 기능 | 무엇을 하나 |
+| 기능 | 역할 |
 |---|---|
 | AI-BOM | 환경의 모든 AI 서비스, 기술, 라이브러리, SDK를 에이전트 없이 식별. 모델, 프레임워크, 의존성 인벤토리 |
 | 오구성 탐지 | OpenAI, Amazon Bedrock 등 AI 서비스의 잘못된 구성을 내장 규칙으로 탐지, IaC 스캔으로 파이프라인까지 확장 |

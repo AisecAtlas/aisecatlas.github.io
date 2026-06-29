@@ -1,6 +1,6 @@
 ---
 title: "자동화 (with AI)"
-description: "SOAR에서 Agentic SOC로. AI가 보안 자동화를 어떻게 다시 설계하나."
+description: "SOAR에서 Agentic SOC로. AI가 다시 설계하는 보안 자동화."
 ShowToc: false
 ---
 
@@ -44,7 +44,7 @@ ShowToc: false
 
 **Tines Smart Mode.** AI Action Creator로 자연어 워크플로 생성. 익명화된 수백만 실행 데이터 기반.
 
-## 어떤 도구를 선택할까
+## 도구 선택 기준
 
 | 상황 | 권장 도구 |
 |---|---|

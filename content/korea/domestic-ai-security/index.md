@@ -14,7 +14,7 @@ ShowToc: true
 
 국내 벤더의 AI 대응은 글로벌 흐름과 같은 두 갈래입니다. 하나는 [SOC 자동화](/cross-cutting/automation/)처럼 AI로 보안을 운영하는 방향이고, 다른 하나는 [AI 레드티밍](/ai/ai-red-teaming/)처럼 AI 자체를 지키는 방향입니다.
 
-| 갈래 | 무엇인가 | 국내 사례 |
+| 갈래 | 정의 | 국내 사례 |
 |---|---|---|
 | AI로 보안 운영 | SOC 자동화, AI 에이전트 관제 | 안랩 AI 에이전트 SOC, 이글루 SPiDER AI |
 | AI 자체 보안 | LLM 취약점 진단, 거버넌스 | SK쉴더스 LLM 진단 가이드 |

@@ -52,7 +52,7 @@ ThreatLabz 2025 데이터는 규모를 보여줍니다. 기업 AI 활동 전년 
 
 ### ① AI 보호 — AI Guard, AI-SPM, Red Teaming
 
-| 제품 | 무엇을 하나 |
+| 제품 | 역할 |
 |---|---|
 | AI Guard | 사내 AI 앱과 에이전트의 런타임 보호. 프롬프트 인젝션, 탈옥, 개인정보 유출을 차단. 18종 이상 탐지기, 다국어, 프록시 또는 사이드카 배포([AI Guard](https://help.zscaler.com/ai-guard/what-ai-guard)) |
 | AI 자산 관리(AI-SPM) | 섀도 AI부터 위험 앱, 모델, 파이프라인까지 AI 생태계를 발견하고 매핑. AI BOM, 모델 계보(발행자, 원산지, 라이선스). Azure AI Foundry, Bedrock, Vertex AI, Hugging Face 커버([AI 자산 관리](https://www.zscaler.com/products-and-solutions/ai-asset-management)) |

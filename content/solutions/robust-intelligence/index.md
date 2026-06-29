@@ -23,9 +23,7 @@ ShowToc: true
 
 Robust Intelligence는 AI 보안 카테고리를 초기 상용화한 업체입니다. **알고리즘 레드티밍**과 **AI Firewall**로 알려졌습니다.
 
-핵심 개념은 **알고리즘 레드티밍**입니다. 사람이 수동으로 프롬프트를 만드는 대신 자동으로 적대적 입력을 생성해 모델, 애플리케이션의 취약점을 탐색하고, 그 결과로 모델별 가드레일을 자동 생성합니다. 런타임에서는 **AI Firewall**이 모델 비종속으로 입력(프롬프트 인젝션, jailbreak)과 출력(PII, 유해 콘텐츠)을 양방향 검사합니다. "업계 첫 AI Firewall"은 Cisco, Robust Intelligence 자체 표현이며 독립 검증된 사실이 아닙니다.
-
-> **왜 중요한가.** 수동 레드티밍은 공격 범위와 속도에 한계가 있습니다. 알고리즘 레드티밍은 적대적 입력을 자동 생성해 배포 전 모델을 폭넓게 사전 검증합니다.
+핵심 개념은 **알고리즘 레드티밍**입니다. 수동 레드티밍은 공격 범위와 속도에 한계가 있습니다. 알고리즘 레드티밍은 사람이 수동으로 프롬프트를 만드는 대신 자동으로 적대적 입력을 생성해 모델, 애플리케이션의 취약점을 탐색하고, 그 결과로 모델별 가드레일을 자동 생성합니다. 배포 전 모델을 폭넓게 사전 검증하는 방식입니다. 런타임에서는 **AI Firewall**이 모델 비종속으로 입력(프롬프트 인젝션, jailbreak)과 출력(PII, 유해 콘텐츠)을 양방향 검사합니다. "업계 첫 AI Firewall"은 Cisco, Robust Intelligence 자체 표현이며 독립 검증된 사실이 아닙니다.
 
 [OWASP LLM Top 10 2025](/framework/owasp-llm-top-10/)의 다음 항목에 대응합니다.
 
@@ -102,7 +100,7 @@ Robust Intelligence는 AI 보안 카테고리를 초기 상용화한 업체로, 
 
 ## 관련 페이지
 
-- [Applications 영역](/pillars/applications/) — AI 애플리케이션 보안 솔루션 분류
+- [Applications 영역](/pillars/applications/) — Robust Intelligence가 속한 솔루션 카탈로그 영역
 - [Cisco 벤더 프로필](/ai/vendors/cisco/) — Robust Intelligence를 인수한 벤더 상세
 - [AI를 지키는 일](/ai/defend-ai/) — AI 자산 방어 전반의 흐름
 

@@ -3,52 +3,47 @@
    Linear/Vercel/Stripe-inspired design system
    ============================================ */
 
-/* ---------- 1. 색상 토큰 (다크 우선) ---------- */
-.dark {
-  --theme: #07090f;
-  --entry: #0d1117;
-  --primary: #e4e6eb;
-  --secondary: #8b95a7;
-  --tertiary: #161b22;
-  --content: #d1d5db;
-  --code-bg: #0d1117;
-  --border: #1f2937;
+/* ---------- 1. 색상 토큰 (B 테크 에디토리얼, 다크) ---------- */
+/* PaperMod는 :root[data-theme="dark"], 확장 CSS는 .dark 를 함께 타깃 */
+:root[data-theme="dark"], .dark {
+  --theme: #0a0c10;
+  --entry: #11141b;
+  --tertiary: #161a22;
+  --primary: #e6e9ef;
+  --secondary: #97a1b2;
+  --content: #c4cad6;
+  --code-bg: #0e1117;
+  --border: #232a36;
+  --border-soft: rgba(255, 255, 255, 0.07);
 
-  --accent: #22d3ee;
-  --accent-hover: #67e8f9;
-  --accent-glow: rgba(34, 211, 238, 0.18);
-  --accent-soft: rgba(34, 211, 238, 0.08);
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-ink: #06241f;
+  --accent-glow: rgba(45, 212, 191, 0.20);
+  --accent-soft: rgba(45, 212, 191, 0.07);
 
-  --grad-1: #0f172a;
-  --grad-2: #0a0e1a;
+  --surface-1: rgba(255, 255, 255, 0.05);
+  --surface-1-border: rgba(255, 255, 255, 0.14);
+
+  /* 미세 상단 그라디언트용 */
+  --grad-1: #0c1018;
+  --grad-2: #0a0c10;
+
+  --content-max: 880px;
+  --radius: 10px;
+  --radius-sm: 8px;
+  --radius-lg: 14px;
+
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
 }
 
-:root {
-  --accent: #0891b2;
-  --accent-hover: #0e7490;
-  --accent-glow: rgba(8, 145, 178, 0.15);
-}
-
-/* ---------- 2. 배경 패턴 (그리드 + 그라디언트) ---------- */
+/* ---------- 2. 배경 (미세 상단 그라디언트, 장식 제거) ---------- */
 body {
-  background:
-    radial-gradient(circle at 0% 0%, var(--accent-soft) 0%, transparent 40%),
-    radial-gradient(circle at 100% 100%, var(--accent-soft) 0%, transparent 40%),
-    linear-gradient(180deg, var(--grad-1) 0%, var(--grad-2) 100%);
+  background: linear-gradient(180deg, var(--grad-1) 0%, var(--theme) 240px);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--primary);
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
-  background-size: 32px 32px;
-  pointer-events: none;
-  z-index: 0;
 }
 
 .header, .main, .footer {
@@ -60,7 +55,7 @@ body::before {
 @media (min-width: 1024px) {
   :root {
     --sidebar-w: 280px;
-    --content-max: 860px;
+    --content-max: 880px;
   }
 
   .header {
@@ -73,7 +68,7 @@ body::before {
     border-bottom: none;
     overflow-y: auto;
     z-index: 100;
-    background: rgba(7, 9, 15, 0.85);
+    background: rgba(10, 12, 16, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-sizing: border-box;
@@ -99,10 +94,7 @@ body::before {
     font-size: 20px;
     font-weight: 800;
     letter-spacing: -0.01em;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent);
   }
 
   #menu {
@@ -190,7 +182,7 @@ body::before {
 @media (max-width: 1023px) {
   .header {
     border-bottom: 1px solid var(--border);
-    background: rgba(7, 9, 15, 0.92);
+    background: rgba(10, 12, 16, 0.92);
     backdrop-filter: blur(20px);
   }
   .main {
@@ -200,15 +192,12 @@ body::before {
 
 /* ---------- 5. 타이포그래피 ---------- */
 .post-title {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 800;
   letter-spacing: -0.025em;
-  line-height: 1.15;
+  line-height: 1.25;
   margin: 0 0 16px;
-  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }
 
 .post-description {
@@ -231,9 +220,10 @@ body::before {
 }
 
 .post-content h2 {
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
   letter-spacing: -0.015em;
+  line-height: 1.35;
   margin: 3rem 0 1rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
@@ -432,15 +422,12 @@ body::before {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   margin: 0 0 20px;
-  background: linear-gradient(180deg, var(--primary) 0%, #94a3b8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }
 
 .hero p {
@@ -453,7 +440,7 @@ body::before {
 
 @media (max-width: 767px) {
   .hero h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
   .hero p {
     font-size: 16px;
@@ -480,7 +467,7 @@ body::before {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
-  color: #07090f !important;
+  color: var(--accent-ink) !important;
   border-color: var(--accent);
   box-shadow: 0 0 0 1px var(--accent-glow), 0 4px 12px var(--accent-glow);
 }
@@ -510,94 +497,53 @@ body::before {
   gap: 0;
 }
 
-/* ---------- 11. 카드 그리드 ---------- */
+/* ---------- 11. 카드 그리드 (B: 보더 강조, transform 없음) ---------- */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--sp-4);
   margin: 2.5em 0;
 }
 
 .card {
-  display: block;
-  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-5);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 100%);
+  border-radius: var(--radius);
+  background: var(--entry);
   text-decoration: none !important;
   color: var(--primary) !important;
-  transition: all 0.25s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, var(--accent-soft) 0%, transparent 50%);
-  opacity: 0;
-  transition: opacity 0.25s ease;
-  pointer-events: none;
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: 12px;
-  padding: 1px;
-  background: linear-gradient(135deg, var(--accent) 0%, transparent 50%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.25s ease;
-  pointer-events: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  border-color: transparent;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.4), 0 0 24px var(--accent-glow);
-}
-
-.card:hover::before {
-  opacity: 1;
-}
-
-.card:hover::after {
-  opacity: 1;
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: var(--primary);
-  letter-spacing: -0.01em;
-  position: relative;
-  z-index: 1;
+  letter-spacing: -0.005em;
 }
 
 .card-desc {
+  flex: 1;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--secondary);
   margin: 0 0 16px;
-  position: relative;
-  z-index: 1;
 }
 
 .card-cta {
+  margin-top: auto;
   font-size: 13px;
   font-weight: 600;
   color: var(--accent);
   letter-spacing: 0.01em;
-  position: relative;
-  z-index: 1;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -629,11 +575,18 @@ body::before {
 /* ---------- 13. 포커스 (접근성) ---------- */
 a:focus-visible,
 button:focus-visible,
-.card:focus-visible {
+.card:focus-visible,
+.home-tab:focus-visible,
+summary:focus-visible,
+input:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* ---------- 한국어 본문 가독성 ---------- */
+:lang(ko) { word-break: keep-all; }
+.post-content { overflow-wrap: anywhere; }
 
 /* ---------- 14. 스크롤바 (다크 톤) ---------- */
 ::-webkit-scrollbar {
@@ -668,6 +621,23 @@ button:focus-visible,
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ---------- 15-b. 모션 최소화 (접근성) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .main { animation: none; }
+  .card,
+  .card:hover,
+  .card-cta,
+  .card:hover .card-cta,
+  .card:hover .card-cta::after,
+  .btn-primary,
+  .btn-primary:hover,
+  .btn-secondary {
+    transition: none;
+    transform: none;
+  }
+  * { scroll-behavior: auto; }
 }
 
 /* ---------- 16. 검색 페이지 강화 ---------- */

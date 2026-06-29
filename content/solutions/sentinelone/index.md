@@ -23,9 +23,7 @@ ShowToc: true
 
 SentinelOne Singularity는 **자율형 EDR/XDR 플랫폼**입니다. 엔드포인트, 클라우드, 신원에 걸쳐 위협을 예방, 탐지, 대응합니다([출처](https://www.sentinelone.com/platform/)).
 
-핵심은 두 가지입니다. 첫째, 엔드포인트가 **스스로 방어**합니다. 비인가 프로세스와 파일을 실시간으로 종료, 격리하고, 자동 교정과 롤백으로 스스로 복구해 평균 복구 시간(MTTR)을 줄입니다([출처](https://www.sentinelone.com/platform/singularity-xdr-protection/)). 둘째, AI 보안 분석가 **Purple AI**가 자연어 질문을 위협 헌팅 쿼리로 바꾸고(다국어 지원), 이벤트 요약과 보고서를 생성합니다([출처](https://www.sentinelone.com/platform/)).
-
-> **왜 중요한가.** 머신 속도의 자율 종료, 격리, 롤백은 SOC 인력이 개입하기 전 위협을 차단하고, Purple AI의 자연어 헌팅은 분석가 학습 곡선을 낮춰 운영 부담을 줄입니다.
+핵심은 두 가지입니다. 첫째, 엔드포인트가 **스스로 방어**합니다. 비인가 프로세스와 파일을 실시간으로 종료, 격리하고, 자동 교정과 롤백으로 스스로 복구해 평균 복구 시간(MTTR)을 줄입니다. 머신 속도의 자율 종료, 격리, 롤백은 SOC 인력이 개입하기 전 위협을 차단합니다([출처](https://www.sentinelone.com/platform/singularity-xdr-protection/)). 둘째, AI 보안 분석가 **Purple AI**가 자연어 질문을 위협 헌팅 쿼리로 바꾸고(다국어 지원), 이벤트 요약과 보고서를 생성합니다. 자연어 헌팅은 분석가 학습 곡선을 낮춰 운영 부담을 줄입니다([출처](https://www.sentinelone.com/platform/)).
 
 | 모듈 | 역할 |
 |---|---|

@@ -8,9 +8,9 @@ categories: ["framework"]
 ShowToc: true
 ---
 
-## 한 줄 요약
+## 핵심 요약
 
-AI 보안 표준은 하나가 아니라 층위가 다른 여러 문서의 묶음입니다. 위협을 분류하는 것, 위험을 관리하는 것, 인증하는 것, 법으로 강제하는 것이 따로 있습니다.
+AI 보안 표준은 하나가 아니라 층위가 다른 여러 문서의 묶음입니다. 위협 분류, 위험 관리, 인증, 법적 강제가 각각 따로 존재합니다.
 
 ## 표준이 여러 개인 이유
 
@@ -61,9 +61,9 @@ OWASP는 세 가지 Top 10을 운영합니다. 단일 호출 LLM은 **LLM Top 10
 
 **가이드라인은 자발.** 한국형 제로트러스트 가이드라인은 강제가 아닌 지침입니다. 다만 공공의 [N²SF](/korea/regulation/n2sf-mangbunri/)와 금융의 [전자금융감독규정](/korea/regulation/financial-mangbunri/)은 별도의 구속력을 갖습니다.
 
-## 본 사이트의 사용 방식
+## 본 사이트의 활용
 
-- OWASP와 MITRE ATLAS는 [AI를 지키는 일](/ai/defend-ai/)과 하위 솔루션 페이지의 위협 모델 근거로 사용합니다.
+- OWASP와 MITRE ATLAS는 [AI를 지키는 일](/ai/defend-ai/)과 하위 솔루션 페이지의 위협 모델 근거로 씁니다.
 - NIST AI RMF, ISO 42001, EU AI Act는 [AI 거버넌스](/ai/ai-governance/)의 컴플라이언스 축으로 사용합니다.
 - 한국형 가이드라인은 [한국 규제 노트](/korea/regulation/)와 연결합니다.
 

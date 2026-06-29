@@ -45,7 +45,7 @@ Singularity Data Lake 위의 agentic SOC 분석가입니다. 자연어를 쿼리
 
 ### ① AI 보호 — Prompt Security, AI-SPM
 
-| 제품 | 무엇을 하나 |
+| 제품 | 역할 |
 |---|---|
 | Prompt Security 런타임 | 사내 AI 앱과 에이전트의 모든 상호작용을 실시간 검사. 프롬프트 인젝션, 탈옥, 악성 출력 조작, 프롬프트 유출 차단. 모델 무관([Prompt Security for Agentic AI](https://www.sentinelone.com/blog/prompt-security-for-agentic-ai/)) |
 | Prompt Security MCP 게이트웨이 | 승인과 섀도 MCP 서버를 발견하고 거버넌스. 도구 호출과 에이전트 상호작용을 실행 시점에 검사 |
