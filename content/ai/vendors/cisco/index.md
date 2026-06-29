@@ -43,7 +43,7 @@ Cisco의 AI 보안 핵심은 **AI Defense**(①)입니다. 인수한 **Robust In
 
 AI 애플리케이션을 개발, 배포, 보호하는 솔루션입니다. 인수한 Robust Intelligence의 AI Validation과 AI Protection이 각각 모델 검증과 런타임 보호의 기반입니다([AI Defense 발표](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m01/cisco-unveils-ai-defense-to-secure-the-ai-transformation-of-enterprises.html)). 2025년 1월 발표, 3월 GA입니다.
 
-| 기능 | 무엇을 하나 |
+| 기능 | 역할 |
 |---|---|
 | AI Discovery | 퍼블릭과 프라이빗 클라우드의 섀도 AI와 승인 AI 앱을 발견 |
 | 모델 검증 | AI 기반 알고리즘 레드티밍으로 배포 전 수백 가지 안전과 보안 이슈를 자동 테스트 |

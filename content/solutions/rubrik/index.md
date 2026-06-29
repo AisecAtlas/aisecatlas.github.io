@@ -23,9 +23,7 @@ ShowToc: true
 
 Rubrik은 데이터를 지키고 공격 이후 복구하는 **사이버 복원력 플랫폼**입니다. 스스로 "Zero Trust 데이터 보안"을 표방합니다([출처](https://www.rubrik.com/products)).
 
-Rubrik Security Cloud는 **DSPM**(데이터 보안 자세 관리)과 **사이버 복구**를 한 플랫폼에 결합했습니다. Rubrik DSPM은 2025년 초 정식 출시됐고, 민감 데이터를 자동으로 발견, 분류, 모니터링해 위반을 교정하고 접근을 최소화하며 위협을 조기에 탐지합니다([출처](https://www.rubrik.com/products/data-security-posture-management)). 기존 백업의 핵심은 **불변 백업 아키텍처**입니다. 백업 데이터가 랜섬웨어에 훼손되지 않도록 막아, 조직의 마지막 방어선을 지킵니다([출처](https://www.rubrik.com/)).
-
-> **왜 중요한가.** 예방 통제가 뚫린 이후에도 불변 백업으로 데이터를 복구할 수 있다는 점에서, 사이버 복원력의 마지막 방어선 역할을 합니다.
+Rubrik Security Cloud는 **DSPM**(데이터 보안 자세 관리)과 **사이버 복구**를 한 플랫폼에 결합했습니다. Rubrik DSPM은 2025년 초 정식 출시됐고, 민감 데이터를 자동으로 발견, 분류, 모니터링해 위반을 교정하고 접근을 최소화하며 위협을 조기에 탐지합니다([출처](https://www.rubrik.com/products/data-security-posture-management)). 기존 백업의 핵심은 **불변 백업 아키텍처**입니다. 백업 데이터가 랜섬웨어에 훼손되지 않도록 막습니다. 예방 통제가 뚫린 이후에도 불변 백업으로 데이터를 복구하므로, 사이버 복원력의 마지막 방어선 역할을 합니다([출처](https://www.rubrik.com/)).
 
 | 모듈 | 역할 |
 |---|---|

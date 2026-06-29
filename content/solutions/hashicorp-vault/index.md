@@ -21,7 +21,7 @@ ShowToc: true
 
 ## 어떤 제품인가
 
-HashiCorp Vault는 API 키, 비밀번호, 인증서 같은 **시크릿을 통제하는 도구**입니다. 시크릿에 대한 단일 인터페이스를 제공하면서 접근을 엄격히 통제하고 상세 감사 로그를 남깁니다([출처](https://github.com/hashicorp/vault)).
+HashiCorp Vault는 API 키, 비밀번호, 인증서 같은 **시크릿을 통제하는 도구**입니다. 시크릿을 다루는 단일 인터페이스를 제공하면서 접근을 엄격히 통제하고 상세 감사 로그를 남깁니다([출처](https://github.com/hashicorp/vault)).
 
 핵심은 **신원 기반 통제와 동적 시크릿**입니다. 데이터를 저장 전에 암호화하고, AWS나 SQL 같은 시스템에는 필요할 때 자격 증명을 즉석에서 생성한 뒤 리스 만료 시 자동 회수합니다([출처](https://developer.hashicorp.com/vault)). 시크릿, 사용자, 머신, 서비스, AI 에이전트의 수명 주기를 자동화해 수동 회전과 폐기에서 오는 사람 실수를 줄입니다([출처](https://www.hashicorp.com/en/products/vault)).
 

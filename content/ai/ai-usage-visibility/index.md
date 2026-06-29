@@ -29,9 +29,9 @@ ShowToc: true
 
 프록시가 트래픽 경로에 끼어 TLS 세션을 **둘로 쪼갭니다**(클라이언트↔프록시, 프록시↔서버). 원 서버 인증서를 검사한 뒤, 같은 호스트명으로 **프록시 자체 CA가 서명한 인증서를 즉석에서 발급**해 클라이언트에 제시합니다([Zscaler — SSL/TLS Inspection](https://help.zscaler.com/zia/understanding-ssltls-inspection)).
 
-- **본다.** 복호화된 평문 전체 — URL, 헤더, 요청 본문(프롬프트 JSON), 응답. 프롬프트에 인라인 DLP 적용 가능.
+- **가시성.** 복호화된 평문 전체 — URL, 헤더, 요청 본문(프롬프트 JSON), 응답. 프롬프트에 인라인 DLP 적용 가능.
 - **전제.** 프록시 **루트 CA를 모든 엔드포인트에 신뢰 설치**(MDM/GPO 배포)해야 합니다. 없으면 인증서 오류가 납니다([Zscaler — CA Certificate](https://help.zscaler.com/zia/choosing-ca-certificate-ssl-inspection)).
-- **못 본다(핀닝).** 인증서를 **핀닝**한 앱은 프록시의 대체 인증서를 거부하고 **연결을 끊습니다**. 프록시는 핀닝을 감지하지도 못합니다 — "클라이언트가 핀닝을 알리는 메시지가 없어 연결이 그냥 실패한다"([Zscaler — Certificate Pinning](https://help.zscaler.com/zia/certificate-pinning-and-ssltls-inspection)). 대응은 핀닝 앱을 **검사 우회 목록**에 넣는 것인데, 우회된 트래픽은 복호화되지 않아 **사각지대**가 됩니다.
+- **사각지대(핀닝).** 인증서를 **핀닝**한 앱은 프록시의 대체 인증서를 거부하고 **연결을 끊습니다**. 프록시는 핀닝을 감지하지도 못합니다 — "클라이언트가 핀닝을 알리는 메시지가 없어 연결이 그냥 실패한다"([Zscaler — Certificate Pinning](https://help.zscaler.com/zia/certificate-pinning-and-ssltls-inspection)). 대응은 핀닝 앱을 **검사 우회 목록**에 넣는 것인데, 우회된 트래픽은 복호화되지 않아 **사각지대**가 됩니다.
 - **위치.** 네트워크(온프렘 어플라이언스 또는 SASE/SSE 클라우드 PoP).
 - **벤더.** Zscaler ZIA, Broadcom/Symantec Cloud SWG, Palo Alto Prisma Access, Netskope.
 
@@ -39,7 +39,7 @@ ShowToc: true
 
 앱이 LLM 제공자 대신 **게이트웨이를 호출하도록 명시적으로 설정**합니다(앱의 base URL을 게이트웨이로 변경). 게이트웨이가 API 키를 쥐고 OpenAI/Anthropic로 대신 전달합니다. 클라이언트가 **게이트웨이와 직접 TLS를 맺으므로** MITM도 인증서 위조도 핀닝 문제도 없습니다. Cloudflare AI Gateway는 "사용자 프롬프트, 모델 응답, 제공자, 토큰 사용량, 비용, 지연"을 기본 기록합니다([Cloudflare AI Gateway — Logging](https://developers.cloudflare.com/ai-gateway/observability/logging/)).
 
-- **본다.** 프롬프트와 응답 전문, 토큰/비용, 사용자별 귀속. 가드레일/DLP 인라인 적용.
+- **가시성.** 프롬프트와 응답 전문, 토큰/비용, 사용자별 귀속. 가드레일/DLP 인라인 적용.
 - **한계(결정적).** **게이트웨이를 거치도록 만든 트래픽만** 봅니다. 우리가 통제하는 **사내 1st-party 앱**에만 유효합니다. 직원이 브라우저로 chat.openai.com을 열어 입력하는 트래픽은 게이트웨이를 거치지 않습니다. 인라인 프록시가 모든 egress를 투명하게 가로채는 것과 반대로, AI 게이트웨이는 **앱이 자발적으로 향하는 종단**입니다.
 - **위치.** 클라우드(Cloudflare) 또는 self-host(LiteLLM, Kong AI Gateway, Portkey).
 - **벤더.** Cloudflare AI Gateway, LiteLLM, Kong AI Gateway, Portkey.
@@ -61,7 +61,7 @@ URL/도메인 분류("생성형 AI" 카테고리), 허용/차단, 그리고 **TL
 
 엔드포인트 에이전트는 데이터가 **암호화되기 전**에 봅니다. 기법은 유저스페이스 API 후킹, 커널 콜백/미니필터 드라이버, **클립보드/키 입력 감시**, 브라우저 붙여넣기 이벤트 후킹입니다. Microsoft Purview Endpoint DLP는 클립보드 복사와 "미승인 앱에서의 민감 데이터 사용"을 차단/경고합니다([Microsoft — Endpoint DLP](https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about)).
 
-- **본다.** 프로세스/네트워크 연결(어느 프로세스가 어느 AI 도메인과 통신했나), **클립보드 복사, 붙여넣기**, 파일 업로드, 키 입력 — OS/앱 계층에서 **TLS, 핀닝과 무관**하게.
+- **가시성.** 프로세스/네트워크 연결(어느 프로세스가 어느 AI 도메인과 통신했나), **클립보드 복사, 붙여넣기**, 파일 업로드, 키 입력 — OS/앱 계층에서 **TLS, 핀닝과 무관**하게.
 - **약점.** 브라우저 내 프롬프트 의미를 정밀 복원하려면 브라우저 연동이 필요하고, 에이전트는 언후킹/우회될 수 있습니다.
 - **헌팅 활용.** EDR 프로세스/DNS 텔레메트리로 단말의 로컬 CLI, IDE 확장, MCP 서버, 웹 AI 사용을 직접 헌팅하는 방법은 [EDR 텔레메트리 기반 Shadow AI 헌팅](/ai/shadow-ai-hunting/)에서 6축 방법론으로 다룹니다.
 - **벤더.** Microsoft Purview Endpoint DLP, CrowdStrike/SentinelOne(EDR 텔레메트리), Forcepoint DLP.
@@ -77,7 +77,7 @@ URL/도메인 분류("생성형 AI" 카테고리), 허용/차단, 그리고 **TL
 
 프롬프트 입력창은 페이지 **DOM**의 일부입니다. 브라우저 확장이나 DOM 스크립팅 권한을 가진 엔터프라이즈 브라우저는 **입력 요소에서 프롬프트를 직접 읽습니다** — 복호화된 뒤, 렌더된 DOM에서. LayerX는 "프롬프트 필드는 보통 페이지 DOM의 일부이고, DOM 스크립팅 권한이 있는 확장은 AI 프롬프트를 직접 읽고 쓸 수 있다"고 설명합니다([LayerX — Man-in-the-Prompt](https://layerxsecurity.com/blog/man-in-the-prompt-top-ai-tools-vulnerable-to-injection/)).
 
-- **본다.** 프롬프트와 응답 전문 + 페이지 맥락, 붙여넣기 실시간 차단 — **TLS, 핀닝과 무관**(네트워크 바이트가 아니라 DOM을 읽음). 프록시가 놓치는 SaaS 내장 AI, 개인 계정 사용까지 포착.
+- **가시성.** 프롬프트와 응답 전문 + 페이지 맥락, 붙여넣기 실시간 차단 — **TLS, 핀닝과 무관**(네트워크 바이트가 아니라 DOM을 읽음). 프록시가 놓치는 SaaS 내장 AI, 개인 계정 사용까지 포착.
 - **약점.** 브라우저 밖(데스크톱 AI 앱, IDE 플러그인)은 못 봅니다. 확장/브라우저가 설치돼 있어야 합니다.
 - **벤더.** LayerX(확장), Island(엔터프라이즈 브라우저), Harmonic Security, Nightfall(확장 기반).
 
@@ -85,8 +85,8 @@ URL/도메인 분류("생성형 AI" 카테고리), 허용/차단, 그리고 **TL
 
 DNS 질의를 검사해 연결 전에 정책을 겁니다. 어떤 AI 서비스 도메인인지 식별합니다. Cisco Umbrella는 DNS 계층 정책으로 "70개 이상 생성형 AI 앱의 사용을 발견/차단/허용"합니다([Cisco Umbrella](https://support.umbrella.com/hc/en-us/articles/16221318789396-DLP-and-CASB-support-for-Generative-AI-and-ChatGPT)).
 
-- **본다.** **어떤 AI를 쓰나**(도메인/앱 식별), 도메인 단위 허용/차단을 복호화 없이 대규모로.
-- **못 본다.** 페이로드 일체 — 프롬프트도 URL 경로도 없음. 순수 메타데이터.
+- **가시성.** **어떤 AI를 쓰나**(도메인/앱 식별), 도메인 단위 허용/차단을 복호화 없이 대규모로.
+- **사각지대.** 페이로드 일체 — 프롬프트도 URL 경로도 없음. 순수 메타데이터.
 - **벤더.** Cisco Umbrella, Infoblox, DNSFilter, Palo Alto DNS Security.
 
 ### 메커니즘 비교 — 프롬프트 텍스트를 잡는 깊이

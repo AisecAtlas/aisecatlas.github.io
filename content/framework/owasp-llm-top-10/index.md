@@ -73,7 +73,7 @@ v2.0(2025)은 RAG와 에이전트 확산을 반영했습니다.
 - 이름 변경: Insecure Output Handling → Improper Output Handling, Training Data Poisoning → Data and Model Poisoning, Overreliance → Misinformation
 - 흡수: Insecure Plugin Design은 별도 항목에서 빠지고 공급망과 과도한 권한으로 나뉘어 들어감
 
-## 다른 표준과 우리 사이트에서
+## 다른 표준 및 본 사이트와의 관계
 
 - MITRE ATLAS와의 관계: ATLAS는 공격자의 전술과 기법을 담은 지식 베이스이고, LLM Top 10은 앱이 받는 위험의 분류입니다. LLM01은 ATLAS의 프롬프트 인젝션 기법에 대응합니다. [MITRE ATLAS](/framework/mitre-atlas/) 참고.
 - 에이전트는 별도 목록인 OWASP Agentic Top 10이 다룹니다. [Agentic AI 보안과 MCP](/ai/agentic-security/) 참고.

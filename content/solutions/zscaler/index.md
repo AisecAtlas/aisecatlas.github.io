@@ -23,9 +23,7 @@ ShowToc: true
 
 Zscaler는 클라우드에서 동작하는 인라인 보안 플랫폼입니다. 핵심은 **Zero Trust Exchange**로, 전 세계 **150개 이상 데이터센터**([출처](https://www.zscaler.com/blogs/cxo-insights/putting-zero-trust-practice-overview-zscalers-platform-offerings-solution-elements-and))에 분산된 SASE 아키텍처 기반입니다.
 
-기존 VPN은 사용자를 사내 네트워크에 들여보냅니다. Zscaler는 네트워크를 사용자에게 확장하지 않고, 개별 디바이스와 개별 앱 사이에만 일대일 연결(**segment of one**)을 만듭니다. 앱은 외부에 노출되지 않고 안에서 밖으로 연결을 맺습니다(**inside-out**).
-
-> **왜 중요한가.** 네트워크 중심 경계 모델에서 ID 우선, 앱 중심 모델로의 전환이 제로 트러스트의 핵심입니다. Zscaler는 이 전환을 제품 구조로 강제합니다.
+기존 VPN은 사용자를 사내 네트워크에 들여보냅니다. Zscaler는 네트워크를 사용자에게 확장하지 않고, 개별 디바이스와 개별 앱 사이에만 일대일 연결(**segment of one**)을 만듭니다. 앱은 외부에 노출되지 않고 안에서 밖으로 연결을 맺습니다(**inside-out**). 네트워크 중심 경계 모델에서 ID 우선, 앱 중심 모델로의 전환이 제로 트러스트의 핵심이며, Zscaler는 이 전환을 제품 구조로 강제합니다.
 
 | 모듈 | 역할 |
 |---|---|

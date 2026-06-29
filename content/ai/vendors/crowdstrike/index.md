@@ -41,7 +41,7 @@ ShowToc: true
 
 Falcon 플랫폼의 **agentic 분석가**입니다. AI 추론과 사람의 판단을 결합해 SOC 결과를 가속합니다. AI 모델을 보호하는 것이 아니라 분석가를 증강합니다([Charlotte AI](https://www.crowdstrike.com/en-us/platform/charlotte-ai/)).
 
-| 구성 | 무엇을 하나 |
+| 구성 | 역할 |
 |---|---|
 | Charlotte AI Agentic Response | 노련한 분석가처럼 조사를 주도하고 질문에 답합니다 |
 | Charlotte Agentic SOAR | 결정론적 자동화와 agentic 추론을 결합해 머신 속도로 대응, 사례 관리 |
@@ -51,7 +51,7 @@ AgentWorks 출시 파트너는 Accenture, AWS, Anthropic, Deloitte, Kroll, NVIDI
 
 ### ① AI 보호 — AIDR, AI-SPM, Shield
 
-| 제품 | 무엇을 하나 |
+| 제품 | 역할 |
 |---|---|
 | Falcon AIDR | 사내 AI의 런타임 위협 탐지. 프롬프트 인젝션, 탈옥, 유해 콘텐츠, 무단 MCP 상호작용을 엔드포인트와 앱과 에이전트와 MCP 서버와 AI/API 게이트웨이에서 탐지([AIDR](https://www.crowdstrike.com/en-us/solutions/secure-your-ai/)) |
 | Falcon Cloud Security AI-SPM | 클라우드 AI 서비스와 모델의 에이전트리스 태세 관리. 오구성, 취약점, 무결성 위험 탐지(2024-09-18 공개) |
@@ -59,7 +59,7 @@ AgentWorks 출시 파트너는 Accenture, AWS, Anthropic, Deloitte, Kroll, NVIDI
 
 ### ② AI 사용행위 보호 — Data Protection, Shadow AI
 
-| 제품 | 무엇을 하나 |
+| 제품 | 역할 |
 |---|---|
 | Falcon Data Protection | GenAI로 나가는 데이터 유출 방지. 브라우저, 로컬 앱, 섀도 AI, 클라우드 흐름을 실시간 가시화하고 무단 GenAI 클라이언트의 분류 데이터 접근 차단 |
 | Shadow AI 가시성 서비스 | 엔드포인트와 클라우드와 SaaS 전반의 승인 또는 미승인 AI 도구와 에이전트와 확장을 발견. 전문 서비스 형태(셀프서비스 제품 아님) |

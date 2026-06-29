@@ -40,7 +40,7 @@ Check Point의 AI 보호(①) 핵심은 인수한 **Lakera**입니다. Lakera Gu
 
 ### ① AI 보호 — Lakera 기반
 
-| 제품 | 무엇을 하나 |
+| 제품 | 역할 |
 |---|---|
 | AI Agent Security (Lakera Guard) | AI 앱과 에이전트의 인라인 런타임 가드레일. 프롬프트 공격, 데이터 유출, 콘텐츠 위반을 실시간 차단. LLM 입출력과 RAG, MCP 데이터까지 검사. 50ms 미만 지연, 100개 이상 언어([Lakera](https://www.lakera.ai/)) |
 | AI Red Teaming (Lakera Red) | 위험 기반 GenAI 레드티밍. 직접과 간접 공격 시뮬레이션으로 배포 전 태세 평가 |

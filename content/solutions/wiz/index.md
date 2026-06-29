@@ -23,9 +23,7 @@ ShowToc: true
 
 Wiz는 흩어진 클라우드 보안 도구를 하나로 묶은 **에이전트리스 CNAPP**입니다. CSPM, CWPP, CIEM, DSPM, IaC 스캔을 단일 플랫폼에서 제공합니다([출처](https://em360tech.com/tech-articles/solution-overview-what-wiz)).
 
-핵심은 **Security Graph**입니다. 클라우드 전체를 속성 그래프로 보고, AWS, Azure, GCP, OCI, Kubernetes에 네이티브 API로 연결해 모든 노드와 엣지를 평가합니다. 코드, 클라우드, 런타임의 위험을 상관 분석해 **악용 가능하고 도달 가능한 위험만** 골라내고, 그렇지 않은 경고는 억제해 알림 피로를 줄입니다([출처](https://solideinfo.com/wiz-cloud-security/)).
-
-> **왜 중요한가.** 멀티클라우드 환경에서 수많은 경고를 쏟아내는 대신, 실제로 악용 가능한 공격 경로만 선별해 우선순위를 잡아준다는 점이 차별점입니다.
+핵심은 **Security Graph**입니다. 클라우드 전체를 속성 그래프로 보고, AWS, Azure, GCP, OCI, Kubernetes에 네이티브 API로 연결해 모든 노드와 엣지를 평가합니다. 코드, 클라우드, 런타임의 위험을 상관 분석해 **악용 가능하고 도달 가능한 위험만** 골라내고, 그렇지 않은 경고는 억제해 알림 피로를 줄입니다. 멀티클라우드 환경에서 수많은 경고를 쏟아내는 대신 실제로 악용 가능한 공격 경로만 선별해 우선순위를 잡아준다는 점이 차별점입니다([출처](https://solideinfo.com/wiz-cloud-security/)).
 
 | 모듈 | 역할 |
 |---|---|

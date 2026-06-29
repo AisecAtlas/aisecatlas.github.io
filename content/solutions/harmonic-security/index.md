@@ -21,7 +21,7 @@ ShowToc: true
 
 ## 어떤 제품인가
 
-Harmonic Security는 직원의 생성형 AI 사용을 발견하고, 민감 데이터가 AI 도구로 새는 것을 막는 데이터 보호 플랫폼입니다. 제품명은 **Harmonic Protect**. 설계의 중심은 **브라우저 확장**입니다.
+Harmonic Security는 직원의 생성형 AI 사용을 찾아내고 민감 데이터가 AI 도구로 새는 경로를 막는 데이터 보호 플랫폼입니다. 제품명은 **Harmonic Protect**, 설계의 중심은 **브라우저 확장**입니다.
 
 다른 Shadow AI 통제가 네트워크 프록시에 의존하는 것과 달리, Harmonic은 **브라우저 확장(Chrome, Edge, Firefox, Safari)을 주 센서**로 쓰고, 워크스테이션의 데스크톱 AI 앱과 에이전트를 위해 **엔드포인트 에이전트**를 더합니다. 프롬프트는 DOM에서 직접 읽히므로 TLS 암호화나 인증서 핀닝과 무관하게 내용을 봅니다. 캡처 메커니즘의 일반 비교는 [AI 사용 가시화](/ai/ai-usage-visibility/)가 정리합니다.
 
